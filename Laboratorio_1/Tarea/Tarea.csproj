@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3F5F12E6-3FE6-4148-8E2D-07568CD6ED25}</ProjectGuid>
+    <ProjectGuid>{7D6D72A2-C04A-4EDD-A73B-265884DEA193}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Laboratorio_1</RootNamespace>
-    <AssemblyName>Laboratorio_1</AssemblyName>
+    <RootNamespace>Tarea</RootNamespace>
+    <AssemblyName>Tarea</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,7 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Ejercicio.cs" />
+    <Compile Include="Tarea.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
