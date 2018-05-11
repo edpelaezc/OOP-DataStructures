@@ -10,6 +10,12 @@ namespace Laboratorio_1
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Hola mundo");            
+            Console.Write("Ingrese su nombre: ");
+            string name = Console.ReadLine();
+
+            Console.WriteLine("Hola " + name + ", este es su primer programa!");
+            Console.ReadLine();
         }
     }
 }
