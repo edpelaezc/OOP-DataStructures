@@ -33,8 +33,7 @@ namespace Figura_1_Canvas
         private void pictureBox1_Paint(object sender, PaintEventArgs e)
         {
             Graphics myDraw = e.Graphics;
-            Pen myPen = new Pen(Color.FromArgb(255, 0, 0, 0));
-            //myDraw.DrawLine(myPen, 50, 10, 300, 100);
+            Pen myPen = new Pen(Color.FromArgb(255, 0, 0, 0));            
             int x = 10;
             int y = 100;
             for (int i = 0; i < 10; i++)
