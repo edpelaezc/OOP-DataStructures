@@ -35,5 +35,29 @@ namespace NumerosAmigos
                 return false;
             }
         }
+
+        public string numerosPrimos()
+        {
+            int numeroDivisores = 0;
+            int contador = 1;
+            string primos = "";
+            for (int i = 1; i < 50; i++)
+            {
+                for (int j = 1; j < contador; j++)
+                {
+                    if (contador % j == 0)
+                    {
+                        numeroDivisores++;
+                    }
+                }
+                if (numeroDivisores > 1)
+                {
+                    primos += contador.ToString() + ",";
+                }
+                contador++;
+            }
+
+            return primos;
+        }
     }
 }

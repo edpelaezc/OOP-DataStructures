@@ -18,10 +18,16 @@ namespace NumerosAmigos
             Console.Write("\nIngrese el segundo numero: ");
             num2 = int.Parse(Console.ReadLine());
 
-            if (numeros.Comparacion(num1, num2))
+            string[] arrayPrimos = numeros.numerosPrimos().Split(',');
+            for (int j = 0; j < arrayPrimos.Length; j++)
+                {
+                    Console.Write(arrayPrimos[j] + "  ");
+                }
+
+            /*if (numeros.Comparacion(num1, num2))
             {
                 Console.WriteLine("LOS NUMEROS SON AMIGOS");
-            }
+            }*/
             Console.ReadLine();
         }
     }
