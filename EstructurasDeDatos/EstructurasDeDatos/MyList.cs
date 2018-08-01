@@ -30,7 +30,7 @@ namespace EstructurasDeDatos
             }
             else
             {
-                throw new IndexOutOfRangeException("INDICE FUERA DE RANGO");
+                throw new IndexOutOfRangeException("INDICE FUERA DE RANGO.");
             }
         }
 
@@ -41,20 +41,27 @@ namespace EstructurasDeDatos
 
         public override T remove(int index)
         {
-            if (index >= 0 && index < list.Length)
+            if (!isEmpty())
             {
-                T auxiliary = list[index];
-                list[index] = default(T);
-                for (int i = index + 1; i < list.Length; i++)
+                if (true)
                 {
-                    list[i - 1] = list[i];
+                    T auxiliary = list[index];
+                    list[index] = default(T);
+                    for (int i = index + 1; i < list.Length; i++)
+                    {
+                        list[i - 1] = list[i];
+                    }
+                    count--;
+                    return auxiliary;
                 }
-                count--;
-                return auxiliary;
+                else
+                {
+                    throw new IndexOutOfRangeException("INDICE FUERA DE RANGO.");
+                }
             }
             else
             {
-                throw new IndexOutOfRangeException("INDICE FUERA DE RANGO");
+                throw new Exception("LISTA VACIA.");
             }
         }
 
