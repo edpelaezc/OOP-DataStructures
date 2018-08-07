@@ -8,13 +8,15 @@ namespace BinarySearchTree
 {
     public class Node<T>
     {
-        private T element;        
+        private T element;
+        private Node<T> parent;
         private Node<T> left;
         private Node<T> right; 
         
-        public Node(T t, Node<T> leftChild, Node<T> rightChild)
+        public Node(T t, Node<T> above, Node<T> leftChild, Node<T> rightChild)
         {
-            element = t;            
+            element = t;
+            parent = above;
             left = leftChild;
             right = rightChild;
         }
@@ -22,7 +24,12 @@ namespace BinarySearchTree
         public T getElement() 
         {
 			return element;
-        }      
+        }
+
+        public Node<T> getParent()
+        {
+            return parent;
+        }
 
         public Node<T> getLeft()
         {
@@ -37,6 +44,11 @@ namespace BinarySearchTree
         public void setElement(T t)
         {
             element = t;
+        }
+
+        public void setParent(Node<T> parentNode)
+        {
+            parent = parentNode;
         }
 
         public void setLeft(Node<T> leftChild)
