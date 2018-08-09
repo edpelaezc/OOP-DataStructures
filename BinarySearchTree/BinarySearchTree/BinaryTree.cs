@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BinarySearchTree
 {
-    class BinaryTree<T>
+    public class BinaryTree<T>
     {
         Node<T> root;
         int contRight = 0;
