@@ -9,7 +9,7 @@ namespace BinarySearchTree
 {
     public class BinaryTree<T>
     {
-        Node<T> root;
+        public Node<T> root;
         int contRight = 0;
         int contLeft = 0;
         private int treeSize = 0;
