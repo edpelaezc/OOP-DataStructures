@@ -13,10 +13,12 @@ namespace MaximumDepthOfBT
         {
             BinaryTree<int> tree = new BinaryTree<int>();
             tree.add(tree.root, 3);
-            tree.add(tree.root, 9);
+            tree.add(tree.root, 2);
             tree.add(tree.root, 20);
             tree.add(tree.root, 15);
-            tree.add(tree.root, 7);                        
+            tree.add(tree.root, 7);
+            Console.WriteLine(tree.maxDepth(tree.root));
+            Console.ReadLine();
         }
     }
 }

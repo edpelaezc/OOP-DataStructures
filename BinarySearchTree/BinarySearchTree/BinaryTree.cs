@@ -39,11 +39,11 @@ namespace BinarySearchTree
             return Math.Max(contRight, contLeft);
         }
 
-        public void add(Node<T> aux, T element)
+        public void add(Node<T> root, T element)
         {            
-            if (root == null)
+            if (this.root == null)
             {
-                root = new Node<T>(element, null, null, null);
+                this.root = new Node<T>(element, null, null, null);
                 treeSize++;
             }
             else
@@ -56,7 +56,7 @@ namespace BinarySearchTree
                         treeSize++;
                     }
                     else
-                    {
+                    {                        
                         add(root.getLeft(), element);
                     }
                 }
