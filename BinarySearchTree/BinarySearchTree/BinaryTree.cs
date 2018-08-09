@@ -10,8 +10,8 @@ namespace BinarySearchTree
     public class BinaryTree<T>
     {
         public Node<T> root;
-        int contRight = 0;
-        int contLeft = 0;
+        public int contRight = 0;
+        public int contLeft = 0;
         private int treeSize = 0;
         Comparer<T> comp = Comparer<T>.Default;
         LinkedQueue<Node<T>> order = new LinkedQueue<Node<T>>(); 
