@@ -16,8 +16,8 @@ namespace MaximumDepthOfBT
             tree.add(tree.root, 2);
             tree.add(tree.root, 20);
             tree.add(tree.root, 15);
-            tree.add(tree.root, 7);
-            Console.WriteLine(tree.maxDepth(tree.root));
+            tree.add(tree.root, 7);            
+            Console.WriteLine(tree.depth());
             Console.ReadLine();
         }
     }

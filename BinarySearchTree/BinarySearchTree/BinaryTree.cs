@@ -28,12 +28,12 @@ namespace BinarySearchTree
 
         public void maxDepth(Node<T> root)
         {
-            if (root.getLeft() != null)
+            if (this.root.getLeft() != null)
             {
                 contLeft++;
                 maxDepth(root.getLeft());
             }
-            if (root.getRight()!= null)
+            if (this.root.getRight()!= null)
             {
                 contRight++;
                 maxDepth(root.getRight());
