@@ -39,11 +39,12 @@ namespace BinarySearchTree
             return Math.Max(contRight, contLeft);
         }
 
-        public void add(Node<T> root, T element)
+        public void add(Node<T> aux, T element)
         {            
             if (root == null)
             {
-                root = new Node<T>(element, null, null, null); ;
+                root = new Node<T>(element, null, null, null);
+                treeSize++;
             }
             else
             {                
