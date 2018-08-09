@@ -9,7 +9,9 @@ namespace BinarySearchTree
 {
     class BinaryTree<T>
     {
-        Node<T> root;        
+        Node<T> root;
+        int contRight = 0;
+        int contLeft = 0;
         private int treeSize = 0;
         Comparer<T> comp = Comparer<T>.Default;
         LinkedQueue<Node<T>> order = new LinkedQueue<Node<T>>(); 
@@ -22,6 +24,19 @@ namespace BinarySearchTree
         public int size()
         {
             return treeSize;
+        }
+
+        public int maxDepth(Node<T> root)
+        {
+            if (root.getLeft() != null)
+            {
+                contLeft = maxDepth(root.getLeft());                
+            }
+            if (root.getRight()!= null)
+            {
+                contRight = maxDepth(root.getRight());
+            }
+            return Math.Max(contRight, contLeft);
         }
 
         public void add(Node<T> root, T element)
