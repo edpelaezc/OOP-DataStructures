@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EstrcuturasDinamicas
 {
-    public abstract class Stack<T>
+    abstract class Stack<T>
     {
         public abstract int size();
         public abstract bool isEmpty();

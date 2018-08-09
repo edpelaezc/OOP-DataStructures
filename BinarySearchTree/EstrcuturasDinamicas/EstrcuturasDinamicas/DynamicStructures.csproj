@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{75B12557-7E5B-4EC5-AA95-F847F955BA62}</ProjectGuid>
+    <ProjectGuid>{7F6D0EB4-4829-4404-AF76-36146E9C9448}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BinarySearchTree</RootNamespace>
-    <AssemblyName>BinarySearchTree</AssemblyName>
+    <RootNamespace>EstrcuturasDinamicas</RootNamespace>
+    <AssemblyName>EstrcuturasDinamicas</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,15 +40,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BinaryTree.cs" />
+    <Compile Include="LinkedQueue.cs" />
+    <Compile Include="LinkedList.cs" />
+    <Compile Include="LinkedStack.cs" />
     <Compile Include="Node.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\EstrcuturasDinamicas\EstrcuturasDinamicas\DynamicStructures.csproj">
-      <Project>{7f6d0eb4-4829-4404-af76-36146e9c9448}</Project>
-      <Name>DynamicStructures</Name>
-    </ProjectReference>
+    <Compile Include="Queue.cs" />
+    <Compile Include="Stack.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

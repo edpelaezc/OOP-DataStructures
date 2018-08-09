@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EstrcuturasDinamicas
 {
-    abstract class Queue<T>
+    public abstract class Queue<T>
     {
         public abstract int size();
         public abstract bool isEmpty();

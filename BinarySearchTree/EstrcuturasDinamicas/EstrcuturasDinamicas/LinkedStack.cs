@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EstrcuturasDinamicas
 {
-    public class LinkedStack<T> : Stack<T>
+    class LinkedStack<T> : Stack<T>
     {
         LinkedList<T> myList;
         public LinkedStack()

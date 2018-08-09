@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EstrcuturasDinamicas
 {
-    public class LinkedQueue<T> : Queue<T>
+    class LinkedQueue<T> : Queue<T>
     {
         LinkedList<T> myList;
         public LinkedQueue()

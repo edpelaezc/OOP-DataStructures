@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace EstrcuturasDinamicas
 {
-    public abstract class Stack<T>
+    abstract class Queue<T>
     {
         public abstract int size();
         public abstract bool isEmpty();
-        public abstract void push(T t);
-        public abstract T pop();
-        public abstract T top();
+        public abstract void enqueue(T t);
+        public abstract T dequeue();
+        public abstract T front();
     }
 }

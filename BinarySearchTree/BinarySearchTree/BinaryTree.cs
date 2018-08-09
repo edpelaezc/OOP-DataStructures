@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using EstrcuturasDinamicas;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,6 +12,7 @@ namespace BinarySearchTree
         Node<T> root;        
         private int treeSize = 0;
         Comparer<T> comp = Comparer<T>.Default;
+        LinkedQueue<Node<T>> order = new LinkedQueue<Node<T>>(); 
 
         public BinaryTree()
         {
@@ -144,11 +146,36 @@ namespace BinarySearchTree
                 }
                 else if (numberOfChildren(root) == 1)
                 {
-                    return default(T);
+                    T aux = root.getElement();
+                    if (comp.Compare(element, root.getParent().getLeft().getElement()) == 0)
+                    {                        
+                        if (root.getLeft() != null)
+                        {
+                            root.getParent().setLeft(root.getLeft());
+                        }
+                        else
+                        {
+                            root.getParent().setLeft(root.getRight());
+                        }
+                    }
+                    else
+                    {
+                        if (root.getLeft() != null)
+                        {
+                            root.getParent().setRight(root.getLeft());
+                        }
+                        else
+                        {
+                            root.getParent().setRight(root.getRight());
+                        }
+                    }
+                    return aux;
                 }
                 else
                 {
-                    return default(T);
+                    T aux = root.getElement();
+
+                    return aux;
                 }
             }
             else
@@ -163,5 +190,35 @@ namespace BinarySearchTree
                 }
             }                                   
         }        
+
+        public void preOrder(Node<T> root)
+        {
+            if (root != null)
+            {
+                order.enqueue(root);
+                preOrder(root.getLeft());
+                preOrder(root.getRight());
+            }   
+        }
+
+        public void postOrder(Node<T> root)
+        {
+            if (root != null)
+            {
+                postOrder(root.getLeft());
+                postOrder(root.getRight());
+                order.enqueue(root);
+            }
+        }
+
+        public void inOrder(Node<T> root)
+        {
+            if (root != null)
+            {
+                inOrder(root.getLeft());
+                order.enqueue(root);
+                inOrder(root.getRight());
+            }
+        }
     }
 }
