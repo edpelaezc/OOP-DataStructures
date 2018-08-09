@@ -26,19 +26,23 @@ namespace BinarySearchTree
             return treeSize;
         }
 
-        public int maxDepth(Node<T> root)
+        public void maxDepth(Node<T> root)
         {
             if (root.getLeft() != null)
             {
-                contLeft = maxDepth(root.getLeft());                
+                contLeft++;
+                maxDepth(root.getLeft());
             }
             if (root.getRight()!= null)
             {
-                contRight = maxDepth(root.getRight());
-            }
-            return Math.Max(contRight, contLeft);
+                contRight++;
+                maxDepth(root.getRight());
+            }            
         }
-
+        public int depth()
+        {
+            return Math.Max(contLeft, contRight);
+        }
         public void add(Node<T> root, T element)
         {            
             if (this.root == null)
