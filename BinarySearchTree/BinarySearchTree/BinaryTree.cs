@@ -13,7 +13,9 @@ namespace BinarySearchTree
         private int treeSize = 0;
         public int depth = 1;
         Comparer<T> comp = Comparer<T>.Default;
-        public LinkedQueue<Node<T>> order = new LinkedQueue<Node<T>>(); 
+        public LinkedQueue<Node<T>> order = new LinkedQueue<Node<T>>();
+        public LinkedQueue<Node<T>> postorder = new LinkedQueue<Node<T>>();
+        public LinkedStack<Node<T>> preorder = new LinkedStack<Node<T>>();
 
         public BinaryTree()
         {
@@ -148,6 +150,37 @@ namespace BinarySearchTree
                 return count;            
         }
 
+        public void removeLeaf(Node<T> root, T element)
+        {
+            if (root != null)
+            {
+                if (comp.Compare(element, root.getElement()) == 0)
+                {
+                    if (comp.Compare(element, root.getParent().getLeft().getElement()) == 0)
+                    {
+                        root.getParent().setLeft(null);
+                        root = null;
+                    }
+                    else
+                    {
+                        root.getParent().setRight(null);
+                        root = null;
+                    }                 
+                }
+                else
+                {
+                    if (comp.Compare(element, root.getElement()) < 0)
+                    {
+                        removeLeaf(root.getLeft(), element);
+                    }
+                    else
+                    {
+                        removeLeaf(root.getRight(), element);
+                    }
+                }
+            }
+        }
+
         public T remove(Node<T> root, T element)
         {
             if (root == null)
@@ -203,7 +236,22 @@ namespace BinarySearchTree
                 else
                 {
                     T aux = root.getElement();
-
+                    if (comp.Compare(element, this.root.getElement()) < 0)
+                    {
+                        postOrder(this.root);
+                        Node<T> right = postorder.dequeue();
+                        right = postorder.dequeue();
+                        root.setElement(right.getElement());
+                        removeLeaf(root, right.getElement());
+                    }
+                    else
+                    {
+                        preOrder(this.root);
+                        Node<T> left = preorder.pop();
+                        left = preorder.pop();
+                        root.setElement(left.getElement());
+                        removeLeaf(root, left.getElement());
+                    }
                     return aux;
                 }
             }
@@ -224,7 +272,7 @@ namespace BinarySearchTree
         {
             if (root != null)
             {
-                order.enqueue(root);
+                preorder.push(root);
                 preOrder(root.getLeft());
                 preOrder(root.getRight());
             }   
@@ -236,7 +284,7 @@ namespace BinarySearchTree
             {
                 postOrder(root.getLeft());
                 postOrder(root.getRight());
-                order.enqueue(root);
+                postorder.enqueue(root);
             }
         }
 
