@@ -12,12 +12,14 @@ namespace MaximumDepthOfBT
         static void Main(string[] args)
         {
             BinaryTree<int> tree = new BinaryTree<int>();
-            tree.add(tree.root, 3);
-            tree.add(tree.root, 2);
-            tree.add(tree.root, 20);
-            tree.add(tree.root, 15);
-            tree.add(tree.root, 7);            
-            Console.WriteLine(tree.depth());
+            //tree.add(tree.root, 3);
+            //tree.add(tree.root, 2);
+            //tree.add(tree.root, 20);
+            //tree.add(tree.root, 15);
+            //tree.add(tree.root, 7);
+            //tree.add(tree.root, 5);
+            tree.maxDepth(tree.root);
+            Console.WriteLine(tree.depth);                 
             Console.ReadLine();
         }
     }

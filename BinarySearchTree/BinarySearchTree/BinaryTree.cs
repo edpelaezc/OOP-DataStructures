@@ -10,11 +10,10 @@ namespace BinarySearchTree
     public class BinaryTree<T>
     {
         public Node<T> root;
-        public int contRight = 0;
-        public int contLeft = 0;
         private int treeSize = 0;
+        public int depth = 1;
         Comparer<T> comp = Comparer<T>.Default;
-        LinkedQueue<Node<T>> order = new LinkedQueue<Node<T>>(); 
+        public LinkedQueue<Node<T>> order = new LinkedQueue<Node<T>>(); 
 
         public BinaryTree()
         {
@@ -28,21 +27,31 @@ namespace BinarySearchTree
 
         public void maxDepth(Node<T> root)
         {
-            if (this.root.getLeft() != null)
+            if (root != null)
             {
-                contLeft++;
-                maxDepth(root.getLeft());
+                if (root.getLeft() != null && root.getRight() == null)
+                {
+                    depth++;
+                    maxDepth(root.getLeft());
+                }
+                else if (root.getRight() != null && root.getLeft() == null) 
+                {
+                    depth++;
+                    maxDepth(root.getRight());
+                }
+                else if (root.getRight() != null && root.getLeft() != null)
+                {
+                    depth++;
+                    maxDepth(root.getLeft());
+                    maxDepth(root.getRight());
+                }
             }
-            if (this.root.getRight()!= null)
+            else
             {
-                contRight++;
-                maxDepth(root.getRight());
-            }            
+                depth = 0;
+            }
         }
-        public int depth()
-        {
-            return Math.Max(contLeft, contRight);
-        }
+
         public void add(Node<T> root, T element)
         {            
             if (this.root == null)
@@ -106,7 +115,7 @@ namespace BinarySearchTree
             }
         }
 
-      /*  public Node<T> locate(Node<T> root, T element)
+        public Node<T> locate(Node<T> root, T element)
         {
             if (root == null)
             {
@@ -127,7 +136,7 @@ namespace BinarySearchTree
                     return locate(root.getRight(), element);
                 }
             }
-        }*/
+        }
 
         public int numberOfChildren(Node<T> root)
         {
