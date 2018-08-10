@@ -13,7 +13,7 @@ namespace BinarySearchTree
         private int treeSize = 0;
         public int depth = 1;
         Comparer<T> comp = Comparer<T>.Default;
-        public LinkedQueue<Node<T>> order = new LinkedQueue<Node<T>>();
+        public LinkedQueue<Node<T>> inorder = new LinkedQueue<Node<T>>();
         public LinkedQueue<Node<T>> postorder = new LinkedQueue<Node<T>>();
         public LinkedStack<Node<T>> preorder = new LinkedStack<Node<T>>();
 
