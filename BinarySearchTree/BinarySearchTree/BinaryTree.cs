@@ -288,7 +288,7 @@ namespace BinarySearchTree
             }
         }
 
-        public void inorder(Node<T> root)
+        public void inOrder(Node<T> root)
         {
             if (root != null)
             {
