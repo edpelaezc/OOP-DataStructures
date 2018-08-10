@@ -250,7 +250,7 @@ namespace BinarySearchTree
                         Node<T> left = preorder.pop();
                         left = preorder.pop();
                         root.setElement(left.getElement());
-                        removeLeaf(root, left.getElement());
+                        removeLeaf(root, left.getElement()); 
                     }
                     return aux;
                 }
