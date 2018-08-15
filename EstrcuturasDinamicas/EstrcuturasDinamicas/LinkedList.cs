@@ -8,10 +8,17 @@ namespace EstrcuturasDinamicas
 {
     public class LinkedList<T>
     {
-        private Node<T> head = null;
-        private Node<T> tail = null;
-        private int listSize = 0;
+        private Node<T> head;
+        private Node<T> tail;
+        private int listSize;
         
+        public LinkedList()
+        {
+            head = null;
+            tail = null;
+            listSize = 0;
+        }
+
         public int size() {return listSize;}
 
         public bool isEmpty() { return listSize == 0; }

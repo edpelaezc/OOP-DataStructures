@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2000
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeTwoSortedLists", "MergeTwoSortedLists\MergeTwoSortedLists.csproj", "{DC4C1377-DFBE-4E41-9244-AEBD7A308BCF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicStructures", "..\EstrcuturasDinamicas\EstrcuturasDinamicas\DynamicStructures.csproj", "{7F6D0EB4-4829-4404-AF76-36146E9C9448}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DC4C1377-DFBE-4E41-9244-AEBD7A308BCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC4C1377-DFBE-4E41-9244-AEBD7A308BCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC4C1377-DFBE-4E41-9244-AEBD7A308BCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC4C1377-DFBE-4E41-9244-AEBD7A308BCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F6D0EB4-4829-4404-AF76-36146E9C9448}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F6D0EB4-4829-4404-AF76-36146E9C9448}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F6D0EB4-4829-4404-AF76-36146E9C9448}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F6D0EB4-4829-4404-AF76-36146E9C9448}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {419756E6-A755-4888-9D69-652572897121}
+	EndGlobalSection
+EndGlobal
