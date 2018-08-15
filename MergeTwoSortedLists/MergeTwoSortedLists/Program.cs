@@ -12,9 +12,9 @@ namespace MergeTwoSortedLists
         static void Main(string[] args)
         {
             string input = "";
-            MyLinkedList<int> list1 = new MyLinkedList<int>();
-            MyLinkedList<int> list2 = new MyLinkedList<int>();
-            MyLinkedList<int> mergedList = new MyLinkedList<int>();
+            MyLinkedList<string> list1 = new MyLinkedList<string>();
+            MyLinkedList<string> list2 = new MyLinkedList<string>();
+            MyLinkedList<string> mergedList = new MyLinkedList<string>();
             Console.WriteLine("INGRESE LAS DOS LISTAS: ");
             input = Console.ReadLine();
 
@@ -24,11 +24,11 @@ namespace MergeTwoSortedLists
                 {
                     if (input[i] != ',')
                     {
-                        list1.addLast(input[i++]);
+                        list1.addLast(input[i++].ToString());
                     }
                     else
                     {
-                        list2.addLast(input[i++]);
+                        list2.addLast(input[i++].ToString());
                     }
                 }
             }

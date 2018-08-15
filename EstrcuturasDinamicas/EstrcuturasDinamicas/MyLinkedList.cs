@@ -63,6 +63,7 @@ namespace EstrcuturasDinamicas
             if (isEmpty())
             {
                 head = newest;
+                listSize++;
             }
             else
             {                
