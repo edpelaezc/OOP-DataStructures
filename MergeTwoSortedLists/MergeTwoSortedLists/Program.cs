@@ -10,8 +10,7 @@ namespace MergeTwoSortedLists
     class Program
     {
         static void Main(string[] args)
-        {
-            
+        {                        
         }
     }
 }

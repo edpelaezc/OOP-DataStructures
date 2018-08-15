@@ -41,7 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="LinkedQueue.cs" />
-    <Compile Include="LinkedList.cs" />
+    <Compile Include="MyLinkedList.cs" />
     <Compile Include="LinkedStack.cs" />
     <Compile Include="Node.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

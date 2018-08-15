@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace EstrcuturasDinamicas
 {
-    public class LinkedList<T>
+    public class MyLinkedList<T>
     {
         private Node<T> head;
         private Node<T> tail;
         private int listSize;
         
-        public LinkedList()
+        public MyLinkedList()
         {
             head = null;
             tail = null;
