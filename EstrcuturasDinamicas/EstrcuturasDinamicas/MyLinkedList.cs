@@ -62,15 +62,14 @@ namespace EstrcuturasDinamicas
             Node<T> newest = new Node<T>(t, null);
             if (isEmpty())
             {
-                head = newest;
-                listSize++;
+                head = newest;                
             }
             else
-            {                
-                tail.setNext(newest);
-                tail = newest;
-                listSize++;
-            }                        
+            {                                                
+                tail.setNext(newest);                
+            }
+            tail = newest;
+            listSize++;
         }
 
         public T removeFirst()
