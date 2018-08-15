@@ -8,10 +8,10 @@ namespace EstrcuturasDinamicas
 {
     public class LinkedQueue<T> : Queue<T>
     {
-        LinkedList<T> myList;
+        MyLinkedList<T> myList;
         public LinkedQueue()
         {
-            myList = new LinkedList<T>();
+            myList = new MyLinkedList<T>();
         }
 
         public override T dequeue()

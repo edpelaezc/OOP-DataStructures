@@ -8,10 +8,10 @@ namespace EstrcuturasDinamicas
 {
     public class LinkedStack<T> : Stack<T>
     {
-        LinkedList<T> myList;
+        MyLinkedList<T> myList;
         public LinkedStack()
         {
-            myList = new LinkedList<T>();
+            myList = new MyLinkedList<T>();
         }
 
         public override bool isEmpty()
