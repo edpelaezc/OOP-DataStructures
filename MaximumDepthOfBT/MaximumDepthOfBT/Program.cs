@@ -19,7 +19,7 @@ namespace MaximumDepthOfBT
             tree.add(tree.root, 7);
             tree.add(tree.root, 5);
             tree.maxDepth(tree.root);
-            Console.WriteLine(tree.depth);                 
+            Console.WriteLine("LA PROFUNDIDAD DE SU ARBOL BINARIO ES: " + tree.depth);                 
             Console.ReadLine();
         }
     }

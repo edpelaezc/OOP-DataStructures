@@ -17,21 +17,29 @@ namespace MergeTwoSortedLists
             MyLinkedList<string> mergedList = new MyLinkedList<string>();
             Console.WriteLine("INGRESE LAS DOS LISTAS: ");
             input = Console.ReadLine();
+            string[] elements = input.Split('-', '>');
+            int cont = 0;
 
-            for (int i = 0; i < input.Length; i++)
+            for (int i = 0; i < elements.Length; i++)
             {
-                if (input[i] != '-' || input[i] != '>' )
+                if (elements[i] == ",")
                 {
-                    if (input[i] != ',')
-                    {
-                        list1.addLast(input[i++].ToString());
-                    }
-                    else
-                    {
-                        list2.addLast(input[i++].ToString());
-                    }
+                    cont = i;
                 }
             }
+
+            for (int i = 0; i < elements.Length; i++)
+            {
+                if (i < cont)
+                {
+                    list1.addLast(elements[i]);
+                }
+                else
+                {
+                    list2.addLast(elements[i]);
+                }
+            }
+
 
             while (list1.isEmpty() == false && list2.isEmpty() == false)
             {
