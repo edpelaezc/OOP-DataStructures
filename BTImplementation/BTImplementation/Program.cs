@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using BinarySearchTree;
 
 namespace BTImplementation
 {
@@ -11,18 +10,6 @@ namespace BTImplementation
     {
         static void Main(string[] args)
         {
-            BinaryTree<int> tree = new BinaryTree<int>();
-            tree.add(tree.root, 3);
-            tree.add(tree.root, 2);
-            tree.add(tree.root, 20);
-            tree.add(tree.root, 15);
-            tree.add(tree.root, 7);
-            tree.add(tree.root, 5);
-            tree.remove(tree.root, 3);
-            tree.remove(tree.root, 5);
-            tree.maxDepth(tree.root);
-            Console.WriteLine(tree.depth);
-            Console.ReadLine();
         }
     }
 }

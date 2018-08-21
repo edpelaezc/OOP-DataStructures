@@ -4,13 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F4AEBE61-B42E-491F-9A0E-BD6F46ED6E10}</ProjectGuid>
+    <ProjectGuid>{985CE396-5C73-4D36-BD7C-C833F32B3F17}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>BTImplementation</RootNamespace>
     <AssemblyName>BTImplementation</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -47,12 +48,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\BinarySearchTree\BinarySearchTree\BinarySearchTree.csproj">
-      <Project>{75b12557-7e5b-4ec5-aa95-f847f955ba62}</Project>
-      <Name>BinarySearchTree</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
