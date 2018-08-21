@@ -14,8 +14,6 @@ namespace BinarySearchTree
         public int depth = 1;
         Comparer<T> comp = Comparer<T>.Default;
         public LinkedQueue<Node<T>> order = new LinkedQueue<Node<T>>();
-        public LinkedQueue<Node<T>> postorder = new LinkedQueue<Node<T>>();
-        public LinkedStack<Node<T>> preorder = new LinkedStack<Node<T>>();
 
         public BinaryTree()
         {
@@ -117,28 +115,7 @@ namespace BinarySearchTree
             }
         }
 
-        public Node<T> locate(Node<T> root, T element)
-        {
-            if (root == null)
-            {
-                return null;
-            }
-            else if (comp.Compare(element, root.getElement()) == 0)
-            {
-                return root;
-            }
-            else
-            {
-                if (comp.Compare(element, root.getElement()) < 0)
-                {
-                    return locate(root.getLeft(), element);
-                }
-                else
-                {
-                    return locate(root.getRight(), element);
-                }
-            }
-        }
+       /* public Node<T> locate(Node<T> root, T element)*/
 
         public int numberOfChildren(Node<T> root)
         {
@@ -179,6 +156,19 @@ namespace BinarySearchTree
                     }
                 }
             }
+        }
+
+        public T searchRight(Node<T> root)
+        {
+            Node<T> next = this.root.getLeft();
+            if (next.getRight() == null && next.getLeft() == null)
+            {
+                return next.getElement();
+            }
+            else
+            {
+                return searchRight(next.getRight());                
+            }            
         }
 
         public T remove(Node<T> root, T element)
@@ -233,25 +223,11 @@ namespace BinarySearchTree
                     }
                     return aux;
                 }
-                else
+                else//El que sustituirá será el más derecho de los izquierdos
                 {
                     T aux = root.getElement();
-                    if (comp.Compare(element, this.root.getElement()) < 0)
-                    {
-                        postOrder(this.root);
-                        Node<T> right = postorder.dequeue();
-                        right = postorder.dequeue();
-                        root.setElement(right.getElement());
-                        removeLeaf(root, right.getElement());
-                    }
-                    else
-                    {
-                        preOrder(this.root);
-                        Node<T> left = preorder.pop();
-                        left = preorder.pop();
-                        root.setElement(left.getElement());
-                        removeLeaf(root, left.getElement()); 
-                    }
+                    root.setElement(searchRight(root));
+                    removeLeaf(root, element);
                     return aux;
                 }
             }
@@ -272,7 +248,7 @@ namespace BinarySearchTree
         {
             if (root != null)
             {
-                preorder.push(root);
+                order.enqueue(root);
                 preOrder(root.getLeft());
                 preOrder(root.getRight());
             }   
@@ -284,7 +260,7 @@ namespace BinarySearchTree
             {
                 postOrder(root.getLeft());
                 postOrder(root.getRight());
-                postorder.enqueue(root);
+                order.enqueue(root);
             }
         }
 
