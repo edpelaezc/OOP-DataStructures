@@ -141,16 +141,19 @@ namespace BinarySearchTree
             {
                 if (comp.Compare(element, root.getElement()) == 0)
                 {
-                    if (comp.Compare(element, root.getParent().getLeft().getElement()) == 0)
+                    if (numberOfChildren(root) == 0)
                     {
-                        root.getParent().setLeft(null);
-                        root = null;
+                        if (comp.Compare(element, root.getParent().getLeft().getElement()) == 0)
+                        {                            
+                            root.getParent().setLeft(null);
+                            root = null;                            
+                        }
+                        else
+                        {                            
+                            root.getParent().setRight(null);
+                            root = null;                            
+                        }
                     }
-                    else
-                    {
-                        root.getParent().setRight(null);
-                        root = null;
-                    }                 
                 }
                 else
                 {
@@ -232,7 +235,7 @@ namespace BinarySearchTree
                 {
                     T aux = root.getElement();
                     root.setElement(searchRight(root));
-                    removeLeaf(root, element);
+                    removeLeaf(this.root, element);
                     return aux;
                 }
             }
