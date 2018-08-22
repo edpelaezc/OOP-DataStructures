@@ -22,7 +22,7 @@ namespace BTImplementation
             tree.add(tree.root, 14);
             tree.add(tree.root, 13);
             tree.branchesDepth(tree.root);
-            tree.remove(tree.root, 14);
+            tree.remove(tree.root, 3);
             Console.WriteLine(tree.maxDepth());
             Console.ReadLine();
         }

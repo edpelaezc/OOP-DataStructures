@@ -10,8 +10,7 @@ namespace BinarySearchTree
     public class BinaryTree<T>
     {
         public Node<T> root;
-        private int treeSize = 0;
-        public int depth = 1;
+        private int treeSize = 0;        
         public int depthRight = 0;
         public int depthLeft = 0;
         Comparer<T> comp = Comparer<T>.Default;
@@ -167,17 +166,14 @@ namespace BinarySearchTree
             }
         }
 
-        public T searchRight(Node<T> root)
+        public T searchRight(Node<T> root) 
         {
-            Node<T> next = this.root.getLeft();
-            if (next.getRight() == null && next.getLeft() == null)
+            Node<T> next = root.getLeft();
+            while (next.getRight() != null)
             {
-                return next.getElement();
+                next = next.getRight();
             }
-            else
-            {
-                return searchRight(next.getRight());                
-            }            
+            return next.getElement();
         }
 
         public T remove(Node<T> root, T element)
