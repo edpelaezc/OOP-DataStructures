@@ -12,6 +12,8 @@ namespace BinarySearchTree
         public Node<T> root;
         private int treeSize = 0;
         public int depth = 1;
+        public int depthRight = 0;
+        public int depthLeft = 0;
         Comparer<T> comp = Comparer<T>.Default;
         public LinkedQueue<Node<T>> order = new LinkedQueue<Node<T>>();
 
@@ -25,31 +27,38 @@ namespace BinarySearchTree
             return treeSize;
         }
 
-        public void maxDepth(Node<T> root)
+        public void branchesDepth(Node<T> root)
         {
             if (root != null)
             {
                 if (root.getLeft() != null && root.getRight() == null)
                 {
-                    depth++;
-                    maxDepth(root.getLeft());
+                    depthLeft++;
+                    branchesDepth(root.getLeft());
                 }
                 else if (root.getRight() != null && root.getLeft() == null) 
                 {
-                    depth++;
-                    maxDepth(root.getRight());
+                    depthRight++;
+                    branchesDepth(root.getRight());
                 }
                 else if (root.getRight() != null && root.getLeft() != null)
                 {
-                    depth++;
-                    maxDepth(root.getLeft());
-                    maxDepth(root.getRight());
+                    depthLeft++;
+                    depthRight++;
+                    branchesDepth(root.getLeft());
+                    branchesDepth(root.getRight());
                 }
             }
             else
             {
-                depth = 0;
+                depthLeft = 0;
+                depthRight = 0;
             }
+        }
+
+        public int maxDepth()
+        {           
+            return Math.Max(depthLeft,depthRight) - 1;
         }
 
         public void add(Node<T> root, T element)
@@ -199,7 +208,7 @@ namespace BinarySearchTree
                 else if (numberOfChildren(root) == 1)
                 {
                     T aux = root.getElement();
-                    if (comp.Compare(element, root.getParent().getLeft().getElement()) == 0)
+                    if (root.getParent().getLeft() != null)
                     {                        
                         if (root.getLeft() != null)
                         {
