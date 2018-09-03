@@ -13,6 +13,9 @@ namespace EstrcuturasDinamicas
         private int listSize;
         Comparer<T> comp = Comparer<T>.Default;
 
+        /// <summary>
+        /// Constructor de la Lista Enlazada simple
+        /// </summary>
         public MyLinkedList()
         {
             head = null;
@@ -20,10 +23,22 @@ namespace EstrcuturasDinamicas
             listSize = 0;
         }
 
+        /// <summary>
+        /// Size
+        /// </summary>
+        /// <returns>Devuelve el tamaño de la lista.</returns>
         public int size() {return listSize;}
 
+        /// <summary>
+        /// isEmpty
+        /// </summary>
+        /// <returns>Devuelve un valor booleano si la lista está vacía o no.</returns>
         public bool isEmpty() { return listSize == 0; }
 
+        /// <summary>
+        /// first
+        /// </summary>
+        /// <returns>Devuelve el primero elemento de la lista.</returns>
         public T first()
         {
             if (isEmpty())
@@ -36,6 +51,10 @@ namespace EstrcuturasDinamicas
             }
         }
 
+        /// <summary>
+        /// last
+        /// </summary>
+        /// <returns>Devuelve el último elemento de la lista.</returns>
         public T last()
         {
             if (isEmpty())
@@ -48,6 +67,10 @@ namespace EstrcuturasDinamicas
             }
         }
 
+        /// <summary>
+        /// addFirst
+        /// </summary>
+        /// <param name="t">Agrega el elemento genérico "t" en la primera posición de la lista (head).</param>
         public void addFirst(T t)
         {
             head = new Node<T>(t, head);
@@ -58,6 +81,11 @@ namespace EstrcuturasDinamicas
             listSize++;
         }
 
+        /// <summary>
+        /// addElement
+        /// </summary>
+        /// <param name="reference">Elemento que sirve de referencia para insertar.</param>
+        /// <param name="t">Inserta el genérico "t" después del genérico "reference"</param>
         public void addElement(T reference, T t) 
         {            
             Node<T> auxiliar = head;
@@ -70,6 +98,10 @@ namespace EstrcuturasDinamicas
             listSize++;
         }
 
+        /// <summary>
+        /// addLast
+        /// </summary>
+        /// <param name="t">Agrega el elemento genérico "t" en la última posición de la lista (tail).</param>
         public void addLast(T t)
         {
             Node<T> newest = new Node<T>(t, null);
@@ -85,6 +117,10 @@ namespace EstrcuturasDinamicas
             listSize++;
         }
 
+        /// <summary>
+        /// removeFirst
+        /// </summary>
+        /// <returns>Elimina el elemento que se encuentra en la última posición de la lista.</returns>
         public T removeFirst()
         {            
             if (isEmpty())
