@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EstrcuturasDinamicas
 {
-    class Node<T>
+    public class Node<T>
     {
         private T element;//valor
         private Node<T> next;//nodo siguiente

@@ -57,6 +57,18 @@ namespace EstrcuturasDinamicas
             listSize++;
         }
 
+        public void addElement(Node<T> reference, T t) 
+        {            
+            Node<T> auxiliar = head;
+            while (auxiliar != reference)
+            {
+                auxiliar = auxiliar.getNext();
+            }
+            Node<T> newNode = new Node<T>(t, auxiliar.getNext());
+            auxiliar.setNext(newNode);
+            listSize++;
+        }
+
         public void addLast(T t)
         {
             Node<T> newest = new Node<T>(t, null);

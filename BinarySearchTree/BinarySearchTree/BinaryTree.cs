@@ -235,7 +235,7 @@ namespace BinarySearchTree
                 {
                     T aux = root.getElement();
                     root.setElement(searchRight(root));
-                    removeLeaf(root, element);
+                    removeLeaf(root, root.getElement());
                     return aux;
                 }
             }
