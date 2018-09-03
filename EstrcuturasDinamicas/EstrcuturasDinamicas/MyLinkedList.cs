@@ -11,7 +11,8 @@ namespace EstrcuturasDinamicas
         private Node<T> head;
         private Node<T> tail;
         private int listSize;
-        
+        Comparer<T> comp = Comparer<T>.Default;
+
         public MyLinkedList()
         {
             head = null;
@@ -57,10 +58,10 @@ namespace EstrcuturasDinamicas
             listSize++;
         }
 
-        public void addElement(Node<T> reference, T t) 
+        public void addElement(T reference, T t) 
         {            
             Node<T> auxiliar = head;
-            while (auxiliar != reference)
+            while (comp.Compare(auxiliar.getElement(), reference) != 0)
             {
                 auxiliar = auxiliar.getNext();
             }

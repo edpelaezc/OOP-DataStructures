@@ -20,6 +20,7 @@ namespace DSImplementation
             myList.addLast(7);
             myList.addLast(5);
             myList.addFirst(10);
+            myList.addElement(3, 15);
             cont = myList.size();
 
             Console.WriteLine("LISTA");
