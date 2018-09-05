@@ -8,8 +8,8 @@ namespace EstrcuturasDinamicas
 {
     public class MyLinkedList<T>
     {
-        public Node<T> head;
-        public Node<T> tail;
+        private Node<T> head;
+        private Node<T> tail;
         private int listSize;
         Comparer<T> comp = Comparer<T>.Default;
 

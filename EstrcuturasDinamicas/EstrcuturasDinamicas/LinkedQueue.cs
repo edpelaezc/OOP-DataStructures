@@ -8,7 +8,7 @@ namespace EstrcuturasDinamicas
 {
     public class LinkedQueue<T> : Queue<T>
     {
-        public MyLinkedList<T> myList;
+        MyLinkedList<T> myList;
         public LinkedQueue()
         {
             myList = new MyLinkedList<T>();
