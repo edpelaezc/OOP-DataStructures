@@ -8,7 +8,7 @@ namespace EstrcuturasDinamicas
 {
     public class LinkedStack<T> : Stack<T>
     {
-        MyLinkedList<T> myList;
+        public MyLinkedList<T> myList;
         public LinkedStack()
         {
             myList = new MyLinkedList<T>();
