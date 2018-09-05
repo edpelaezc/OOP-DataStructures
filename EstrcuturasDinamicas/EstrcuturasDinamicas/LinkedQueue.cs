@@ -14,6 +14,11 @@ namespace EstrcuturasDinamicas
             myList = new MyLinkedList<T>();
         }
 
+        public void purge()
+        {
+            Node<T> auxiliary = new Node<T>();
+        }
+
         public override T dequeue()
         {
             return myList.removeFirst();
