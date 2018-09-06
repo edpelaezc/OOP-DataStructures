@@ -8,8 +8,8 @@ namespace EstrcuturasDinamicas
 {
     public class MyLinkedList<T>
     {
-        public Node<T> head;
-        public Node<T> tail;
+        private Node<T> head;
+        private Node<T> tail;
         private int listSize;
         Comparer<T> comp = Comparer<T>.Default;
 
@@ -79,6 +79,35 @@ namespace EstrcuturasDinamicas
                 tail = head;
             }
             listSize++;
+        }
+
+        public void purge()
+        {
+            Node<T> aux = head;
+            Node<T> aux2 = aux.getNext();
+            while (aux2.getNext() != null)
+            {
+                while (aux2 != null)
+                {
+                    if (comp.Compare(aux.getElement(), aux2.getElement()) == 0)
+                    {
+                        Node<T> auxiliar = head;
+                        while (auxiliar.getNext() != aux2)
+                        {
+                            auxiliar = auxiliar.getNext();
+                        }
+                        auxiliar.setNext(aux2.getNext());
+                        listSize--;
+                    }
+                    aux2 = aux2.getNext();                                      
+                }
+                aux = aux.getNext();
+                aux2 = aux.getNext();
+                if (aux == null || aux2 == null)
+                {
+                    break;
+                }
+            }
         }
 
         /// <summary>

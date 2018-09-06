@@ -21,8 +21,10 @@ namespace QueuePurge
             myQueue.enqueue(2);
             myQueue.enqueue(45);
             myQueue.purge();
+            int cont = myQueue.size();
 
-            for (int i = 0; i < myQueue.size(); i++)
+            Console.WriteLine("La nueva lista, sin elementos repetidos es: ");
+            for (int i = 0; i < cont; i++)
             {
                 Console.WriteLine(myQueue.dequeue().ToString());
             }

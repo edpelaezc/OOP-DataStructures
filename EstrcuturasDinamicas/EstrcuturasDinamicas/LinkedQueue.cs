@@ -13,39 +13,7 @@ namespace EstrcuturasDinamicas
         public LinkedQueue()
         {
             myList = new MyLinkedList<T>();
-        }
-
-        public void purge()
-        {
-            Node<T> auxiliary = myList.head;
-            Node<T> newAux = myList.head.getNext();            
-
-            while (auxiliary.getNext() != null)
-            {
-                while (newAux != null)
-                {
-                    if (newAux.getNext() != null)
-                    { 
-                        newAux = newAux.getNext();
-                    }                    
-                }
-
-                if (auxiliary.getNext() != null && newAux.getNext() != null)
-                {
-                    auxiliary = auxiliary.getNext();
-                    newAux = auxiliary.getNext();
-                }                                   
-            }
-
-            Node<T> auxiliar = myList.head.getNext();
-            while (auxiliar.getNext() != newAux)
-            {
-                auxiliar = auxiliar.getNext();
-            }
-
-            auxiliar.setNext(newAux.getNext());
-            newAux = null;
-        }
+        }        
 
         public override T dequeue()
         {
@@ -70,6 +38,11 @@ namespace EstrcuturasDinamicas
         public override int size()
         {
             return myList.size();
+        }
+
+        public override void purge()
+        {
+            myList.purge();
         }
     }
 }
