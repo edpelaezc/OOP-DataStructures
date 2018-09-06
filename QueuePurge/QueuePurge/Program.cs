@@ -20,7 +20,13 @@ namespace QueuePurge
             myQueue.enqueue(45);
             myQueue.enqueue(2);
             myQueue.enqueue(45);
+            myQueue.purge();
 
+            for (int i = 0; i < myQueue.size(); i++)
+            {
+                Console.WriteLine(myQueue.dequeue().ToString());
+            }
+            Console.ReadLine();
         }
     }
 }
