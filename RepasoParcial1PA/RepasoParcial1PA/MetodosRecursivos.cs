@@ -80,12 +80,20 @@ namespace RepasoParcial1PA
             string result = "";
             if (validacion(n, baseFuente))
             {
-                cambio(baseDestino, cambioDecimal(baseFuente, n));
-                for (int i = 0; i < n.Length - 1; i++)
+                if (baseDestino != 10)
                 {
-                    result += myStack.Pop();
+                    cambio(baseDestino, cambioDecimal(baseFuente, n));                    
+                    for (int i = 0; i < n.Length - 1; i++)
+                    {
+                        result += myStack.Pop();
+                    }
+                    return result;
                 }
-                return result;
+                else
+                {
+                    return cambioDecimal(baseFuente, n).ToString();
+                }
+
             }
             else
             {
@@ -197,6 +205,6 @@ namespace RepasoParcial1PA
                     return false;
                 }
             }
-        }
+        }     
     }
 }

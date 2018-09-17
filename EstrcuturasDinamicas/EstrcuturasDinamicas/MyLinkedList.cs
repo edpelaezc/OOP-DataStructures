@@ -8,8 +8,8 @@ namespace EstrcuturasDinamicas
 {
     public class MyLinkedList<T>
     {
-        private Node<T> head;
-        private Node<T> tail;
+        public Node<T> head;
+        public Node<T> tail;
         private int listSize;
         Comparer<T> comp = Comparer<T>.Default;
 
@@ -125,7 +125,7 @@ namespace EstrcuturasDinamicas
             Node<T> newNode = new Node<T>(t, auxiliar.getNext());
             auxiliar.setNext(newNode);
             listSize++;
-        }
+        }        
 
         /// <summary>
         /// addLast

@@ -21,8 +21,8 @@ namespace RepasoParcial1PA
             b = int.Parse(Console.ReadLine());
             Console.WriteLine("El MCD de [a] y [b] es: " + recursividad.maximoComunDivisor(a, b));*/
             //Console.WriteLine(recursividad.duplicacionRuso(27, 45));
-            //Console.WriteLine(recursividad.cambioBase("2500", 8, 16));
-            Console.WriteLine(recursividad.esPalindromo("ala"));
+            Console.WriteLine(recursividad.cambioBase("356", 16, 3));
+            //Console.WriteLine(recursividad.esPalindromo("ala"));
             Console.ReadLine();
         }
     }
