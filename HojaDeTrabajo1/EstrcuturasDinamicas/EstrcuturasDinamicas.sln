@@ -1,11 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.28010.2003
+VisualStudioVersion = 15.0.27703.2000
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HojaDeTrabajo1", "HojaDeTrabajo1\HojaDeTrabajo1.csproj", "{D12B8CDD-C245-4533-A1C5-F663EFCB745C}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicStructures", "EstrcuturasDinamicas\EstrcuturasDinamicas\DynamicStructures.csproj", "{7F6D0EB4-4829-4404-AF76-36146E9C9448}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicStructures", "EstrcuturasDinamicas\DynamicStructures.csproj", "{7F6D0EB4-4829-4404-AF76-36146E9C9448}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,10 +11,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D12B8CDD-C245-4533-A1C5-F663EFCB745C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D12B8CDD-C245-4533-A1C5-F663EFCB745C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D12B8CDD-C245-4533-A1C5-F663EFCB745C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D12B8CDD-C245-4533-A1C5-F663EFCB745C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7F6D0EB4-4829-4404-AF76-36146E9C9448}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7F6D0EB4-4829-4404-AF76-36146E9C9448}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7F6D0EB4-4829-4404-AF76-36146E9C9448}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -26,6 +20,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {351F4D35-5945-44F4-8E16-19A616A2F95A}
+		SolutionGuid = {CF60E2C3-C2F9-42E5-A7AA-54D27B745AD6}
 	EndGlobalSection
 EndGlobal

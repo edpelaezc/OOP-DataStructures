@@ -72,7 +72,7 @@ namespace HojaDeTrabajo1
                     cajero1.tiempoAtencion(tiempoCajero.dequeue());
                     cajero2.tiempoAtencion(tiempoCajero.dequeue());
                     cajero3.tiempoAtencion(tiempoCajero.dequeue());
-                    cajero4.tiempoAtencion(tiempoCajero.dequeue());                    
+                    cajero4.tiempoAtencion(tiempoCajero.dequeue());
 
                     //Mientras la cola tenga clientes los cajeros atenderan
                     //Aumentara el tiempo acumulado y el numero de clientes
@@ -130,33 +130,101 @@ namespace HojaDeTrabajo1
                 }
                 else
                 {
-                    cajero1.tiempoAtencion(tiempoCajero.dequeue());
-                    cajero2.tiempoAtencion(tiempoCajero.dequeue());
-                    cajero3.tiempoAtencion(tiempoCajero.dequeue());
-                    cajero4.tiempoAtencion(tiempoCajero.dequeue());
-                    cajero1.atender();
-                    cajero2.atender();
-                    cajero3.atender();
-                    cajero4.atender();
-                    //mostrar datos en gridview                        
-                    //mostrar numero de clientes
-                    dataGridView1.Rows[0].Cells[0].Value = cajero1.clientesAtendidos.ToString();
-                    dataGridView1.Rows[1].Cells[0].Value = cajero2.clientesAtendidos.ToString();
-                    dataGridView1.Rows[2].Cells[0].Value = cajero3.clientesAtendidos.ToString();
-                    dataGridView1.Rows[3].Cells[0].Value = cajero4.clientesAtendidos.ToString();
-                    //mostrar tiempo acumulado
-                    dataGridView1.Rows[0].Cells[1].Value = cajero1.tiempoAcumulado.ToString();
-                    dataGridView1.Rows[1].Cells[1].Value = cajero2.tiempoAcumulado.ToString();
-                    dataGridView1.Rows[2].Cells[1].Value = cajero3.tiempoAcumulado.ToString();
-                    dataGridView1.Rows[3].Cells[1].Value = cajero4.tiempoAcumulado.ToString();
-                    //mostrar tiempo promedio en que atiende el cajero
-                    if (cajero1.clientesAtendidos != 0 || cajero2.clientesAtendidos != 0 || cajero3.clientesAtendidos != 0 || cajero4.clientesAtendidos != 0)
+                    if (num == 4)
                     {
-                        dataGridView1.Rows[0].Cells[2].Value = (cajero1.tiempoAcumulado / cajero1.clientesAtendidos).ToString();
-                        dataGridView1.Rows[1].Cells[2].Value = (cajero2.tiempoAcumulado / cajero2.clientesAtendidos).ToString();
-                        dataGridView1.Rows[2].Cells[2].Value = (cajero3.tiempoAcumulado / cajero3.clientesAtendidos).ToString();
-                        dataGridView1.Rows[3].Cells[2].Value = (cajero4.tiempoAcumulado / cajero4.clientesAtendidos).ToString();
+                        cajero1.tiempoAtencion(tiempoCajero.dequeue());
+                        cajero2.tiempoAtencion(tiempoCajero.dequeue());
+                        cajero3.tiempoAtencion(tiempoCajero.dequeue());
+                        cajero4.tiempoAtencion(tiempoCajero.dequeue());
+                        cajero1.atender();
+                        cajero2.atender();
+                        cajero3.atender();
+                        cajero4.atender();
+                        //mostrar datos en gridview                        
+                        //mostrar numero de clientes
+                        dataGridView1.Rows[0].Cells[0].Value = cajero1.clientesAtendidos.ToString();
+                        dataGridView1.Rows[1].Cells[0].Value = cajero2.clientesAtendidos.ToString();
+                        dataGridView1.Rows[2].Cells[0].Value = cajero3.clientesAtendidos.ToString();
+                        dataGridView1.Rows[3].Cells[0].Value = cajero4.clientesAtendidos.ToString();
+                        //mostrar tiempo acumulado
+                        dataGridView1.Rows[0].Cells[1].Value = cajero1.tiempoAcumulado.ToString();
+                        dataGridView1.Rows[1].Cells[1].Value = cajero2.tiempoAcumulado.ToString();
+                        dataGridView1.Rows[2].Cells[1].Value = cajero3.tiempoAcumulado.ToString();
+                        dataGridView1.Rows[3].Cells[1].Value = cajero4.tiempoAcumulado.ToString();
+                        //mostrar tiempo promedio en que atiende el cajero
+                        if (cajero1.clientesAtendidos != 0 || cajero2.clientesAtendidos != 0 || cajero3.clientesAtendidos != 0)
+                        {
+                            dataGridView1.Rows[0].Cells[2].Value = (cajero1.tiempoAcumulado / cajero1.clientesAtendidos).ToString();
+                            dataGridView1.Rows[1].Cells[2].Value = (cajero2.tiempoAcumulado / cajero2.clientesAtendidos).ToString();
+                            dataGridView1.Rows[2].Cells[2].Value = (cajero3.tiempoAcumulado / cajero3.clientesAtendidos).ToString();
+                            dataGridView1.Rows[3].Cells[2].Value = (cajero4.tiempoAcumulado / cajero4.clientesAtendidos).ToString();
+                        }
                     }
+                    else if (num == 3) {
+                        cajero1.tiempoAtencion(tiempoCajero.dequeue());
+                        cajero2.tiempoAtencion(tiempoCajero.dequeue());
+                        cajero3.tiempoAtencion(tiempoCajero.dequeue());
+                        cajero1.atender();
+                        cajero2.atender();
+                        cajero3.atender();
+                        //mostrar datos en gridview                        
+                        //mostrar numero de clientes
+                        dataGridView1.Rows[0].Cells[0].Value = cajero1.clientesAtendidos.ToString();
+                        dataGridView1.Rows[1].Cells[0].Value = cajero2.clientesAtendidos.ToString();
+                        dataGridView1.Rows[2].Cells[0].Value = cajero3.clientesAtendidos.ToString();
+                        //mostrar tiempo acumulado
+                        dataGridView1.Rows[0].Cells[1].Value = cajero1.tiempoAcumulado.ToString();
+                        dataGridView1.Rows[1].Cells[1].Value = cajero2.tiempoAcumulado.ToString();
+                        dataGridView1.Rows[2].Cells[1].Value = cajero3.tiempoAcumulado.ToString();
+                        //mostrar tiempo promedio en que atiende el cajero
+                        if (cajero1.clientesAtendidos != 0 || cajero2.clientesAtendidos != 0 || cajero3.clientesAtendidos != 0)
+                        {
+                            dataGridView1.Rows[0].Cells[2].Value = (cajero1.tiempoAcumulado / cajero1.clientesAtendidos).ToString();
+                            dataGridView1.Rows[1].Cells[2].Value = (cajero2.tiempoAcumulado / cajero2.clientesAtendidos).ToString();
+                            dataGridView1.Rows[2].Cells[2].Value = (cajero3.tiempoAcumulado / cajero3.clientesAtendidos).ToString();
+                        }
+                    }
+                    else if (num == 2)
+                        {
+                            cajero1.tiempoAtencion(tiempoCajero.dequeue());
+                            cajero2.tiempoAtencion(tiempoCajero.dequeue());                            
+                            cajero1.atender();
+                            cajero2.atender();                            
+                            //mostrar datos en gridview                        
+                            //mostrar numero de clientes
+                            dataGridView1.Rows[0].Cells[0].Value = cajero1.clientesAtendidos.ToString();
+                            dataGridView1.Rows[1].Cells[0].Value = cajero2.clientesAtendidos.ToString();                            
+                            //mostrar tiempo acumulado
+                            dataGridView1.Rows[0].Cells[1].Value = cajero1.tiempoAcumulado.ToString();
+                            dataGridView1.Rows[1].Cells[1].Value = cajero2.tiempoAcumulado.ToString();                            
+                            //mostrar tiempo promedio en que atiende el cajero
+                            if (cajero1.clientesAtendidos != 0 || cajero2.clientesAtendidos != 0)
+                            {
+                                dataGridView1.Rows[0].Cells[2].Value = (cajero1.tiempoAcumulado / cajero1.clientesAtendidos).ToString();
+                                dataGridView1.Rows[1].Cells[2].Value = (cajero2.tiempoAcumulado / cajero2.clientesAtendidos).ToString();                                
+                            }
+                        }
+                        else if (num == 1)
+                        {
+                            cajero1.tiempoAtencion(tiempoCajero.dequeue());                            
+                            cajero1.atender();                            
+                            //mostrar datos en gridview                        
+                            //mostrar numero de clientes
+                            dataGridView1.Rows[0].Cells[0].Value = cajero1.clientesAtendidos.ToString();                            
+                            //mostrar tiempo acumulado
+                            dataGridView1.Rows[0].Cells[1].Value = cajero1.tiempoAcumulado.ToString();
+                           
+                            //mostrar tiempo promedio en que atiende el cajero
+                            if (cajero1.clientesAtendidos != 0)
+                            {
+                                dataGridView1.Rows[0].Cells[2].Value = (cajero1.tiempoAcumulado / cajero1.clientesAtendidos).ToString();                                
+                            }
+                        }
+                        else
+                        {
+                            MessageBox.Show("LA COLA NO TIENE CLIENTES.");
+                        }
+                    
                 }
             }
             else
@@ -164,6 +232,25 @@ namespace HojaDeTrabajo1
                 MessageBox.Show("FORMATO INVÁLIDO. VUELVA A INGRESAR LA CANTIDAD DE CLIENTES.");
                 textBox1.Clear();
             }
+            textBox1.Clear();
+        }
+
+        private void borrarDatos_Click(object sender, EventArgs e)
+        {
+            //vaciar gridview
+            for (int i = 0; i < 4; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    dataGridView1.Rows[i].Cells[j].Value = "";
+                }
+            }
+
+            cajero1 = new Cajero();
+            cajero2 = new Cajero();
+            cajero3 = new Cajero();
+            cajero4 = new Cajero();
+            tiempoCajero = new LinkedQueue<int>();
         }
     }
 }

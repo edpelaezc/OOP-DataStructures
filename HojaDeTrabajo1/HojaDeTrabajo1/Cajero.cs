@@ -14,13 +14,13 @@ namespace HojaDeTrabajo1
 
         public void tiempoAtencion(int n)
         {
-            tiempo = n;           
+            tiempo = n;            
+            tiempoAcumulado += tiempo;
         }
 
         public void atender()
-        {            
+        {
             clientesAtendidos++;
-            tiempoAcumulado += tiempo;           
         }
     }
 }
