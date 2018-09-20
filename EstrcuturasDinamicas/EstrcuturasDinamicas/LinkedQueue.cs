@@ -7,8 +7,7 @@ using System.Threading.Tasks;
 namespace EstrcuturasDinamicas
 {
     public class LinkedQueue<T> : Queue<T>
-    {
-        Comparer<T> comp = Comparer<T>.Default;
+    {        
         MyLinkedList<T> myList;
         public LinkedQueue()
         {
