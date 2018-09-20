@@ -49,6 +49,38 @@ void MyLinkedListC::addElement(int reference, int t) {
 	listSize++;
 }
 
+void MyLinkedListC::addLast(int t) {
+	node newest = new Node(t, NULL);
+	if (isEmpty())
+	{
+		head = newest;
+	}
+	else
+	{
+		tail->setNext(newest);
+	}
+	tail = newest;
+	listSize++;
+}
+
+int MyLinkedListC::removeFirst() {
+	if (isEmpty())
+	{
+		return NULL;
+	}
+	else
+	{
+		int auxiliary = head->getElement();
+		*head = head->getNext();
+		listSize--;
+		if (listSize == 0)
+		{
+			tail = NULL;
+		}
+		return auxiliary;
+	}
+}
+
 MyLinkedListC::~MyLinkedListC()
 {
 }
