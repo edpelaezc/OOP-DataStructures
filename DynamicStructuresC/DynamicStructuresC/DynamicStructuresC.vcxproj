@@ -129,6 +129,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="DynamicStructuresC.h" />
+    <ClInclude Include="LinkedQueueC.h" />
     <ClInclude Include="MyLinkedListC.h" />
     <ClInclude Include="Node.h" />
     <ClInclude Include="Resource.h" />
@@ -137,6 +138,7 @@
   <ItemGroup>
     <ClCompile Include="AssemblyInfo.cpp" />
     <ClCompile Include="DynamicStructuresC.cpp" />
+    <ClCompile Include="LinkedQueueC.cpp" />
     <ClCompile Include="MyLinkedListC.cpp" />
     <ClCompile Include="Node.cpp" />
     <ClCompile Include="stdafx.cpp">

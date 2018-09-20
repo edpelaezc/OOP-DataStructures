@@ -30,6 +30,9 @@
     <ClInclude Include="MyLinkedListC.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
+    <ClInclude Include="LinkedQueueC.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="DynamicStructuresC.cpp">
@@ -45,6 +48,9 @@
       <Filter>Archivos de origen</Filter>
     </ClCompile>
     <ClCompile Include="MyLinkedListC.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="LinkedQueueC.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
   </ItemGroup>
