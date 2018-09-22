@@ -12,29 +12,26 @@ namespace DSImplementation
         static void Main(string[] args)
         {
             MyLinkedList<int> myList = new MyLinkedList<int>();
-            LinkedStack<int> myStack = new LinkedStack<int>();
-            LinkedQueue<int> myQueue = new LinkedQueue<int>();
+            /*LinkedStack<int> myStack = new LinkedStack<int>();
+            LinkedQueue<int> myQueue = new LinkedQueue<int>();*/
              int cont = 0;
              myList.addLast(1);
              myList.addLast(3);
              myList.addLast(7);
              myList.addLast(5);
              myList.addFirst(10);
-             myList.addElement(3, 15);
+             myList.addElement(3, 15);                          
              cont = myList.size();
-
-             Console.WriteLine("LISTA");
+             int[] array = myList.listToArray();
+             Console.WriteLine("LISTA");             
              Console.WriteLine("El primer elemento de la lista es: " + myList.first());
              Console.WriteLine("El ultimo elemento de la lista es: " + myList.last());
              for (int i = 0; i < cont; i++)
              {
-                 Console.WriteLine(myList.removeFirst());
+                 Console.WriteLine(array[i]);
              }
-             Console.WriteLine("\nEl primer elemento de la lista es: " + myList.first());
-             Console.WriteLine("El ultimo elemento de la lista es: " + myList.last());
-             Console.WriteLine("El nuevo tamaño de la lista es: " + myList.size());
 
-             myStack.push(1);
+             /*myStack.push(1);
              myStack.push(3);
              myStack.push(7);
              myStack.push(5);
@@ -60,7 +57,7 @@ namespace DSImplementation
             for (int i = 0; i < 8; i++)
             {
                 Console.WriteLine(myQueue.dequeue());
-            }            
+            }*/            
             Console.ReadLine();
         }
     }

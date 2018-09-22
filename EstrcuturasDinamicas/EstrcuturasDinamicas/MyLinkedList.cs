@@ -220,8 +220,8 @@ namespace EstrcuturasDinamicas
 
         public T[] listToArray()
         {
-            T[] myArray = new T[listSize];
-            for (int i = 0; i < listSize; i++)
+            T[] myArray = new T[this.size()];
+            for (int i = 0; i < myArray.Length; i++)
             {
                 myArray[i] = this.removeFirst();
             }
