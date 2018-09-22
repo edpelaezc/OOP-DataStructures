@@ -5,8 +5,6 @@ VisualStudioVersion = 15.0.28010.2003
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DSCImplementation", "DSCImplementation\DSCImplementation.vcxproj", "{E4082CB8-3161-4078-A3B3-6559D4E7F481}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DynamicStructuresC", "..\DynamicStructuresC\DynamicStructuresC\DynamicStructuresC.vcxproj", "{D35C74AF-DCAC-4AF9-B1A8-4D42D9C4E8AF}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -23,14 +21,6 @@ Global
 		{E4082CB8-3161-4078-A3B3-6559D4E7F481}.Release|x64.Build.0 = Release|x64
 		{E4082CB8-3161-4078-A3B3-6559D4E7F481}.Release|x86.ActiveCfg = Release|Win32
 		{E4082CB8-3161-4078-A3B3-6559D4E7F481}.Release|x86.Build.0 = Release|Win32
-		{D35C74AF-DCAC-4AF9-B1A8-4D42D9C4E8AF}.Debug|x64.ActiveCfg = Debug|x64
-		{D35C74AF-DCAC-4AF9-B1A8-4D42D9C4E8AF}.Debug|x64.Build.0 = Debug|x64
-		{D35C74AF-DCAC-4AF9-B1A8-4D42D9C4E8AF}.Debug|x86.ActiveCfg = Debug|Win32
-		{D35C74AF-DCAC-4AF9-B1A8-4D42D9C4E8AF}.Debug|x86.Build.0 = Debug|Win32
-		{D35C74AF-DCAC-4AF9-B1A8-4D42D9C4E8AF}.Release|x64.ActiveCfg = Release|x64
-		{D35C74AF-DCAC-4AF9-B1A8-4D42D9C4E8AF}.Release|x64.Build.0 = Release|x64
-		{D35C74AF-DCAC-4AF9-B1A8-4D42D9C4E8AF}.Release|x86.ActiveCfg = Release|Win32
-		{D35C74AF-DCAC-4AF9-B1A8-4D42D9C4E8AF}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

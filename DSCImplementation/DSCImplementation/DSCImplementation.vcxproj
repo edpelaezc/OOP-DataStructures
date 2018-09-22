@@ -132,6 +132,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\DynamicStructuresC\DynamicStructuresC\Node.h" />
+    <ClInclude Include="MyLinkedListCpp.h" />
+    <ClInclude Include="NodeC.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="stdafx.h" />
   </ItemGroup>
@@ -139,8 +142,11 @@
     <ResourceCompile Include="app.rc" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\DynamicStructuresC\DynamicStructuresC\Node.cpp" />
     <ClCompile Include="AssemblyInfo.cpp" />
     <ClCompile Include="DSCImplementation.cpp" />
+    <ClCompile Include="MyLinkedListCpp.cpp" />
+    <ClCompile Include="NodeC.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
@@ -155,11 +161,6 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\DynamicStructuresC\DynamicStructuresC\DynamicStructuresC.vcxproj">
-      <Project>{d35c74af-dcac-4af9-b1a8-4d42d9c4e8af}</Project>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

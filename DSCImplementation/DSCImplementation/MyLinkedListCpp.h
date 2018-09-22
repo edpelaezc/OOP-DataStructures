@@ -1,11 +1,11 @@
 #pragma once
-#include "Node.h"
-public class MyLinkedListC
+#include "NodeC.h"
+class MyLinkedListCpp
 {
 public:
-	MyLinkedListC();
 	node head;
 	node tail;
+	MyLinkedListCpp();		
 	int size();
 	bool isEmpty();
 	int first();
@@ -14,8 +14,8 @@ public:
 	void addElement(int reference, int t);
 	void addLast(int t);
 	int removeFirst();
-	~MyLinkedListC();
+	~MyLinkedListCpp();
 private:
-	int listSize;	
+	int listSize;
 };
 
