@@ -2,25 +2,30 @@
 #include "NodeC.h"
 #include <iostream>
 
-NodeC::NodeC(int newElement, NodeC *nextNode)
+template <typename T>
+NodeC<T>::NodeC(T newElement, NodeC<T> *nextNode)
 {	
 	element = newElement;
 	next = nextNode;
 }
 
-int NodeC::getElement() {
+template <typename T>
+T NodeC<T>::getElement() {
 	return element;
 }
 
-NodeC* NodeC::getNext() {	
+template <typename T>
+NodeC<T>* NodeC<T>::getNext() {
 	return next;
 }
 
-void NodeC::setNext(NodeC *next) {
+template <typename T>
+void NodeC<T>::setNext(NodeC<T> *next) {
 	this->next = next;
 }
 
-NodeC::~NodeC()
+template <typename T>
+NodeC<T>::~NodeC()
 {
 }
 

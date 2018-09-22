@@ -2,18 +2,22 @@
 #include "MyLinkedListCpp.h"
 #include <iostream>
 
-MyLinkedListCpp::MyLinkedListCpp()
+template <typename T>
+MyLinkedListCpp<T>::MyLinkedListCpp()
 {
 	head = NULL;
 	tail = NULL;
 	listSize = 0;
 }
 
-int MyLinkedListCpp::size() { return listSize; }
+template <typename T>
+int MyLinkedListCpp<T>::size() { return listSize; }
 
-bool MyLinkedListCpp::isEmpty() { return listSize == 0; }
+template <typename T>
+bool MyLinkedListCpp<T>::isEmpty() { return listSize == 0; }
 
-int MyLinkedListCpp::first() {
+template <typename T>
+T MyLinkedListCpp<T>::first() {
 	if (isEmpty()) {
 		return NULL;
 	}
@@ -22,7 +26,8 @@ int MyLinkedListCpp::first() {
 	}
 }
 
-int MyLinkedListCpp::last() {
+template <typename T>
+T MyLinkedListCpp<T>::last() {
 	if (isEmpty()) {
 		return NULL;
 	}
@@ -31,7 +36,8 @@ int MyLinkedListCpp::last() {
 	}
 }
 
-void MyLinkedListCpp::addFirst(int t) {
+template <typename T>
+void MyLinkedListCpp<T>::addFirst(T t) {
 	head = new NodeC(t, head);
 	if (listSize == 0)
 	{
@@ -40,18 +46,8 @@ void MyLinkedListCpp::addFirst(int t) {
 	listSize++;
 }
 
-void MyLinkedListCpp::addElement(int reference, int t) {
-	node auxiliar = head;
-	while (auxiliar->getElement() != reference)
-	{
-		auxiliar = auxiliar->getNext();
-	}
-	node newNode = new NodeC(t, auxiliar);
-	auxiliar->setNext(newNode);
-	listSize++;
-}
-
-void MyLinkedListCpp::addLast(int t) {
+template <typename T>
+void MyLinkedListCpp<T>::addLast(T t) {
 	node newest = new NodeC(t, NULL);
 	if (isEmpty())
 	{
@@ -65,14 +61,15 @@ void MyLinkedListCpp::addLast(int t) {
 	listSize++;
 }
 
-int MyLinkedListCpp::removeFirst() {
+template <typename T>
+T MyLinkedListCpp<T>::removeFirst() {
 	if (isEmpty())
 	{
 		return NULL;
 	}
 	else
 	{
-		int auxiliary = head->getElement();
+		T auxiliary = head->getElement();
 		head = head->getNext();
 		listSize--;
 		if (listSize == 0)
@@ -83,6 +80,7 @@ int MyLinkedListCpp::removeFirst() {
 	}
 }
 
-MyLinkedListCpp::~MyLinkedListCpp()
+template <typename T>
+MyLinkedListCpp<T>::~MyLinkedListCpp()
 {
 }

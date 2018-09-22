@@ -21,9 +21,6 @@
     <ClInclude Include="Resource.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\DynamicStructuresC\DynamicStructuresC\Node.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
     <ClInclude Include="MyLinkedListCpp.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
@@ -47,9 +44,6 @@
       <Filter>Archivos de origen</Filter>
     </ClCompile>
     <ClCompile Include="stdafx.cpp">
-      <Filter>Archivos de origen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\DynamicStructuresC\DynamicStructuresC\Node.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
     <ClCompile Include="MyLinkedListCpp.cpp">
