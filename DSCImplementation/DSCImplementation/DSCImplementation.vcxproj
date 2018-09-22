@@ -133,6 +133,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="..\..\DynamicStructuresC\DynamicStructuresC\Node.h" />
+    <ClInclude Include="LinkedStackCpp.h" />
     <ClInclude Include="MyLinkedListCpp.h" />
     <ClInclude Include="NodeC.h" />
     <ClInclude Include="Resource.h" />
@@ -145,6 +146,7 @@
     <ClCompile Include="..\..\DynamicStructuresC\DynamicStructuresC\Node.cpp" />
     <ClCompile Include="AssemblyInfo.cpp" />
     <ClCompile Include="DSCImplementation.cpp" />
+    <ClCompile Include="LinkedStackCpp.cpp" />
     <ClCompile Include="MyLinkedListCpp.cpp" />
     <ClCompile Include="NodeC.cpp" />
     <ClCompile Include="stdafx.cpp">
