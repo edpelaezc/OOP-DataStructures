@@ -38,5 +38,10 @@ namespace EstrcuturasDinamicas
         {
             return myList.first();
         }
+
+        public override T[] stackToArray()
+        {
+            return myList.listToArray();
+        }
     }
 }

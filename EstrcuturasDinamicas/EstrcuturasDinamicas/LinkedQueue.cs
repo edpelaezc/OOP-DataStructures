@@ -43,5 +43,10 @@ namespace EstrcuturasDinamicas
         {
             myList.purge();
         }
+
+        public override T[] queueToArray()
+        {
+            return myList.listToArray();
+        }
     }
 }

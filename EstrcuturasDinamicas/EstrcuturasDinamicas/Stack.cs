@@ -13,5 +13,6 @@ namespace EstrcuturasDinamicas
         public abstract void push(T t);
         public abstract T pop();
         public abstract T top();
+        public abstract T[] stackToArray();
     }
 }

@@ -14,5 +14,6 @@ namespace EstrcuturasDinamicas
         public abstract T dequeue();
         public abstract T front();
         public abstract void purge();
+        public abstract T[] queueToArray();
     }
 }
