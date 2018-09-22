@@ -44,7 +44,7 @@ void MyLinkedListCpp::addElement(int reference, int t) {
 	node auxiliar = head;
 	while (auxiliar->getElement() != reference)
 	{
-		*auxiliar = auxiliar->getNext();
+		auxiliar = auxiliar->getNext();
 	}
 	node newNode = new NodeC(t, auxiliar);
 	auxiliar->setNext(newNode);
@@ -73,7 +73,7 @@ int MyLinkedListCpp::removeFirst() {
 	else
 	{
 		int auxiliary = head->getElement();
-		*head = head->getNext();
+		head = head->getNext();
 		listSize--;
 		if (listSize == 0)
 		{

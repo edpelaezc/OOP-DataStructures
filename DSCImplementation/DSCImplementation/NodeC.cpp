@@ -12,8 +12,8 @@ int NodeC::getElement() {
 	return element;
 }
 
-NodeC NodeC::getNext() {	
-	return *next;
+NodeC* NodeC::getNext() {	
+	return next;
 }
 
 void NodeC::setNext(NodeC *next) {

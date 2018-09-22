@@ -4,7 +4,7 @@ public class NodeC
 public:
 	NodeC(int newElement, NodeC *nextNode);
 	int getElement();
-	NodeC getNext();
+	NodeC* getNext();
 	void setNext(NodeC *next);
 	~NodeC();
 private:
