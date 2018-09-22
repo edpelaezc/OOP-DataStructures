@@ -27,7 +27,7 @@ namespace EstrcuturasDinamicas
         /// Size
         /// </summary>
         /// <returns>Devuelve el tamaño de la lista.</returns>
-        public int size() {return listSize;}
+        public int size() { return listSize; }
 
         /// <summary>
         /// isEmpty
@@ -68,6 +68,23 @@ namespace EstrcuturasDinamicas
         }
 
         /// <summary>
+        /// addElement
+        /// </summary>
+        /// <param name="reference">Elemento que sirve de referencia para insertar.</param>
+        /// <param name="t">Inserta el genérico "t" después del genérico "reference"</param>
+        public void addElement(T reference, T t)
+        {
+            Node<T> auxiliar = head;
+            while (comp.Compare(auxiliar.getElement(), reference) != 0)
+            {
+                auxiliar = auxiliar.getNext();
+            }
+            Node<T> newNode = new Node<T>(t, auxiliar.getNext());
+            auxiliar.setNext(newNode);
+            listSize++;
+        }
+
+        /// <summary>
         /// addFirst
         /// </summary>
         /// <param name="t">Agrega el elemento genérico "t" en la primera posición de la lista (head).</param>
@@ -81,6 +98,28 @@ namespace EstrcuturasDinamicas
             listSize++;
         }
 
+        /// <summary>
+        /// addLast
+        /// </summary>
+        /// <param name="t">Agrega el elemento genérico "t" en la última posición de la lista (tail).</param>
+        public void addLast(T t)
+        {
+            Node<T> newest = new Node<T>(t, null);
+            if (isEmpty())
+            {
+                head = newest;
+            }
+            else
+            {
+                tail.setNext(newest);
+            }
+            tail = newest;
+            listSize++;
+        }
+
+        /// <summary>
+        /// Purge. Elimina elementos repetidos en la lista enlazada. 
+        /// </summary>
         public void purge()
         {
             Node<T> aux = head;
@@ -99,7 +138,7 @@ namespace EstrcuturasDinamicas
                         auxiliar.setNext(aux2.getNext());
                         listSize--;
                     }
-                    aux2 = aux2.getNext();                                      
+                    aux2 = aux2.getNext();
                 }
                 aux = aux.getNext();
                 aux2 = aux.getNext();
@@ -108,48 +147,28 @@ namespace EstrcuturasDinamicas
                     break;
                 }
             }
-        }
+        } 
 
-        /// <summary>
-        /// addElement
-        /// </summary>
-        /// <param name="reference">Elemento que sirve de referencia para insertar.</param>
-        /// <param name="t">Inserta el genérico "t" después del genérico "reference"</param>
-        public void addElement(T reference, T t) 
-        {            
-            Node<T> auxiliar = head;
-            while (comp.Compare(auxiliar.getElement(), reference) != 0)
-            {
-                auxiliar = auxiliar.getNext();
-            }
-            Node<T> newNode = new Node<T>(t, auxiliar.getNext());
-            auxiliar.setNext(newNode);
-            listSize++;
-        }        
-
-        /// <summary>
-        /// addLast
-        /// </summary>
-        /// <param name="t">Agrega el elemento genérico "t" en la última posición de la lista (tail).</param>
-        public void addLast(T t)
+        public T removeElement(T reference)
         {
-            Node<T> newest = new Node<T>(t, null);
-            if (isEmpty())
+            Node<T> predecessor = null;
+            Node<T> auxNode = head;
+
+            while (comp.Compare(auxNode.getElement(), reference) != 0)
             {
-                head = newest;                
+                predecessor = auxNode;
+                auxNode = auxNode.getNext();
             }
-            else
-            {                                                
-                tail.setNext(newest);                
-            }
-            tail = newest;
-            listSize++;
+            T auxiliary = auxNode.getElement();
+            predecessor.setNext(auxNode.getNext());
+            listSize--;
+            return auxiliary;
         }
 
         /// <summary>
         /// removeFirst
         /// </summary>
-        /// <returns>Elimina el elemento que se encuentra en la última posición de la lista.</returns>
+        /// <returns>Elimina el elemento que se encuentra en la primera posición de la lista.</returns>
         public T removeFirst()
         {            
             if (isEmpty())
@@ -167,6 +186,47 @@ namespace EstrcuturasDinamicas
                 }
                 return auxiliary;
             }
+        }
+
+        /// <summary>
+        /// removeLast
+        /// </summary>
+        /// <returns>Elimina el elemento que se encuentra en la última posición de la lista.</returns>
+        public T removeLast()
+        {
+            if (isEmpty())
+            {
+                return default(T);
+            }
+            else
+            {
+                T auxiliary = tail.getElement();
+                Node<T> auxNode = head;
+
+                while (auxNode.getNext() != tail)
+                {
+                    auxNode = auxNode.getNext();
+                }
+                tail = auxNode;                
+                listSize--;
+
+                if (listSize == 0)
+                {
+                    tail = null;
+                }
+                return auxiliary;
+            }
+        }
+
+        public T[] listToArray()
+        {
+            T[] myArray = new T[listSize];
+            for (int i = 0; i < listSize; i++)
+            {
+                myArray[i] = this.removeFirst();
+            }
+
+            return myArray;
         }
     }
 }

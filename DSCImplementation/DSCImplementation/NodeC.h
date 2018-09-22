@@ -1,14 +1,13 @@
 #pragma once
-template <class T>
 public class NodeC
 {
 public:
-	NodeC(T newElement, NodeC<T> *nextNode);
-	T getElement();
-	NodeC<T>* getNext();
-	void setNext(NodeC<T> *next);
+	NodeC(int newElement, NodeC *nextNode);
+	int getElement();
+	NodeC* getNext();
+	void setNext(NodeC *next);
 	~NodeC();
 private:
-	T element;
-	NodeC<T> *next;
-}; 
+	int element;
+	NodeC *next;
+}; typedef NodeC *node;

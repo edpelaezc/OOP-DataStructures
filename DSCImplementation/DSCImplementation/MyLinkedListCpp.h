@@ -1,22 +1,22 @@
 #pragma once
 #include "NodeC.h"
-
-template <class T>
 class MyLinkedListCpp
 {
 public:
-	NodeC<T>* head;
-	NodeC<T>* tail;
-	MyLinkedListCpp<T>();		
+	node head;
+	node tail;
+	MyLinkedListCpp();
 	int size();
 	bool isEmpty();
-	T first();
-	T last();
-	void addFirst(T t);	
-	void addLast(T t);
-	T removeFirst();
-	~MyLinkedListCpp<T>();
+	int first();
+	int last();
+	void addFirst(int t);
+	void addElement(int reference, int t);
+	void addLast(int t);
+	int removeFirst();
+	~MyLinkedListCpp();
 private:
 	int listSize;
 };
+
 

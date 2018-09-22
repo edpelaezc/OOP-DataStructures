@@ -2,22 +2,18 @@
 #include "MyLinkedListCpp.h"
 #include <iostream>
 
-template <typename T>
-MyLinkedListCpp<T>::MyLinkedListCpp()
+MyLinkedListCpp::MyLinkedListCpp()
 {
 	head = NULL;
 	tail = NULL;
 	listSize = 0;
 }
 
-template <typename T>
-int MyLinkedListCpp<T>::size() { return listSize; }
+int MyLinkedListCpp::size() { return listSize; }
 
-template <typename T>
-bool MyLinkedListCpp<T>::isEmpty() { return listSize == 0; }
+bool MyLinkedListCpp::isEmpty() { return listSize == 0; }
 
-template <typename T>
-T MyLinkedListCpp<T>::first() {
+int MyLinkedListCpp::first() {
 	if (isEmpty()) {
 		return NULL;
 	}
@@ -26,8 +22,7 @@ T MyLinkedListCpp<T>::first() {
 	}
 }
 
-template <typename T>
-T MyLinkedListCpp<T>::last() {
+int MyLinkedListCpp::last() {
 	if (isEmpty()) {
 		return NULL;
 	}
@@ -36,8 +31,7 @@ T MyLinkedListCpp<T>::last() {
 	}
 }
 
-template <typename T>
-void MyLinkedListCpp<T>::addFirst(T t) {
+void MyLinkedListCpp::addFirst(int t) {
 	head = new NodeC(t, head);
 	if (listSize == 0)
 	{
@@ -46,8 +40,18 @@ void MyLinkedListCpp<T>::addFirst(T t) {
 	listSize++;
 }
 
-template <typename T>
-void MyLinkedListCpp<T>::addLast(T t) {
+void MyLinkedListCpp::addElement(int reference, int t) {
+	node auxiliar = head;
+	while (auxiliar->getElement() != reference)
+	{
+		auxiliar = auxiliar->getNext();
+	}
+	node newNode = new NodeC(t, auxiliar);
+	auxiliar->setNext(newNode);
+	listSize++;
+}
+
+void MyLinkedListCpp::addLast(int t) {
 	node newest = new NodeC(t, NULL);
 	if (isEmpty())
 	{
@@ -61,15 +65,14 @@ void MyLinkedListCpp<T>::addLast(T t) {
 	listSize++;
 }
 
-template <typename T>
-T MyLinkedListCpp<T>::removeFirst() {
+int MyLinkedListCpp::removeFirst() {
 	if (isEmpty())
 	{
 		return NULL;
 	}
 	else
 	{
-		T auxiliary = head->getElement();
+		int auxiliary = head->getElement();
 		head = head->getNext();
 		listSize--;
 		if (listSize == 0)
@@ -80,7 +83,6 @@ T MyLinkedListCpp<T>::removeFirst() {
 	}
 }
 
-template <typename T>
-MyLinkedListCpp<T>::~MyLinkedListCpp()
+MyLinkedListCpp::~MyLinkedListCpp()
 {
 }

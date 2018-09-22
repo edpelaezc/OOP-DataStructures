@@ -1,42 +1,37 @@
 #include "stdafx.h"
 #include "LinkedStackCpp.h"
 
-template <typename T>
-LinkedStackCpp<T>::LinkedStackCpp()
+
+LinkedStackCpp::LinkedStackCpp()
 {
 	myList = new MyLinkedListCpp();
 }
 
-template <typename T>
-int LinkedStackCpp<T>::size() {
+int LinkedStackCpp::size() {
 	return myList->size();
 }
 
-template <typename T>
-bool LinkedStackCpp<T>::isEmpty()
+
+bool LinkedStackCpp::isEmpty()
 {
 	return myList->isEmpty();
 }
 
-template <typename T>
-T LinkedStackCpp<T>::pop()
+int LinkedStackCpp::pop()
 {
 	return myList->removeFirst();
 }
 
-template <typename T>
-void LinkedStackCpp<T>::push(T t)
+void LinkedStackCpp::push(int t)
 {
 	myList->addFirst(t);
 }
 
-template <typename T>
-T LinkedStackCpp<T>::top()
+int LinkedStackCpp::top()
 {
 	return myList->first();
 }
 
-template <typename T>
-LinkedStackCpp<T>::~LinkedStackCpp()
+LinkedStackCpp::~LinkedStackCpp()
 {
 }
