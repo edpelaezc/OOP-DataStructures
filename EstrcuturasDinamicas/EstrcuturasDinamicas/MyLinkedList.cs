@@ -66,6 +66,42 @@ namespace EstrcuturasDinamicas
                 return tail.getElement();
             }
         }
+        public void addAtIndex(T t, int index)
+        {
+            int size = this.size();
+            if (validate(index.ToString()))
+            {
+                if (index == 0)
+                {
+                    this.addFirst(t);
+                }
+                else if (size > 0 && index < size)
+                {
+                    Node<T> actualNode = head;
+                    int cont = 1;
+
+                    while (cont < index)
+                    {
+                        actualNode = actualNode.getNext();
+                        cont++;
+                    }
+
+                    this.addElement(actualNode.getElement(), t);
+                }
+                else if (size == index)
+                {
+                    this.addLast(t);
+                }
+                else
+                {
+                    throw new IndexOutOfRangeException();
+                }
+            }
+            else
+            {
+                throw new FormatException();
+            }
+        }
 
         /// <summary>
         /// addElement
@@ -147,7 +183,7 @@ namespace EstrcuturasDinamicas
                     break;
                 }
             }
-        } 
+        }        
 
         public T removeElement(T reference)
         {
@@ -227,6 +263,12 @@ namespace EstrcuturasDinamicas
             }
 
             return myArray;
+        }
+
+        public bool validate(string _string)
+        {
+            int numValue;
+            return int.TryParse(_string, out numValue);
         }
     }
 }
