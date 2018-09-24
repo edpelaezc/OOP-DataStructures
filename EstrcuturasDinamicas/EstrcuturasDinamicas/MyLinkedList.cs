@@ -66,6 +66,12 @@ namespace EstrcuturasDinamicas
                 return tail.getElement();
             }
         }
+
+        /// <summary>
+        /// addAtIndex
+        /// </summary>
+        /// <param name="t">Elemento que se insertará en la lista cuando el contador auxiliar sea igual al índice.</param>
+        /// <param name="index">Posición en donde se insertará el elemento.</param>
         public void addAtIndex(T t, int index)
         {
             int size = this.size();
@@ -185,6 +191,35 @@ namespace EstrcuturasDinamicas
             }
         }        
 
+        /// <summary>
+        /// removeAtIndex
+        /// </summary>
+        /// <param name="index">Número entero que indica la posición en donde se quiere eliminar.</param>
+        /// <returns>Retorna en el elemento que se encuentra en la posición del índice.</returns>
+        public T removeAtIndex(int index)
+        {
+            if (validate(index.ToString()))
+            {
+                int cont = 0;
+                Node<T> auxiliarNode = head;
+                while (cont < index)
+                {
+                    cont++;
+                    auxiliarNode = auxiliarNode.getNext();
+                }
+                return this.removeElement(auxiliarNode.getElement());
+            }
+            else
+            {
+                throw new FormatException();
+            }
+        }
+
+        /// <summary>
+        /// removeElement
+        /// </summary>
+        /// <param name="reference">Parámetro de referencia, elemento que se eliminará</param>
+        /// <returns>Retorna el elemento que se especificó en el parámetro.</returns>
         public T removeElement(T reference)
         {
             Node<T> predecessor = null;
@@ -254,6 +289,10 @@ namespace EstrcuturasDinamicas
             }
         }
 
+        /// <summary>
+        /// listToArray
+        /// </summary>
+        /// <returns>Devuelve los elementos de la lista enlazada en un arreglo convencional.</returns>
         public T[] listToArray()
         {
             T[] myArray = new T[this.size()];
@@ -265,6 +304,11 @@ namespace EstrcuturasDinamicas
             return myArray;
         }
 
+        /// <summary>
+        /// validate
+        /// </summary>
+        /// <param name="_string">Cadena que se tratará de convertir a tipo entero. Índice que se utiliza en algunos métodos de la lista.</param>
+        /// <returns>"True" si es posible convertir la cadena a entero, "False" si no es posible hacer la conversión.</returns>
         public bool validate(string _string)
         {
             int numValue;
