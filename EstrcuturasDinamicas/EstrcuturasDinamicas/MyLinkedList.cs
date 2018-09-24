@@ -198,20 +198,27 @@ namespace EstrcuturasDinamicas
         /// <returns>Retorna en el elemento que se encuentra en la posición del índice.</returns>
         public T removeAtIndex(int index)
         {
-            if (validate(index.ToString()))
+            if (index == 0)
             {
-                int cont = 0;
-                Node<T> auxiliarNode = head;
-                while (cont < index)
-                {
-                    cont++;
-                    auxiliarNode = auxiliarNode.getNext();
-                }
-                return this.removeElement(auxiliarNode.getElement());
+                return this.removeFirst();
             }
             else
             {
-                throw new FormatException();
+                if (validate(index.ToString()))
+                {
+                    int cont = 0;
+                    Node<T> auxiliarNode = head;
+                    while (cont < index)
+                    {
+                        cont++;
+                        auxiliarNode = auxiliarNode.getNext();
+                    }
+                    return this.removeElement(auxiliarNode.getElement());
+                }
+                else
+                {
+                    throw new FormatException();
+                }
             }
         }
 
