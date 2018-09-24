@@ -198,13 +198,13 @@ namespace EstrcuturasDinamicas
         /// <returns>Retorna en el elemento que se encuentra en la posición del índice.</returns>
         public T removeAtIndex(int index)
         {
-            if (index == 0)
+            if (validate(index.ToString()))
             {
-                return this.removeFirst();
-            }
-            else
-            {
-                if (validate(index.ToString()))
+                if (index == 0)
+                {
+                    return this.removeFirst();
+                }
+                else
                 {
                     int cont = 0;
                     Node<T> auxiliarNode = head;
@@ -212,13 +212,13 @@ namespace EstrcuturasDinamicas
                     {
                         cont++;
                         auxiliarNode = auxiliarNode.getNext();
-                    }
+                    }                    
                     return this.removeElement(auxiliarNode.getElement());
                 }
-                else
-                {
-                    throw new FormatException();
-                }
+            }
+            else
+            {
+                throw new FormatException();
             }
         }
 
