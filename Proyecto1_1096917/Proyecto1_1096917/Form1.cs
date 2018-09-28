@@ -31,7 +31,7 @@ namespace Proyecto1_1096917
         }
 
         private void enterFile_Click(object sender, EventArgs e)
-        {
+        {            
             OpenFileDialog openFile = new OpenFileDialog();
             openFile.Title = "SELECCIONE EL ARCHIVO PARA INICIAR SESIÓN";
             StreamReader fileReader;
