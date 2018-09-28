@@ -25,6 +25,11 @@ namespace Proyecto1_1096917
             InitializeComponent();
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {           
+            pictureBox1.Image = Image.FromFile(@"C:\GitHub\OOP-DataStructures\Proyecto1_1096917\users_21937.png");
+        }
+
         private void enterFile_Click(object sender, EventArgs e)
         {
             OpenFileDialog openFile = new OpenFileDialog();
@@ -93,7 +98,7 @@ namespace Proyecto1_1096917
             string password = credentials.removeFirst();
 
             if (userName == textBox1.Text && password == textBox2.Text)
-            {
+            {                
                 MessageBox.Show("Se inició sesión correctamente. ¡Bienvenido!");
             }
             else
@@ -103,7 +108,7 @@ namespace Proyecto1_1096917
                 textBox2.Clear();
             }
         }
-
+        
         /// <summary>
         /// validate
         /// </summary>
