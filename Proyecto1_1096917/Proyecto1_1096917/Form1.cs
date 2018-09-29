@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Collections;
 using System.IO;
 using EstrcuturasDinamicas;
+using System.Threading;
 
 namespace Proyecto1_1096917
 {
@@ -98,7 +99,11 @@ namespace Proyecto1_1096917
             string password = credentials.removeFirst();
 
             if (userName == textBox1.Text && password == textBox2.Text)
-            {                
+            {
+                using (Loading loadingForm = new Loading(saveData))
+                {
+                    loadingForm.ShowDialog(this);
+                }
                 MessageBox.Show("Se inició sesión correctamente. ¡Bienvenido!");
             }
             else
@@ -106,6 +111,14 @@ namespace Proyecto1_1096917
                 MessageBox.Show("Usuario o contraseña incorrectos.");
                 textBox1.Clear();
                 textBox2.Clear();
+            }
+        }
+
+        void saveData()
+        {
+            for (int i = 0; i <= 500; i++)
+            {
+                Thread.Sleep(5);//Simulador
             }
         }
         

@@ -34,11 +34,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.logIn = new System.Windows.Forms.Button();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.enterFile = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.logIn = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -56,6 +56,7 @@
             this.textBox2.Enabled = false;
             this.textBox2.Location = new System.Drawing.Point(115, 188);
             this.textBox2.Name = "textBox2";
+            this.textBox2.PasswordChar = '*';
             this.textBox2.Size = new System.Drawing.Size(160, 20);
             this.textBox2.TabIndex = 1;
             // 
@@ -91,6 +92,25 @@
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(132, 19);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(129, 83);
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+            // 
+            // logIn
+            // 
+            this.logIn.Enabled = false;
+            this.logIn.Location = new System.Drawing.Point(134, 214);
+            this.logIn.Name = "logIn";
+            this.logIn.Size = new System.Drawing.Size(121, 49);
+            this.logIn.TabIndex = 5;
+            this.logIn.Text = "Iniciar sesión";
+            this.logIn.UseVisualStyleBackColor = true;
+            this.logIn.Click += new System.EventHandler(this.logIn_Click);
+            // 
             // textBox3
             // 
             this.textBox3.Location = new System.Drawing.Point(127, 42);
@@ -116,25 +136,6 @@
             this.label3.Size = new System.Drawing.Size(84, 13);
             this.label3.TabIndex = 8;
             this.label3.Text = "Ingresar Archivo";
-            // 
-            // logIn
-            // 
-            this.logIn.Enabled = false;
-            this.logIn.Location = new System.Drawing.Point(134, 214);
-            this.logIn.Name = "logIn";
-            this.logIn.Size = new System.Drawing.Size(121, 49);
-            this.logIn.TabIndex = 5;
-            this.logIn.Text = "Iniciar sesión";
-            this.logIn.UseVisualStyleBackColor = true;
-            this.logIn.Click += new System.EventHandler(this.logIn_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(132, 19);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(129, 83);
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
             // 
             // Form1
             // 
