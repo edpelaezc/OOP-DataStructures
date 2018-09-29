@@ -64,26 +64,29 @@ namespace Proyecto1_1096917
                     }
                     else if (line == "[NEWSFEED]")
                     {
+                        line = fileReader.ReadLine();
                         while (line != "[MESSENGER]" && line != "[CONTACTOS]")
-                        {
-                            line = fileReader.ReadLine();
+                        {                            
                             newsFeed.enqueue(line);
+                            line = fileReader.ReadLine();
                         }
                     }
                     else if (line == "[MESSENGER]")
                     {
+                        line = fileReader.ReadLine();
                         while (line != "[CONTACTOS]")
-                        {
-                            line = fileReader.ReadLine();
+                        {                            
                             messenger.push(line);
+                            line = fileReader.ReadLine();
                         }
                     }
                     else
                     {
+                        line = fileReader.ReadLine();
                         while (line != null)
-                        {
-                            line = fileReader.ReadLine();
+                        {                            
                             friends.addLast(line);
+                            line = fileReader.ReadLine();
                         }
                     }
                 }
