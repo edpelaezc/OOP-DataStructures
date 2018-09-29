@@ -20,6 +20,8 @@ namespace Proyecto1_1096917
         LinkedStack<string> messenger = new LinkedStack<string>();
         MyLinkedList<string> friends = new MyLinkedList<string>();
         MyLinkedList<string> credentials = new MyLinkedList<string>();
+        string userName = "";
+        string password = "";
 
         public Form1()
         {
@@ -91,13 +93,12 @@ namespace Proyecto1_1096917
             textBox1.Enabled = true;
             textBox2.Enabled = true;
             logIn.Enabled = true;
+            userName = credentials.removeFirst();
+            password = credentials.removeFirst();
         }
 
         private void logIn_Click(object sender, EventArgs e)
-        {
-            string userName = credentials.removeFirst();
-            string password = credentials.removeFirst();
-
+        {           
             if (userName == textBox1.Text && password == textBox2.Text)
             {
                 using (Loading loadingForm = new Loading(saveData))
@@ -105,6 +106,8 @@ namespace Proyecto1_1096917
                     loadingForm.ShowDialog(this);
                 }
                 MessageBox.Show("Se inició sesión correctamente. ¡Bienvenido!");
+                MainPage formMainPage = new MainPage(newsFeed, messenger, friends);
+                formMainPage.Show();
             }
             else
             {
