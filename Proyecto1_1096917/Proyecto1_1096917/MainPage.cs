@@ -30,21 +30,6 @@ namespace Proyecto1_1096917
             int nFSize = newsFeed.size();
             int mSize = messenger.size();
             int fSize = friends.size();
-
-            for (int i = 0; i < nFSize; i++)
-            {
-                listBox1.Items.Add(newsFeed.dequeue());
-            }
-
-            for (int i = 0; i < mSize; i++)
-            {
-                listBox2.Items.Add(messenger.pop());
-            }
-
-            for (int i = 0; i < fSize; i++)
-            {
-                listBox3.Items.Add(friends.removeFirst());
-            }
         }
 
         private void logOut_Click(object sender, EventArgs e)
