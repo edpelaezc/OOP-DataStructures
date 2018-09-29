@@ -44,60 +44,70 @@ namespace Proyecto1_1096917
             {
                 textBox3.Text = openFile.FileName;
                 path = openFile.FileName;
+                if (path.Contains(".txt"))
+                {
+                    string line = "";
+                    fileReader = new StreamReader(path);
+                    line = fileReader.ReadLine();
+                    while (line != null)
+                    {
+                        if (line != null)
+                        {
+                            if (line != "[NEWSFEED]" && line != "[MESSENGER]" && line != "[CONTACTOS]" && credentials.size() != 2)
+                            {
+                                credentials.addLast(line);
+                                line = fileReader.ReadLine();
+                            }
+                            else if (line == "[NEWSFEED]")
+                            {
+                                line = fileReader.ReadLine();
+                                while (line != "[MESSENGER]" && line != "[CONTACTOS]")
+                                {
+                                    newsFeed.addLast(line);
+                                    line = fileReader.ReadLine();
+                                }
+                            }
+                            else if (line == "[MESSENGER]")
+                            {
+                                line = fileReader.ReadLine();
+                                while (line != "[CONTACTOS]")
+                                {
+                                    messenger.addFirst(line);
+                                    line = fileReader.ReadLine();
+                                }
+                            }
+                            else
+                            {
+                                line = fileReader.ReadLine();
+                                while (line != null)
+                                {
+                                    friends.addLast(line);
+                                    line = fileReader.ReadLine();
+                                }
+                            }
+                        }
+                    }
+
+                    fileReader.Close();
+                    textBox1.Enabled = true;
+                    textBox2.Enabled = true;
+                    logIn.Enabled = true;
+                    userName = credentials.removeFirst();
+                    password = credentials.removeFirst();
+                }
+                else
+                {
+                    MessageBox.Show("FORMATO INCORRECTO.");
+                    textBox3.Text = "";
+                    path = "";
+                }
             }
             else
             {
                 MessageBox.Show("SELECCIONE UN ARCHIVO.");
             }
 
-            string line = "";
-            fileReader = new StreamReader(path);
-            line = fileReader.ReadLine();
-            while (line != null)
-            {                
-                if (line != null)
-                {
-                    if (line != "[NEWSFEED]" && line != "[MESSENGER]" && line != "[CONTACTOS]" && credentials.size() != 2)
-                    {
-                        credentials.addLast(line);
-                        line = fileReader.ReadLine();
-                    }
-                    else if (line == "[NEWSFEED]")
-                    {
-                        line = fileReader.ReadLine();
-                        while (line != "[MESSENGER]" && line != "[CONTACTOS]")
-                        {                            
-                            newsFeed.addLast(line);
-                            line = fileReader.ReadLine();
-                        }
-                    }
-                    else if (line == "[MESSENGER]")
-                    {
-                        line = fileReader.ReadLine();
-                        while (line != "[CONTACTOS]")
-                        {                            
-                            messenger.addFirst(line);
-                            line = fileReader.ReadLine();
-                        }
-                    }
-                    else
-                    {
-                        line = fileReader.ReadLine();
-                        while (line != null)
-                        {                            
-                            friends.addLast(line);
-                            line = fileReader.ReadLine();
-                        }
-                    }
-                }
-            }
-
-            fileReader.Close();
-            textBox1.Enabled = true;
-            textBox2.Enabled = true;
-            logIn.Enabled = true;
-            userName = credentials.removeFirst();
-            password = credentials.removeFirst();
+      
         }
 
         private void logIn_Click(object sender, EventArgs e)
