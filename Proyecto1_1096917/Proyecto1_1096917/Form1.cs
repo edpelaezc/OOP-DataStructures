@@ -16,8 +16,8 @@ namespace Proyecto1_1096917
 {
     public partial class Form1 : Form
     {
-        LinkedQueue<string> newsFeed = new LinkedQueue<string>();
-        LinkedStack<string> messenger = new LinkedStack<string>();
+        MyLinkedList<string> newsFeed = new MyLinkedList<string>();//lista con disciplina de cola.
+        MyLinkedList<string> messenger = new MyLinkedList<string>();//lista con disciplina de pila.
         MyLinkedList<string> friends = new MyLinkedList<string>();
         MyLinkedList<string> credentials = new MyLinkedList<string>();
         string userName = "";
@@ -67,7 +67,7 @@ namespace Proyecto1_1096917
                         line = fileReader.ReadLine();
                         while (line != "[MESSENGER]" && line != "[CONTACTOS]")
                         {                            
-                            newsFeed.enqueue(line);
+                            newsFeed.addLast(line);
                             line = fileReader.ReadLine();
                         }
                     }
@@ -76,7 +76,7 @@ namespace Proyecto1_1096917
                         line = fileReader.ReadLine();
                         while (line != "[CONTACTOS]")
                         {                            
-                            messenger.push(line);
+                            messenger.addFirst(line);
                             line = fileReader.ReadLine();
                         }
                     }

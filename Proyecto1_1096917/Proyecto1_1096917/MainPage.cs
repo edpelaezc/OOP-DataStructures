@@ -13,11 +13,11 @@ namespace Proyecto1_1096917
 {
     public partial class MainPage : Form
     {
-        LinkedQueue<string> newsFeed = new LinkedQueue<string>();
-        LinkedStack<string> messenger = new LinkedStack<string>();
+        MyLinkedList<string> newsFeed = new MyLinkedList<string>();
+        MyLinkedList<string> messenger = new MyLinkedList<string>();
         MyLinkedList<string> friends = new MyLinkedList<string>();        
 
-        public MainPage(LinkedQueue<string> newsFeed, LinkedStack<string> messenger, MyLinkedList<string> friends)
+        public MainPage(MyLinkedList<string> newsFeed, MyLinkedList<string> messenger, MyLinkedList<string> friends)
         {
             InitializeComponent();
             this.newsFeed = newsFeed;            
