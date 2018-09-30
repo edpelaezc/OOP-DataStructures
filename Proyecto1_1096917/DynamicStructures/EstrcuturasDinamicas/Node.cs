@@ -14,6 +14,7 @@ namespace EstrcuturasDinamicas
     {
         private T element;//valor
         private Node<T> next;//nodo siguiente
+        private T key;
 
         /// <summary>
         /// Node. Constructor de la Clase.
@@ -51,6 +52,16 @@ namespace EstrcuturasDinamicas
         public void setNext(Node<T> next)
         {
             this.next = next;
+        }
+
+        public T getKey()
+        {
+            return key;
+        }
+
+        public void setKey(T key)
+        {
+            this.key = key;
         }
 
     }

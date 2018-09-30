@@ -16,6 +16,11 @@ namespace Proyecto1_1096917
         MyLinkedList<string> newsFeed = new MyLinkedList<string>();
         MyLinkedList<string> messenger = new MyLinkedList<string>();
         MyLinkedList<string> friends = new MyLinkedList<string>();
+        News[] arrayNews;
+        Message[] arrayMessages;
+        int nFSize;
+        int mSize;
+        int fSize;
 
         //estructuras que se manipularán 
         MyLinkedList<News> news = new MyLinkedList<News>();
@@ -31,13 +36,13 @@ namespace Proyecto1_1096917
 
         private void MainPage_Load(object sender, EventArgs e)
         {
-            int nFSize = newsFeed.size();
-            int mSize = messenger.size();
-            int fSize = friends.size();
+            nFSize = newsFeed.size();
+            mSize = messenger.size();
+            fSize = friends.size();
 
             //mostrar noticias
             string[] aux = new string[2];
-            News auxNews = new News();
+            News auxNews = new News();           
             for (int i = 0; i < nFSize; i++)
             {
                 aux = newsFeed.removeFirst().Split(',');
@@ -47,17 +52,17 @@ namespace Proyecto1_1096917
                 auxNews = new News();
             }
 
-            News[] arrayNews = news.listToArray();                                   
-            dataGridView1.Columns.Add("NOTICIAS", "NOTICIAS");            
+            arrayNews = news.listToArray();
+            dataGridView1.Columns.Add("NOTICIAS", "NOTICIAS");
             for (int i = 0; i < nFSize; i++)
             {
-                dataGridView1.Rows.Add();                
+                dataGridView1.Rows.Add();
                 dataGridView1.Rows[i].Cells[0].Value = arrayNews[i].toString();
             }
 
             //mostrar contacto que enviaron mensajes
             string[] message = new string[2];
-            Message auxMessage = new Message();
+            Message auxMessage = new Message();           
             for (int i = 0; i < mSize; i++)
             {
                 message = messenger.removeFirst().Split(',');
@@ -67,11 +72,59 @@ namespace Proyecto1_1096917
                 auxMessage = new Message();
             }
 
-            Message[] arrayMessages = chat.listToArray();
+            purgeContacts();
+            arrayMessages = chat.listToArray();
             for (int i = 0; i < mSize; i++)
             {
                 listBox2.Items.Add(arrayMessages[i].getContact());
             }
+        }
+
+        private void listBox2_DoubleClick(object sender, EventArgs e)
+        {
+            string name = listBox2.SelectedItem.ToString();
+            for (int i = 0; i < mSize; i++)
+            {
+                if (arrayMessages[i].getContact() == name)
+                {
+                    listBox3.Items.Add(arrayMessages[i].getChat());
+                }
+            }
+        }
+
+        //Metodo para que los contactos que han enviado un mensaje aparezcan una sola vez en la lista.
+        public void purgeContacts()
+        {
+            Node<Message> aux = chat.head;
+            Node<Message> aux2 = aux.getNext();
+            while (aux2.getNext() != null)
+            {
+                while (aux2 != null)
+                {
+                    if (aux.getElement().getContact() == aux.getElement().getContact())
+                    {
+                        Node<Message> auxiliar = chat.head;
+                        while (auxiliar.getNext() != aux2)
+                        {
+                            auxiliar = auxiliar.getNext();
+                        }
+                        auxiliar.getElement().setChat(auxiliar.getElement().getChat() + "," + auxiliar.getNext().getElement().getChat());
+                        chat.removeElement(auxiliar.getNext().getElement());                             
+                    }
+                    aux2 = aux2.getNext();
+                }
+                aux = aux.getNext();
+                aux2 = aux.getNext();
+                if (aux == null || aux2 == null)
+                {
+                    break;
+                }
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            listBox3.Items.Clear();
         }
 
         private void logOut_Click(object sender, EventArgs e)
