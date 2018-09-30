@@ -19,6 +19,7 @@ namespace Proyecto1_1096917
 
         //estructuras que se manipularán 
         MyLinkedList<News> news = new MyLinkedList<News>();
+        MyLinkedList<Message> chat = new MyLinkedList<Message>();
 
         public MainPage(MyLinkedList<string> newsFeed, MyLinkedList<string> messenger, MyLinkedList<string> friends)
         {
@@ -34,6 +35,7 @@ namespace Proyecto1_1096917
             int mSize = messenger.size();
             int fSize = friends.size();
 
+            //mostrar noticias
             string[] aux = new string[2];
             News auxNews = new News();
             for (int i = 0; i < nFSize; i++)
@@ -45,13 +47,30 @@ namespace Proyecto1_1096917
                 auxNews = new News();
             }
 
-            News[] arrayNews = news.listToArray();
-            //mostrar noticias                       
+            News[] arrayNews = news.listToArray();                                   
             dataGridView1.Columns.Add("NOTICIAS", "NOTICIAS");            
             for (int i = 0; i < nFSize; i++)
             {
                 dataGridView1.Rows.Add();                
                 dataGridView1.Rows[i].Cells[0].Value = arrayNews[i].toString();
+            }
+
+            //mostrar contacto que enviaron mensajes
+            string[] message = new string[2];
+            Message auxMessage = new Message();
+            for (int i = 0; i < mSize; i++)
+            {
+                message = messenger.removeFirst().Split(',');
+                auxMessage.setContact(message[0]);
+                auxMessage.setChat(message[1]);
+                chat.addLast(auxMessage);
+                auxMessage = new Message();
+            }
+
+            Message[] arrayMessages = chat.listToArray();
+            for (int i = 0; i < mSize; i++)
+            {
+                listBox2.Items.Add(arrayMessages[i].getContact());
             }
         }
 
