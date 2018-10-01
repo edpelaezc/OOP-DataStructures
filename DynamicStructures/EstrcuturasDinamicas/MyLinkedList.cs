@@ -306,10 +306,12 @@ namespace EstrcuturasDinamicas
         /// <returns>Devuelve los elementos de la lista enlazada en un arreglo convencional.</returns>
         public T[] listToArray()
         {
+            Node<T> auxiliar = head;
             T[] myArray = new T[this.size()];
             for (int i = 0; i < myArray.Length; i++)
             {
-                myArray[i] = this.removeFirst();
+                myArray[i] = auxiliar.getElement();
+                auxiliar = auxiliar.getNext();
             }
 
             return myArray;
