@@ -60,7 +60,7 @@ namespace Proyecto1_1096917
                 dataGridView1.Rows[i].Cells[0].Value = arrayNews[i].toString();
             }
 
-            //mostrar contacto que enviaron mensajes
+            //mostrar contactos que enviaron mensajes
             string[] message = new string[2];
             Message auxMessage = new Message();           
             for (int i = 0; i < mSize; i++)
@@ -101,15 +101,15 @@ namespace Proyecto1_1096917
             {
                 while (aux2 != null)
                 {
-                    if (aux.getElement().getContact() == aux.getElement().getContact())
+                    if (aux.getElement().getContact() == aux2.getElement().getContact())
                     {
                         Node<Message> auxiliar = chat.head;
-                        while (auxiliar.getNext() != aux2)
+                        while (auxiliar.getNext().getElement().getContact() != aux2.getElement().getContact())
                         {
                             auxiliar = auxiliar.getNext();
                         }
-                        auxiliar.getElement().setChat(auxiliar.getElement().getChat() + "," + auxiliar.getNext().getElement().getChat());
-                        chat.removeElement(auxiliar.getNext().getElement());                             
+                        aux.getElement().setChat(aux.getElement().getChat() + ", " + aux2.getElement().getChat());
+                        auxiliar.setNext(aux2.getNext());                        
                     }
                     aux2 = aux2.getNext();
                 }
