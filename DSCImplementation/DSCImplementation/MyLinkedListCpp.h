@@ -14,6 +14,7 @@ public:
 	void addFirst(int t);
 	void addLast(int t);
 	int removeFirst();
+	void showElements();
 	~MyLinkedListCpp();
 private:
 	int listSize;

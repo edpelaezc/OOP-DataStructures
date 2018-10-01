@@ -83,6 +83,15 @@ int MyLinkedListCpp::removeFirst() {
 	}
 }
 
+void MyLinkedListCpp::showElements() {
+	node auxiliar = head;
+	while (auxiliar != NULL)
+	{
+		std::cout << auxiliar->getElement() << "\t";
+		auxiliar = auxiliar->getNext();
+	}
+}
+
 MyLinkedListCpp::~MyLinkedListCpp()
 {
 }
