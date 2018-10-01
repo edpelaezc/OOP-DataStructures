@@ -132,7 +132,7 @@ namespace Proyecto1_1096917
 
         void saveData()
         {
-            for (int i = 0; i <= 325; i++)
+            for (int i = 0; i <= 250; i++)
             {
                 Thread.Sleep(5);//Simulador
             }
