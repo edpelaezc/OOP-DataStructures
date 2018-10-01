@@ -63,7 +63,8 @@ namespace Proyecto1_1096917
 
         public string toString()
         {
-            return "[Nombre]: " + this.getName()
+            return "[INFORMACIÓN DEL CONTACTO]"
+            + "\n[Nombre]: " + this.getName()
             + "\n[Apellido]: " + this.getLastName()
             + "\n[Edad]: " + this.getAge()
             + "\n[Fecha de Nacimiento]: " + this.getBirthDate();            

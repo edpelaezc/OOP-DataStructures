@@ -193,7 +193,38 @@ namespace EstrcuturasDinamicas
                     break;
                 }
             }
-        }        
+        }
+
+        public void purgeElement(T reference)
+        {
+            Node<T> aux = head;
+            Node<T> aux2 = aux.getNext();
+            while (aux2.getNext() != null)
+            {
+                while (aux2 != null)
+                {
+                    if (comp.Compare(aux.getElement(), reference) == 0)
+                    {
+                        Node<T> auxiliar = head;
+                        while (auxiliar.getNext() != aux2)
+                        {
+                            auxiliar = auxiliar.getNext();
+                        }
+                        auxiliar.setNext(aux2.getNext());
+                        listSize--;
+                    }
+                    aux2 = aux2.getNext();
+                }
+                aux = aux.getNext();
+                aux2 = aux.getNext();
+                if (aux == null || aux2 == null)        
+                {
+                    break;
+                }
+            }
+
+            this.removeElement(reference);
+        } 
 
         /// <summary>
         /// removeAtIndex
@@ -236,15 +267,22 @@ namespace EstrcuturasDinamicas
             Node<T> predecessor = null;
             Node<T> auxNode = head;
 
-            while (comp.Compare(auxNode.getElement(), reference) != 0)
+            if (comp.Compare(head.getElement(), reference) == 0)
             {
-                predecessor = auxNode;
-                auxNode = auxNode.getNext();
+                return removeFirst();
             }
-            T auxiliary = auxNode.getElement();
-            predecessor.setNext(auxNode.getNext());
-            listSize--;
-            return auxiliary;
+            else
+            {
+                while (comp.Compare(auxNode.getElement(), reference) != 0)
+                {
+                    predecessor = auxNode;
+                    auxNode = auxNode.getNext();
+                }
+                T auxiliary = auxNode.getElement();
+                predecessor.setNext(auxNode.getNext());
+                listSize--;
+                return auxiliary;
+            }
         }
 
         /// <summary>

@@ -166,5 +166,11 @@ namespace Proyecto1_1096917
                 dataGridView1.Rows[i].Cells[0].Value = arrayNews[i].toString();
             }
         }
+
+        private void listBox1_DoubleClick(object sender, EventArgs e)
+        {
+            int selected = listBox1.SelectedIndex;
+            MessageBox.Show(arrayFriends[selected].toString());
+        }
     }
 }

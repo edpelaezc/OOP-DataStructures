@@ -39,11 +39,10 @@
             this.listBox2 = new System.Windows.Forms.ListBox();
             this.listBox3 = new System.Windows.Forms.ListBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.logOut = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.block = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.block = new System.Windows.Forms.Button();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.logOut = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -151,7 +150,6 @@
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.tabPage3.Controls.Add(this.button4);
             this.tabPage3.Controls.Add(this.button3);
             this.tabPage3.Controls.Add(this.block);
             this.tabPage3.Controls.Add(this.listBox1);
@@ -162,23 +160,14 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Amigos";
             // 
-            // logOut
+            // button3
             // 
-            this.logOut.Location = new System.Drawing.Point(352, 16);
-            this.logOut.Name = "logOut";
-            this.logOut.Size = new System.Drawing.Size(95, 38);
-            this.logOut.TabIndex = 0;
-            this.logOut.Text = "Cerrar sesión";
-            this.logOut.UseVisualStyleBackColor = true;
-            this.logOut.Click += new System.EventHandler(this.logOut_Click);
-            // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(97, 67);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(237, 199);
-            this.listBox1.TabIndex = 0;
+            this.button3.Location = new System.Drawing.Point(178, 38);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "Borrarlos";
+            this.button3.UseVisualStyleBackColor = true;
             // 
             // block
             // 
@@ -190,23 +179,24 @@
             this.block.UseVisualStyleBackColor = true;
             this.block.Click += new System.EventHandler(this.block_Click);
             // 
-            // button3
+            // listBox1
             // 
-            this.button3.Location = new System.Drawing.Point(178, 38);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Borrarlos";
-            this.button3.UseVisualStyleBackColor = true;
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(97, 67);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(237, 199);
+            this.listBox1.TabIndex = 0;
+            this.listBox1.DoubleClick += new System.EventHandler(this.listBox1_DoubleClick);
             // 
-            // button4
+            // logOut
             // 
-            this.button4.Location = new System.Drawing.Point(259, 38);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Información";
-            this.button4.UseVisualStyleBackColor = true;
+            this.logOut.Location = new System.Drawing.Point(352, 16);
+            this.logOut.Name = "logOut";
+            this.logOut.Size = new System.Drawing.Size(95, 38);
+            this.logOut.TabIndex = 0;
+            this.logOut.Text = "Cerrar sesión";
+            this.logOut.UseVisualStyleBackColor = true;
+            this.logOut.Click += new System.EventHandler(this.logOut_Click);
             // 
             // MainPage
             // 
@@ -243,7 +233,6 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button block;
         private System.Windows.Forms.ListBox listBox1;
