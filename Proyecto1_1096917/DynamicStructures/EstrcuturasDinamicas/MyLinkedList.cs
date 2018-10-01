@@ -236,15 +236,22 @@ namespace EstrcuturasDinamicas
             Node<T> predecessor = null;
             Node<T> auxNode = head;
 
-            while (comp.Compare(auxNode.getElement(), reference) != 0)
+            if (comp.Compare(head.getElement(), reference) == 0)
             {
-                predecessor = auxNode;
-                auxNode = auxNode.getNext();
+                return removeFirst();
             }
-            T auxiliary = auxNode.getElement();
-            predecessor.setNext(auxNode.getNext());
-            listSize--;
-            return auxiliary;
+            else
+            {
+                while (comp.Compare(auxNode.getElement(), reference) != 0)
+                {
+                    predecessor = auxNode;
+                    auxNode = auxNode.getNext();
+                }
+                T auxiliary = auxNode.getElement();
+                predecessor.setNext(auxNode.getNext());
+                listSize--;
+                return auxiliary;
+            }
         }
 
         /// <summary>
@@ -306,10 +313,12 @@ namespace EstrcuturasDinamicas
         /// <returns>Devuelve los elementos de la lista enlazada en un arreglo convencional.</returns>
         public T[] listToArray()
         {
+            Node<T> auxiliar = head;
             T[] myArray = new T[this.size()];
             for (int i = 0; i < myArray.Length; i++)
             {
-                myArray[i] = this.removeFirst();
+                myArray[i] = auxiliar.getElement();
+                auxiliar = auxiliar.getNext();
             }
 
             return myArray;

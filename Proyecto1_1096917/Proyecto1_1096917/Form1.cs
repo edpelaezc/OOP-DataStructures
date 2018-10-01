@@ -76,7 +76,7 @@ namespace Proyecto1_1096917
                                     line = fileReader.ReadLine();
                                 }
                             }
-                            else
+                            else if (line == "[CONTACTOS]")
                             {
                                 line = fileReader.ReadLine();
                                 while (line != null)

@@ -18,6 +18,7 @@ namespace Proyecto1_1096917
         MyLinkedList<string> friends = new MyLinkedList<string>();
         News[] arrayNews;
         Message[] arrayMessages;
+        Contact[] arrayFriends;
         int nFSize;
         int mSize;
         int fSize;
@@ -25,6 +26,7 @@ namespace Proyecto1_1096917
         //estructuras que se manipularán 
         MyLinkedList<News> news = new MyLinkedList<News>();
         MyLinkedList<Message> chat = new MyLinkedList<Message>();
+        MyLinkedList<Contact> friendList = new MyLinkedList<Contact>();
 
         public MainPage(MyLinkedList<string> newsFeed, MyLinkedList<string> messenger, MyLinkedList<string> friends)
         {
@@ -103,6 +105,23 @@ namespace Proyecto1_1096917
                     cont2++;
                 }
             }
+
+            //mostrar lista de amigos
+            string[] friend;
+            Contact auxContact;
+            for (int i = 0; i < fSize; i++)
+            {
+                friend = friends.removeFirst().Split(',');
+                auxContact = new Contact(friend[0], friend[1], friend[2], friend[3]);
+                friendList.addLast(auxContact);
+                auxContact = null;
+            }
+
+            arrayFriends = friendList.listToArray();
+            for (int i = 0; i < fSize; i++)
+            {
+                listBox1.Items.Add(arrayFriends[i].getName() + " " + arrayFriends[i].getLastName());
+            }
         }
 
         private void listBox2_DoubleClick(object sender, EventArgs e)
@@ -125,6 +144,27 @@ namespace Proyecto1_1096917
         private void logOut_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void block_Click(object sender, EventArgs e)
+        {
+            string selected = listBox1.SelectedItem.ToString();
+            for (int i = 0; i < nFSize; i++)
+            {
+                if (arrayNews[i].getName() == selected)
+                {
+                    news.removeElement(arrayNews[i]);
+                }
+            }
+
+            nFSize = newsFeed.size();
+            arrayNews = news.listToArray();
+            dataGridView1.Columns.Add("NOTICIAS", "NOTICIAS");
+            for (int i = 0; i < nFSize; i++)
+            {
+                dataGridView1.Rows.Add();
+                dataGridView1.Rows[i].Cells[0].Value = arrayNews[i].toString();
+            }
         }
     }
 }

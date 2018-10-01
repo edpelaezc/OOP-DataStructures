@@ -10,10 +10,10 @@ namespace Proyecto1_1096917
     {
         private string name;
         private string lastName;
-        private int age;
+        private string age;
         private string birthDate;        
 
-        public Contact(string cName, string cLastName, int cAge, string cBirthDate)
+        public Contact(string cName, string cLastName, string cAge, string cBirthDate)
         {
             name = cName;
             lastName = cLastName;
@@ -41,12 +41,12 @@ namespace Proyecto1_1096917
             this.lastName = lastName;
         }
 
-        public int getAge()
+        public string getAge()
         {
             return age;
         }
 
-        public void setAge(int age)
+        public void setAge(string age)
         {
             this.age = age;
         }
