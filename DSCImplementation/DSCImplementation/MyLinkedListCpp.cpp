@@ -31,15 +31,6 @@ int MyLinkedListCpp::last() {
 	}
 }
 
-void MyLinkedListCpp::addFirst(int t) {
-	head = new NodeC(t, head);
-	if (listSize == 0)
-	{
-		tail = head;
-	}
-	listSize++;
-}
-
 void MyLinkedListCpp::addElement(int reference, int t) {
 	node auxiliar = head;
 	while (auxiliar->getElement() != reference)
@@ -48,6 +39,15 @@ void MyLinkedListCpp::addElement(int reference, int t) {
 	}
 	node newNode = new NodeC(t, auxiliar);
 	auxiliar->setNext(newNode);
+	listSize++;
+}
+
+void MyLinkedListCpp::addFirst(int t) {
+	head = new NodeC(t, head);
+	if (listSize == 0)
+	{
+		tail = head;
+	}
 	listSize++;
 }
 
@@ -77,7 +77,7 @@ int MyLinkedListCpp::removeFirst() {
 		listSize--;
 		if (listSize == 0)
 		{
-			tail = NULL;
+			tail = NULL;			
 		}
 		return auxiliary;
 	}

@@ -9,9 +9,9 @@ public:
 	int size();
 	bool isEmpty();
 	int first();
-	int last();
-	void addFirst(int t);
+	int last();	
 	void addElement(int reference, int t);
+	void addFirst(int t);
 	void addLast(int t);
 	int removeFirst();
 	~MyLinkedListCpp();
