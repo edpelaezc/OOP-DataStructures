@@ -83,6 +83,26 @@ int MyLinkedListCpp::removeFirst() {
 	}
 }
 
+bool MyLinkedListCpp::searchElement(int reference) {
+	node auxiliar = head;
+	while (auxiliar != NULL){	
+		if (auxiliar->getElement() == reference)
+		{			
+			return true;
+			break;			
+		}
+		else
+		{
+			auxiliar = auxiliar->getNext();
+		}	
+	}
+
+	/*if (auxiliar == NULL)
+	{
+		return false;
+	}*/
+}
+
 void MyLinkedListCpp::showElements() {
 	node auxiliar = head;
 	while (auxiliar != NULL)

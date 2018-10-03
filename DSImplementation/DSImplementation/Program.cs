@@ -21,8 +21,14 @@ namespace DSImplementation
             myList.addLast(3);
             myList.addLast(1);
             myList.addLast(2);
+            myList.addLast(1);
+            myList.addLast(1);
+            myList.addLast(1);
             myList.addLast(7);
-             myList.addLast(5);
+            myList.addLast(1);
+            myList.addLast(1);
+            myList.addLast(5);
+            myList.addLast(1);
             myList.addLast(1);
             myList.addLast(1);
             myList.addLast(1);            
@@ -30,6 +36,7 @@ namespace DSImplementation
              myList.addAtIndex(4, 4);
             //myList.removeElement(1);
             myList.purgeElement(1);
+            myList.purgeElement(3);
             cont = myList.size();
             int[] array = myList.listToArray();
              Console.WriteLine("LISTA");             

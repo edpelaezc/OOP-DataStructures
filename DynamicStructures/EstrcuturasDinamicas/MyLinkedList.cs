@@ -198,32 +198,14 @@ namespace EstrcuturasDinamicas
         public void purgeElement(T reference)
         {
             Node<T> aux = head;
-            Node<T> aux2 = aux.getNext();
-            while (aux2.getNext() != null)
+            while (aux != null)
             {
-                while (aux2 != null)
+                if (comp.Compare(aux.getElement(), reference) == 0)
                 {
-                    if (comp.Compare(aux.getElement(), reference) == 0)
-                    {
-                        Node<T> auxiliar = head;
-                        while (auxiliar.getNext() != aux2)
-                        {
-                            auxiliar = auxiliar.getNext();
-                        }
-                        auxiliar.setNext(aux2.getNext());
-                        listSize--;
-                    }
-                    aux2 = aux2.getNext();
+                    removeElement(reference);                    
                 }
                 aux = aux.getNext();
-                aux2 = aux.getNext();
-                if (aux == null || aux2 == null)        
-                {
-                    break;
-                }
             }
-
-            this.removeElement(reference);
         } 
 
         /// <summary>

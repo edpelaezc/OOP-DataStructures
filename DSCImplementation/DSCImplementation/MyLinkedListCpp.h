@@ -14,6 +14,7 @@ public:
 	void addFirst(int t);
 	void addLast(int t);
 	int removeFirst();
+	bool searchElement(int reference);
 	void showElements();
 	~MyLinkedListCpp();
 private:
