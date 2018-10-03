@@ -24,7 +24,7 @@ namespace EstrcuturasDinamicas
         {
             head = null;
             tail = null;
-            listSize = 0;
+            listSize = 0;            
         }
 
         /// <summary>
@@ -248,23 +248,22 @@ namespace EstrcuturasDinamicas
         {
             Node<T> predecessor = null;
             Node<T> auxNode = head;
-
-            if (comp.Compare(head.getElement(), reference) == 0)
+            while (comp.Compare(auxNode.getElement(), reference) != 0)
             {
-                return removeFirst();
+                predecessor = auxNode;
+                auxNode = auxNode.getNext();
             }
-            else
+            if (predecessor != null)
             {
-                while (comp.Compare(auxNode.getElement(), reference) != 0)
-                {
-                    predecessor = auxNode;
-                    auxNode = auxNode.getNext();
-                }
                 T auxiliary = auxNode.getElement();
                 predecessor.setNext(auxNode.getNext());
                 listSize--;
                 return auxiliary;
             }
+            else
+            {
+                return this.removeFirst();
+            }            
         }
 
         /// <summary>

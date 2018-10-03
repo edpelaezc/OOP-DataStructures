@@ -120,7 +120,7 @@ namespace Proyecto1_1096917
             arrayFriends = friendList.listToArray();
             for (int i = 0; i < fSize; i++)
             {
-                listBox1.Items.Add(arrayFriends[i].getName() + " " + arrayFriends[i].getLastName());
+                listBox1.Items.Add(arrayFriends[i].getName() + arrayFriends[i].getLastName());
             }
         }
 
@@ -148,17 +148,21 @@ namespace Proyecto1_1096917
 
         private void block_Click(object sender, EventArgs e)
         {
+            News reference = new News();
             string selected = listBox1.SelectedItem.ToString();
             for (int i = 0; i < nFSize; i++)
             {
                 if (arrayNews[i].getName() == selected)
-                {
-                    news.removeElement(arrayNews[i]);
+                {                    
+                    reference = arrayNews[i];
+                    news.removeElement(reference);
+                    reference = new News();
                 }
             }
-
-            nFSize = newsFeed.size();
+            
+            nFSize = news.size();
             arrayNews = news.listToArray();
+            dataGridView1.Columns.Clear();
             dataGridView1.Columns.Add("NOTICIAS", "NOTICIAS");
             for (int i = 0; i < nFSize; i++)
             {
