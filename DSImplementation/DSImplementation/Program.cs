@@ -37,7 +37,7 @@ namespace DSImplementation
              myList.addAtIndex(4, 4);
             myList.purgeElement(1);
             myList.addFirst(500);            
-            myList.removeElement(500);
+            myList.removeElement(600);
             cont = myList.size();
             int[] array = myList.listToArray();
              Console.WriteLine("LISTA");             

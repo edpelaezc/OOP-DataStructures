@@ -73,16 +73,23 @@ int MyLinkedListCpp::remove(int reference) {
 		predecessor = auxNode;
 		auxNode = auxNode->getNext();
 	}
-	if (predecessor != NULL)
+	if (auxNode != NULL)
 	{
-		int auxiliary = auxNode->getElement();
-		predecessor->setNext(auxNode->getNext());
-		listSize--;
-		return auxiliary;
+		if (predecessor != NULL)
+		{
+			int auxiliary = auxNode->getElement();
+			predecessor->setNext(auxNode->getNext());
+			listSize--;
+			return auxiliary;
+		}
+		else
+		{
+			return this->removeFirst();
+		}
 	}
 	else
 	{
-		return this->removeFirst();
+		return NULL;
 	}
 }
 
