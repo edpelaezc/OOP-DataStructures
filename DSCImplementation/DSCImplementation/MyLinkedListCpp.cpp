@@ -65,6 +65,27 @@ void MyLinkedListCpp::addLast(int t) {
 	listSize++;
 }
 
+int MyLinkedListCpp::remove(int reference) {
+	node predecessor = NULL;
+	node auxNode = head;
+	while (auxNode->getElement() != reference)
+	{
+		predecessor = auxNode;
+		auxNode = auxNode->getNext();
+	}
+	if (predecessor != NULL)
+	{
+		int auxiliary = auxNode->getElement();
+		predecessor->setNext(auxNode->getNext());
+		listSize--;
+		return auxiliary;
+	}
+	else
+	{
+		return this->removeFirst();
+	}
+}
+
 int MyLinkedListCpp::removeFirst() {
 	if (isEmpty())
 	{

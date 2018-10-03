@@ -13,6 +13,7 @@ public:
 	void addElement(int reference, int t);
 	void addFirst(int t);
 	void addLast(int t);
+	int remove(int reference);
 	int removeFirst();
 	bool searchElement(int reference);
 	void showElements();
