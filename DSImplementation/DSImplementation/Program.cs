@@ -14,9 +14,9 @@ namespace DSImplementation
             MyLinkedList<int> myList = new MyLinkedList<int>();
             /*LinkedStack<int> myStack = new LinkedStack<int>();
             LinkedQueue<int> myQueue = new LinkedQueue<int>();*/
-             int cont = 0;
-             myList.addLast(1);
-             myList.addLast(3);
+            int cont = 0;
+            myList.addLast(1);
+            myList.addLast(3);
             myList.addLast(1);
             myList.addLast(3);
             myList.addLast(1);
@@ -26,10 +26,16 @@ namespace DSImplementation
             myList.addLast(1);
             myList.addLast(7);
             myList.addLast(1);
+            myList.addLast(2);
             myList.addLast(1);
             myList.addLast(5);
+            myList.addLast(2);
+            myList.addLast(2);
+            myList.addLast(2);
             myList.addLast(1);
             myList.addLast(1);
+            myList.addLast(2);
+            myList.addLast(2);
             myList.addLast(1);
             myList.addLast(1);            
              myList.addElement(3, 15);
@@ -37,6 +43,7 @@ namespace DSImplementation
             //myList.removeElement(1);
             myList.purgeElement(1);
             myList.purgeElement(3);
+            myList.purgeElement(2);
             cont = myList.size();
             int[] array = myList.listToArray();
              Console.WriteLine("LISTA");             

@@ -193,7 +193,20 @@ namespace EstrcuturasDinamicas
                     break;
                 }
             }
-        }        
+        }
+
+        public void purgeElement(T reference)
+        {
+            Node<T> aux = head;
+            while (aux != null)
+            {
+                if (comp.Compare(aux.getElement(), reference) == 0)
+                {
+                    removeElement(reference);                    
+                }
+                aux = aux.getNext();
+            }
+        } 
 
         /// <summary>
         /// removeAtIndex

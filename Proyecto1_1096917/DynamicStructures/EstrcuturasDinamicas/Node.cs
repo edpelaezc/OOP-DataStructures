@@ -13,7 +13,7 @@ namespace EstrcuturasDinamicas
     public class Node<T>
     {
         private T element;//valor
-        private Node<T> next;//nodo siguiente        
+        private Node<T> next;//nodo siguiente
 
         /// <summary>
         /// Node. Constructor de la Clase.
@@ -52,5 +52,6 @@ namespace EstrcuturasDinamicas
         {
             this.next = next;
         }
+
     }
 }
