@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28010.2003
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Polimorfismo", "Polimorfismo\Polimorfismo.csproj", "{FF99F468-1B19-4932-87DC-BB55313E8136}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicStructures", "..\DynamicStructures\EstrcuturasDinamicas\DynamicStructures.csproj", "{7F6D0EB4-4829-4404-AF76-36146E9C9448}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{FF99F468-1B19-4932-87DC-BB55313E8136}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF99F468-1B19-4932-87DC-BB55313E8136}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF99F468-1B19-4932-87DC-BB55313E8136}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F6D0EB4-4829-4404-AF76-36146E9C9448}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F6D0EB4-4829-4404-AF76-36146E9C9448}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F6D0EB4-4829-4404-AF76-36146E9C9448}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F6D0EB4-4829-4404-AF76-36146E9C9448}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -143,23 +143,24 @@ namespace Proyecto1_1096917
 
         private void logOut_Click(object sender, EventArgs e)
         {
+            Form1 login = new Form1();
+            login.close(true);
             this.Close();
         }
 
         private void block_Click(object sender, EventArgs e)
         {
-            News reference = new News();
             string selected = listBox1.SelectedItem.ToString();
-            for (int i = 0; i < nFSize; i++)
+            Node<News> auxiliar = news.head;
+            while (auxiliar != null)
             {
-                if (arrayNews[i].getName() == selected)
-                {                    
-                    reference = arrayNews[i];
-                    news.removeElement(reference);
-                    reference = new News();
+                if (auxiliar.getElement().getName() == selected)
+                {
+                    news.removeNode(auxiliar);
                 }
+                auxiliar = auxiliar.getNext();
             }
-            
+
             nFSize = news.size();
             arrayNews = news.listToArray();
             dataGridView1.Columns.Clear();
@@ -171,10 +172,102 @@ namespace Proyecto1_1096917
             }
         }
 
-        private void listBox1_DoubleClick(object sender, EventArgs e)
+        private void listBox1_DoubleClick_1(object sender, EventArgs e)
         {
             int selected = listBox1.SelectedIndex;
             MessageBox.Show(arrayFriends[selected].toString());
+        }
+
+        private void delete_Click(object sender, EventArgs e)
+        {
+            //eliminar noticias
+            string selected = listBox1.SelectedItem.ToString();
+            Node<News> newsAuxiliar = news.head;
+            while (newsAuxiliar != null)
+            {
+                if (newsAuxiliar.getElement().getName() == selected)
+                {
+                    news.removeNode(newsAuxiliar);
+                }
+                newsAuxiliar = newsAuxiliar.getNext();
+            }
+
+            nFSize = news.size();
+            arrayNews = news.listToArray();
+            dataGridView1.Columns.Clear();
+            dataGridView1.Columns.Add("NOTICIAS", "NOTICIAS");
+            for (int i = 0; i < nFSize; i++)
+            {
+                dataGridView1.Rows.Add();
+                dataGridView1.Rows[i].Cells[0].Value = arrayNews[i].toString();
+            }
+
+            //eliminar mensajes  
+            Node<Message> chatAuxiliar = chat.head;
+            while (chatAuxiliar != null)
+            {
+                if (chatAuxiliar.getElement().getContact() == selected)
+                {
+                    chat.removeNode(chatAuxiliar);
+                }
+                chatAuxiliar = chatAuxiliar.getNext();
+            }
+
+            listBox2.Items.Clear();
+            if (!chat.isEmpty())
+            {
+                mSize = chat.size();
+                int cont1 = 0;
+                int cont2 = 2;
+                arrayMessages = chat.listToArray();
+                listBox2.Items.Add(arrayMessages[0].getContact());
+                if (arrayMessages[1].getContact() != arrayMessages[0].getContact())
+                {
+                    listBox2.Items.Add(arrayMessages[1].getContact());
+                }
+                while (cont2 < mSize)
+                {
+                    while (cont1 < cont2)
+                    {
+                        if (arrayMessages[cont1].getContact() != arrayMessages[cont2].getContact())
+                        {
+                            cont1++;
+                        }
+                        else
+                        {
+                            cont1 = 0;
+                            cont2++;
+                        }
+                        break;
+                    }
+
+                    if (cont1 == cont2)
+                    {
+                        listBox2.Items.Add(arrayMessages[cont2].getContact());
+                        cont1 = 0;
+                        cont2++;
+                    }
+                }
+            }
+
+            //eliminar amigo           
+            Node<Contact> friendsAuxiliar = friendList.head;
+            while (friendsAuxiliar != null)
+            {
+                if ((friendsAuxiliar.getElement().getName() + friendsAuxiliar.getElement().getLastName()) == selected)
+                {
+                    friendList.removeNode(friendsAuxiliar);
+                }
+                friendsAuxiliar = friendsAuxiliar.getNext();
+            }
+
+            listBox1.Items.Clear();
+            fSize = friendList.size();
+            arrayFriends = friendList.listToArray();
+            for (int i = 0; i < fSize; i++)
+            {
+                listBox1.Items.Add(arrayFriends[i].getName() + arrayFriends[i].getLastName());
+            }
         }
     }
 }

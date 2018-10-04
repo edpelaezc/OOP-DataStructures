@@ -148,5 +148,22 @@ namespace Proyecto1_1096917
             int numValue;
             return int.TryParse(_string, out numValue);
         }
+
+        public void close(bool flag)
+        {
+            textBox1.Clear();
+            textBox2.Clear();
+            textBox3.Clear();
+            userName = "";
+            password = "";
+            newsFeed = new MyLinkedList<string>();
+            messenger = new MyLinkedList<string>();
+            friends = new MyLinkedList<string>();
+            credentials = new MyLinkedList<string>();
+            if (flag)
+            {
+                MessageBox.Show("SESIÓN CERRADA.");
+            }
+        }
     }
 }

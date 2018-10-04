@@ -8,5 +8,21 @@ namespace Polimorfismo
 {
     class User
     {
+        private string name;
+
+        public void setName(string name)
+        {
+            this.name = name;
+        }
+
+        public string getName()
+        {
+            return this.name;
+        }
+
+        public string toString()
+        {
+            return "[NOMBRE]: " + this.getName();
+        }
     }
 }

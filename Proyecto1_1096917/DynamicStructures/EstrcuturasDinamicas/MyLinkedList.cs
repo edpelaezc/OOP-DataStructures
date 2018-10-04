@@ -223,7 +223,7 @@ namespace EstrcuturasDinamicas
                 }
                 else
                 {
-                    int cont = 0;
+                    int cont = 0;                    
                     Node<T> auxiliarNode = head;
                     while (cont < index)
                     {
@@ -246,24 +246,68 @@ namespace EstrcuturasDinamicas
         /// <returns>Retorna el elemento que se especificó en el parámetro.</returns>
         public T removeElement(T reference)
         {
-            Node<T> predecessor = null;
-            Node<T> auxNode = head;
-            while (comp.Compare(auxNode.getElement(), reference) != 0)
+            if (isEmpty())
             {
-                predecessor = auxNode;
-                auxNode = auxNode.getNext();
-            }
-            if (predecessor != null)
-            {
-                T auxiliary = auxNode.getElement();
-                predecessor.setNext(auxNode.getNext());
-                listSize--;
-                return auxiliary;
+                Node<T> predecessor = null;
+                Node<T> auxNode = head;
+                while (comp.Compare(auxNode.getElement(), reference) != 0)
+                {
+                    predecessor = auxNode;
+                    auxNode = auxNode.getNext();
+                }
+                if (predecessor != null)
+                {
+                    T auxiliary = auxNode.getElement();
+                    predecessor.setNext(auxNode.getNext());
+                    listSize--;
+                    return auxiliary;
+                }
+                else
+                {
+                    return this.removeFirst();
+                }
             }
             else
             {
-                return this.removeFirst();
-            }            
+                return default(T);
+            }      
+        }
+
+        public Node<T> removeNode(Node<T> reference)
+        {
+            if (isEmpty())
+            {
+                return null;
+            }
+            else
+            {
+                Node<T> auxiliary = null;
+                Node<T> predecessor = null;
+                Node<T> auxNode = head;
+                while (auxNode != null && auxNode != reference)
+                {
+                    predecessor = auxNode;
+                    auxNode = auxNode.getNext();
+                }
+                if (predecessor != null)
+                {
+                    auxiliary = auxNode;
+                    predecessor.setNext(auxNode.getNext());
+                    listSize--;
+                    return auxiliary;
+                }
+                else
+                {
+                    auxiliary = head;
+                    head = head.getNext();
+                    listSize--;
+                    if (listSize == 0)
+                    {
+                        tail = null;
+                    }
+                    return auxiliary;
+                }
+            }
         }
 
         /// <summary>
