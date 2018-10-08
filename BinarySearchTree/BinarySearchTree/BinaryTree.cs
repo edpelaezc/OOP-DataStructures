@@ -14,7 +14,7 @@ namespace BinarySearchTree
         public int depthRight = 0;
         public int depthLeft = 0;
         Comparer<T> comp = Comparer<T>.Default;
-        public LinkedQueue<Node<T>> order = new LinkedQueue<Node<T>>();
+        public MyLinkedList<Node<T>> order = new MyLinkedList<Node<T>>();
 
         public BinaryTree()
         {
@@ -56,7 +56,8 @@ namespace BinarySearchTree
         }
 
         public int maxDepth()
-        {           
+        {
+            branchesDepth(this.root);
             return Math.Max(depthLeft,depthRight) - 1;
         }
 
@@ -194,6 +195,7 @@ namespace BinarySearchTree
                         T aux = root.getElement();
                         root.getParent().setLeft(null);
                         root = null;
+                        treeSize--;
                         return aux;
                     }
                     else
@@ -201,6 +203,7 @@ namespace BinarySearchTree
                         T aux = root.getElement();
                         root.getParent().setRight(null);
                         root = null;
+                        treeSize--;
                         return aux;
                     }
                 }
@@ -229,13 +232,22 @@ namespace BinarySearchTree
                             root.getParent().setRight(root.getRight());
                         }
                     }
+                    treeSize--;
                     return aux;
                 }
                 else//El que sustituirá será el más derecho de los izquierdos
                 {
+                    Node<T> next = root.getLeft();
                     T aux = root.getElement();
                     root.setElement(searchRight(root));
-                    removeLeaf(root, root.getElement());
+                    //removeLeaf(root, root.getElement());                    
+
+                    while (next.getRight() != null)
+                    {
+                        next = next.getRight();
+                    }
+                    Node<T> father = next.getParent();
+                    father.setRight(null);
                     return aux;
                 }
             }
@@ -256,7 +268,7 @@ namespace BinarySearchTree
         {
             if (root != null)
             {
-                order.enqueue(root);
+                order.addLast(root);
                 preOrder(root.getLeft());
                 preOrder(root.getRight());
             }   
@@ -268,7 +280,7 @@ namespace BinarySearchTree
             {
                 postOrder(root.getLeft());
                 postOrder(root.getRight());
-                order.enqueue(root);
+                order.addLast(root);
             }
         }
 
@@ -277,7 +289,7 @@ namespace BinarySearchTree
             if (root != null)
             {
                 inOrder(root.getLeft());
-                order.enqueue(root);
+                order.addLast(root);
                 inOrder(root.getRight());
             }
         }
