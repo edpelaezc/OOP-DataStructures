@@ -93,6 +93,19 @@ int MyLinkedListCpp::remove(int reference) {
 	}
 }
 
+MyLinkedListCpp* MyLinkedListCpp::invert() {
+	MyLinkedListCpp *list = new MyLinkedListCpp();
+	node auxiliar = head;	
+	
+	while (auxiliar != NULL)
+	{
+		list->addFirst(auxiliar->getElement());
+		auxiliar = auxiliar->getNext();
+	}
+	
+	return list;
+}
+
 int MyLinkedListCpp::removeFirst() {
 	if (isEmpty())
 	{

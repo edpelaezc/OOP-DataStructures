@@ -45,7 +45,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\EstrcuturasDinamicas\EstrcuturasDinamicas\DynamicStructures.csproj">
+    <ProjectReference Include="..\DynamicStructures\EstrcuturasDinamicas\DynamicStructures.csproj">
       <Project>{7f6d0eb4-4829-4404-af76-36146e9c9448}</Project>
       <Name>DynamicStructures</Name>
     </ProjectReference>

@@ -8,6 +8,7 @@ public:
 	MyLinkedListCpp();
 	int size();
 	bool isEmpty();
+	MyLinkedListCpp* invert();
 	int first();
 	int last();	
 	void addElement(int reference, int t);
