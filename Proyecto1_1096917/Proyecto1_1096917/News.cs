@@ -8,29 +8,47 @@ namespace Proyecto1_1096917
 {
     class News
     {
-        private string name;
-        private string activity;
+        private string email;
+        private string type;
+        private string path = @"";
+        private string text;
 
-        public string getName()
+        public string getEmail()
         {
-            return name;
+            return email;
         }
-        public void setName(string name)
+        public void setEmail(string email)
         {
-            this.name = name;
+            this.email = email;
         }
-        public string getActivity()
+        public string getType()
         {
-            return activity;
+            return type;
         }
-        public void setActivity(string activity)
+        public void setType(string type)
         {
-            this.activity = activity;
+            this.type = type;
+        }
+        public string getPath()
+        {
+            return path;
+        }
+        public void setPath(string path)
+        {
+            this.path += path;
+        }
+        public string getText()
+        {
+            return text;
+        }
+        public void setText(string text)
+        {
+            this.text = text;
         }
 
         public string toString()
         {
-            return name + ", " + activity;
+            return email + ", " + text;
         }
     }
 }

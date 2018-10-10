@@ -141,9 +141,9 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(127, 42);
+            this.textBox3.Location = new System.Drawing.Point(91, 42);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(160, 20);
+            this.textBox3.Size = new System.Drawing.Size(233, 20);
             this.textBox3.TabIndex = 6;
             // 
             // enterFile
@@ -159,11 +159,11 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(124, 26);
+            this.label3.Location = new System.Drawing.Point(88, 26);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(84, 13);
+            this.label3.Size = new System.Drawing.Size(101, 13);
             this.label3.TabIndex = 8;
-            this.label3.Text = "Ingresar Archivo";
+            this.label3.Text = "Ingrese los archivos";
             // 
             // Form1
             // 
@@ -198,11 +198,11 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Button enterFile;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button logIn;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label3;
     }
 }
 

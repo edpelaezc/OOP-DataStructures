@@ -8,24 +8,51 @@ namespace Proyecto1_1096917
 {
     class Message
     {
-        private string contact;
-        private string chat;
+        private string email;
+        private string text;
+        private string hour;
+        private string status;
+        private string send;
 
-        public string getContact()
+        public string getEmail()
         {
-            return contact;
+            return email;
         }
-        public void setContact(string contact)
+        public void setEmail(string email)
         {
-            this.contact = contact;
+            this.email = email;
         }
-        public string getChat()
+        public string getText()
         {
-            return chat;
+            return text;
         }
-        public void setChat(string chat)
+        public void setText(string text)
         {
-            this.chat = chat;
+            this.text = text;
+        }
+        public string getHour()
+        {
+            return hour;
+        }
+        public void setHour(string hour)
+        {
+            this.hour = hour;
+        }
+        public string getStatus()
+        {
+            return status;
+        }
+        public void setStatus(string status )
+        {
+            this.status = status;
+        }
+        public string getSend()
+        {
+            return send;
+        }
+        public void setSend(string send)
+        {
+            this.send = send;
         }
     }
 }

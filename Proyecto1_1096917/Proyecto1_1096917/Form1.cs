@@ -18,10 +18,12 @@ namespace Proyecto1_1096917
     {
         MyLinkedList<string> newsFeed = new MyLinkedList<string>();//lista con disciplina de cola.
         MyLinkedList<string> messenger = new MyLinkedList<string>();//lista con disciplina de pila.
-        MyLinkedList<string> friends = new MyLinkedList<string>();
-        MyLinkedList<string> credentials = new MyLinkedList<string>();
+        MyLinkedList<string> friends = new MyLinkedList<string>();        
+        OpenFileDialog openFile;
+        StreamReader fileReader;
         string userName = "";
         string password = "";
+        string path;
 
         public Form1()
         {
@@ -34,80 +36,91 @@ namespace Proyecto1_1096917
         }
 
         private void enterFile_Click(object sender, EventArgs e)
-        {            
-            OpenFileDialog openFile = new OpenFileDialog();
+        {
+            openFile = new OpenFileDialog();
             openFile.Title = "SELECCIONE EL ARCHIVO PARA INICIAR SESIÓN";
-            StreamReader fileReader;
-            string path = "";
+            path = "";
 
             if (openFile.ShowDialog() == DialogResult.OK)
             {
-                textBox3.Text = openFile.FileName;
-                path = openFile.FileName;
-                if (path.Contains(".txt"))
+                if (newsFeed.isEmpty() || messenger.isEmpty() || friends.isEmpty())
                 {
-                    string line = "";
-                    fileReader = new StreamReader(path);
-                    line = fileReader.ReadLine();
-                    while (line != null)
+                    textBox3.Text = openFile.FileName;
+                    path = openFile.FileName;
+                    if (path.Contains(".txt"))
                     {
-                        if (line != null)
+                        if (path.Contains("newsfeed") && newsFeed.isEmpty())
                         {
-                            if (line != "[NEWSFEED]" && line != "[MESSENGER]" && line != "[CONTACTOS]" && credentials.size() != 2)
+                            string line = "";
+                            fileReader = new StreamReader(path);
+                            line = fileReader.ReadLine();
+                            while (line != null)
                             {
-                                credentials.addLast(line);
+                                newsFeed.addLast(line);
                                 line = fileReader.ReadLine();
-                            }
-                            else if (line == "[NEWSFEED]")
-                            {
-                                line = fileReader.ReadLine();
-                                while (line != "[MESSENGER]" && line != "[CONTACTOS]")
-                                {
-                                    newsFeed.addLast(line);
-                                    line = fileReader.ReadLine();
-                                }
-                            }
-                            else if (line == "[MESSENGER]")
-                            {
-                                line = fileReader.ReadLine();
-                                while (line != "[CONTACTOS]")
-                                {
-                                    messenger.addFirst(line);
-                                    line = fileReader.ReadLine();
-                                }
-                            }
-                            else if (line == "[CONTACTOS]")
-                            {
-                                line = fileReader.ReadLine();
-                                while (line != null)
-                                {
-                                    friends.addLast(line);
-                                    line = fileReader.ReadLine();
-                                }
                             }
                         }
+                        else if (path.Contains("messenger") && messenger.isEmpty())
+                        {
+                            string line = "";
+                            fileReader = new StreamReader(path);
+                            line = fileReader.ReadLine();
+                            while (line != null)
+                            {
+                                messenger.addFirst(line);
+                                line = fileReader.ReadLine();
+                            }
+                        }
+                        else if (path.Contains("contacts") && friends.isEmpty())
+                        {
+                            string line = "";
+                            fileReader = new StreamReader(path);
+                            line = fileReader.ReadLine();
+                            while (line != null)
+                            {
+                                friends.addLast(line);
+                                line = fileReader.ReadLine();
+                            }
+                        }
+                        else if (path.Contains("config") && userName == "" && password == "")
+                        {
+                            string[] line;
+                            fileReader = new StreamReader(path);
+                            line = fileReader.ReadLine().Split('|');
+                            userName = line[0];
+                            password = line[1];
+                        }
+                        else
+                        {
+                            MessageBox.Show("EL ARCHIVO ES INCORRECTO O YA FUE INGRESADO.");
+                            textBox3.Clear();
+                        }                        
+                    }
+                    else
+                    {
+                        MessageBox.Show("FORMATO INCORRECTO.");
+                        textBox3.Text = "";
+                        path = "";
                     }
 
-                    fileReader.Close();
-                    textBox1.Enabled = true;
-                    textBox2.Enabled = true;
-                    logIn.Enabled = true;
-                    userName = credentials.removeFirst();
-                    password = credentials.removeFirst();
-                }
-                else
-                {
-                    MessageBox.Show("FORMATO INCORRECTO.");
-                    textBox3.Text = "";
-                    path = "";
+                    if (!newsFeed.isEmpty() && !messenger.isEmpty() && !friends.isEmpty())
+                    {
+                        MessageBox.Show("TODOS LOS ARCHIVOS FUERON INGRESADOS.");
+                        fileReader.Close();
+                        textBox1.Enabled = true;
+                        textBox2.Enabled = true;
+                        logIn.Enabled = true;
+                    }
+                    else
+                    {
+                        MessageBox.Show("SIGA INGRESANDO LOS DEMÁS ARCHIVOS.");
+                    }                    
                 }
             }
             else
             {
                 MessageBox.Show("SELECCIONE UN ARCHIVO.");
             }
-
-      
         }
 
         private void logIn_Click(object sender, EventArgs e)
@@ -158,8 +171,7 @@ namespace Proyecto1_1096917
             password = "";
             newsFeed = new MyLinkedList<string>();
             messenger = new MyLinkedList<string>();
-            friends = new MyLinkedList<string>();
-            credentials = new MyLinkedList<string>();
+            friends = new MyLinkedList<string>();            
             if (flag)
             {
                 MessageBox.Show("SESIÓN CERRADA.");

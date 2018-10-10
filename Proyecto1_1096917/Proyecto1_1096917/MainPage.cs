@@ -33,7 +33,7 @@ namespace Proyecto1_1096917
             InitializeComponent();
             this.newsFeed = newsFeed;            
             this.messenger = messenger;
-            this.friends = friends;
+            this.friends = friends;            
         }
 
         private void MainPage_Load(object sender, EventArgs e)
@@ -43,19 +43,21 @@ namespace Proyecto1_1096917
             fSize = friends.size();
 
             //mostrar noticias
-            string[] aux = new string[2];
+            string[] aux;
             News auxNews = new News();
             for (int i = 0; i < nFSize; i++)
             {
-                aux = newsFeed.removeFirst().Split(',');
-                auxNews.setName(aux[0]);
-                auxNews.setActivity(aux[1]);
+                aux = newsFeed.removeFirst().Split('│');
+                auxNews.setEmail(aux[0]);
+                auxNews.setType(aux[1]);
+                auxNews.setPath(aux[2]);
+                auxNews.setText(aux[3]);
                 news.addLast(auxNews);
                 auxNews = new News();
             }
 
             arrayNews = news.listToArray();
-            dataGridView1.Columns.Add("NOTICIAS", "NOTICIAS");
+            dataGridView1.Columns.Add("NOTICIAS", "NOTICIAS"); 
             for (int i = 0; i < nFSize; i++)
             {
                 dataGridView1.Rows.Add();
@@ -63,13 +65,16 @@ namespace Proyecto1_1096917
             }
 
             //mostrar contactos que enviaron mensajes
-            string[] message = new string[2];
+            string[] message;
             Message auxMessage = new Message();
             for (int i = 0; i < mSize; i++)
             {
-                message = messenger.removeFirst().Split(',');
-                auxMessage.setContact(message[0]);
-                auxMessage.setChat(message[1]);
+                message = messenger.removeFirst().Split('│');
+                auxMessage.setEmail(message[0]);
+                auxMessage.setText(message[1]);
+                auxMessage.setHour(message[2]);
+                auxMessage.setStatus(message[3]);
+                auxMessage.setSend(message[4]);
                 chat.addLast(auxMessage);
                 auxMessage = new Message();
             }
@@ -77,16 +82,16 @@ namespace Proyecto1_1096917
             int cont1 = 0;
             int cont2 = 2;
             arrayMessages = chat.listToArray();
-            listBox2.Items.Add(arrayMessages[0].getContact());
-            if (arrayMessages[1].getContact() != arrayMessages[0].getContact())
+            listBox2.Items.Add(arrayMessages[0].getEmail());
+            if (arrayMessages[1].getEmail() != arrayMessages[0].getEmail())
             {
-                listBox2.Items.Add(arrayMessages[1].getContact());
+                listBox2.Items.Add(arrayMessages[1].getEmail());
             }
             while (cont2 < mSize)
             {
                 while (cont1 < cont2)
                 {
-                    if (arrayMessages[cont1].getContact() != arrayMessages[cont2].getContact())
+                    if (arrayMessages[cont1].getEmail() != arrayMessages[cont2].getEmail())
                     {
                         cont1++;
                     }
@@ -100,7 +105,7 @@ namespace Proyecto1_1096917
 
                 if (cont1 == cont2)
                 {
-                    listBox2.Items.Add(arrayMessages[cont2].getContact());
+                    listBox2.Items.Add(arrayMessages[cont2].getEmail());
                     cont1 = 0;
                     cont2++;
                 }
@@ -111,8 +116,8 @@ namespace Proyecto1_1096917
             Contact auxContact;
             for (int i = 0; i < fSize; i++)
             {
-                friend = friends.removeFirst().Split(',');
-                auxContact = new Contact(friend[0], friend[1], friend[2], friend[3]);
+                friend = friends.removeFirst().Split('│');
+                auxContact = new Contact(friend[0], friend[1], friend[2], friend[3], friend[4], friend[5]);
                 friendList.addLast(auxContact);
                 auxContact = null;
             }
@@ -120,7 +125,7 @@ namespace Proyecto1_1096917
             arrayFriends = friendList.listToArray();
             for (int i = 0; i < fSize; i++)
             {
-                listBox1.Items.Add(arrayFriends[i].getName() + arrayFriends[i].getLastName());
+                listBox1.Items.Add(arrayFriends[i].getName() + " " + arrayFriends[i].getLastName());
             }
         }
 
@@ -129,9 +134,9 @@ namespace Proyecto1_1096917
             string name = listBox2.SelectedItem.ToString();
             for (int i = 0; i < mSize; i++)
             {
-                if (arrayMessages[i].getContact() == name)
+                if (arrayMessages[i].getEmail() == name)
                 {
-                    listBox3.Items.Add(arrayMessages[i].getChat());
+                    listBox3.Items.Add(arrayMessages[i].getHour() + " " + arrayMessages[i].getText());
                 }
             }
         }
@@ -154,7 +159,7 @@ namespace Proyecto1_1096917
             Node<News> auxiliar = news.head;
             while (auxiliar != null)
             {
-                if (auxiliar.getElement().getName() == selected)
+                if (auxiliar.getElement().getEmail() == selected)
                 {
                     news.removeNode(auxiliar);
                 }
@@ -185,7 +190,7 @@ namespace Proyecto1_1096917
             Node<News> newsAuxiliar = news.head;
             while (newsAuxiliar != null)
             {
-                if (newsAuxiliar.getElement().getName() == selected)
+                if (newsAuxiliar.getElement().getEmail() == selected)
                 {
                     news.removeNode(newsAuxiliar);
                 }
@@ -206,7 +211,7 @@ namespace Proyecto1_1096917
             Node<Message> chatAuxiliar = chat.head;
             while (chatAuxiliar != null)
             {
-                if (chatAuxiliar.getElement().getContact() == selected)
+                if (chatAuxiliar.getElement().getEmail() == selected)
                 {
                     chat.removeNode(chatAuxiliar);
                 }
@@ -220,16 +225,16 @@ namespace Proyecto1_1096917
                 int cont1 = 0;
                 int cont2 = 2;
                 arrayMessages = chat.listToArray();
-                listBox2.Items.Add(arrayMessages[0].getContact());
-                if (arrayMessages[1].getContact() != arrayMessages[0].getContact())
+                listBox2.Items.Add(arrayMessages[0].getEmail());
+                if (arrayMessages[1].getEmail() != arrayMessages[0].getEmail())
                 {
-                    listBox2.Items.Add(arrayMessages[1].getContact());
+                    listBox2.Items.Add(arrayMessages[1].getEmail());
                 }
                 while (cont2 < mSize)
                 {
                     while (cont1 < cont2)
                     {
-                        if (arrayMessages[cont1].getContact() != arrayMessages[cont2].getContact())
+                        if (arrayMessages[cont1].getEmail() != arrayMessages[cont2].getEmail())
                         {
                             cont1++;
                         }
@@ -243,7 +248,7 @@ namespace Proyecto1_1096917
 
                     if (cont1 == cont2)
                     {
-                        listBox2.Items.Add(arrayMessages[cont2].getContact());
+                        listBox2.Items.Add(arrayMessages[cont2].getEmail());
                         cont1 = 0;
                         cont2++;
                     }
@@ -254,7 +259,7 @@ namespace Proyecto1_1096917
             Node<Contact> friendsAuxiliar = friendList.head;
             while (friendsAuxiliar != null)
             {
-                if ((friendsAuxiliar.getElement().getName() + friendsAuxiliar.getElement().getLastName()) == selected)
+                if ((friendsAuxiliar.getElement().getName() + " " + friendsAuxiliar.getElement().getLastName()) == selected)
                 {
                     friendList.removeNode(friendsAuxiliar);
                 }

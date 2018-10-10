@@ -8,17 +8,29 @@ namespace Proyecto1_1096917
 {
     class Contact
     {
+        private string email;
         private string name;
         private string lastName;
         private string age;
-        private string birthDate;        
+        private string birthDate;
+        private string status;
 
-        public Contact(string cName, string cLastName, string cAge, string cBirthDate)
+        public Contact(string cEmail, string cName, string cLastName, string cAge, string cBirthDate, string cStatus)
         {
             name = cName;
             lastName = cLastName;
             age = cAge;
             birthDate = cBirthDate;
+        }
+
+        public string getEmail()
+        {
+            return email;
+        }
+
+        public void setEmail(string email)
+        {
+            this.email = email;
         }
 
         public string getName()
@@ -59,6 +71,16 @@ namespace Proyecto1_1096917
         public void setBirthDate(string birthDate)
         {
             this.birthDate = birthDate;
+        }
+
+        public string getStatus()
+        {
+            return status;
+        }
+
+        public void setStatus(string status)
+        {
+            this.status = status;
         }
 
         public string toString()
