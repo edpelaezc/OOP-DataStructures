@@ -170,6 +170,7 @@
             // listBox3
             // 
             this.listBox3.FormattingEnabled = true;
+            this.listBox3.HorizontalScrollbar = true;
             this.listBox3.Location = new System.Drawing.Point(178, 36);
             this.listBox3.Name = "listBox3";
             this.listBox3.Size = new System.Drawing.Size(276, 212);

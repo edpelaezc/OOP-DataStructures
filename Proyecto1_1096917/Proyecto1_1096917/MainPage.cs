@@ -44,24 +44,21 @@ namespace Proyecto1_1096917
 
             //mostrar noticias
             string[] aux;
-            News auxNews = new News();
+            News auxNews;
             for (int i = 0; i < nFSize; i++)
             {
                 aux = newsFeed.removeFirst().Split('│');
-                auxNews.setEmail(aux[0]);
-                auxNews.setType(aux[1]);
-                auxNews.setPath(aux[2]);
-                auxNews.setText(aux[3]);
+                auxNews = new News(aux[0], aux[1], aux[2], aux[3]);
                 news.addLast(auxNews);
-                auxNews = new News();
+                auxNews = null;
             }
 
             arrayNews = news.listToArray();
-            dataGridView1.Columns.Add("NOTICIAS", "NOTICIAS"); 
+            dataGridView1.Columns.Add("NOTICIAS", "NOTICIAS");            
             for (int i = 0; i < nFSize; i++)
             {
                 dataGridView1.Rows.Add();
-                dataGridView1.Rows[i].Cells[0].Value = arrayNews[i].toString();
+                dataGridView1.Rows[i].Cells[0].Value = arrayNews[i].toString();               
             }
 
             //mostrar contactos que enviaron mensajes

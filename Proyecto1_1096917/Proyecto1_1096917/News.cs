@@ -10,8 +10,16 @@ namespace Proyecto1_1096917
     {
         private string email;
         private string type;
-        private string path = @"";
+        private string path = @"C:\GitHub\OOP-DataStructures\Proyecto1_1096917\";
         private string text;
+
+        public News(string nEmail, string nType, string nPath, string nText)
+        {
+            email = nEmail;
+            type = nType;
+            path += nPath;
+            text = nText;
+        }
 
         public string getEmail()
         {
