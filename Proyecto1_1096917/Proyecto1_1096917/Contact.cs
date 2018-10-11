@@ -103,7 +103,9 @@ namespace Proyecto1_1096917
             return "[INFORMACIÓN DEL CONTACTO]"
             + "\n[Nombre]: " + this.getName()
             + "\n[Apellido]: " + this.getLastName()
+            + "\n[E-mail]: " + this.getEmail()
             + "\n[Edad]: " + this.getAge()
+            + "\n[Estado]: " + this.getStatus()
             + "\n[Fecha de Nacimiento]: " + this.getBirthDate();            
         }
     }
