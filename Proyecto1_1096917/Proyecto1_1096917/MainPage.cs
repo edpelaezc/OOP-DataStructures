@@ -155,7 +155,17 @@ namespace Proyecto1_1096917
 
         private void block_Click(object sender, EventArgs e)
         {
-            string selected = listBox1.SelectedItem.ToString();
+            string selected = "";
+            string name = listBox1.SelectedItem.ToString();
+            //recorrer lista para obtener email
+            for (int i = 0; i < arrayFriends.Length; i++)
+            {
+                if (name == arrayFriends[i].getName() + " " + arrayFriends[i].getLastName())
+                {
+                    selected = arrayFriends[i].getEmail();
+                }
+            }
+
             Node<News> auxiliar = news.head;
             while (auxiliar != null)
             {
@@ -186,7 +196,17 @@ namespace Proyecto1_1096917
         private void delete_Click(object sender, EventArgs e)
         {
             //eliminar noticias
-            string selected = listBox1.SelectedItem.ToString();
+            string selected = "";
+            string name = listBox1.SelectedItem.ToString();
+            //recorrer lista para obtener email
+            for (int i = 0; i < arrayFriends.Length; i++)
+            {
+                if (name == arrayFriends[i].getName() + " " + arrayFriends[i].getLastName())
+                {
+                    selected = arrayFriends[i].getEmail();
+                }
+            }
+            
             Node<News> newsAuxiliar = news.head;
             while (newsAuxiliar != null)
             {
@@ -259,7 +279,7 @@ namespace Proyecto1_1096917
             Node<Contact> friendsAuxiliar = friendList.head;
             while (friendsAuxiliar != null)
             {
-                if ((friendsAuxiliar.getElement().getName() + " " + friendsAuxiliar.getElement().getLastName()) == selected)
+                if ((friendsAuxiliar.getElement().getEmail() == selected))
                 {
                     friendList.removeNode(friendsAuxiliar);
                 }
@@ -271,7 +291,7 @@ namespace Proyecto1_1096917
             arrayFriends = friendList.listToArray();
             for (int i = 0; i < fSize; i++)
             {
-                listBox1.Items.Add(arrayFriends[i].getName() + arrayFriends[i].getLastName());
+                listBox1.Items.Add(arrayFriends[i].getName() + " " + arrayFriends[i].getLastName());
             }
         }
     }

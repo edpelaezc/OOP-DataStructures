@@ -31,8 +31,7 @@ namespace Proyecto1_1096917
         }
 
         private void Form1_Load(object sender, EventArgs e)
-        {           
-            pictureBox1.Image = Image.FromFile(@"C:\GitHub\OOP-DataStructures\Proyecto1_1096917\users_21937.png");
+        {                      
         }
 
         private void enterFile_Click(object sender, EventArgs e)

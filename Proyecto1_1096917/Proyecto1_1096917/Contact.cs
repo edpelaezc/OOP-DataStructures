@@ -17,10 +17,12 @@ namespace Proyecto1_1096917
 
         public Contact(string cEmail, string cName, string cLastName, string cAge, string cBirthDate, string cStatus)
         {
+            email = cEmail;
             name = cName;
             lastName = cLastName;
             age = cAge;
             birthDate = cBirthDate;
+            status = cStatus;
         }
 
         public string getEmail()
