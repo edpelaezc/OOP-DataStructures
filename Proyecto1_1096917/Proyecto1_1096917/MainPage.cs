@@ -66,17 +66,13 @@ namespace Proyecto1_1096917
 
             //mostrar contactos que enviaron mensajes
             string[] message;
-            Message auxMessage = new Message();
+            Message auxMessage;
             for (int i = 0; i < mSize; i++)
             {
                 message = messenger.removeFirst().Split('│');
-                auxMessage.setEmail(message[0]);
-                auxMessage.setText(message[1]);
-                auxMessage.setHour(message[2]);
-                auxMessage.setStatus(message[3]);
-                auxMessage.setSend(message[4]);
+                auxMessage = new Message(message[0], message[1], message[2], message[3], message[4]);                
                 chat.addLast(auxMessage);
-                auxMessage = new Message();
+                auxMessage = null;
             }
 
             int cont1 = 0;

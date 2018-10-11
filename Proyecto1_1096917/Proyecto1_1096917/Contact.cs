@@ -23,6 +23,19 @@ namespace Proyecto1_1096917
             age = cAge;
             birthDate = cBirthDate;
             status = cStatus;
+
+            if (status == "1")
+            {
+                status = "Habilitado";
+            }
+            else if (status == "2")
+            {
+                status = "Bloqueado";
+            }
+            else
+            {
+                status = "Importante";
+            }
         }
 
         public string getEmail()

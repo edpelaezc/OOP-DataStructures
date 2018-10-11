@@ -14,6 +14,23 @@ namespace Proyecto1_1096917
         private string status;
         private string send;
 
+        public Message(string mEmail, string mText, string mHour, string mStatus, string mSend)
+        {
+            email = mEmail;
+            text = mText;
+            hour = mHour;
+            status = mStatus;
+            send = mSend;
+
+            if (status == "1")
+            {
+                status = "Leído";
+            }
+            else
+            {
+                status = "No leído";
+            }
+        }
         public string getEmail()
         {
             return email;
