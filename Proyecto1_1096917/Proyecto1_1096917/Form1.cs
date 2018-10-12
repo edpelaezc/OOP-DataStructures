@@ -162,17 +162,17 @@ namespace Proyecto1_1096917
         }
 
         public void close(bool flag)
-        {
-            textBox1.Clear();
-            textBox2.Clear();
-            textBox3.Clear();
-            userName = "";
-            password = "";
-            newsFeed = new MyLinkedList<string>();
-            messenger = new MyLinkedList<string>();
-            friends = new MyLinkedList<string>();            
+        {    
             if (flag)
             {
+                textBox1.Clear();
+                textBox2.Clear();
+                textBox3.Clear();
+                userName = "";
+                password = "";
+                newsFeed = new MyLinkedList<string>();
+                messenger = new MyLinkedList<string>();
+                friends = new MyLinkedList<string>();
                 MessageBox.Show("SESIÓN CERRADA.");
             }
         }

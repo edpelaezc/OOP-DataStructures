@@ -58,11 +58,12 @@ namespace Proyecto1_1096917
             {
                 dataGridView1.Rows.Add();
                 dataGridView1.Rows[i].Cells[0].Value = arrayNews[i].toString();
-                if (arrayNews[i].getPath().Contains("-") == false)
+                if (arrayNews[i].getPath() != null)
                 {
-                    dataGridView1.Rows[i].Cells[1].Value = arrayNews[i].getPath();
-                }
+                    dataGridView1.Rows[i].Cells[1].Value = Image.FromFile(arrayNews[i].getPath());
+                }                
             }
+            dataGridView1.Update();
 
             //mostrar contactos que enviaron mensajes
             string[] message;
@@ -176,10 +177,18 @@ namespace Proyecto1_1096917
             arrayNews = news.listToArray();
             dataGridView1.Columns.Clear();
             dataGridView1.Columns.Add("NOTICIAS", "NOTICIAS");
+            DataGridViewImageColumn column = new DataGridViewImageColumn();
+            column.Name = "image";
+            column.HeaderText = "IMÁGENES";
+            dataGridView1.Columns.Add(column);
             for (int i = 0; i < nFSize; i++)
             {
                 dataGridView1.Rows.Add();
                 dataGridView1.Rows[i].Cells[0].Value = arrayNews[i].toString();
+                if (arrayNews[i].getPath() != null)
+                {
+                    dataGridView1.Rows[i].Cells[1].Value = Image.FromFile(arrayNews[i].getPath());
+                }
             }
         }
 
@@ -217,10 +226,18 @@ namespace Proyecto1_1096917
             arrayNews = news.listToArray();
             dataGridView1.Columns.Clear();
             dataGridView1.Columns.Add("NOTICIAS", "NOTICIAS");
+            DataGridViewImageColumn column = new DataGridViewImageColumn();
+            column.Name = "image";
+            column.HeaderText = "IMÁGENES";
+            dataGridView1.Columns.Add(column);
             for (int i = 0; i < nFSize; i++)
             {
                 dataGridView1.Rows.Add();
                 dataGridView1.Rows[i].Cells[0].Value = arrayNews[i].toString();
+                if (arrayNews[i].getPath() != null)
+                {
+                    dataGridView1.Rows[i].Cells[1].Value = Image.FromFile(arrayNews[i].getPath());
+                }
             }
 
             //eliminar mensajes  
@@ -288,26 +305,6 @@ namespace Proyecto1_1096917
             for (int i = 0; i < fSize; i++)
             {
                 listBox1.Items.Add(arrayFriends[i].getName() + " " + arrayFriends[i].getLastName());
-            }
-        }
-
-        private void dataGridView1_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
-        {
-            switch (this.dataGridView1.Columns[e.ColumnIndex].Name)
-            {
-                case "image":
-                    if (e.Value != null)
-                    {
-                        try
-                        {
-                            e.Value = Image.FromFile(e.Value.ToString());
-                        }
-                        catch (System.IO.FileNotFoundException ex)
-                        {
-                            e.Value = null;
-                        }
-                    }
-                    break;
             }
         }
     }
