@@ -56,7 +56,7 @@ namespace Proyecto1_1096917
 
         public string toString()
         {
-            return email + ", " + text;
+            return getEmail() + "\n" + getType() + "\n" + getText();
         }
     }
 }
