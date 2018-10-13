@@ -141,7 +141,7 @@ namespace Proyecto1_1096917
                 }
                 MessageBox.Show("Se inició sesión correctamente. ¡Bienvenido!");
                 MainPage formMainPage = new MainPage(newsFeed, messenger, friends);                
-                formMainPage.Show();
+                formMainPage.Show();                
             }
             else
             {

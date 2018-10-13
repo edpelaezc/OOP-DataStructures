@@ -185,10 +185,9 @@ namespace Proyecto1_1096917
         /// logOut, Cierra la sesión actual.
         /// </summary>
         private void logOut_Click(object sender, EventArgs e)
-        {
-            //envía booleano a metodo del Form1 para reiniciar el Form1
-            Form1 login = new Form1();            
-            this.Close();            
+        {            
+            Form1 login = new Form1();
+            Application.Exit();            
         }
 
         /// <summary>
