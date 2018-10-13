@@ -40,11 +40,11 @@ namespace Proyecto1_1096917
 
         private void MainPage_Load(object sender, EventArgs e)
         {
-            nFSize = newsFeed.size();
-            mSize = messenger.size();
-            fSize = friends.size();
+            nFSize = newsFeed.size();//tamaño de la cola de newsfeed
+            mSize = messenger.size();//tamaño de la pila de messenger
+            fSize = friends.size();//tamaño de la lista de amigos
 
-            //mostrar noticias
+            //mostrar noticias, usar auxiliar para ir agregando a estructura de tipo "News"
             string[] aux;
             News auxNews;
             for (int i = 0; i < nFSize; i++)
@@ -54,37 +54,38 @@ namespace Proyecto1_1096917
                 news.addLast(auxNews);
                 auxNews = null;
             }
-            
-            arrayNews = news.listToArray();                  
+
+            //Pasar elementos de la lista a un arreglo para poder manipularlos y mostrarlos
+            arrayNews = news.listToArray();                
             for (int i = 0; i < nFSize; i++)
             {
                 dataGridView1.Rows.Add();
-                dataGridView1.Rows[i].Cells[0].Value = arrayNews[i].toString();
+                dataGridView1.Rows[i].Cells[0].Value = arrayNews[i].toString();//agrega toString de News
                 if (arrayNews[i].getPath() != "")
                 {
-                    try
+                    try//validación, por si no encuentra la direccion de la imagen
                     {
                         Image image = Image.FromFile(arrayNews[i].getPath());
-                        Image newImage = resizeImage(image, new Size(165, 165));
+                        Image newImage = resizeImage(image, new Size(169, 169));
                         dataGridView1.Rows[i].Cells[1].Value = newImage;
                     }
-                    catch (Exception)
+                    catch (Exception)//si no la encuentra muestra el fondo-blanco
                     {
                         Image image = Image.FromFile(background);
-                        Image newImage = resizeImage(image, new Size(165, 165));
+                        Image newImage = resizeImage(image, new Size(169, 169));
                         dataGridView1.Rows[i].Cells[1].Value = newImage;
                     }
                 }
                 else
                 {
                     Image image = Image.FromFile(background);
-                    Image newImage = resizeImage(image, new Size(165, 165));
+                    Image newImage = resizeImage(image, new Size(169, 169));
                     dataGridView1.Rows[i].Cells[1].Value = newImage;
                 }   
             }
             dataGridView1.Update();
 
-            //mostrar contactos que enviaron mensajes
+            //mostrar contactos que enviaron mensajes, usando auxiliar para agregar a estructura de tipo "Message"
             string[] message;
             Message auxMessage;
             for (int i = 0; i < mSize; i++)
@@ -95,8 +96,9 @@ namespace Proyecto1_1096917
                 auxMessage = null;
             }
 
-            int cont1 = 0;
-            int cont2 = 2;
+            //Metodo para mostrar una sola vez los contactos que enviaron un mensaje.
+            int cont1 = 0;//elemento actual
+            int cont2 = 2;//elemento siguiente 
             arrayMessages = chat.listToArray();
             listBox2.Items.Add(arrayMessages[0].getEmail());
             if (arrayMessages[1].getEmail() != arrayMessages[0].getEmail())
@@ -127,7 +129,7 @@ namespace Proyecto1_1096917
                 }
             }
 
-            //mostrar lista de amigos
+            //mostrar lista de amigos, usando auxiliar para agregar lista de tipo "Contact"
             string[] friend;
             Contact auxContact;
             for (int i = 0; i < fSize; i++)
@@ -147,28 +149,40 @@ namespace Proyecto1_1096917
 
         private void listBox2_DoubleClick(object sender, EventArgs e)
         {
+            //si hace doble click en el item de la lista, se muestran los mensajes correspondiente
             string name = listBox2.SelectedItem.ToString();
             for (int i = 0; i < mSize; i++)
             {
                 if (arrayMessages[i].getEmail() == name)
                 {
-                    listBox3.Items.Add(arrayMessages[i].getHour() + " " + arrayMessages[i].getText());
+                    listBox3.Items.Add(arrayMessages[i].toString());
                 }
             }
         }
 
+        /// <summary>
+        /// Limpia los mensajes de la bandeja de entrada
+        /// </summary>
         private void button1_Click(object sender, EventArgs e)
         {
+            //limpia los mensajes que entraron
             listBox3.Items.Clear();
         }
 
+        /// <summary>
+        /// logOut, Cierra la sesión actual.
+        /// </summary>
         private void logOut_Click(object sender, EventArgs e)
         {
+            //envía booleano a metodo del Form1 para reiniciar el Form1
             Form1 login = new Form1();
             login.close(true);
             this.Close();
         }
 
+        /// <summary>
+        /// block, Bloquea al amigo borrando sus noticias de la sección "NewsFeed"
+        /// </summary>
         private void block_Click(object sender, EventArgs e)
         {
             string selected = "";
@@ -209,20 +223,20 @@ namespace Proyecto1_1096917
                     try
                     {
                         Image image = Image.FromFile(arrayNews[i].getPath());
-                        Image newImage = resizeImage(image, new Size(165, 165));
+                        Image newImage = resizeImage(image, new Size(169, 169));
                         dataGridView1.Rows[i].Cells[1].Value = newImage;
                     }
                     catch (Exception)
                     {
                         Image image = Image.FromFile(background);
-                        Image newImage = resizeImage(image, new Size(165, 165));
+                        Image newImage = resizeImage(image, new Size(169, 169));
                         dataGridView1.Rows[i].Cells[1].Value = newImage;
                     }
                 }
                 else
                 {
                     Image image = Image.FromFile(background);
-                    Image newImage = resizeImage(image, new Size(165, 165));
+                    Image newImage = resizeImage(image, new Size(169, 169));
                     dataGridView1.Rows[i].Cells[1].Value = newImage;
                 }
             }
@@ -235,6 +249,9 @@ namespace Proyecto1_1096917
             MessageBox.Show(arrayFriends[selected].toString());
         }
 
+        /// <summary>
+        /// delete, Elimina al amigo seleccionado en la listBox
+        /// </summary>
         private void delete_Click(object sender, EventArgs e)
         {
             //eliminar noticias
@@ -276,20 +293,20 @@ namespace Proyecto1_1096917
                     try
                     {
                         Image image = Image.FromFile(arrayNews[i].getPath());
-                        Image newImage = resizeImage(image, new Size(164, 164));
+                        Image newImage = resizeImage(image, new Size(169, 169));
                         dataGridView1.Rows[i].Cells[1].Value = newImage;
                     }
                     catch (Exception)
                     {
                         Image image = Image.FromFile(background);
-                        Image newImage = resizeImage(image, new Size(164, 164));
+                        Image newImage = resizeImage(image, new Size(169, 169));
                         dataGridView1.Rows[i].Cells[1].Value = newImage;
                     }
                 }
                 else
                 {
                     Image image = Image.FromFile(background);
-                    Image newImage = resizeImage(image, new Size(164, 164));
+                    Image newImage = resizeImage(image, new Size(169, 169));
                     dataGridView1.Rows[i].Cells[1].Value = newImage;
                 }
             }
@@ -363,6 +380,12 @@ namespace Proyecto1_1096917
             }
         }
 
+        /// <summary>
+        /// resizeImage
+        /// </summary>
+        /// <param name="imageToResize">Imagen que será redimensionada</param>
+        /// <param name="size">Nuevo tamaña para la imagen</param>
+        /// <returns></returns>
         public static Image resizeImage(Image imageToResize, Size size)
         {
             return (Image)(new Bitmap(imageToResize, size));
