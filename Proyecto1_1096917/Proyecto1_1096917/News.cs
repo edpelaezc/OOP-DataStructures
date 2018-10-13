@@ -25,7 +25,7 @@ namespace Proyecto1_1096917
             }
             else
             {
-                path = null;
+                path = "";
             }
         }
 

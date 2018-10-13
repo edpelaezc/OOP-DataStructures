@@ -23,6 +23,7 @@ namespace Proyecto1_1096917
         int nFSize;
         int mSize;
         int fSize;
+        string background = @"C:\GitHub\OOP-DataStructures\Proyecto1_1096917\fondo-blanco.jpg";//si no hay imagen en newsfeed
 
         //estructuras que se manipularán 
         MyLinkedList<News> news = new MyLinkedList<News>();
@@ -59,12 +60,18 @@ namespace Proyecto1_1096917
             {
                 dataGridView1.Rows.Add();
                 dataGridView1.Rows[i].Cells[0].Value = arrayNews[i].toString();
-                if (arrayNews[i].getPath() != null)
+                if (arrayNews[i].getPath() != "")
                 {
                     Image image = Image.FromFile(arrayNews[i].getPath());
-                    Image newImage = resizeImage(image, new Size(125, 125));
+                    Image newImage = resizeImage(image, new Size(164, 164));
                     dataGridView1.Rows[i].Cells[1].Value = newImage;
-                }                
+                }
+                else
+                {
+                    Image image = Image.FromFile(background);
+                    Image newImage = resizeImage(image, new Size(164, 164));
+                    dataGridView1.Rows[i].Cells[1].Value = newImage;
+                }   
             }
             dataGridView1.Update();
 
