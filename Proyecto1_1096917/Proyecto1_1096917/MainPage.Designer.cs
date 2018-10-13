@@ -259,6 +259,7 @@
             this.image.HeaderText = "IMÁGENES";
             this.image.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
             this.image.Name = "image";
+            this.image.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.image.Width = 69;
             // 
             // MainPage

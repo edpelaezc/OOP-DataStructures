@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -60,7 +61,9 @@ namespace Proyecto1_1096917
                 dataGridView1.Rows[i].Cells[0].Value = arrayNews[i].toString();
                 if (arrayNews[i].getPath() != null)
                 {
-                    dataGridView1.Rows[i].Cells[1].Value = Image.FromFile(arrayNews[i].getPath());
+                    Image image = Image.FromFile(arrayNews[i].getPath());
+                    Image newImage = resizeImage(image, new Size(125, 125));
+                    dataGridView1.Rows[i].Cells[1].Value = newImage;
                 }                
             }
             dataGridView1.Update();
@@ -187,9 +190,12 @@ namespace Proyecto1_1096917
                 dataGridView1.Rows[i].Cells[0].Value = arrayNews[i].toString();
                 if (arrayNews[i].getPath() != null)
                 {
-                    dataGridView1.Rows[i].Cells[1].Value = Image.FromFile(arrayNews[i].getPath());
+                    Image image = Image.FromFile(arrayNews[i].getPath());
+                    Image newImage = resizeImage(image, new Size(125, 125));
+                    dataGridView1.Rows[i].Cells[1].Value = newImage;
                 }
             }
+            dataGridView1.Update();
         }
 
         private void listBox1_DoubleClick_1(object sender, EventArgs e)
@@ -236,9 +242,12 @@ namespace Proyecto1_1096917
                 dataGridView1.Rows[i].Cells[0].Value = arrayNews[i].toString();
                 if (arrayNews[i].getPath() != null)
                 {
-                    dataGridView1.Rows[i].Cells[1].Value = Image.FromFile(arrayNews[i].getPath());
+                    Image image = Image.FromFile(arrayNews[i].getPath());
+                    Image newImage = resizeImage(image, new Size(125, 125));
+                    dataGridView1.Rows[i].Cells[1].Value = newImage;
                 }
             }
+            dataGridView1.Update();
 
             //eliminar mensajes  
             Node<Message> chatAuxiliar = chat.head;
@@ -307,5 +316,10 @@ namespace Proyecto1_1096917
                 listBox1.Items.Add(arrayFriends[i].getName() + " " + arrayFriends[i].getLastName());
             }
         }
+
+        public static Image resizeImage(Image imageToResize, Size size)
+        {
+            return (Image)(new Bitmap(imageToResize, size));
+        }        
     }
 }
