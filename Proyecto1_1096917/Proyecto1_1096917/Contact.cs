@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Proyecto1_1096917
 {
+    /// <summary>
+    /// Clase "Contact". Utilizada para extraer del archivo de texto los amigos agregados en la red social.
+    /// </summary>
     class Contact
     {
         private string email;
@@ -15,6 +18,15 @@ namespace Proyecto1_1096917
         private string birthDate;
         private string status;
 
+        /// <summary>
+        /// Constructor de la clase.
+        /// </summary>
+        /// <param name="cEmail">Email del usuario que está en la lista de amigos.</param>
+        /// <param name="cName">Nombre o nombres del usuario amigo.</param>
+        /// <param name="cLastName">Apellidos del usuario amigo.</param>
+        /// <param name="cAge">Edad del usuario amigo.</param>
+        /// <param name="cBirthDate">Fecha de nacimiento del usuario amigo.</param>
+        /// <param name="cStatus">Estado del usuario, puede ser: 1 = Habilitado, 2 = Bloqueado, 3 = Importante.</param>
         public Contact(string cEmail, string cName, string cLastName, string cAge, string cBirthDate, string cStatus)
         {
             email = cEmail;
@@ -98,6 +110,10 @@ namespace Proyecto1_1096917
             this.status = status;
         }
 
+        /// <summary>
+        /// toString
+        /// </summary>
+        /// <returns>Devuelve una cadena con los datos del Contacto</returns>
         public string toString()
         {
             return "[INFORMACIÓN DEL CONTACTO]"

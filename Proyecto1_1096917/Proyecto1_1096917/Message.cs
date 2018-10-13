@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Proyecto1_1096917
 {
     /// <summary>
-    /// Clase Message
+    /// Clase "Message". Utilizada para extraer del archivo de texto los mensajes enviados o recibidos. 
     /// </summary>
     class Message
     {

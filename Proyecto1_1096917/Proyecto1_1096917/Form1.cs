@@ -14,6 +14,9 @@ using System.Threading;
 
 namespace Proyecto1_1096917
 {
+    /// <summary>
+    /// Login de la red social. 
+    /// </summary>
     public partial class Form1 : Form
     {
         MyLinkedList<string> newsFeed = new MyLinkedList<string>();//lista con disciplina de cola.
@@ -31,9 +34,12 @@ namespace Proyecto1_1096917
         }
 
         private void Form1_Load(object sender, EventArgs e)
-        {                      
+        {
         }
 
+        /// <summary>
+        /// Botón utilizado para insertar y leer los archivos de texto correspondientes.
+        /// </summary>
         private void enterFile_Click(object sender, EventArgs e)
         {
             openFile = new OpenFileDialog();
@@ -42,11 +48,11 @@ namespace Proyecto1_1096917
 
             if (openFile.ShowDialog() == DialogResult.OK)
             {
-                if (newsFeed.isEmpty() || messenger.isEmpty() || friends.isEmpty())
+                if (newsFeed.isEmpty() || messenger.isEmpty() || friends.isEmpty())//mientras que las estructuras estén vacías ejecutará el código.
                 {
                     textBox3.Text = openFile.FileName;
                     path = openFile.FileName;
-                    if (path.Contains(".txt"))
+                    if (path.Contains(".txt"))//valida que sea el formato de archivo correcto
                     {
                         if (path.Contains("newsfeed") && newsFeed.isEmpty())
                         {
@@ -89,19 +95,19 @@ namespace Proyecto1_1096917
                             userName = line[0];
                             password = line[1];
                         }
-                        else
+                        else//si el archivo ya fue ingresado.
                         {
                             MessageBox.Show("EL ARCHIVO ES INCORRECTO O YA FUE INGRESADO.");
                             textBox3.Clear();
                         }                        
                     }
-                    else
+                    else//si no es del formato correcto.
                     {
                         MessageBox.Show("FORMATO INCORRECTO.");
                         textBox3.Text = "";
                         path = "";
                     }
-
+                    //si las estructuras ya están llenas permite el acceso a lo
                     if (!newsFeed.isEmpty() && !messenger.isEmpty() && !friends.isEmpty())
                     {
                         MessageBox.Show("TODOS LOS ARCHIVOS FUERON INGRESADOS.");
@@ -122,6 +128,9 @@ namespace Proyecto1_1096917
             }
         }
 
+        /// <summary>
+        /// Botón para inicar sesión.
+        /// </summary>
         private void logIn_Click(object sender, EventArgs e)
         {           
             if (userName == textBox1.Text && password == textBox2.Text)
@@ -131,7 +140,7 @@ namespace Proyecto1_1096917
                     loadingForm.ShowDialog(this);
                 }
                 MessageBox.Show("Se inició sesión correctamente. ¡Bienvenido!");
-                MainPage formMainPage = new MainPage(newsFeed, messenger, friends);
+                MainPage formMainPage = new MainPage(newsFeed, messenger, friends);                
                 formMainPage.Show();
             }
             else
@@ -161,20 +170,20 @@ namespace Proyecto1_1096917
             return int.TryParse(_string, out numValue);
         }
 
-        public void close(bool flag)
-        {    
-            if (flag)
-            {
-                textBox1.Clear();
-                textBox2.Clear();
-                textBox3.Clear();
-                userName = "";
-                password = "";
-                newsFeed = new MyLinkedList<string>();
-                messenger = new MyLinkedList<string>();
-                friends = new MyLinkedList<string>();
-                MessageBox.Show("SESIÓN CERRADA.");
-            }
+        /// <summary>
+        /// Después de cerrar "Main Page" reinicia todo.
+        /// </summary>
+        public void close()
+        {
+            textBox1.Clear();
+            textBox2.Clear();
+            textBox3.Clear();
+            userName = "";
+            password = "";
+            newsFeed = new MyLinkedList<string>();
+            messenger = new MyLinkedList<string>();
+            friends = new MyLinkedList<string>();
+            MessageBox.Show("SESIÓN CERRADA.");
         }
     }
 }

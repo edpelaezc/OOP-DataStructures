@@ -12,6 +12,9 @@ using EstrcuturasDinamicas;
 
 namespace Proyecto1_1096917
 {
+    /// <summary>
+    /// "Main Page". Utilizado para mostrar newsfeed, messenger y la lista de amigos. 
+    /// </summary>
     public partial class MainPage : Form
     {
         MyLinkedList<string> newsFeed = new MyLinkedList<string>();
@@ -30,6 +33,12 @@ namespace Proyecto1_1096917
         MyLinkedList<Message> chat = new MyLinkedList<Message>();
         MyLinkedList<Contact> friendList = new MyLinkedList<Contact>();
 
+        /// <summary>
+        /// Constructor del fomulario. Recibe como parámetro las estructuras del Login para poder extraer los datos y manejarlos.
+        /// </summary>
+        /// <param name="newsFeed">Cola que contiene las líneas leídas en el archivo "newsfeed".</param>
+        /// <param name="messenger">Pila que contiene las líneas leídas en el archivo "messenger".</param>
+        /// <param name="friends">Cola que contiene las líneas leídas en el archivo "contact".</param>
         public MainPage(MyLinkedList<string> newsFeed, MyLinkedList<string> messenger, MyLinkedList<string> friends)
         {
             InitializeComponent();
@@ -147,6 +156,9 @@ namespace Proyecto1_1096917
             }
         }
 
+        /// <summary>
+        /// Si hace doble click en la listBox2 se muestran los mensajes correspondientes al contacto seleccionado.
+        /// </summary>
         private void listBox2_DoubleClick(object sender, EventArgs e)
         {
             //si hace doble click en el item de la lista, se muestran los mensajes correspondiente
@@ -175,9 +187,8 @@ namespace Proyecto1_1096917
         private void logOut_Click(object sender, EventArgs e)
         {
             //envía booleano a metodo del Form1 para reiniciar el Form1
-            Form1 login = new Form1();
-            login.close(true);
-            this.Close();
+            Form1 login = new Form1();            
+            this.Close();            
         }
 
         /// <summary>

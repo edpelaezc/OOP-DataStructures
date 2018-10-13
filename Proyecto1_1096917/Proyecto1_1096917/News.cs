@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Proyecto1_1096917
 {
+    /// <summary>
+    /// Clase "News". Tipo de dato utilizado para extraer las noticias de los archivos de texto.
+    /// </summary>
     class News
     {
         private string email;
@@ -13,6 +16,13 @@ namespace Proyecto1_1096917
         private string path = "C:\\GitHub\\OOP-DataStructures\\Proyecto1_1096917\\";
         private string text;
 
+        /// <summary>
+        /// Constructor de la clase
+        /// </summary>
+        /// <param name="nEmail">Email del usuario que publica en "newsfeed".</param>
+        /// <param name="nType">Tipo de noticia, pueden ser: Estado, historia, acontecimiento, festividad general.</param>
+        /// <param name="nPath">Dirección de la imagen que pertenece a la noticia.</param>
+        /// <param name="nText">Texto de la notica.</param>
         public News(string nEmail, string nType, string nPath, string nText)
         {
             email = nEmail;
