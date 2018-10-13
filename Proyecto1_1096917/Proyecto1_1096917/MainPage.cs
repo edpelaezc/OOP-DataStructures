@@ -62,14 +62,23 @@ namespace Proyecto1_1096917
                 dataGridView1.Rows[i].Cells[0].Value = arrayNews[i].toString();
                 if (arrayNews[i].getPath() != "")
                 {
-                    Image image = Image.FromFile(arrayNews[i].getPath());
-                    Image newImage = resizeImage(image, new Size(164, 164));
-                    dataGridView1.Rows[i].Cells[1].Value = newImage;
+                    try
+                    {
+                        Image image = Image.FromFile(arrayNews[i].getPath());
+                        Image newImage = resizeImage(image, new Size(165, 165));
+                        dataGridView1.Rows[i].Cells[1].Value = newImage;
+                    }
+                    catch (Exception)
+                    {
+                        Image image = Image.FromFile(background);
+                        Image newImage = resizeImage(image, new Size(165, 165));
+                        dataGridView1.Rows[i].Cells[1].Value = newImage;
+                    }
                 }
                 else
                 {
                     Image image = Image.FromFile(background);
-                    Image newImage = resizeImage(image, new Size(164, 164));
+                    Image newImage = resizeImage(image, new Size(165, 165));
                     dataGridView1.Rows[i].Cells[1].Value = newImage;
                 }   
             }
@@ -195,10 +204,25 @@ namespace Proyecto1_1096917
             {
                 dataGridView1.Rows.Add();
                 dataGridView1.Rows[i].Cells[0].Value = arrayNews[i].toString();
-                if (arrayNews[i].getPath() != null)
+                if (arrayNews[i].getPath() != "")
                 {
-                    Image image = Image.FromFile(arrayNews[i].getPath());
-                    Image newImage = resizeImage(image, new Size(125, 125));
+                    try
+                    {
+                        Image image = Image.FromFile(arrayNews[i].getPath());
+                        Image newImage = resizeImage(image, new Size(165, 165));
+                        dataGridView1.Rows[i].Cells[1].Value = newImage;
+                    }
+                    catch (Exception)
+                    {
+                        Image image = Image.FromFile(background);
+                        Image newImage = resizeImage(image, new Size(165, 165));
+                        dataGridView1.Rows[i].Cells[1].Value = newImage;
+                    }
+                }
+                else
+                {
+                    Image image = Image.FromFile(background);
+                    Image newImage = resizeImage(image, new Size(165, 165));
                     dataGridView1.Rows[i].Cells[1].Value = newImage;
                 }
             }
@@ -247,10 +271,25 @@ namespace Proyecto1_1096917
             {
                 dataGridView1.Rows.Add();
                 dataGridView1.Rows[i].Cells[0].Value = arrayNews[i].toString();
-                if (arrayNews[i].getPath() != null)
+                if (arrayNews[i].getPath() != "")
                 {
-                    Image image = Image.FromFile(arrayNews[i].getPath());
-                    Image newImage = resizeImage(image, new Size(125, 125));
+                    try
+                    {
+                        Image image = Image.FromFile(arrayNews[i].getPath());
+                        Image newImage = resizeImage(image, new Size(164, 164));
+                        dataGridView1.Rows[i].Cells[1].Value = newImage;
+                    }
+                    catch (Exception)
+                    {
+                        Image image = Image.FromFile(background);
+                        Image newImage = resizeImage(image, new Size(164, 164));
+                        dataGridView1.Rows[i].Cells[1].Value = newImage;
+                    }
+                }
+                else
+                {
+                    Image image = Image.FromFile(background);
+                    Image newImage = resizeImage(image, new Size(164, 164));
                     dataGridView1.Rows[i].Cells[1].Value = newImage;
                 }
             }

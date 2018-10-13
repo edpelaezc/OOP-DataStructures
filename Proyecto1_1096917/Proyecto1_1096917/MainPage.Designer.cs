@@ -33,6 +33,8 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.NOTICIAS = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.image = new System.Windows.Forms.DataGridViewImageColumn();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -47,8 +49,6 @@
             this.delete = new System.Windows.Forms.Button();
             this.block = new System.Windows.Forms.Button();
             this.logOut = new System.Windows.Forms.Button();
-            this.NOTICIAS = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.image = new System.Windows.Forms.DataGridViewImageColumn();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -98,10 +98,24 @@
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView1.Location = new System.Drawing.Point(63, 16);
+            this.dataGridView1.Location = new System.Drawing.Point(58, 16);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(358, 294);
+            this.dataGridView1.Size = new System.Drawing.Size(363, 294);
             this.dataGridView1.TabIndex = 2;
+            // 
+            // NOTICIAS
+            // 
+            this.NOTICIAS.HeaderText = "NOTICIAS";
+            this.NOTICIAS.Name = "NOTICIAS";
+            this.NOTICIAS.Width = 82;
+            // 
+            // image
+            // 
+            this.image.HeaderText = "IMÁGENES";
+            this.image.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
+            this.image.Name = "image";
+            this.image.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.image.Width = 69;
             // 
             // pictureBox1
             // 
@@ -247,20 +261,6 @@
             this.logOut.Text = "Cerrar sesión";
             this.logOut.UseVisualStyleBackColor = true;
             this.logOut.Click += new System.EventHandler(this.logOut_Click);
-            // 
-            // NOTICIAS
-            // 
-            this.NOTICIAS.HeaderText = "NOTICIAS";
-            this.NOTICIAS.Name = "NOTICIAS";
-            this.NOTICIAS.Width = 82;
-            // 
-            // image
-            // 
-            this.image.HeaderText = "IMÁGENES";
-            this.image.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
-            this.image.Name = "image";
-            this.image.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.image.Width = 69;
             // 
             // MainPage
             // 
