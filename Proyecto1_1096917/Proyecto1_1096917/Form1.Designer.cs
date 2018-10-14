@@ -41,10 +41,12 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.enterFile = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox1
@@ -126,14 +128,20 @@
             this.pictureBox1.Location = new System.Drawing.Point(132, 19);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(129, 83);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
             // logIn
             // 
             this.logIn.Enabled = false;
-            this.logIn.Location = new System.Drawing.Point(134, 214);
+            this.logIn.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.logIn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CornflowerBlue;
+            this.logIn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue;
+            this.logIn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.logIn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logIn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.logIn.Location = new System.Drawing.Point(134, 227);
             this.logIn.Name = "logIn";
             this.logIn.Size = new System.Drawing.Size(121, 49);
             this.logIn.TabIndex = 5;
@@ -150,9 +158,15 @@
             // 
             // enterFile
             // 
+            this.enterFile.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.enterFile.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CornflowerBlue;
+            this.enterFile.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue;
+            this.enterFile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.enterFile.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.enterFile.ForeColor = System.Drawing.Color.White;
             this.enterFile.Location = new System.Drawing.Point(146, 68);
             this.enterFile.Name = "enterFile";
-            this.enterFile.Size = new System.Drawing.Size(121, 23);
+            this.enterFile.Size = new System.Drawing.Size(121, 35);
             this.enterFile.TabIndex = 7;
             this.enterFile.Text = "Abrir Archivo";
             this.enterFile.UseVisualStyleBackColor = true;
@@ -167,12 +181,23 @@
             this.label3.TabIndex = 8;
             this.label3.Text = "Ingrese los archivos";
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(144, 422);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(129, 50);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 9;
+            this.pictureBox4.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
-            this.ClientSize = new System.Drawing.Size(422, 453);
+            this.ClientSize = new System.Drawing.Size(422, 484);
+            this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.enterFile);
             this.Controls.Add(this.textBox3);
@@ -186,6 +211,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -205,6 +231,7 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.PictureBox pictureBox4;
     }
 }
 

@@ -399,6 +399,6 @@ namespace Proyecto1_1096917
         public static Image resizeImage(Image imageToResize, Size size)
         {
             return (Image)(new Bitmap(imageToResize, size));
-        }        
+        }
     }
 }
