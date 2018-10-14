@@ -185,8 +185,8 @@ namespace Proyecto1_1096917
         /// logOut, Cierra la sesión actual.
         /// </summary>
         private void logOut_Click(object sender, EventArgs e)
-        {            
-            Form1 login = new Form1();
+        {
+            MessageBox.Show("CERRANDO SESIÓN...");
             Application.Exit();            
         }
 

@@ -142,7 +142,7 @@
             this.logIn.Enabled = false;
             this.logIn.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.logIn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CornflowerBlue;
-            this.logIn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue;
+            this.logIn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSteelBlue;
             this.logIn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.logIn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.logIn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
@@ -165,7 +165,7 @@
             // 
             this.enterFile.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.enterFile.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CornflowerBlue;
-            this.enterFile.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue;
+            this.enterFile.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSteelBlue;
             this.enterFile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.enterFile.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.enterFile.ForeColor = System.Drawing.Color.White;
