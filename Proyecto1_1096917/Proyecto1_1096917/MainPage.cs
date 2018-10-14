@@ -194,63 +194,71 @@ namespace Proyecto1_1096917
         /// block, Bloquea al amigo borrando sus noticias de la sección "NewsFeed"
         /// </summary>
         private void block_Click(object sender, EventArgs e)
-        {
-            string selected = "";
-            string name = listBox1.SelectedItem.ToString();
-            //recorrer lista para obtener email
-            for (int i = 0; i < arrayFriends.Length; i++)
+        {            
+            if (listBox1.SelectedItem != null)
             {
-                if (name == arrayFriends[i].getName() + " " + arrayFriends[i].getLastName())
+                string selected = "";
+                string name = listBox1.SelectedItem.ToString();
+                //recorrer lista para obtener email
+                for (int i = 0; i < arrayFriends.Length; i++)
                 {
-                    selected = arrayFriends[i].getEmail();
-                }
-            }
-
-            Node<News> auxiliar = news.head;
-            while (auxiliar != null)
-            {
-                if (auxiliar.getElement().getEmail() == selected)
-                {
-                    news.removeNode(auxiliar);
-                }
-                auxiliar = auxiliar.getNext();
-            }
-
-            nFSize = news.size();
-            arrayNews = news.listToArray();
-            dataGridView1.Columns.Clear();
-            dataGridView1.Columns.Add("NOTICIAS", "NOTICIAS");
-            DataGridViewImageColumn column = new DataGridViewImageColumn();
-            column.Name = "image";
-            column.HeaderText = "IMÁGENES";
-            dataGridView1.Columns.Add(column);
-            for (int i = 0; i < nFSize; i++)
-            {
-                dataGridView1.Rows.Add();
-                dataGridView1.Rows[i].Cells[0].Value = arrayNews[i].toString();
-                if (arrayNews[i].getPath() != "")
-                {
-                    try
+                    if (name == arrayFriends[i].getName() + " " + arrayFriends[i].getLastName())
                     {
-                        Image image = Image.FromFile(arrayNews[i].getPath());
-                        Image newImage = resizeImage(image, new Size(169, 169));
-                        dataGridView1.Rows[i].Cells[1].Value = newImage;
+                        selected = arrayFriends[i].getEmail();
                     }
-                    catch (Exception)
+                }
+
+
+                Node<News> auxiliar = news.head;
+                while (auxiliar != null)
+                {
+                    if (auxiliar.getElement().getEmail() == selected)
+                    {
+                        news.removeNode(auxiliar);
+                    }
+                    auxiliar = auxiliar.getNext();
+                }
+
+                nFSize = news.size();
+                arrayNews = news.listToArray();
+                dataGridView1.Columns.Clear();
+                dataGridView1.Columns.Add("NOTICIAS", "NOTICIAS");
+                DataGridViewImageColumn column = new DataGridViewImageColumn();
+                column.Name = "image";
+                column.HeaderText = "IMÁGENES";
+                dataGridView1.Columns.Add(column);
+                for (int i = 0; i < nFSize; i++)
+                {
+                    dataGridView1.Rows.Add();
+                    dataGridView1.Rows[i].Cells[0].Value = arrayNews[i].toString();
+                    if (arrayNews[i].getPath() != "")
+                    {
+                        try
+                        {
+                            Image image = Image.FromFile(arrayNews[i].getPath());
+                            Image newImage = resizeImage(image, new Size(169, 169));
+                            dataGridView1.Rows[i].Cells[1].Value = newImage;
+                        }
+                        catch (Exception)
+                        {
+                            Image image = Image.FromFile(background);
+                            Image newImage = resizeImage(image, new Size(169, 169));
+                            dataGridView1.Rows[i].Cells[1].Value = newImage;
+                        }
+                    }
+                    else
                     {
                         Image image = Image.FromFile(background);
                         Image newImage = resizeImage(image, new Size(169, 169));
                         dataGridView1.Rows[i].Cells[1].Value = newImage;
                     }
                 }
-                else
-                {
-                    Image image = Image.FromFile(background);
-                    Image newImage = resizeImage(image, new Size(169, 169));
-                    dataGridView1.Rows[i].Cells[1].Value = newImage;
-                }
+                dataGridView1.Update();
             }
-            dataGridView1.Update();
+            else
+            {
+                MessageBox.Show("SELECCIONE UN USUARIO.");
+            }          
         }
 
         private void listBox1_DoubleClick_1(object sender, EventArgs e)
@@ -264,129 +272,136 @@ namespace Proyecto1_1096917
         /// </summary>
         private void delete_Click(object sender, EventArgs e)
         {
-            //eliminar noticias
-            string selected = "";
-            string name = listBox1.SelectedItem.ToString();
-            //recorrer lista para obtener email
-            for (int i = 0; i < arrayFriends.Length; i++)
+            if (listBox1.SelectedItem != null)
             {
-                if (name == arrayFriends[i].getName() + " " + arrayFriends[i].getLastName())
+                //eliminar noticias
+                string selected = "";
+                string name = listBox1.SelectedItem.ToString();
+                //recorrer lista para obtener email
+                for (int i = 0; i < arrayFriends.Length; i++)
                 {
-                    selected = arrayFriends[i].getEmail();
-                }
-            }
-            
-            Node<News> newsAuxiliar = news.head;
-            while (newsAuxiliar != null)
-            {
-                if (newsAuxiliar.getElement().getEmail() == selected)
-                {
-                    news.removeNode(newsAuxiliar);
-                }
-                newsAuxiliar = newsAuxiliar.getNext();
-            }
-
-            nFSize = news.size();
-            arrayNews = news.listToArray();
-            dataGridView1.Columns.Clear();
-            dataGridView1.Columns.Add("NOTICIAS", "NOTICIAS");
-            DataGridViewImageColumn column = new DataGridViewImageColumn();
-            column.Name = "image";
-            column.HeaderText = "IMÁGENES";
-            dataGridView1.Columns.Add(column);
-            for (int i = 0; i < nFSize; i++)
-            {
-                dataGridView1.Rows.Add();
-                dataGridView1.Rows[i].Cells[0].Value = arrayNews[i].toString();
-                if (arrayNews[i].getPath() != "")
-                {
-                    try
+                    if (name == arrayFriends[i].getName() + " " + arrayFriends[i].getLastName())
                     {
-                        Image image = Image.FromFile(arrayNews[i].getPath());
-                        Image newImage = resizeImage(image, new Size(169, 169));
-                        dataGridView1.Rows[i].Cells[1].Value = newImage;
+                        selected = arrayFriends[i].getEmail();
                     }
-                    catch (Exception)
+                }
+
+                Node<News> newsAuxiliar = news.head;
+                while (newsAuxiliar != null)
+                {
+                    if (newsAuxiliar.getElement().getEmail() == selected)
+                    {
+                        news.removeNode(newsAuxiliar);
+                    }
+                    newsAuxiliar = newsAuxiliar.getNext();
+                }
+
+                nFSize = news.size();
+                arrayNews = news.listToArray();
+                dataGridView1.Columns.Clear();
+                dataGridView1.Columns.Add("NOTICIAS", "NOTICIAS");
+                DataGridViewImageColumn column = new DataGridViewImageColumn();
+                column.Name = "image";
+                column.HeaderText = "IMÁGENES";
+                dataGridView1.Columns.Add(column);
+                for (int i = 0; i < nFSize; i++)
+                {
+                    dataGridView1.Rows.Add();
+                    dataGridView1.Rows[i].Cells[0].Value = arrayNews[i].toString();
+                    if (arrayNews[i].getPath() != "")
+                    {
+                        try
+                        {
+                            Image image = Image.FromFile(arrayNews[i].getPath());
+                            Image newImage = resizeImage(image, new Size(169, 169));
+                            dataGridView1.Rows[i].Cells[1].Value = newImage;
+                        }
+                        catch (Exception)
+                        {
+                            Image image = Image.FromFile(background);
+                            Image newImage = resizeImage(image, new Size(169, 169));
+                            dataGridView1.Rows[i].Cells[1].Value = newImage;
+                        }
+                    }
+                    else
                     {
                         Image image = Image.FromFile(background);
                         Image newImage = resizeImage(image, new Size(169, 169));
                         dataGridView1.Rows[i].Cells[1].Value = newImage;
                     }
                 }
-                else
-                {
-                    Image image = Image.FromFile(background);
-                    Image newImage = resizeImage(image, new Size(169, 169));
-                    dataGridView1.Rows[i].Cells[1].Value = newImage;
-                }
-            }
-            dataGridView1.Update();
+                dataGridView1.Update();
 
-            //eliminar mensajes  
-            Node<Message> chatAuxiliar = chat.head;
-            while (chatAuxiliar != null)
-            {
-                if (chatAuxiliar.getElement().getEmail() == selected)
+                //eliminar mensajes  
+                Node<Message> chatAuxiliar = chat.head;
+                while (chatAuxiliar != null)
                 {
-                    chat.removeNode(chatAuxiliar);
-                }
-                chatAuxiliar = chatAuxiliar.getNext();
-            }
-
-            listBox2.Items.Clear();
-            if (!chat.isEmpty())
-            {
-                mSize = chat.size();
-                int cont1 = 0;
-                int cont2 = 2;
-                arrayMessages = chat.listToArray();
-                listBox2.Items.Add(arrayMessages[0].getEmail());
-                if (arrayMessages[1].getEmail() != arrayMessages[0].getEmail())
-                {
-                    listBox2.Items.Add(arrayMessages[1].getEmail());
-                }
-                while (cont2 < mSize)
-                {
-                    while (cont1 < cont2)
+                    if (chatAuxiliar.getElement().getEmail() == selected)
                     {
-                        if (arrayMessages[cont1].getEmail() != arrayMessages[cont2].getEmail())
+                        chat.removeNode(chatAuxiliar);
+                    }
+                    chatAuxiliar = chatAuxiliar.getNext();
+                }
+
+                listBox2.Items.Clear();
+                if (!chat.isEmpty())
+                {
+                    mSize = chat.size();
+                    int cont1 = 0;
+                    int cont2 = 2;
+                    arrayMessages = chat.listToArray();
+                    listBox2.Items.Add(arrayMessages[0].getEmail());
+                    if (arrayMessages[1].getEmail() != arrayMessages[0].getEmail())
+                    {
+                        listBox2.Items.Add(arrayMessages[1].getEmail());
+                    }
+                    while (cont2 < mSize)
+                    {
+                        while (cont1 < cont2)
                         {
-                            cont1++;
+                            if (arrayMessages[cont1].getEmail() != arrayMessages[cont2].getEmail())
+                            {
+                                cont1++;
+                            }
+                            else
+                            {
+                                cont1 = 0;
+                                cont2++;
+                            }
+                            break;
                         }
-                        else
+
+                        if (cont1 == cont2)
                         {
+                            listBox2.Items.Add(arrayMessages[cont2].getEmail());
                             cont1 = 0;
                             cont2++;
                         }
-                        break;
-                    }
-
-                    if (cont1 == cont2)
-                    {
-                        listBox2.Items.Add(arrayMessages[cont2].getEmail());
-                        cont1 = 0;
-                        cont2++;
                     }
                 }
-            }
 
-            //eliminar amigo           
-            Node<Contact> friendsAuxiliar = friendList.head;
-            while (friendsAuxiliar != null)
-            {
-                if ((friendsAuxiliar.getElement().getEmail() == selected))
+                //eliminar amigo           
+                Node<Contact> friendsAuxiliar = friendList.head;
+                while (friendsAuxiliar != null)
                 {
-                    friendList.removeNode(friendsAuxiliar);
+                    if ((friendsAuxiliar.getElement().getEmail() == selected))
+                    {
+                        friendList.removeNode(friendsAuxiliar);
+                    }
+                    friendsAuxiliar = friendsAuxiliar.getNext();
                 }
-                friendsAuxiliar = friendsAuxiliar.getNext();
-            }
 
-            listBox1.Items.Clear();
-            fSize = friendList.size();
-            arrayFriends = friendList.listToArray();
-            for (int i = 0; i < fSize; i++)
+                listBox1.Items.Clear();
+                fSize = friendList.size();
+                arrayFriends = friendList.listToArray();
+                for (int i = 0; i < fSize; i++)
+                {
+                    listBox1.Items.Add(arrayFriends[i].getName() + " " + arrayFriends[i].getLastName());
+                }
+            }
+            else
             {
-                listBox1.Items.Add(arrayFriends[i].getName() + " " + arrayFriends[i].getLastName());
+                MessageBox.Show("SELECCIONE UN USUARIO.");
             }
         }
 
