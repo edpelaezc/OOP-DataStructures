@@ -9,7 +9,7 @@ namespace Proyecto1_1096917
     /// <summary>
     /// Clase "News". Tipo de dato utilizado para extraer las noticias de los archivos de texto.
     /// </summary>
-    class News
+    public class News
     {
         private string email;
         private string type;

@@ -138,6 +138,7 @@
             // 
             // logIn
             // 
+            this.logIn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.logIn.Enabled = false;
             this.logIn.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.logIn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CornflowerBlue;

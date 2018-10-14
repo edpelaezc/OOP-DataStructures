@@ -9,7 +9,7 @@ namespace Proyecto1_1096917
     /// <summary>
     /// Clase "Contact". Utilizada para extraer del archivo de texto los amigos agregados en la red social.
     /// </summary>
-    class Contact
+    public class Contact
     {
         private string email;
         private string name;
