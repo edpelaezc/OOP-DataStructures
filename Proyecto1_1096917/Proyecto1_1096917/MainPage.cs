@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Drawing.Drawing2D;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -72,13 +73,13 @@ namespace Proyecto1_1096917
                 dataGridView1.Rows[i].Cells[0].Value = arrayNews[i].toString();//agrega toString de News
                 if (arrayNews[i].getPath() != "")
                 {
-                    try//validación, por si no encuentra la direccion de la imagen
+                    if (File.Exists(arrayNews[i].getPath()))
                     {
                         Image image = Image.FromFile(arrayNews[i].getPath());
                         Image newImage = resizeImage(image, new Size(169, 169));
                         dataGridView1.Rows[i].Cells[1].Value = newImage;
                     }
-                    catch (Exception)//si no la encuentra muestra el fondo-blanco
+                    else
                     {
                         Image image = Image.FromFile(background);
                         Image newImage = resizeImage(image, new Size(169, 169));
@@ -90,7 +91,7 @@ namespace Proyecto1_1096917
                     Image image = Image.FromFile(background);
                     Image newImage = resizeImage(image, new Size(169, 169));
                     dataGridView1.Rows[i].Cells[1].Value = newImage;
-                }   
+                }  
             }
             dataGridView1.Update();
 
