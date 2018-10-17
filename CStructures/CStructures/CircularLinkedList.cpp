@@ -71,6 +71,41 @@ int CircularLinkedList::removeFirst() {
 	}
 }
 
+bool CircularLinkedList::search(int reference) {
+	node auxiliar = tail->getNext();	
+	bool flag = true;
+	while (auxiliar != tail && flag)
+	{
+		if (auxiliar->getElement() == reference)
+		{
+			flag = false;
+		}
+		else
+		{
+			auxiliar = auxiliar->getNext();
+		}
+	}
+
+	if (auxiliar == tail && auxiliar->getElement() == reference)
+	{
+		return flag;
+	}
+	else
+	{
+		return !flag;
+	}
+}
+
+void CircularLinkedList::showElements() {
+	node auxiliar = tail->getNext();
+	while (auxiliar != tail)
+	{
+		std::cout << auxiliar->getElement() << "\t";
+		auxiliar = auxiliar->getNext();
+	}
+	std::cout << auxiliar->getElement() << "\n";
+}
+
 CircularLinkedList::~CircularLinkedList()
 {
 }

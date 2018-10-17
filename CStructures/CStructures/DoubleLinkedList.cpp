@@ -88,7 +88,7 @@ bool DoubleLinkedList::search(int reference) {
 			auxiliar = auxiliar->getNext();
 		}
 	}
-	return flag;
+	return !flag;
 }
 
 void DoubleLinkedList::showElements() {

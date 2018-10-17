@@ -138,7 +138,7 @@ bool MyLinkedListC::searchElement(int reference) {
 			auxiliar = auxiliar->getNext();
 		}
 	}
-	return flag;
+	return !flag;
 }
 
 void MyLinkedListC::showElements() {

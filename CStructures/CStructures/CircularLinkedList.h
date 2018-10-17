@@ -15,6 +15,8 @@ public:
 	void addFirst(int n);
 	void addLast(int n);
 	int removeFirst();
+	bool search(int reference);
+	void showElements();
 	~CircularLinkedList();
 };
 
