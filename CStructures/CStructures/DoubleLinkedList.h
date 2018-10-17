@@ -1,13 +1,13 @@
 #pragma once
 
-class NodeD {
+class Node {
 private:
 	int element;
-	NodeD *prev;
-	NodeD *next;
+	Node *prev;
+	Node *next;
 
 public:
-	NodeD(int e, NodeD *previousNode, NodeD *nextNode) {
+	Node(int e, Node *previousNode, Node *nextNode) {
 		element = e;
 		prev = previousNode;
 		next = nextNode;
@@ -17,32 +17,32 @@ public:
 		return element;
 	}
 
-	NodeD *getPrev() {
+	Node *getPrev() {
 		return prev;
 	}
 
-	void setPrev(NodeD *previous) {
+	void setPrev(Node *previous) {
 		prev = previous;
 	}
 
-	NodeD *getNext() {
+	Node *getNext() {
 		return next;
 	}
 
-	void setNext(NodeD *nextNode) {
+	void setNext(Node *nextNode) {
 		next = nextNode;
 	}
-}; typedef NodeD *nodeD;
+}; typedef Node *node;
 
 
 class DoubleLinkedList
 {
 private:
-	nodeD header;
-	nodeD trailer;
+	node header;
+	node trailer;
 	int listSize;
-	void addBetween(int n, nodeD predecessor, nodeD successor);
-	int remove(NodeD *node);
+	void addBetween(int n, node predecessor, node successor);
+	int remove(Node *node);
 public:	
 	DoubleLinkedList();
 	int size();

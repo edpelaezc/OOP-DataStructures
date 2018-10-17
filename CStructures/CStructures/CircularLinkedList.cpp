@@ -55,11 +55,11 @@ void CircularLinkedList::addLast(int n) {
 }
 
 int CircularLinkedList::removeFirst() {
-	if (isEmpty()) {
+	if (isEmpty) {
 		return NULL;
 	}
 	else {
-		Node *head = tail->getNext();
+		node head = tail->getNext();
 		if (tail == head) {
 			tail = NULL;
 		}

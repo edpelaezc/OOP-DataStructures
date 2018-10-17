@@ -4,8 +4,8 @@
 
 DoubleLinkedList::DoubleLinkedList()
 {
-	header = new NodeD(NULL, NULL, NULL);
-	trailer = new NodeD(NULL, header, NULL);
+	header = new Node(NULL, NULL, NULL);
+	trailer = new Node(NULL, header, NULL);
 	header->setNext(trailer);
 	listSize = 0;
 }
@@ -58,16 +58,16 @@ int DoubleLinkedList::removeLast() {
 	}
 }
 
-void DoubleLinkedList::addBetween(int n, nodeD predecessor, nodeD successor) {
-	nodeD newest = new NodeD(n, predecessor, successor);
+void DoubleLinkedList::addBetween(int n, node predecessor, node successor) {
+	node newest = new Node(n, predecessor, successor);
 	predecessor->setNext(newest);
 	successor->setPrev(newest);
 	listSize++;
 }
 
-int DoubleLinkedList::remove(NodeD *node) {
-	NodeD *predecessor = node->getPrev();
-	NodeD *successor = node->getNext();
+int DoubleLinkedList::remove(Node *node) {
+	Node *predecessor = node->getPrev();
+	Node *successor = node->getNext();
 	predecessor->setNext(successor);
 	successor->setPrev(predecessor);
 	listSize--;
@@ -75,7 +75,7 @@ int DoubleLinkedList::remove(NodeD *node) {
 }
 
 bool DoubleLinkedList::search(int reference) {
-	nodeD auxiliar = header->getNext();
+	node auxiliar = header->getNext();
 	bool flag = true;
 	while (auxiliar != trailer && flag)
 	{
@@ -92,7 +92,7 @@ bool DoubleLinkedList::search(int reference) {
 }
 
 void DoubleLinkedList::showElements() {
-	nodeD auxiliar = header->getNext();
+	node auxiliar = header->getNext();
 	while (auxiliar != trailer)
 	{
 		std::cout << auxiliar->getElement() << "\t";
