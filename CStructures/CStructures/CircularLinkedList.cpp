@@ -55,7 +55,7 @@ void CircularLinkedList::addLast(int n) {
 }
 
 int CircularLinkedList::removeFirst() {
-	if (isEmpty) {
+	if (isEmpty()) {
 		return NULL;
 	}
 	else {
