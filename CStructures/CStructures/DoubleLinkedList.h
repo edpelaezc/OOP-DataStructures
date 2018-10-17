@@ -53,6 +53,8 @@ public:
 	void addLast(int n);
 	int removeFirst();
 	int removeLast();
+	bool search(int reference);
+	void showElements();
 	~DoubleLinkedList();
 };
 

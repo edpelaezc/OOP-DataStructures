@@ -74,6 +74,31 @@ int DoubleLinkedList::remove(Node *node) {
 	return node->getElement();
 }
 
+bool DoubleLinkedList::search(int reference) {
+	node auxiliar = header->getNext();
+	bool flag = true;
+	while (auxiliar != trailer && flag)
+	{
+		if (auxiliar->getElement() == reference)
+		{
+			flag = false;
+		}
+		else
+		{
+			auxiliar = auxiliar->getNext();
+		}
+	}
+	return flag;
+}
+
+void DoubleLinkedList::showElements() {
+	node auxiliar = header->getNext();
+	while (auxiliar != trailer)
+	{
+		std::cout << auxiliar->getElement() << "\t";
+		auxiliar = auxiliar->getNext();
+	}
+}
 DoubleLinkedList::~DoubleLinkedList()
 {
 }
