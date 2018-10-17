@@ -10,5 +10,5 @@ public:
 private:
 	int element;
 	Node *next;
-}; Node *node;
+}; typedef Node *node;
 

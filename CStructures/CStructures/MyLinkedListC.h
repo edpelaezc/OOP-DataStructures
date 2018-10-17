@@ -1,13 +1,14 @@
 #pragma once
+#include "Node.h"
 class MyLinkedListC
 {
 public:
 	node head;
 	node tail;
-	MyLinkedListCpp();
+	MyLinkedListC();
 	int size();
 	bool isEmpty();
-	MyLinkedListCpp* invert();
+	MyLinkedListC* invert();
 	int first();
 	int last();
 	void addElement(int reference, int t);
@@ -17,7 +18,7 @@ public:
 	int removeFirst();
 	bool searchElement(int reference);
 	void showElements();
-	~MyLinkedListCpp();
+	~MyLinkedListC();
 private:
 	int listSize;
 };
