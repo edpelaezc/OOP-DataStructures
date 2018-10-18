@@ -122,9 +122,7 @@ namespace BinarySearchTree
                     return elementExists(root.getRight(), element);
                 }
             }
-        }
-
-       /* public Node<T> locate(Node<T> root, T element)*/
+        }       
 
         public int numberOfChildren(Node<T> root)
         {
