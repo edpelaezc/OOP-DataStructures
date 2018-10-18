@@ -3,7 +3,7 @@
 #include <iostream>
 
 DoubleLinkedList::DoubleLinkedList()
-{
+{		
 	header = new NodeD(NULL, NULL, NULL);
 	trailer = new NodeD(NULL, header, NULL);
 	header->setNext(trailer);
@@ -15,7 +15,7 @@ int DoubleLinkedList::size() { return listSize; }
 bool DoubleLinkedList::isEmpty() { return listSize == 0; }
 
 int DoubleLinkedList::first() {
-	if (isEmpty()) {
+	if (isEmpty()) {			
 		return NULL;
 	}
 	else {
@@ -24,7 +24,7 @@ int DoubleLinkedList::first() {
 }
 
 int DoubleLinkedList::last() {
-	if (isEmpty()) {
+	if (isEmpty()) {				
 		return NULL;
 	}
 	else {
@@ -41,7 +41,7 @@ void DoubleLinkedList::addLast(int n) {
 }
 
 int DoubleLinkedList::removeFirst() {
-	if (isEmpty()) {
+	if (isEmpty()) {			
 		return NULL;
 	}
 	else {
@@ -50,7 +50,7 @@ int DoubleLinkedList::removeFirst() {
 }
 
 int DoubleLinkedList::removeLast() {
-	if (isEmpty()) {
+	if (isEmpty()) {			
 		return NULL;
 	}
 	else {

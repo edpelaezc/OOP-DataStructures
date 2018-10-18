@@ -1,4 +1,9 @@
 #pragma once
+#include <string.h>
+#include <string>
+#include <stdio.h>
+#include <iostream>
+
 
 class NodeD {
 private:
@@ -7,8 +12,7 @@ private:
 	NodeD *next;
 
 public:
-	NodeD(int e, NodeD *previousNode, NodeD *nextNode) {
-		element = e;
+	NodeD(int e, NodeD *previousNode, NodeD *nextNode) {		
 		prev = previousNode;
 		next = nextNode;
 	}
