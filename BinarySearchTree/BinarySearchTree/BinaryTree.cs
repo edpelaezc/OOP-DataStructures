@@ -236,14 +236,12 @@ namespace BinarySearchTree
                 else//El que sustituirá será el más derecho de los izquierdos
                 {
                     Node<T> next = root.getLeft();
-                    T aux = root.getElement();
-                    root.setElement(searchRight(root));
-                    //removeLeaf(root, root.getElement());                    
-
+                    T aux = root.getElement();                                                        
                     while (next.getRight() != null)
                     {
                         next = next.getRight();
                     }
+                    root.setElement(next.getElement());
                     Node<T> father = next.getParent();
                     father.setRight(null);
                     return aux;

@@ -20,7 +20,7 @@ void BinaryTree::add(int element) {
 	}
 }
 
-void BinaryTree::addElement(node root, int element) {
+void BinaryTree::addElement(Node root, int element) {
 	//si el elemento es menor que el valor de root lo agrega a la izq. recursivamente
 	if (element < root->getElement()) {
 		if (root->getLeft() != NULL) {
@@ -45,7 +45,7 @@ void BinaryTree::addElement(node root, int element) {
 	}
 }
 
-bool BinaryTree::elementExists(node root, int element) {
+bool BinaryTree::elementExists(Node root, int element) {
 	if (this->root == NULL) {
 		return false;
 	}
@@ -65,7 +65,7 @@ bool BinaryTree::elementExists(node root, int element) {
 	}
 }
 
-void BinaryTree::preOrder(node root) {
+void BinaryTree::preOrder(Node root) {
 	if (this->root != NULL)
 	{
 		cout << root->getElement();
@@ -74,7 +74,7 @@ void BinaryTree::preOrder(node root) {
 	}
 }
 
-void BinaryTree::postOrder(node root) {
+void BinaryTree::postOrder(Node root) {
 	if (this->root != NULL)
 	{
 		postOrder(root->getLeft());
@@ -83,12 +83,96 @@ void BinaryTree::postOrder(node root) {
 	}
 }
 
-void BinaryTree::inOrder(node root) {
+void BinaryTree::inOrder(Node root) {
 	if (this->root != NULL)
 	{
 		inOrder(root->getLeft());
 		cout << root->getElement();
 		inOrder(root->getRight());
+	}
+}
+
+int BinaryTree::numberOfChildren(Node root) {
+	int count = 0;
+	if (root->getLeft() != NULL)
+		count++;
+	if (root->getRight() != NULL)
+		count++;
+	return count;
+}
+
+int BinaryTree::remove(Node root, int element) {
+	if (this->root != NULL) {
+		return NULL;
+	}
+	else if (element == root->getElement()) {
+		if (numberOfChildren(root) == 0)
+		{
+			if (element == root->getParent()->getLeft()->getElement())
+			{
+				int aux = root->getElement();
+				root->getParent()->setLeft(NULL);
+				root = NULL;
+				treeSize--;
+				return aux;
+			}
+			else
+			{
+				int aux = root->getElement();
+				root->getParent()->setRight(NULL);
+				root = NULL;
+				treeSize--;
+				return aux;
+			}
+		}
+		else if (numberOfChildren(root) == 1) {
+			int aux = root->getElement();
+			if (root->getParent()->getLeft() != NULL)
+			{
+				if (root->getLeft() != NULL)
+				{
+					root->getParent()->setLeft(root->getLeft());
+				}
+				else
+				{
+					root->getParent()->setLeft(root->getRight());
+				}
+			}
+			else
+			{
+				if (root->getLeft() != NULL)
+				{
+					root->getParent()->setRight(root->getLeft());
+				}
+				else
+				{
+					root->getParent()->setRight(root->getRight());               
+				}
+			}
+			treeSize--;
+			return aux;
+		}
+		else {// el nodo que sustituirá será el más derecho del subárbol izquierdo.
+			Node next = root->getLeft();
+			int aux = root->getElement();			
+			while (next->getRight() != NULL)
+			{
+				next = next->getRight();
+			}
+			root->setElement(next->getElement());
+			Node father = next->getParent();
+			father->setRight(NULL);
+			return aux;
+		}
+	}
+	else {
+		if (element < root->getElement()) {
+			return remove(root->getLeft(), element);
+		}
+		else {
+			return remove(root->getRight(), element);
+		}
+
 	}
 }
 
