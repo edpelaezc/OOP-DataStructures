@@ -212,22 +212,22 @@ namespace BinarySearchTree
                     {                        
                         if (root.getLeft() != null)
                         {
-                            root.getParent().setLeft(root.getLeft());
+                            root.getParent().setLeft(root.getLeft());                            
                         }
                         else
                         {
-                            root.getParent().setLeft(root.getRight());
+                            root.getParent().setLeft(root.getRight());                            
                         }
                     }
                     else
                     {
                         if (root.getLeft() != null)
                         {
-                            root.getParent().setRight(root.getLeft());
+                            root.getParent().setRight(root.getLeft());                            
                         }
                         else
                         {
-                            root.getParent().setRight(root.getRight());
+                            root.getParent().setRight(root.getRight());                            
                         }
                     }
                     treeSize--;
@@ -244,6 +244,7 @@ namespace BinarySearchTree
                     root.setElement(next.getElement());
                     Node<T> father = next.getParent();
                     father.setRight(null);
+                    treeSize--;
                     return aux;
                 }
             }

@@ -4,26 +4,27 @@
 
 using namespace std;
 BinaryTree::BinaryTree()
-{
+{	
 	root = NULL;
+	treeSize = 0;
 }
 
 int BinaryTree::size() { return treeSize; }
 
 void BinaryTree::add(int element) {
-	if (root->getElement() == NULL)	{
+	if (this->root == NULL)	{
 		root = new TreeNode(element, NULL, NULL, NULL);
 		treeSize++;
 	}
 	else {
-		addElement(this->root, element);
+		addElement(root, element);
 	}
 }
 
-void BinaryTree::addElement(Node root, int element) {
+void BinaryTree::addElement(TreeNode *root, int element) {
 	//si el elemento es menor que el valor de root lo agrega a la izq. recursivamente
 	if (element < root->getElement()) {
-		if (root->getLeft() != NULL) {
+		if (root->getLeft() == NULL) {
 			root->setLeft(new TreeNode(element, root, NULL, NULL));
 			treeSize++;
 		}
@@ -32,7 +33,7 @@ void BinaryTree::addElement(Node root, int element) {
 		}
 	}
 	else if (element > root->getElement()) {// si es mayor lo agrega al subarbol derecho. 
-		if (root->getRight() != NULL) {
+		if (root->getRight() == NULL) {			
 			root->setRight(new TreeNode(element, root, NULL, NULL));
 			treeSize++;
 		}
@@ -45,7 +46,7 @@ void BinaryTree::addElement(Node root, int element) {
 	}
 }
 
-bool BinaryTree::elementExists(Node root, int element) {
+bool BinaryTree::elementExists(TreeNode *root, int element) {
 	if (this->root == NULL) {
 		return false;
 	}
@@ -65,34 +66,34 @@ bool BinaryTree::elementExists(Node root, int element) {
 	}
 }
 
-void BinaryTree::preOrder(Node root) {
-	if (this->root != NULL)
+void BinaryTree::preOrder(TreeNode *root) {
+	if (root != NULL)
 	{
-		cout << root->getElement();
+		cout << root->getElement() << endl;
 		preOrder(root->getLeft());
 		preOrder(root->getRight());
 	}
 }
 
-void BinaryTree::postOrder(Node root) {
-	if (this->root != NULL)
+void BinaryTree::postOrder(TreeNode *root) {
+	if (root != NULL)
 	{
 		postOrder(root->getLeft());
 		postOrder(root->getRight());
-		cout << root->getElement();
+		cout << root->getElement()<< endl;
 	}
 }
 
-void BinaryTree::inOrder(Node root) {
-	if (this->root != NULL)
+void BinaryTree::inOrder(TreeNode *root) {
+	if (root != NULL)
 	{
 		inOrder(root->getLeft());
-		cout << root->getElement();
+		cout << root->getElement() << endl;
 		inOrder(root->getRight());
 	}
 }
 
-int BinaryTree::numberOfChildren(Node root) {
+int BinaryTree::numberOfChildren(TreeNode *root) {
 	int count = 0;
 	if (root->getLeft() != NULL)
 		count++;
@@ -101,8 +102,8 @@ int BinaryTree::numberOfChildren(Node root) {
 	return count;
 }
 
-int BinaryTree::remove(Node root, int element) {
-	if (this->root != NULL) {
+int BinaryTree::remove(TreeNode *root, int element) {
+	if (this->root == NULL) {
 		return NULL;
 	}
 	else if (element == root->getElement()) {
@@ -153,15 +154,16 @@ int BinaryTree::remove(Node root, int element) {
 			return aux;
 		}
 		else {// el nodo que sustituirá será el más derecho del subárbol izquierdo.
-			Node next = root->getLeft();
+			TreeNode *next = root->getLeft();
 			int aux = root->getElement();			
 			while (next->getRight() != NULL)
 			{
 				next = next->getRight();
 			}
 			root->setElement(next->getElement());
-			Node father = next->getParent();
+			TreeNode *father = next->getParent();
 			father->setRight(NULL);
+			treeSize--;
 			return aux;
 		}
 	}

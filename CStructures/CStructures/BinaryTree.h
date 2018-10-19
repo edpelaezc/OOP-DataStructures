@@ -52,24 +52,24 @@ public:
 	{
 		right = rightChild;
 	}
-}; typedef TreeNode *Node;
+};
 
 class BinaryTree
 {
 public:
-	Node root;
+	TreeNode *root;
 	BinaryTree();		
 	int size();
 	void add(int element);	
-	bool elementExists(Node root, int element);
-	int numberOfChildren(Node root);
-	void preOrder(Node root);
-	void postOrder(Node root);
-	void inOrder(Node root);
-	int remove(Node root, int element);
+	bool elementExists(TreeNode *root, int element);
+	int numberOfChildren(TreeNode *root);
+	void preOrder(TreeNode *root);
+	void postOrder(TreeNode *root);
+	void inOrder(TreeNode *root);
+	int remove(TreeNode *root, int element);
 	~BinaryTree();
 private:
 	int treeSize;
-	void addElement(Node root, int element);
+	void addElement(TreeNode *root, int element);
 };
 
