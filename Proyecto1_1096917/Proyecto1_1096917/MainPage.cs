@@ -59,7 +59,7 @@ namespace Proyecto1_1096917
             News auxNews;
             for (int i = 0; i < nFSize; i++)
             {
-                aux = newsFeed.removeFirst().Split('│');
+                aux = newsFeed.removeFirst().Split('│', '|');
                 auxNews = new News(aux[0], aux[1], aux[2], aux[3]);
                 news.addLast(auxNews);
                 auxNews = null;
@@ -100,7 +100,7 @@ namespace Proyecto1_1096917
             Message auxMessage;
             for (int i = 0; i < mSize; i++)
             {
-                message = messenger.removeFirst().Split('│');
+                message = messenger.removeFirst().Split('│', '|');
                 auxMessage = new Message(message[0], message[1], message[2], message[3], message[4]);                
                 chat.addLast(auxMessage);
                 auxMessage = null;
@@ -144,7 +144,7 @@ namespace Proyecto1_1096917
             Contact auxContact;
             for (int i = 0; i < fSize; i++)
             {
-                friend = friends.removeFirst().Split('│');
+                friend = friends.removeFirst().Split('│', '|');
                 auxContact = new Contact(friend[0], friend[1], friend[2], friend[3], friend[4], friend[5]);
                 friendList.addLast(auxContact);
                 auxContact = null;

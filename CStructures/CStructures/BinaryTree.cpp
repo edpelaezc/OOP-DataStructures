@@ -69,7 +69,7 @@ bool BinaryTree::elementExists(TreeNode *root, int element) {
 void BinaryTree::preOrder(TreeNode *root) {
 	if (root != NULL)
 	{
-		cout << root->getElement() << endl;
+		cout << root->getElement() << " ";
 		preOrder(root->getLeft());
 		preOrder(root->getRight());
 	}
@@ -80,7 +80,7 @@ void BinaryTree::postOrder(TreeNode *root) {
 	{
 		postOrder(root->getLeft());
 		postOrder(root->getRight());
-		cout << root->getElement()<< endl;
+		cout << root->getElement()<< " ";
 	}
 }
 
@@ -88,7 +88,7 @@ void BinaryTree::inOrder(TreeNode *root) {
 	if (root != NULL)
 	{
 		inOrder(root->getLeft());
-		cout << root->getElement() << endl;
+		cout << root->getElement() << " ";
 		inOrder(root->getRight());
 	}
 }
