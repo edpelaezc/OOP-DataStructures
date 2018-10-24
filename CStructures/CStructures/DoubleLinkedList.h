@@ -57,8 +57,12 @@ public:
 	void addLast(char n);
 	char removeFirst();
 	char removeLast();
-	bool search(char reference);
+	int leftSearch(char pivot, char character);
+	int rightSearch(char pivot, char character);
+	int searchPivot(char reference);
+	bool search(char reference);	
 	void showElements();
+	void showElements(int reference);
 	~DoubleLinkedList();
 };
 

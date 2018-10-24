@@ -74,6 +74,36 @@ char DoubleLinkedList::remove(NodeD *node) {
 	return node->getElement();
 }
 
+int DoubleLinkedList::leftSearch(char pivot, char character) {
+	nodeD auxiliar = header->getNext();
+	int response = 0;
+	while (auxiliar->getElement() != pivot) {
+		if (auxiliar->getElement() == character) {
+			response++;
+		}
+		auxiliar = auxiliar->getNext();
+	}
+	return response;
+}
+
+int DoubleLinkedList::rightSearch(char pivot, char character) {
+	nodeD auxiliar = header->getNext();
+	int response = 0;
+
+	while (auxiliar->getElement() != pivot) {
+		auxiliar = auxiliar->getNext();
+	}
+	auxiliar = auxiliar->getNext();
+
+	while (auxiliar != trailer) {
+		if (auxiliar->getElement() == character) {
+			response++;
+		}
+		auxiliar = auxiliar->getNext();
+	}
+	return response;
+}
+
 bool DoubleLinkedList::search(char reference) {
 	nodeD auxiliar = header->getNext();
 	bool flag = true;
@@ -97,6 +127,34 @@ void DoubleLinkedList::showElements() {
 	{
 		std::cout << auxiliar->getElement() << "\t";
 		auxiliar = auxiliar->getNext();
+	}
+}
+
+int DoubleLinkedList::searchPivot(char reference) {
+	nodeD auxiliar = header->getNext();
+	int response = 0;
+	while (auxiliar != trailer) {
+		if (auxiliar->getElement() == reference) {
+			break;
+		}
+		auxiliar = auxiliar->getNext();
+		response++;
+	}
+	return response;
+}
+
+void DoubleLinkedList::showElements(int reference) {
+	nodeD auxiliar = header->getNext();	
+	int cont = 0;
+	while (auxiliar != trailer) {
+		if (cont == reference) {
+			std::cout << "Pivote: " << auxiliar->getElement() << "\t";
+		}
+		else {
+			std::cout << auxiliar->getElement() << "\t";
+		}
+		auxiliar = auxiliar->getNext();	
+		cont++;
 	}
 }
 DoubleLinkedList::~DoubleLinkedList()
