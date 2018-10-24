@@ -4,20 +4,20 @@
 #include <stdio.h>
 #include <iostream>
 
-
 class NodeD {
 private:
-	int element;
+	char element;
 	NodeD *prev;
 	NodeD *next;
 
 public:
-	NodeD(int e, NodeD *previousNode, NodeD *nextNode) {		
+	NodeD(char e, NodeD *previousNode, NodeD *nextNode) {	
+		element = e;
 		prev = previousNode;
 		next = nextNode;
 	}
 
-	int getElement() {
+	char getElement() {
 		return element;
 	}
 
@@ -45,19 +45,19 @@ private:
 	nodeD header;
 	nodeD trailer;
 	int listSize;
-	void addBetween(int n, nodeD predecessor, nodeD successor);
-	int remove(NodeD *node);
+	void addBetween(char n, nodeD predecessor, nodeD successor);
+	char remove(NodeD *node);
 public:	
 	DoubleLinkedList();
 	int size();
 	bool isEmpty();
-	int first();
-	int last();
-	void addFirst(int n);
-	void addLast(int n);
-	int removeFirst();
-	int removeLast();
-	bool search(int reference);
+	char first();
+	char last();
+	void addFirst(char n);
+	void addLast(char n);
+	char removeFirst();
+	char removeLast();
+	bool search(char reference);
 	void showElements();
 	~DoubleLinkedList();
 };

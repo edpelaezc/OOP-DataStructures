@@ -65,8 +65,9 @@ public:
 	int numberOfChildren(TreeNode *root);
 	void preOrder(TreeNode *root);
 	void postOrder(TreeNode *root);
-	void inOrder(TreeNode *root);
+	void inOrder(TreeNode *root);	
 	int remove(TreeNode *root, int element);
+	int treeDepth(TreeNode *root);
 	~BinaryTree();
 private:
 	int treeSize;

@@ -178,6 +178,22 @@ int BinaryTree::remove(TreeNode *root, int element) {
 	}
 }
 
+int BinaryTree::treeDepth(TreeNode *root) {
+	if (!root) {
+		return 0;
+	}
+	else {
+		int leftDepth = treeDepth(root->getLeft());
+		int rightDepth = treeDepth(root->getRight());
+		if (leftDepth > rightDepth) {
+			return leftDepth + 1;
+		}
+		else {
+			return rightDepth + 1;
+		}
+	}
+}
+
 BinaryTree::~BinaryTree()
 {
 }
