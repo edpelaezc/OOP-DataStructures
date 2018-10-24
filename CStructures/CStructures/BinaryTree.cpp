@@ -6,15 +6,15 @@ using namespace std;
 BinaryTree::BinaryTree()
 {	
 	root = NULL;
-	treeSize = 0;
+	numberOfNodes = 0;
 }
 
-int BinaryTree::size() { return treeSize; }
+int BinaryTree::weight() { return numberOfNodes; }
 
 void BinaryTree::add(int element) {
 	if (this->root == NULL)	{
 		root = new TreeNode(element, NULL, NULL, NULL);
-		treeSize++;
+		numberOfNodes++;
 	}
 	else {
 		addElement(root, element);
@@ -26,7 +26,7 @@ void BinaryTree::addElement(TreeNode *root, int element) {
 	if (element < root->getElement()) {
 		if (root->getLeft() == NULL) {
 			root->setLeft(new TreeNode(element, root, NULL, NULL));
-			treeSize++;
+			numberOfNodes++;
 		}
 		else {
 			addElement(root->getLeft(), element);
@@ -35,7 +35,7 @@ void BinaryTree::addElement(TreeNode *root, int element) {
 	else if (element > root->getElement()) {// si es mayor lo agrega al subarbol derecho. 
 		if (root->getRight() == NULL) {			
 			root->setRight(new TreeNode(element, root, NULL, NULL));
-			treeSize++;
+			numberOfNodes++;
 		}
 		else {
 			addElement(root->getRight(), element);
@@ -113,18 +113,17 @@ int BinaryTree::remove(TreeNode *root, int element) {
 			{
 				int aux = root->getElement();
 				root->getParent()->setLeft(NULL);
-				root = NULL;
-				treeSize--;
+				root = NULL;				
 				return aux;
 			}
 			else
 			{
 				int aux = root->getElement();
 				root->getParent()->setRight(NULL);
-				root = NULL;
-				treeSize--;
+				root = NULL;				
 				return aux;
 			}
+			numberOfNodes--;
 		}
 		else if (numberOfChildren(root) == 1) {
 			int aux = root->getElement();
@@ -150,20 +149,27 @@ int BinaryTree::remove(TreeNode *root, int element) {
 					root->getParent()->setRight(root->getRight());               
 				}
 			}
-			treeSize--;
+			numberOfNodes--;
 			return aux;
 		}
 		else {// el nodo que sustituirá será el más derecho del subárbol izquierdo.
 			TreeNode *next = root->getLeft();
 			int aux = root->getElement();			
-			while (next->getRight() != NULL)
-			{
-				next = next->getRight();
+			if (next->getRight() != NULL) {
+				while (next->getRight() != NULL)
+				{
+					next = next->getRight();
+				}
+				root->setElement(next->getElement());
+				TreeNode *father = next->getParent();
+				father->setRight(NULL);				
+			}
+			else {
+
 			}
 			root->setElement(next->getElement());
-			TreeNode *father = next->getParent();
-			father->setRight(NULL);
-			treeSize--;
+			root->setLeft(NULL);
+			numberOfNodes--;
 			return aux;
 		}
 	}
@@ -175,6 +181,17 @@ int BinaryTree::remove(TreeNode *root, int element) {
 			return remove(root->getRight(), element);
 		}
 
+	}
+}
+
+void BinaryTree::removeLeaf(TreeNode *root) {
+	if (root != NULL) {			
+		removeLeaf(root->getLeft());
+		removeLeaf(root->getRight());
+
+		if (numberOfChildren(root) == 0 && root->getElement() % 2 != 0) {
+			remove(this->root, root->getElement());
+		}
 	}
 }
 

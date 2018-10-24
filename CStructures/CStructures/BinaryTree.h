@@ -59,7 +59,7 @@ class BinaryTree
 public:
 	TreeNode *root;
 	BinaryTree();		
-	int size();
+	int weight();
 	void add(int element);	
 	bool elementExists(TreeNode *root, int element);
 	int numberOfChildren(TreeNode *root);
@@ -67,10 +67,11 @@ public:
 	void postOrder(TreeNode *root);
 	void inOrder(TreeNode *root);	
 	int remove(TreeNode *root, int element);
+	void removeLeaf(TreeNode * root);
 	int treeDepth(TreeNode *root);
 	~BinaryTree();
 private:
-	int treeSize;
+	int numberOfNodes;
 	void addElement(TreeNode *root, int element);
 };
 
