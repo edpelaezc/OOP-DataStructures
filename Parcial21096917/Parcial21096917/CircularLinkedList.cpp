@@ -106,6 +106,20 @@ void CircularLinkedList::showElements() {
 	std::cout << auxiliar->getElement() << "\n";
 }
 
+int CircularLinkedList::searchPointer(int rep) {
+	node auxiliar = tail->getNext();
+	int cont = 0;
+	
+	while (cont != rep) {		
+		auxiliar = auxiliar->getNext();
+		auxiliar = auxiliar->getNext();
+		cont += 2;
+	}
+	auxiliar = auxiliar->getNext();
+	auxiliar = auxiliar->getNext();
+	return auxiliar->getElement();
+}
+
 CircularLinkedList::~CircularLinkedList()
 {
 }
