@@ -73,7 +73,7 @@ public:
 	void removeLeaf(TreeNode * root);
 	void showParents(TreeNode *root);
 	int treeDepth(TreeNode *root);
-	CircularLinkedList leaf(TreeNode *root);
+	void leaf(TreeNode *root, static CircularLinkedList *list);
 	~BinaryTree();
 private:
 	int numberOfNodes;

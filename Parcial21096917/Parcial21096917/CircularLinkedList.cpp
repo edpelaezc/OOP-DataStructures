@@ -100,7 +100,7 @@ void CircularLinkedList::showElements() {
 	node auxiliar = tail->getNext();
 	while (auxiliar != tail)
 	{
-		std::cout << auxiliar->getElement() << "\t";
+		std::cout << auxiliar->getElement() << "-";
 		auxiliar = auxiliar->getNext();
 	}
 	std::cout << auxiliar->getElement() << "\n";

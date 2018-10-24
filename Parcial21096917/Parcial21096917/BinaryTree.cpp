@@ -66,6 +66,23 @@ bool BinaryTree::elementExists(TreeNode *root, int element) {
 	}
 }
 
+void BinaryTree::leaf(TreeNode *root, static CircularLinkedList *list) {
+	if (root != NULL) {
+		leaf(root->getLeft(), list);
+
+		if (numberOfChildren(root) == 0) {
+			int nivel = level(this->root, root->getElement(), 0 );
+			int result = root->getElement() * nivel;
+			if (result % 2 == 0)
+			{
+				list->addLast(result);
+			}			
+		}
+
+		leaf(root->getRight(), list);
+	}
+};
+
 int BinaryTree::level(TreeNode *root, int element, int response) {	
 	if (root == NULL) {
 		return 0;
