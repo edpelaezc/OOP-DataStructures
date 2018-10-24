@@ -1,4 +1,6 @@
 #pragma once
+#include "CircularLinkedList.h"
+
 class TreeNode {
 private:
 	int element;
@@ -70,6 +72,7 @@ public:
 	void removeLeaf(TreeNode * root);
 	void showParents(TreeNode *root);
 	int treeDepth(TreeNode *root);
+	CircularLinkedList leaf(TreeNode *root);
 	~BinaryTree();
 private:
 	int numberOfNodes;

@@ -80,7 +80,7 @@ void BinaryTree::postOrder(TreeNode *root) {
 	{
 		postOrder(root->getLeft());
 		postOrder(root->getRight());
-		cout << root->getElement() << " ";
+		cout << root->getElement() << "-";
 	}
 }
 
@@ -88,7 +88,7 @@ void BinaryTree::inOrder(TreeNode *root) {
 	if (root != NULL)
 	{
 		inOrder(root->getLeft());
-		cout << root->getElement() << " ";
+		cout << root->getElement() << "-";
 		inOrder(root->getRight());
 	}
 }
@@ -197,11 +197,12 @@ void BinaryTree::removeLeaf(TreeNode *root) {
 
 void BinaryTree::showParents(TreeNode *root) {
 	if (root != NULL) {
+		if (numberOfChildren(root) == 1 || numberOfChildren(root) == 2) {
+			std::cout << root->getElement() << "-";
+		}
+
 		showParents(root->getLeft());
 		showParents(root->getRight());
-		if (numberOfChildren(root) == 1 || numberOfChildren(root) == 2) {
-			std::cout << "Nodo padre: " << root->getElement() << std::endl; 
-		}
 	}
 }
 
