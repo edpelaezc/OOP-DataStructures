@@ -68,6 +68,7 @@ public:
 	void inOrder(TreeNode *root);
 	int remove(TreeNode *root, int element);
 	void removeLeaf(TreeNode * root);
+	void showParents(TreeNode *root);
 	int treeDepth(TreeNode *root);
 	~BinaryTree();
 private:

@@ -186,11 +186,21 @@ int BinaryTree::remove(TreeNode *root, int element) {
 
 void BinaryTree::removeLeaf(TreeNode *root) {
 	if (root != NULL) {
-		removeLeaf(root->getLeft());
 		removeLeaf(root->getRight());
+		removeLeaf(root->getLeft());		
 
 		if (numberOfChildren(root) == 0 && root->getElement() % 2 != 0) {
 			remove(this->root, root->getElement());
+		}
+	}
+}
+
+void BinaryTree::showParents(TreeNode *root) {
+	if (root != NULL) {
+		showParents(root->getLeft());
+		showParents(root->getRight());
+		if (numberOfChildren(root) == 1 || numberOfChildren(root) == 2) {
+			std::cout << "Nodo padre: " << root->getElement() << std::endl; 
 		}
 	}
 }
