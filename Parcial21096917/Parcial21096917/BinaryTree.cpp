@@ -47,7 +47,7 @@ void BinaryTree::addElement(TreeNode *root, int element) {
 }
 
 bool BinaryTree::elementExists(TreeNode *root, int element) {
-	if (this->root == NULL) {
+	if (root == NULL) {
 		return false;
 	}
 	else if (element == root->getElement()) {
@@ -62,6 +62,25 @@ bool BinaryTree::elementExists(TreeNode *root, int element) {
 		else
 		{
 			return elementExists(root->getRight(), element);
+		}
+	}
+}
+
+int BinaryTree::level(TreeNode *root, int element, int response) {	
+	if (root == NULL) {
+		return 0;
+	}
+	else {
+		if (element == root->getElement()) {
+			return response;
+		}
+		else if(element < root->getElement()) {
+			response++;
+			return level(root->getLeft(), element, response);
+		}
+		else {
+			response++;
+			return level(root->getRight(), element, response);
 		}
 	}
 }

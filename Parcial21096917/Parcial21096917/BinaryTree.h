@@ -64,6 +64,7 @@ public:
 	int weight();
 	void add(int element);
 	bool elementExists(TreeNode *root, int element);
+	int level(TreeNode *root, int element, int response);
 	int numberOfChildren(TreeNode *root);
 	void preOrder(TreeNode *root);
 	void postOrder(TreeNode *root);
