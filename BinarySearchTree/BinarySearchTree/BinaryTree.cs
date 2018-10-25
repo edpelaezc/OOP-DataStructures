@@ -10,9 +10,7 @@ namespace BinarySearchTree
     public class BinaryTree<T>
     {
         public Node<T> root;
-        private int treeSize = 0;        
-        public int depthRight = 0;
-        public int depthLeft = 0;
+        private int numberOfNodes = 0;        
         Comparer<T> comp = Comparer<T>.Default;
         public MyLinkedList<Node<T>> order = new MyLinkedList<Node<T>>();
 
@@ -21,52 +19,44 @@ namespace BinarySearchTree
             root = null;
         }
 
-        public int size()
+        public int weight()
         {
-            return treeSize;
+            return numberOfNodes;
         }
+        
 
-        public void branchesDepth(Node<T> root)
+        public int treeDepth(Node<T> root)
         {
             if (root != null)
             {
-                if (root.getLeft() != null && root.getRight() == null)
-                {
-                    depthLeft++;
-                    branchesDepth(root.getLeft());
-                }
-                else if (root.getRight() != null && root.getLeft() == null) 
-                {
-                    depthRight++;
-                    branchesDepth(root.getRight());
-                }
-                else if (root.getRight() != null && root.getLeft() != null)
-                {
-                    depthLeft++;
-                    depthRight++;
-                    branchesDepth(root.getLeft());
-                    branchesDepth(root.getRight());
-                }
+                return 0;
             }
             else
             {
-                depthLeft = 0;
-                depthRight = 0;
+                int leftDepth = treeDepth(root.getLeft());
+                int rightDepth = treeDepth(root.getRight());
+                return Math.Max(leftDepth, rightDepth);
             }
         }
 
-        public int maxDepth()
-        {
-            branchesDepth(this.root);
-            return Math.Max(depthLeft,depthRight) - 1;
+        public void add(Node<T> root, T element) {
+            if (this.root == null)
+            {
+                root = new Node<T>(element, null, null, null);
+                numberOfNodes++;
+            }
+            else
+            {
+                addElement(root, element);
+            }
         }
 
-        public void add(Node<T> root, T element)
+        private void addElement(Node<T> root, T element)
         {            
             if (this.root == null)
             {
                 this.root = new Node<T>(element, null, null, null);
-                treeSize++;
+                numberOfNodes++;
             }
             else
             {                
@@ -75,7 +65,7 @@ namespace BinarySearchTree
                     if (root.getLeft() == null)
                     {
                         root.setLeft(new Node<T>(element, root, null, null));
-                        treeSize++;
+                        numberOfNodes++;
                     }
                     else
                     {                        
@@ -87,7 +77,7 @@ namespace BinarySearchTree
                     if (root.getRight() == null)
                     {
                         root.setRight(new Node<T>(element,root, null, null));
-                        treeSize++;
+                        numberOfNodes++;
                     }
                     else
                     {
@@ -149,7 +139,7 @@ namespace BinarySearchTree
                         T aux = root.getElement();
                         root.getParent().setLeft(null);
                         root = null;
-                        treeSize--;
+                        numberOfNodes--;
                         return aux;
                     }
                     else
@@ -157,7 +147,7 @@ namespace BinarySearchTree
                         T aux = root.getElement();
                         root.getParent().setRight(null);
                         root = null;
-                        treeSize--;
+                        numberOfNodes--;
                         return aux;
                     }
                 }
@@ -186,7 +176,7 @@ namespace BinarySearchTree
                             root.getParent().setRight(root.getRight());                            
                         }
                     }
-                    treeSize--;
+                    numberOfNodes--;
                     return aux;
                 }
                 else//El que sustituirá será el más derecho de los izquierdos
@@ -209,7 +199,7 @@ namespace BinarySearchTree
                         root.setLeft(null); 
                     }
 
-                    treeSize--;
+                    numberOfNodes--;
                     return aux;
                 }
             }
