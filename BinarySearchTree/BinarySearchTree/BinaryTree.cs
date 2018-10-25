@@ -132,51 +132,7 @@ namespace BinarySearchTree
                 if (root.getRight() != null)
                     count++;
                 return count;            
-        }
-
-        public void removeLeaf(Node<T> root, T element)
-        {
-            if (root != null)
-            {
-                if (comp.Compare(element, root.getElement()) == 0)
-                {
-                    if (numberOfChildren(root) == 0)
-                    {
-                        if (comp.Compare(element, root.getParent().getLeft().getElement()) == 0)
-                        {                            
-                            root.getParent().setLeft(null);
-                            root = null;                            
-                        }
-                        else
-                        {                            
-                            root.getParent().setRight(null);
-                            root = null;                            
-                        }
-                    }
-                }
-                else
-                {
-                    if (comp.Compare(element, root.getElement()) < 0)
-                    {
-                        removeLeaf(root.getLeft(), element);
-                    }
-                    else
-                    {
-                        removeLeaf(root.getRight(), element);
-                    }
-                }
-            }
-        }
-
-        public T searchRight(Node<T> root) 
-        {
-            Node<T> next = root.getLeft();
-            while (next.getRight() != null)
-            {
-                next = next.getRight();
-            }
-            return next.getElement();
-        }
+        }        
 
         public T remove(Node<T> root, T element)
         {
@@ -236,14 +192,23 @@ namespace BinarySearchTree
                 else//El que sustituirá será el más derecho de los izquierdos
                 {
                     Node<T> next = root.getLeft();
-                    T aux = root.getElement();                                                        
-                    while (next.getRight() != null)
+                    T aux = root.getElement();
+                    if (next.getRight() != null)
                     {
-                        next = next.getRight();
+                        while (next.getRight() != null)
+                        {
+                            next = next.getRight();
+                        }
+                        root.setElement(next.getElement());
+                        Node<T> father = next.getParent();
+                        father.setRight(null);
                     }
-                    root.setElement(next.getElement());
-                    Node<T> father = next.getParent();
-                    father.setRight(null);
+                    else
+                    {
+                        root.setElement(next.getElement());
+                        root.setLeft(null); 
+                    }
+
                     treeSize--;
                     return aux;
                 }
