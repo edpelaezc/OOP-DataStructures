@@ -165,10 +165,9 @@ int BinaryTree::remove(TreeNode *root, int element) {
 				father->setRight(NULL);				
 			}
 			else {
-
+				root->setElement(next->getElement());
+				root->setLeft(NULL);
 			}
-			root->setElement(next->getElement());
-			root->setLeft(NULL);
 			numberOfNodes--;
 			return aux;
 		}
