@@ -107,46 +107,51 @@ int BinaryTree::remove(TreeNode *root, int element) {
 		return NULL;
 	}
 	else if (element == root->getElement()) {
-		if (numberOfChildren(root) == 0)
-		{
-			if (element == root->getParent()->getLeft()->getElement())
-			{
-				int aux = root->getElement();
-				root->getParent()->setLeft(NULL);
-				root = NULL;				
-				return aux;
+		if (numberOfChildren(root) == 0) {
+			int aux = root->getElement();
+			if (root == this->root) {
+				this->root = NULL;
 			}
-			else
-			{
-				int aux = root->getElement();
-				root->getParent()->setRight(NULL);
-				root = NULL;				
-				return aux;
+			else {
+				if (element == root->getParent()->getLeft()->getElement()) {
+					root->getParent()->setLeft(NULL);
+					root = NULL;
+				}
+				else {
+					root->getParent()->setRight(NULL);
+					root = NULL;
+				}
 			}
 			numberOfNodes--;
+			return aux;
 		}
 		else if (numberOfChildren(root) == 1) {
 			int aux = root->getElement();
-			if (root->getParent()->getLeft() != NULL)
-			{
-				if (root->getLeft() != NULL)
-				{
-					root->getParent()->setLeft(root->getLeft());
+
+			if (root == this->root) {
+				if (root->getLeft() != NULL) {
+					this->root = root->getLeft();
 				}
-				else
-				{
-					root->getParent()->setLeft(root->getRight());
+				else {
+					this->root = root->getRight();
 				}
 			}
-			else
-			{
-				if (root->getLeft() != NULL)
-				{
-					root->getParent()->setRight(root->getLeft());
+			else {
+				if (root->getParent()->getLeft() != NULL) {
+					if (root->getLeft() != NULL) {
+						root->getParent()->setLeft(root->getLeft());
+					}
+					else {
+						root->getParent()->setLeft(root->getRight());
+					}
 				}
-				else
-				{
-					root->getParent()->setRight(root->getRight());               
+				else {
+					if (root->getLeft() != NULL) {
+						root->getParent()->setRight(root->getLeft());
+					}
+					else {
+						root->getParent()->setRight(root->getRight());
+					}
 				}
 			}
 			numberOfNodes--;

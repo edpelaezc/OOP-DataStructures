@@ -12,20 +12,17 @@ namespace BTImplementation
         static void Main(string[] args)
         {
             BinaryTree<int> tree = new BinaryTree<int>();
-            tree.add(tree.root, 15);
-            tree.add(tree.root, 6);
-            tree.add(tree.root, 3);
-            tree.add(tree.root, 9);
-            tree.add(tree.root, 1);
-            tree.add(tree.root, 4);
-            tree.add(tree.root, 7);
-            tree.add(tree.root, 12);
-            tree.add(tree.root, 20);
-            tree.add(tree.root, 18);
-            tree.add(tree.root, 17);
-            tree.add(tree.root, 24);            
-            tree.remove(tree.root, 6);
-            Console.WriteLine(tree.maxDepth());
+            tree.add(9);
+            tree.add(11);
+            tree.add(10);
+            tree.add(12);
+            Console.WriteLine("Arbol binario completo");
+            tree.preOrder(tree.root);
+            Console.WriteLine("Raiz actual: " + tree.root.getElement());
+            tree.remove(tree.root, 9);
+            Console.WriteLine("\nEliminando nodo raiz\n");
+            Console.WriteLine("Raiz actual: " + tree.root.getElement());
+            tree.preOrder(tree.root);
             Console.ReadLine();
         }
     }

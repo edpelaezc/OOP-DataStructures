@@ -39,7 +39,7 @@ namespace BinarySearchTree
             }
         }
 
-        public void add(Node<T> root, T element) {
+        public void add(T element) {
             if (this.root == null)
             {
                 root = new Node<T>(element, null, null, null);
@@ -68,8 +68,8 @@ namespace BinarySearchTree
                         numberOfNodes++;
                     }
                     else
-                    {                        
-                        add(root.getLeft(), element);
+                    {
+                        addElement(root.getLeft(), element);
                     }
                 }
                 else if (comp.Compare(element, root.getElement()) > 0)//x es mayor que y 
@@ -81,7 +81,7 @@ namespace BinarySearchTree
                     }
                     else
                     {
-                        add(root.getRight(), element);
+                        addElement(root.getRight(), element);
                     }
                 }
                 else//x es igual que y
@@ -154,26 +154,40 @@ namespace BinarySearchTree
                 else if (numberOfChildren(root) == 1)
                 {
                     T aux = root.getElement();
-                    if (root.getParent().getLeft() != null)
-                    {                        
-                        if (root.getLeft() != null)
-                        {
-                            root.getParent().setLeft(root.getLeft());                            
-                        }
-                        else
-                        {
-                            root.getParent().setLeft(root.getRight());                            
-                        }
-                    }
-                    else
+                    if (root == this.root)
                     {
                         if (root.getLeft() != null)
                         {
-                            root.getParent().setRight(root.getLeft());                            
+                            this.root = root.getLeft();
                         }
                         else
                         {
-                            root.getParent().setRight(root.getRight());                            
+                            this.root = root.getRight();
+                        }
+                    }
+                    else
+                    {                        
+                        if (root.getParent().getLeft() != null)
+                        {
+                            if (root.getLeft() != null)
+                            {
+                                root.getParent().setLeft(root.getLeft());
+                            }
+                            else
+                            {
+                                root.getParent().setLeft(root.getRight());
+                            }
+                        }
+                        else
+                        {
+                            if (root.getLeft() != null)
+                            {
+                                root.getParent().setRight(root.getLeft());
+                            }
+                            else
+                            {
+                                root.getParent().setRight(root.getRight());
+                            }
                         }
                     }
                     numberOfNodes--;
@@ -220,7 +234,7 @@ namespace BinarySearchTree
         {
             if (root != null)
             {
-                order.addLast(root);
+                Console.Write(root.getElement() + "->");
                 preOrder(root.getLeft());
                 preOrder(root.getRight());
             }   
