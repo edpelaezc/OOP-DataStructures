@@ -1,42 +1,44 @@
 #pragma once
-template<class DataN>
+#include <iostream>
+
+template<class T>
 class Node {
 private:
-	DataN element;
-	Node<DataN> *next;
+	T element;
+	Node<T> *next;
 public:
-	DataN getElement() {
+	T getElement() {
 		return element;
 	}
 
-	Node<DataN>* getNext() {
+	Node<T>* getNext() {
 		return next;
 	}
-	void setNext(Node<DataN> *next) {
+	void setNext(Node<T> *next) {
 		this->next = next;
 	}
 
-	Node(DataN d, Node<DataN> *nextNode) {
+	Node(T d, Node<T> *nextNode) {
 		element = d;
 		next = nextNode;
 	}
 };
 
-template<class Data>
+template<class T>
 class MyLinkedList
 {
 public:
 	MyLinkedList();
-	Node<Data> *head;
-	Node<Data> *tail;
+	Node<T> *head;
+	Node<T> *tail;
 	int size();
 	bool isEmpty();
-	Data first();
-	Data last();
-	void addFirst(Data t);
-	void addLast(Data t);
-	Data removeFirst();
-	bool searchElement(Data reference);
+	T first();
+	T last();
+	void addFirst(T d);
+	void addLast(T d);
+	T removeFirst();
+	bool searchElement(T reference);
 	void showElements();
 	~MyLinkedList();
 private:

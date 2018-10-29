@@ -2,21 +2,21 @@
 #include "MyLinkedList.h"
 #include <iostream>
 
-template<class Data>
-MyLinkedList<Data>::MyLinkedList() {
+template<typename T>
+MyLinkedList<T>::MyLinkedList() {
 	head = NULL;
 	tail = NULL;
 	listSize = 0;
 }
 
-template<class Data>
-int MyLinkedList<Data>::size() { return listSize; }
+template<typename T>
+int MyLinkedList<T>::size() { return listSize; }
 
-template<class Data>
-bool MyLinkedList<Data>::isEmpty() { return listSize == 0; }
+template<typename T>
+bool MyLinkedList<T>::isEmpty() { return listSize == 0; }
 
-template<class Data>
-Data MyLinkedList<Data>::first() {
+template<typename T>
+T MyLinkedList<T>::first() {
 	if (isEmpty()) {
 		return NULL;
 	}
@@ -25,8 +25,8 @@ Data MyLinkedList<Data>::first() {
 	}
 }
 
-template<class Data>
-Data MyLinkedList<Data>::last() {
+template<typename T>
+T MyLinkedList<T>::last() {
 	if (isEmpty()) {
 		return NULL;
 	}
@@ -36,18 +36,18 @@ Data MyLinkedList<Data>::last() {
 }
 
 
-template<class Data>
-void MyLinkedList<Data>::addFirst(Data d) {
-	head = new Node<Data>(d, head);
+template<typename T>
+void MyLinkedList<T>::addFirst(T d) {
+	head = new Node<T>(d, head);
 	if (listSize == 0) {
 		tail = head;
 	}
 	listSize++;
 }
 
-template<class Data>
-void MyLinkedList<Data>::addLast(Data d) {
-	Node<Data> newest = new Node<Data>(d, NULL);
+template<typename T>
+void MyLinkedList<T>::addLast(T d) {
+	Node<T> *newest = new Node<T>(d, NULL);
 	if (isEmpty()) {
 		head = newest;
 	}
@@ -58,13 +58,13 @@ void MyLinkedList<Data>::addLast(Data d) {
 	listSize++;
 }
 
-template<class Data>
-Data MyLinkedList<Data>::removeFirst() {
+template<typename T>
+T MyLinkedList<T>::removeFirst() {
 	if (isEmpty()) {
 		return NULL;
 	}
 	else {
-		Data auxiliary = head->getElement();
+		T auxiliary = head->getElement();
 		head = head->getNext();
 		listSize--;
 		if (listSize == 0)
@@ -75,9 +75,9 @@ Data MyLinkedList<Data>::removeFirst() {
 	}
 }
 
-template<class Data>
-bool MyLinkedList<Data>::searchElement(Data reference) {
-	Node<Data> auxiliar = head;
+template<typename T>
+bool MyLinkedList<T>::searchElement(T reference) {
+	Node<T> *auxiliar = head;
 	bool flag = true;
 	while (auxiliar != NULL && flag) {
 		if (auxiliar->getElement() == reference) {
@@ -90,15 +90,15 @@ bool MyLinkedList<Data>::searchElement(Data reference) {
 	return !flag;
 }
 
-template<class Data>
-void MyLinkedList<Data>::showElements() {
-	Node<Data> auxiliar = head;
+template<typename T>
+void MyLinkedList<T>::showElements() {
+	Node<T> *auxiliar = head;
 	while (auxiliar != NULL) {
 		std::cout << auxiliar->getElement() << "\t";
 		auxiliar = auxiliar->getNext();
 	}
 }
 
-template<class Data>
-MyLinkedList<Data>::~MyLinkedList() {
+template<typename T>
+MyLinkedList<T>::~MyLinkedList() {
 }
