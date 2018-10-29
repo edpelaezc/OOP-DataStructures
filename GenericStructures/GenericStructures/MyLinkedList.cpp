@@ -94,7 +94,7 @@ template<typename T>
 void MyLinkedList<T>::showElements() {
 	Node<T> *auxiliar = head;
 	while (auxiliar != NULL) {
-		std::cout << auxiliar->getElement() << "\t";
+		std::cout << auxiliar->getElement() << "->";
 		auxiliar = auxiliar->getNext();
 	}
 }
