@@ -62,17 +62,17 @@ public:
 	TreeNode<T> *root;
 	BinaryTree();
 	int weight();
-	void add(int element);
-	bool elementExists(TreeNode<T> *root, int element);
+	void add(T element);
+	bool elementExists(TreeNode<T> *root, T element);
 	int numberOfChildren(TreeNode<T> *root);
 	void preOrder(TreeNode<T> *root);
 	void postOrder(TreeNode<T> *root);
 	void inOrder(TreeNode<T> *root);
-	T remove(TreeNode<T> *root, int element);
+	T remove(TreeNode<T> *root, T element);
 	int treeDepth(TreeNode<T> *root);
 	~BinaryTree();
 private:
 	int numberOfNodes;
-	void addElement(TreeNode<T> *root, int element);
+	void addElement(TreeNode<T> *root, T element);
 };
 
