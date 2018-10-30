@@ -1,12 +1,12 @@
 #include "pch.h"
 #include "BinaryTree.h"
 
-
-BinaryTree::BinaryTree()
+template<typename T>
+BinaryTree<T>::BinaryTree()
 {
 }
 
-
-BinaryTree::~BinaryTree()
+template<typename T>
+BinaryTree<T>::~BinaryTree()
 {
 }
