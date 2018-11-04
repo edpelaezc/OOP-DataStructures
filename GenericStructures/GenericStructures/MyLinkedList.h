@@ -29,6 +29,7 @@ class MyLinkedList
 {
 public:
 	MyLinkedList();
+	void *compare;
 	Node<T> *head;
 	Node<T> *tail;
 	int size();
@@ -39,7 +40,7 @@ public:
 	void addLast(T d);
 	T removeFirst();
 	bool searchElement(T reference);
-	void showElements();
+	void showElements();	
 	~MyLinkedList();
 private:
 	int listSize;

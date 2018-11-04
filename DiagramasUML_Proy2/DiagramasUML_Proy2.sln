@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2050
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiagramasUML_Proy2", "DiagramasUML_Proy2\DiagramasUML_Proy2.csproj", "{A17636F5-876B-4C70-8B51-382938697F2B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A17636F5-876B-4C70-8B51-382938697F2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A17636F5-876B-4C70-8B51-382938697F2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A17636F5-876B-4C70-8B51-382938697F2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A17636F5-876B-4C70-8B51-382938697F2B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8DE5AF4C-8BD9-4A52-B333-10F1D37EE3BB}
+	EndGlobalSection
+EndGlobal

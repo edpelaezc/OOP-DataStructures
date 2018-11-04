@@ -7,12 +7,18 @@ private:
 	TreeNode<T> *parent;
 	TreeNode<T> *left;
 	TreeNode<T> *right;
+	int key;
 public: 
-	TreeNode(T t, TreeNode<T> *above, TreeNode<T> *leftChild, TreeNode<T> *rightChild) {
+	TreeNode(T t, TreeNode<T> *above, TreeNode<T> *leftChild, TreeNode<T> *rightChild, int nKey) {
 		element = t;
 		parent = above;
 		left = leftChild;
 		right = rightChild;
+		key = nKey;
+	}
+
+	int getKey() {
+		return key;
 	}
 
 	T getElement() {
@@ -62,17 +68,17 @@ public:
 	TreeNode<T> *root;
 	BinaryTree();
 	int weight();
-	void add(T element);
-	bool elementExists(TreeNode<T> *root, T element);
+	void add(T element, int key);
+	bool elementExists(TreeNode<T> *root, int elementKey);
 	int numberOfChildren(TreeNode<T> *root);
 	void preOrder(TreeNode<T> *root);
 	void postOrder(TreeNode<T> *root);
 	void inOrder(TreeNode<T> *root);
-	T remove(TreeNode<T> *root, T element);
+	T remove(TreeNode<T> *root, int elementKey);
 	int treeDepth(TreeNode<T> *root);
 	~BinaryTree();
 private:
 	int numberOfNodes;
-	void addElement(TreeNode<T> *root, T element);
+	void addElement(TreeNode<T> *root, T element, int key);
 };
 
