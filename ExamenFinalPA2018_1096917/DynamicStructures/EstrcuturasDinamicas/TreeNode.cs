@@ -9,16 +9,23 @@ namespace EstrcuturasDinamicas
     public class TreeNode<T>
     {
         private T element;
+        private int key;
         private TreeNode<T> parent;
         private TreeNode<T> left;
         private TreeNode<T> right;
+        public delegate string toStringD<T>();
 
-        public TreeNode(T t, TreeNode<T> above, TreeNode<T> leftChild, TreeNode<T> rightChild)
+        public TreeNode(T t, TreeNode<T> above, TreeNode<T> leftChild, TreeNode<T> rightChild, int tKey)
         {
             element = t;
+            key = tKey;
             parent = above;
             left = leftChild;
             right = rightChild;
+        }
+
+        public int getKey() {
+            return key;
         }
 
         public T getElement()
@@ -59,6 +66,11 @@ namespace EstrcuturasDinamicas
         public void setRight(TreeNode<T> rightChild)
         {
             right = rightChild;
+        }
+
+        public string toString(toStringD<T> show)
+        {
+            return show();
         }
     }
 }

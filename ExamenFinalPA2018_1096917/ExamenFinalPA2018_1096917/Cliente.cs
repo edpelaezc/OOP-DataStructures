@@ -31,7 +31,7 @@ namespace ExamenFinalPA2018_1096917
 
         public void setID(int iD)
         {
-            ID = iD;
+            this.ID = iD;
         }
 
         public string getName()
@@ -72,6 +72,11 @@ namespace ExamenFinalPA2018_1096917
         public void setAddress(string address)
         {
             this.address = address;
+        }
+
+        public string toString()
+        {
+            return ID + "," + name + "," + phone + "," + age + "," + address;
         }
     }
 }

@@ -28,7 +28,7 @@ namespace ExamenFinalPA2018_1096917
         private void button1_Click(object sender, EventArgs e)
         {
             openFile = new OpenFileDialog();
-            openFile.Title = "SELECCIONE EL ARCHIVO PARA INICIAR SESIÓN";
+            openFile.Title = "SELECCIONE EL ARCHIVO PARA INGRESARLO AL SISTEMA";
             path = "";
 
             if (openFile.ShowDialog() == DialogResult.OK)
@@ -36,25 +36,45 @@ namespace ExamenFinalPA2018_1096917
                 textBox1.Text = openFile.FileName;
                 path = openFile.FileName;
                 if (path.Contains(".csv"))//verifica que sea el archivo necesario para el sistema
-                {
-                    fileNames.addLast(path);
-                    if (fileNames.searchElement(path) == false)//verifica si el archivo ya fue leído
-                    {//lee el archivo linea por linea
+                {                                      
+                    if (fileNames.isEmpty())
+                    {
                         string line = "";
                         fileReader = new StreamReader(path);
                         line = fileReader.ReadLine();
                         while (line != null)
                         {
-                            customers.addLast(line);
+                            if (line != "ID,Nombre,Tel�fono,Edad,Direcci�n")
+                            {
+                                customers.addLast(line);                                
+                            }
                             line = fileReader.ReadLine();
                         }
                     }
-                    else//si el archivo ya fue leído
+                    else
                     {
-                        path = "";
-                        textBox1.Text = "";
-                        MessageBox.Show("EL ARCHIVO YA FUE INGRESADO");
+                        if (!fileNames.searchElement(path))//verifica si el archivo ya fue leído
+                        {//lee el archivo linea por linea
+                            string line = "";
+                            fileReader = new StreamReader(path);
+                            line = fileReader.ReadLine();
+                            while (line != null)
+                            {
+                                if (line != "ID,Nombre,Tel�fono,Edad,Direcci�n")
+                                {
+                                    customers.addLast(line);
+                                }
+                                line = fileReader.ReadLine();
+                            }                            
+                        }
+                        else//si el archivo ya fue leído
+                        {
+                            path = "";
+                            textBox1.Text = "";
+                            MessageBox.Show("EL ARCHIVO YA FUE INGRESADO");
+                        }
                     }
+                    fileNames.addLast(path);
                 }
                 else//si el formato es incorrecto no hará nada.
                 {
@@ -67,6 +87,13 @@ namespace ExamenFinalPA2018_1096917
             {
                 MessageBox.Show("SELECCIONE UN ARCHIVO.");
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            fileReader.Close();
+            Depuration dForm = new Depuration(customers);
+            dForm.Show();
         }
     }
 }

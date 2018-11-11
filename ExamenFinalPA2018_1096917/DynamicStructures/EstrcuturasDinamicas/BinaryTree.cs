@@ -12,6 +12,10 @@ namespace EstrcuturasDinamicas
         private int numberOfTreeNodes = 0;
         Comparer<T> comp = Comparer<T>.Default;
         public MyLinkedList<TreeNode<T>> order = new MyLinkedList<TreeNode<T>>();
+        public MyLinkedList<TreeNode<T>> repeated = new MyLinkedList<TreeNode<T>>();
+        public MyLinkedList<int> repeatedKeys = new MyLinkedList<int>();
+        Random generator = new Random();
+        public delegate bool exists<T>(Node<TreeNode<T>> element1, Node<TreeNode<T>> element2);
 
         public BinaryTree()
         {
@@ -38,57 +42,72 @@ namespace EstrcuturasDinamicas
             }
         }
 
-        public void add(T element)
+        public void add(T element, int key)
         {
             if (this.root == null)
             {
-                root = new TreeNode<T>(element, null, null, null);
+                root = new TreeNode<T>(element, null, null, null, key);
                 numberOfTreeNodes++;
             }
             else
             {
-                addElement(root, element);
+                addElement(root, element, key);
             }
         }
 
-        private void addElement(TreeNode<T> root, T element)
+        private void addElement(TreeNode<T> root, T element, int key)
         {
             if (this.root == null)
             {
-                this.root = new TreeNode<T>(element, null, null, null);
+                this.root = new TreeNode<T>(element, null, null, null, key);
                 numberOfTreeNodes++;
             }
             else
             {
-                if (comp.Compare(element, root.getElement()) < 0)//x es menor que y
+                if (key < root.getKey())//x es menor que y
                 {
                     if (root.getLeft() == null)
                     {
-                        root.setLeft(new TreeNode<T>(element, root, null, null));
+                        root.setLeft(new TreeNode<T>(element, root, null, null, key));
                         numberOfTreeNodes++;
                     }
                     else
                     {
-                        addElement(root.getLeft(), element);
+                        addElement(root.getLeft(), element, key);
                     }
                 }
-                else if (comp.Compare(element, root.getElement()) > 0)//x es mayor que y 
+                else if (key > root.getKey())//x es mayor que y 
                 {
                     if (root.getRight() == null)
                     {
-                        root.setRight(new TreeNode<T>(element, root, null, null));
+                        root.setRight(new TreeNode<T>(element, root, null, null, key));
                         numberOfTreeNodes++;
                     }
                     else
                     {
-                        addElement(root.getRight(), element);
+                        addElement(root.getRight(), element, key);
                     }
                 }
                 else//x es igual que y
                 {
-                    throw new Exception("NO SE PERMITEN DUPLICADOS");
+                    //si las llave actual es igual a la llave se le restará o se sumará un número aleatorio
+                    //para luego agregarlo al arbol binario                    
+                    repeatedKeys.addLast(key);                   
+                    int num = generator.Next(2, 6);
+                    key *= num;
+                    add(element, key);
                 }
             }
+        }
+
+        public MyLinkedList<int> repeatedID()
+        {
+            return repeatedKeys;
+        }
+
+        public MyLinkedList<TreeNode<T>> repeatedCustomers()
+        {
+            return repeated;
         }
 
         public bool elementExists(TreeNode<T> root, T element)
@@ -122,6 +141,115 @@ namespace EstrcuturasDinamicas
             if (root.getRight() != null)
                 count++;
             return count;
+        }
+
+        public TreeNode<T> removeByKey(TreeNode<T> root, TreeNode<T> reference) {
+            if (root == null)
+            {
+                return null;
+            }
+            else if (root.getKey() == reference.getKey())
+            {
+                if (numberOfChildren(root) == 0)
+                {
+                    TreeNode<T> aux = root;
+                    if (root == this.root)
+                    {
+                        this.root = null;
+                    }
+                    else
+                    {
+                        if (reference.getKey() == root.getParent().getLeft().getKey())
+                        {
+                            root.getParent().setLeft(null);
+                            root = null;
+                        }
+                        else
+                        {
+                            root.getParent().setRight(null);
+                            root = null;
+                        }
+                    }
+                    numberOfTreeNodes--;
+                    return aux;
+                }
+                else if (numberOfChildren(root) == 1)
+                {
+                    TreeNode<T> aux = root;
+                    if (root == this.root)
+                    {
+                        if (root.getLeft() != null)
+                        {
+                            this.root = root.getLeft();
+                        }
+                        else
+                        {
+                            this.root = root.getRight();
+                        }
+                    }
+                    else
+                    {
+                        if (root.getParent().getLeft() != null)
+                        {
+                            if (root.getLeft() != null)
+                            {
+                                root.getParent().setLeft(root.getLeft());
+                            }
+                            else
+                            {
+                                root.getParent().setLeft(root.getRight());
+                            }
+                        }
+                        else
+                        {
+                            if (root.getLeft() != null)
+                            {
+                                root.getParent().setRight(root.getLeft());
+                            }
+                            else
+                            {
+                                root.getParent().setRight(root.getRight());
+                            }
+                        }
+                    }
+                    numberOfTreeNodes--;
+                    return aux;
+                }
+                else//El que sustituirá será el más derecho de los izquierdos
+                {
+                    TreeNode<T> next = root.getLeft();
+                    TreeNode<T> aux = root;
+                    if (next.getRight() != null)
+                    {
+                        while (next.getRight() != null)
+                        {
+                            next = next.getRight();
+                        }
+                        root.setElement(next.getElement());
+                        TreeNode<T> father = next.getParent();
+                        father.setRight(null);
+                    }
+                    else
+                    {
+                        root.setElement(next.getElement());
+                        root.setLeft(null);
+                    }
+
+                    numberOfTreeNodes--;
+                    return aux;
+                }
+            }
+            else
+            {
+                if (reference.getKey() < root.getKey())
+                {
+                    return removeByKey(root.getLeft(), reference);
+                }
+                else
+                {
+                    return removeByKey(root.getRight(), reference);
+                }
+            }
         }
 
         public T remove(TreeNode<T> root, T element)
