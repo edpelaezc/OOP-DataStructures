@@ -90,10 +90,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BinarySearchTree\BinarySearchTree\BinarySearchTree.csproj">
-      <Project>{75b12557-7e5b-4ec5-aa95-f847f955ba62}</Project>
-      <Name>BinarySearchTree</Name>
-    </ProjectReference>
     <ProjectReference Include="..\DynamicStructures\EstrcuturasDinamicas\DynamicStructures.csproj">
       <Project>{7f6d0eb4-4829-4404-af76-36146e9c9448}</Project>
       <Name>DynamicStructures</Name>

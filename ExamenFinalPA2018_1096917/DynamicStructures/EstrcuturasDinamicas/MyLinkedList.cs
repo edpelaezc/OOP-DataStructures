@@ -195,6 +195,23 @@ namespace EstrcuturasDinamicas
             }
         }
 
+        public bool searchElement(T reference) {
+            Node<T> auxiliar = head;
+            bool flag = true;
+            while (auxiliar != null && flag)
+            {
+                if (comp.Compare(auxiliar.getElement(), reference) == 0)
+                {
+                    flag = false;
+                }
+                else
+                {
+                    auxiliar = auxiliar.getNext();
+                }
+            }
+            return !flag;
+        }
+
         public void purgeElement(T reference)
         {
             Node<T> aux = head;
