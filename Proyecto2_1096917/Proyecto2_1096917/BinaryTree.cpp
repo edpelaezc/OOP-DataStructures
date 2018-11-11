@@ -85,7 +85,7 @@ template<typename T>
 void BinaryTree<T>::preOrder(TreeNode<T> * root) {
 	if (root != NULL)
 	{
-		cout << root->getKey() << " ";
+		cout << root->getKey() << "\t";
 		preOrder(root->getLeft());
 		preOrder(root->getRight());
 	}
@@ -97,7 +97,7 @@ void BinaryTree<T>::postOrder(TreeNode<T> *root) {
 	{
 		postOrder(root->getLeft());
 		postOrder(root->getRight());
-		cout << root->getElement() << " ";
+		cout << root->getElement() << "\t";
 	}
 }
 
@@ -106,7 +106,7 @@ void BinaryTree<T>::inOrder(TreeNode<T> *root) {
 	if (root != NULL)
 	{
 		inOrder(root->getLeft());
-		cout << root->getElement() << " ";
+		cout << root->getElement() << "\t";
 		inOrder(root->getRight());
 	}
 }

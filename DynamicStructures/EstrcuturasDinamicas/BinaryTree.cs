@@ -3,16 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using EstrcuturasDinamicas;
 
-namespace BinarySearchTree
+namespace EstrcuturasDinamicas
 {
     public class BinaryTree<T>
     {
-        public Node<T> root;
-        private int numberOfNodes = 0;        
+        public TreeNode<T> root;
+        private int numberOfTreeNodes = 0;
         Comparer<T> comp = Comparer<T>.Default;
-        public MyLinkedList<Node<T>> order = new MyLinkedList<Node<T>>();
+        public MyLinkedList<TreeNode<T>> order = new MyLinkedList<TreeNode<T>>();
 
         public BinaryTree()
         {
@@ -21,11 +20,11 @@ namespace BinarySearchTree
 
         public int weight()
         {
-            return numberOfNodes;
+            return numberOfTreeNodes;
         }
-        
 
-        public int treeDepth(Node<T> root)
+
+        public int treeDepth(TreeNode<T> root)
         {
             if (root != null)
             {
@@ -39,11 +38,12 @@ namespace BinarySearchTree
             }
         }
 
-        public void add(T element) {
+        public void add(T element)
+        {
             if (this.root == null)
             {
-                root = new Node<T>(element, null, null, null);
-                numberOfNodes++;
+                root = new TreeNode<T>(element, null, null, null);
+                numberOfTreeNodes++;
             }
             else
             {
@@ -51,21 +51,21 @@ namespace BinarySearchTree
             }
         }
 
-        private void addElement(Node<T> root, T element)
-        {            
+        private void addElement(TreeNode<T> root, T element)
+        {
             if (this.root == null)
             {
-                this.root = new Node<T>(element, null, null, null);
-                numberOfNodes++;
+                this.root = new TreeNode<T>(element, null, null, null);
+                numberOfTreeNodes++;
             }
             else
-            {                
+            {
                 if (comp.Compare(element, root.getElement()) < 0)//x es menor que y
                 {
                     if (root.getLeft() == null)
                     {
-                        root.setLeft(new Node<T>(element, root, null, null));
-                        numberOfNodes++;
+                        root.setLeft(new TreeNode<T>(element, root, null, null));
+                        numberOfTreeNodes++;
                     }
                     else
                     {
@@ -76,8 +76,8 @@ namespace BinarySearchTree
                 {
                     if (root.getRight() == null)
                     {
-                        root.setRight(new Node<T>(element,root, null, null));
-                        numberOfNodes++;
+                        root.setRight(new TreeNode<T>(element, root, null, null));
+                        numberOfTreeNodes++;
                     }
                     else
                     {
@@ -91,7 +91,7 @@ namespace BinarySearchTree
             }
         }
 
-        public bool elementExists(Node<T> root, T element)
+        public bool elementExists(TreeNode<T> root, T element)
         {
             if (root == null)
             {
@@ -112,19 +112,19 @@ namespace BinarySearchTree
                     return elementExists(root.getRight(), element);
                 }
             }
-        }       
+        }
 
-        public int numberOfChildren(Node<T> root)
+        public int numberOfChildren(TreeNode<T> root)
         {
-                int count = 0;
-                if (root.getLeft() != null)
-                    count++;
-                if (root.getRight() != null)
-                    count++;
-                return count;            
-        }        
+            int count = 0;
+            if (root.getLeft() != null)
+                count++;
+            if (root.getRight() != null)
+                count++;
+            return count;
+        }
 
-        public T remove(Node<T> root, T element)
+        public T remove(TreeNode<T> root, T element)
         {
             if (root == null)
             {
@@ -152,7 +152,7 @@ namespace BinarySearchTree
                             root = null;
                         }
                     }
-                    numberOfNodes--;
+                    numberOfTreeNodes--;
                     return aux;
                 }
                 else if (numberOfChildren(root) == 1)
@@ -170,7 +170,7 @@ namespace BinarySearchTree
                         }
                     }
                     else
-                    {                        
+                    {
                         if (root.getParent().getLeft() != null)
                         {
                             if (root.getLeft() != null)
@@ -194,12 +194,12 @@ namespace BinarySearchTree
                             }
                         }
                     }
-                    numberOfNodes--;
+                    numberOfTreeNodes--;
                     return aux;
                 }
                 else//El que sustituirá será el más derecho de los izquierdos
                 {
-                    Node<T> next = root.getLeft();
+                    TreeNode<T> next = root.getLeft();
                     T aux = root.getElement();
                     if (next.getRight() != null)
                     {
@@ -208,16 +208,16 @@ namespace BinarySearchTree
                             next = next.getRight();
                         }
                         root.setElement(next.getElement());
-                        Node<T> father = next.getParent();
+                        TreeNode<T> father = next.getParent();
                         father.setRight(null);
                     }
                     else
                     {
                         root.setElement(next.getElement());
-                        root.setLeft(null); 
+                        root.setLeft(null);
                     }
 
-                    numberOfNodes--;
+                    numberOfTreeNodes--;
                     return aux;
                 }
             }
@@ -231,20 +231,20 @@ namespace BinarySearchTree
                 {
                     return remove(root.getRight(), element);
                 }
-            }                                   
-        }        
+            }
+        }
 
-        public void preOrder(Node<T> root)
+        public void preOrder(TreeNode<T> root)
         {
             if (root != null)
             {
                 Console.Write(root.getElement() + "->");
                 preOrder(root.getLeft());
                 preOrder(root.getRight());
-            }   
+            }
         }
 
-        public void postOrder(Node<T> root)
+        public void postOrder(TreeNode<T> root)
         {
             if (root != null)
             {
@@ -254,7 +254,7 @@ namespace BinarySearchTree
             }
         }
 
-        public void inOrder(Node<T> root)
+        public void inOrder(TreeNode<T> root)
         {
             if (root != null)
             {
