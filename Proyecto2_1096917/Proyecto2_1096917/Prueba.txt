@@ -1,0 +1,494 @@
+Oeste|Suroeste|San Antonio|Spurs|F|7|21519|Metu, Chimezie|6 ft 10 in (2.08 m)|219 lb (99 kg)|1997–03–22|93|119|157|35|61|0|21583
+Este|Sureste|Charlotte|Hornets|G|7|9473|Bacon, Dwayne|6 ft 7 in (2.01 m)|221 lb (100 kg)|1995–08–30|123|97|2841|13|35|11|12191
+Este|Central|Detroit|Pistons|G|14|9020|Smith, Ish|6 ft 0 in (1.83 m)|175 lb (79 kg)|1988–07–05|121|85|7157|15|27|15|16056
+Oeste|Suroeste|Memphis|Grizzlies|G|24|12405|Brooks, Dillon|6 ft 6 in (1.98 m)|220 lb (100 kg)|1996–01–22|77|95|6823|23|14|40|19151
+Este|Central|Milwaukee|Bucks|G|23|12556|Brown, Sterling|6 ft 6 in (1.98 m)|232 lb (105 kg)|1995–02–10|83|99|1316|35|3|9|13789
+Oeste|Suroeste|Memphis|Grizzlies|G|11|1330|Conley, Mike|6 ft 1 in (1.85 m)|175 lb (79 kg)|1987–10–11|84|124|7299|33|70|35|8545
+Oeste|Pacifico|Phoenix|Suns|G|1|8652|Booker, Devin|6 ft 6 in (1.98 m)|210 lb (95 kg)|1996–10–30|90|82|576|3|15|19|9138
+Oeste|Pacifico|Los Angeles|Lakers|F|23|15137|James, LeBron|6 ft 8 in (2.03 m)|250 lb (113 kg)|1984–12–30|119|86|6889|3|7|15|21907
+Oeste|Pacifico|Sacramento|Kings|F|20|2651|Giles, Harry|6 ft 10 in (2.08 m)|240 lb (109 kg)|1998–04–22|116|97|3243|35|15|29|5778
+Este|Sureste|Atlanta|Hawks|G|5|17572|Hamilton, Daniel (GL)|6 ft 7 in (2.01 m)|195 lb (88 kg)|1995–08–08|92|91|1188|25|16|2|18668
+Oeste|Suroeste|New Orleans|Pelicans|G|33|5690|Johnson, Wesley|6 ft 7 in (2.01 m)|215 lb (98 kg)|1987–07–11|98|122|195|21|66|21|5787
+Este|Sureste|Miami|Heat|G|2|9653|Ellington, Wayne|6 ft 5 in (1.96 m)|200 lb (91 kg)|1987–11–29|125|99|7930|19|3|10|17458
+Este|Sureste|Orlando|Magic|G|14|-369|Augustin, D. J.|6 ft 0 in (1.83 m)|183 lb (83 kg)|1987–11–10|86|84|7622|42|69|44|7167
+Oeste|Noroeste|Portland|Trail Blazers|C|11|17603|Leonard, Meyers|7 ft 1 in (2.16 m)|255 lb (116 kg)|1992–02–27|106|123|2757|32|21|18|20254
+Este|Atlantico|Boston|Celtics|G|45|-1032|Lemon, Walt (TW)|6 ft 3 in (1.91 m)|180 lb (82 kg)|1992–07–26|79|76|7733|11|42|25|6622
+Oeste|Suroeste|San Antonio|Spurs|G|3|3217|Pondexter, Quincy|6 ft 7 in (2.01 m)|225 lb (102 kg)|1988–03–10|90|109|2533|14|63|6|5660
+Oeste|Noroeste|Portland|Trail Blazers|G|1|4551|Turner, Evan|6 ft 7 in (2.01 m)|220 lb (100 kg)|1988–10–27|108|124|3703|37|74|35|8146
+Oeste|Suroeste|Houston|Rockets|G|3|10481|Paul, Chris|6 ft 0 in (1.83 m)|175 lb (79 kg)|1985–05–06|86|116|2802|35|64|14|13197
+Este|Atlantico|Philadelphia|76ers|G|25|14188|Simmons, Ben|6 ft 10 in (2.08 m)|230 lb (104 kg)|1996–07–20|125|102|3499|27|55|44|17562
+Este|Sureste|Washington|Wizards|F|12|9802|Oubre, Kelly|6 ft 7 in (2.01 m)|205 lb (93 kg)|1995–12–09|101|78|5490|30|43|39|15191
+Este|Sureste|Atlanta|Hawks|G|1|13234|Anderson, Justin |6 ft 6 in (1.98 m)|230 lb (104 kg)|1993–11–19|112|80|5325|13|31|36|18447
+Este|Central|Indiana|Pacers|F|33|3849|Turner, Myles|6 ft 11 in (2.11 m)|250 lb (113 kg)|1996–03–24|97|121|2477|46|25|21|6229
+Oeste|Pacifico|Phoenix|Suns|G|11|21299|Crawford, Jamal|6 ft 5 in (1.96 m)|185 lb (84 kg)|1980–03–20|88|110|1902|48|75|22|23113
+Este|Central|Milwaukee|Bucks|G|24|7985|Connaughton, Pat|6 ft 4 in (1.93 m)|209 lb (95 kg)|1993–01–06|75|88|5437|26|56|26|13347
+Este|Sureste|Washington|Wizards|G|3|19001|Beal, Bradley (C)|6 ft 5 in (1.96 m)|207 lb (94 kg)|1993–06–28|89|94|4963|6|22|25|23875
+Oeste|Noroeste|Oklahoma City|Thunder|G|30|22440|Burton, Deonte (TW)|6 ft 5 in (1.96 m)|245 lb (111 kg)|1994–01–31|111|77|829|7|34|5|23158
+Este|Atlantico|Brooklyn|Nets|G|10|9215|Pinson, Theo (TW)|6 ft 6 in (1.98 m)|218 lb (99 kg)|1995–11–05|84|102|6030|28|61|1|15161
+Este|Atlantico|Brooklyn|Nets|G|33|11039|Crabbe, Allen|6 ft 6 in (1.98 m)|212 lb (96 kg)|1992–04–09|90|118|1848|28|2|20|12797
+Oeste|Pacifico|Golden State|Warriors|G|34|6342|Livingston, Shaun|6 ft 7 in (2.01 m)|192 lb (87 kg)|1985–09–11|77|125|6647|31|21|23|12912
+Este|Sureste|Orlando|Magic|G|31|13526|Ross, Terrence|6 ft 7 in (2.01 m)|206 lb (93 kg)|1991–02–05|88|90|7313|2|65|13|20751
+Este|Sureste|Washington|Wizards|G|1|9686|Rivers, Austin|6 ft 4 in (1.93 m)|200 lb (91 kg)|1992–08–01|91|114|5337|27|26|23|14932
+Este|Atlantico|New York|Knicks|G|21|17708|Dotson, Damyean|6 ft 6 in (1.98 m)|210 lb (95 kg)|1994–05–06|120|86|6846|18|8|27|24434
+Oeste|Pacifico|Los Angeles|Clippers|F|30|13543|Scott, Mike|6 ft 8 in (2.03 m)|237 lb (108 kg)|1988–07–16|80|82|5627|17|44|41|19090
+Este|Sureste|Atlanta|Hawks|C|14|13786|Dedmon, Dewayne|7 ft 0 in (2.13 m)|245 lb (111 kg)|1989–08–12|111|94|856|34|39|2|14531
+Este|Sureste|Miami|Heat|C|21|6414|Whiteside, Hassan|7 ft 0 in (2.13 m)|265 lb (120 kg)|1989–06–13|121|116|349|2|17|23|6642
+Este|Sureste|Charlotte|Hornets|G|31|17188|Chealey, Joe (TW)|6 ft 3 in (1.91 m)|190 lb (86 kg)|1995–11–01|93|78|5520|48|60|37|22615
+Este|Sureste|Washington|Wizards|G|2|2463|Wall, John|6 ft 4 in (1.93 m)|210 lb (95 kg)|1990–09–06|94|82|4276|25|70|9|6645
+Este|Atlantico|New York|Knicks|F|20|20349|Knox, Kevin |6 ft 9 in (2.06 m)|215 lb (98 kg)|1999–08–11|77|104|4599|39|26|45|24871
+Oeste|Pacifico|Golden State|Warriors|G|10|-623|Evans, Jacob|6 ft 6 in (1.98 m)|199 lb (90 kg)|1997–06–18|104|83|7160|48|17|29|6433
+Oeste|Pacifico|Phoenix|Suns|G|30|14941|Daniels, Troy|6 ft 4 in (1.93 m)|205 lb (93 kg)|1991–07–15|123|109|5629|4|49|32|20447
+Oeste|Noroeste|Minnesota|Timberwolves|F|43|21377|Tolliver, Anthony|6 ft 8 in (2.03 m)|240 lb (109 kg)|1985–06–01|119|107|488|46|52|38|21746
+Oeste|Suroeste|Houston|Rockets|F|55|6121|Hartenstein, Isaiah|7 ft 1 in (2.16 m)|249 lb (113 kg)|1998–05–05|108|80|499|34|29|12|6512
+Este|Sureste|Miami|Heat|F|40|3698|Haslem, Udonis|6 ft 8 in (2.03 m)|235 lb (107 kg)|1980–06–09|122|102|2932|8|36|28|6508
+Este|Central|Milwaukee|Bucks|F|35|10750|Wood, Christian|6 ft 10 in (2.08 m)|214 lb (97 kg)|1995–09–27|78|101|5412|13|56|4|16084
+Oeste|Pacifico|Golden State|Warriors|F|23|18383|Green, Draymond|6 ft 7 in (2.01 m)|230 lb (104 kg)|1990–03–04|89|122|4889|20|75|42|23183
+Oeste|Noroeste|Minnesota|Timberwolves|G|20|14263|Okogie, Josh|6 ft 4 in (1.93 m)|212 lb (96 kg)|1998–09–01|86|107|205|25|62|7|14382
+Oeste|Noroeste|Portland|Trail Blazers|F|8|17971|Aminu, Al-Farouq|6 ft 9 in (2.06 m)|220 lb (100 kg)|1990–09–21|118|81|1463|45|19|36|19316
+Este|Atlantico|Toronto|Raptors|F|3|10409|Anunoby, OG|6 ft 8 in (2.03 m)|235 lb (107 kg)|1997–07–17|107|101|6764|21|75|7|17066
+Oeste|Suroeste|New Orleans|Pelicans|F|30|14683|Randle, Julius|6 ft 9 in (2.06 m)|250 lb (113 kg)|1994–11–29|78|121|3055|31|23|36|17660
+Oeste|Noroeste|Denver|Nuggets|F|1|12359|Porter, Michael |6 ft 10 in (2.08 m)|210 lb (95 kg)|1998–06–29|125|117|3409|40|5|33|15643
+Este|Sureste|Orlando|Magic|G|35|8514|Frazier, Melvin|6 ft 6 in (1.98 m)|200 lb (91 kg)|1996–08–30|80|79|5738|9|19|22|14172
+Oeste|Noroeste|Oklahoma City|Thunder|G|21|5151|Roberson, André |6 ft 7 in (2.01 m)|210 lb (95 kg)|1991–12–04|90|76|4182|46|39|45|9243
+Este|Sureste|Orlando|Magic|G|3|5230|Caupain, Troy (TW)|6 ft 4 in (1.93 m)|210 lb (95 kg)|1995–11–29|100|108|1315|40|34|39|6445
+Este|Atlantico|Philadelphia|76ers|G|30|5009|Korkmaz, Furkan|6 ft 7 in (2.01 m)|190 lb (86 kg)|1997–07–24|118|91|5422|46|59|14|10313
+Este|Sureste|Atlanta|Hawks|G|15|14794|Carter, Vince|6 ft 6 in (1.98 m)|220 lb (100 kg)|1977–01–26|117|92|7409|37|27|16|22086
+Oeste|Pacifico|Phoenix|Suns|F|20|491|Jackson, Josh|6 ft 8 in (2.03 m)|200 lb (91 kg)|1997–02–10|111|106|6723|2|30|20|7103
+Este|Sureste|Washington|Wizards|F|7|10190|Robinson, Devin (TW)|6 ft 8 in (2.03 m)|200 lb (91 kg)|1995–03–07|102|82|731|45|36|37|10819
+Este|Atlantico|Boston|Celtics|F|0|11378|Tatum, Jayson|6 ft 8 in (2.03 m)|208 lb (94 kg)|1998–03–03|85|118|7859|30|33|29|19152
+Oeste|Pacifico|Los Angeles|Lakers|G|1|12815|Caldwell-Pope, Kentavious|6 ft 5 in (1.96 m)|205 lb (93 kg)|1993–02–18|92|110|1595|33|46|4|14318
+Este|Central|Indiana|Pacers|F|24|13312|Johnson, Alize|6 ft 9 in (2.06 m)|212 lb (96 kg)|1996–04–22|89|91|5576|9|71|12|18799
+Este|Atlantico|Toronto|Raptors|G|55|12926|Wright, Delon|6 ft 5 in (1.96 m)|190 lb (86 kg)|1992–04–26|122|89|7916|30|52|33|20720
+Este|Sureste|Charlotte|Hornets|F|40|3425|Zeller, Cody|7 ft 0 in (2.13 m)|240 lb (109 kg)|1992–10–05|77|108|6379|1|65|9|9727
+Oeste|Noroeste|Oklahoma City|Thunder|G|17|11623|Schröder, Dennis|6 ft 1 in (1.85 m)|172 lb (78 kg)|1993–09–15|124|102|746|15|49|23|12245
+Oeste|Suroeste|Memphis|Grizzlies|F|13|3175|Jackson, Jaren|6 ft 11 in (2.11 m)|242 lb (110 kg)|1999–09–15|112|97|5276|19|59|45|8339
+Oeste|Suroeste|Memphis|Grizzlies|F|1|2413|Anderson, Kyle|6 ft 9 in (2.06 m)|230 lb (104 kg)|1993–09–20|125|123|3161|45|75|16|5449
+Oeste|Pacifico|Phoenix|Suns|F|21|3067|Holmes, Richaun|6 ft 10 in (2.08 m)|235 lb (107 kg)|1993–10–15|88|79|2359|12|27|19|5338
+Oeste|Pacifico|Golden State|Warriors|G|11|20897|Thompson, Klay|6 ft 7 in (2.01 m)|215 lb (98 kg)|1990–02–08|103|77|1116|28|35|29|21910
+Este|Atlantico|Philadelphia|76ers|G|23|-231|Shamet, Landry|6 ft 5 in (1.96 m)|188 lb (85 kg)|1997–03–13|116|88|7622|18|54|1|7275
+Oeste|Suroeste|New Orleans|Pelicans|F|44|11974|Hill, Solomon|6 ft 7 in (2.01 m)|225 lb (102 kg)|1991–03–18|122|109|1240|26|51|42|13092
+Este|Sureste|Atlanta|Hawks|G|24|13843|Bazemore, Kent|6 ft 5 in (1.96 m)|201 lb (91 kg)|1989–07–01|123|88|5213|2|71|42|18933
+Este|Atlantico|Philadelphia|76ers|G|11|2501|Jackson, Demetrius (TW)|6 ft 1 in (1.85 m)|201 lb (91 kg)|1994–09–07|81|112|4030|18|15|39|6450
+Este|Atlantico|Toronto|Raptors|G|0|2684|Miles, C. J.|6 ft 6 in (1.98 m)|225 lb (102 kg)|1987–03–18|117|95|7679|44|8|24|10246
+Oeste|Pacifico|Golden State|Warriors|F|2|6395|Bell, Jordan|6 ft 9 in (2.06 m)|224 lb (102 kg)|1995–01–07|100|78|2165|28|3|44|8460
+Este|Central|Indiana|Pacers|F|20|11309|McDermott, Doug|6 ft 8 in (2.03 m)|225 lb (102 kg)|1992–01–03|106|125|3382|47|2|26|14585
+Este|Atlantico|Boston|Celtics|F|7|13674|Brown, Jaylen |6 ft 7 in (2.01 m)|220 lb (100 kg)|1996–10–24|118|115|5270|22|66|0|18826
+Este|Atlantico|Boston|Celtics|F|37|15884|Ojeleye, Semi|6 ft 7 in (2.01 m)|241 lb (109 kg)|1994–12–05|110|123|6322|30|19|32|22096
+Oeste|Pacifico|Los Angeles|Lakers|G|3|7239|Hart, Josh|6 ft 5 in (1.96 m)|215 lb (98 kg)|1995–03–06|109|83|1554|4|8|7|8684
+Oeste|Noroeste|Minnesota|Timberwolves|G|23|15444|Butler, Jimmy|6 ft 8 in (2.03 m)|232 lb (105 kg)|1989–09–14|117|90|6888|20|2|15|22215
+Oeste|Suroeste|San Antonio|Spurs|C|16|17048|Gasol, Pau|7 ft 0 in (2.13 m)|250 lb (113 kg)|1980–07–06|117|119|2043|45|1|5|18974
+Este|Atlantico|New York|Knicks|F|2|8837|Kornet, Luke|7 ft 1 in (2.16 m)|250 lb (113 kg)|1995–07–15|75|113|5130|47|22|3|13892
+Oeste|Suroeste|San Antonio|Spurs|C|25|8154|Pöltl, Jakob|7 ft 0 in (2.13 m)|230 lb (104 kg)|1995–10–15|102|105|5907|24|33|29|13959
+Este|Sureste|Charlotte|Hornets|C|8|4601|Biyombo, Bismack|6 ft 9 in (2.06 m)|255 lb (116 kg)|1992–08–28|117|121|2998|1|60|32|7482
+Oeste|Pacifico|Los Angeles|Lakers|F|14|-820|Ingram, Brandon|6 ft 9 in (2.06 m)|190 lb (86 kg)|1997–09–02|92|79|7704|23|40|31|6792
+Oeste|Pacifico|Los Angeles|Lakers|C|7|9750|McGee, JaVale|7 ft 0 in (2.13 m)|270 lb (122 kg)|1988–01–19|83|89|3506|45|75|14|13173
+Oeste|Noroeste|Portland|Trail Blazers|G|6|19570|Stauskas, Nik|6 ft 6 in (1.98 m)|205 lb (93 kg)|1993–10–07|114|120|1353|1|31|4|20809
+Oeste|Noroeste|Denver|Nuggets|G|11|10010|Morris, Monté|6 ft 3 in (1.91 m)|175 lb (79 kg)|1995–06–27|99|79|1260|47|12|5|11171
+Oeste|Pacifico|Los Angeles|Lakers|C|40|3830|Zubac, Ivica|7 ft 1 in (2.16 m)|240 lb (109 kg)|1997–03–18|98|77|5099|15|48|9|8831
+Este|Atlantico|New York|Knicks|F|32|1026|Vonleh, Noah|6 ft 9 in (2.06 m)|250 lb (113 kg)|1995–08–24|88|114|5815|32|74|44|6753
+Este|Atlantico|Philadelphia|76ers|G|20|2533|Fultz, Markelle|6 ft 4 in (1.93 m)|200 lb (91 kg)|1998–05–29|82|79|4034|7|51|29|6485
+Este|Central|Chicago|Bulls|G|3|15714|Harrison, Shaquille|6 ft 4 in (1.93 m)|190 lb (86 kg)|1993–10–06|77|90|3893|28|30|19|19530
+Este|Sureste|Atlanta|Hawks|F|22|1974|Poythress, Alex (TW)|6 ft 9 in (2.06 m)|235 lb (107 kg)|1993–09–06|119|110|6702|4|19|12|8557
+Este|Central|Cleveland|Cavaliers|G|12|10086|Nwaba, David|6 ft 4 in (1.93 m)|219 lb (99 kg)|1993–01–14|97|125|2858|50|71|8|12847
+Oeste|Suroeste|Memphis|Grizzlies|G|20|18420|Stephens, D. J. (TW)|6 ft 5 in (1.96 m)|188 lb (85 kg)|1990–12–19|113|104|2551|37|65|30|20858
+Oeste|Noroeste|Denver|Nuggets|G|25|12540|Beasley, Malik|6 ft 5 in (1.96 m)|195 lb (88 kg)|1996–11–26|123|96|1078|42|45|25|13495
+Oeste|Pacifico|Golden State|Warriors|G|4|13716|Cook, Quinn|6 ft 2 in (1.88 m)|179 lb (81 kg)|1993–03–23|99|83|7049|1|39|28|20666
+Este|Atlantico|Brooklyn|Nets|F|15|5435|Williams, Alan (TW)|6 ft 8 in (2.03 m)|265 lb (120 kg)|1993–01–28|92|99|7838|31|14|34|13181
+Oeste|Pacifico|Golden State|Warriors|G|9|17491|Iguodala, Andre|6 ft 6 in (1.98 m)|215 lb (98 kg)|1984–01–28|79|88|6006|18|1|27|23418
+Oeste|Suroeste|San Antonio|Spurs|G|1|6106|Walker, Lonnie |6 ft 5 in (1.96 m)|196 lb (89 kg)|1998–12–14|106|121|1833|40|32|44|7833
+Este|Atlantico|Boston|Celtics|G|26|4252|Bird, Jabari|6 ft 6 in (1.98 m)|198 lb (90 kg)|1994–07–03|122|124|6902|0|23|12|11032
+Oeste|Suroeste|New Orleans|Pelicans|G|11|5288|Holiday, Jrue|6 ft 4 in (1.93 m)|205 lb (93 kg)|1990–06–12|104|78|7201|35|40|42|12385
+Este|Atlantico|Brooklyn|Nets|F|0|1735|Kurucs, Rodions|6 ft 9 in (2.06 m)|210 lb (95 kg)|1998–02–05|119|123|3537|24|38|39|5153
+Oeste|Noroeste|Utah|Jazz|G|30|11717|Mitrou-Long, Naz (TW)|6 ft 4 in (1.93 m)|218 lb (99 kg)|1993–08–03|120|105|1083|39|29|37|12680
+Este|Atlantico|Brooklyn|Nets|F|35|21823|Faried, Kenneth|6 ft 8 in (2.03 m)|220 lb (100 kg)|1989–11–19|94|117|699|34|15|18|22428
+Oeste|Suroeste|Houston|Rockets|F|9|10533|Zhou Qi (GL)|7 ft 1 in (2.16 m)|210 lb (95 kg)|1996–01–16|119|104|7769|32|19|35|18183
+Este|Atlantico|Philadelphia|76ers|G|12|7545|McConnell, T. J.|6 ft 2 in (1.88 m)|190 lb (86 kg)|1992–03–25|86|115|1239|9|17|1|8698
+Oeste|Pacifico|Sacramento|Kings|F|35|6254|Bagley, Marvin|6 ft 11 in (2.11 m)|234 lb (106 kg)|1999–03–14|102|124|5056|49|30|13|11208
+Este|Central|Cleveland|Cavaliers|F|0|1596|Love, Kevin |6 ft 10 in (2.08 m)|251 lb (114 kg)|1988–09–07|125|108|6370|45|72|32|7841
+Este|Central|Cleveland|Cavaliers|F|1|18480|Hood, Rodney|6 ft 8 in (2.03 m)|206 lb (93 kg)|1992–10–20|86|109|1539|25|29|27|19933
+Este|Central|Milwaukee|Bucks|F|34|18196|Antetokounmpo, Giannis|6 ft 11 in (2.11 m)|242 lb (110 kg)|1994–12–06|94|111|3428|23|75|36|21530
+Oeste|Suroeste|San Antonio|Spurs|G|11|15181|Forbes, Bryn|6 ft 3 in (1.91 m)|190 lb (86 kg)|1993–07–23|80|88|1966|17|6|17|17067
+Este|Sureste|Miami|Heat|G|17|15538|McGruder, Rodney|6 ft 4 in (1.93 m)|200 lb (91 kg)|1991–07–29|76|100|7237|9|62|3|22699
+Oeste|Suroeste|San Antonio|Spurs|G|18|1846|Belinelli, Marco|6 ft 5 in (1.96 m)|210 lb (95 kg)|1986–03–25|112|79|7475|27|11|7|9209
+Este|Atlantico|Brooklyn|Nets|G|30|14008|Musa, Džanan|6 ft 9 in (2.06 m)|208 lb (94 kg)|1999–05–08|114|84|3034|4|54|35|16928
+Oeste|Suroeste|San Antonio|Spurs|F|14|6833|Eubanks, Drew (TW)|6 ft 10 in (2.08 m)|240 lb (109 kg)|1997–02–01|104|100|4523|50|17|21|11252
+Oeste|Pacifico|Phoenix|Suns|F|35|6392|Bender, Dragan|7 ft 1 in (2.16 m)|225 lb (102 kg)|1997–11–17|91|121|1032|21|53|40|7333
+Oeste|Suroeste|Dallas|Mavericks|C|50|10713|Mejri, Salah|7 ft 2 in (2.18 m)|235 lb (107 kg)|1986–06–15|109|105|1661|3|14|27|12265
+Oeste|Suroeste|Houston|Rockets|G|1|1002|Carter-Williams, Michael|6 ft 6 in (1.98 m)|190 lb (86 kg)|1991–10–10|114|110|7838|25|55|13|8726
+Oeste|Suroeste|New Orleans|Pelicans|G|10|16234|Frazier, Tim|6 ft 1 in (1.85 m)|170 lb (77 kg)|1990–11–01|98|113|376|32|56|41|16512
+Oeste|Noroeste|Minnesota|Timberwolves|C|24|6397|Patton, Justin |7 ft 0 in (2.13 m)|236 lb (107 kg)|1997–06–14|93|94|6203|46|7|27|12507
+Oeste|Noroeste|Minnesota|Timberwolves|G|25|8189|Rose, Derrick|6 ft 3 in (1.91 m)|190 lb (86 kg)|1988–10–04|102|81|3254|6|3|7|11341
+Este|Central|Indiana|Pacers|G|3|3965|Holiday, Aaron|6 ft 1 in (1.85 m)|185 lb (84 kg)|1996–09–30|122|98|6189|19|69|20|10032
+Este|Atlantico|Brooklyn|Nets|C|17|23004|Davis, Ed|6 ft 10 in (2.08 m)|225 lb (102 kg)|1989–06–05|97|114|684|33|29|32|23591
+Oeste|Noroeste|Denver|Nuggets|F|41|6059|Hernangómez, Juan|6 ft 9 in (2.06 m)|230 lb (104 kg)|1995–09–28|77|91|4797|40|38|12|10779
+Oeste|Suroeste|Houston|Rockets|C|15|1771|Capela, Clint|6 ft 10 in (2.08 m)|240 lb (109 kg)|1994–05–18|97|102|5737|1|3|4|7411
+Oeste|Suroeste|Houston|Rockets|F|17|17109|Tucker, P. J.|6 ft 6 in (1.98 m)|245 lb (111 kg)|1985–05–05|84|93|4592|2|75|26|21617
+Oeste|Pacifico|Los Angeles|Lakers|G|9|10413|Rondo, Rajon|6 ft 1 in (1.85 m)|186 lb (84 kg)|1986–02–22|100|104|5485|11|22|41|15798
+Oeste|Noroeste|Utah|Jazz|G|11|10356|Exum, Dante|6 ft 6 in (1.98 m)|190 lb (86 kg)|1995–07–13|115|76|5931|32|7|38|16172
+Oeste|Suroeste|San Antonio|Spurs|G|5|22233|Murray, Dejounte |6 ft 5 in (1.96 m)|170 lb (77 kg)|1996–09–19|90|112|1234|42|2|21|23377
+Este|Sureste|Orlando|Magic|F|2|6795|Martin, Jarell|6 ft 10 in (2.08 m)|239 lb (108 kg)|1994–05–24|125|117|5363|28|37|19|12033
+Oeste|Suroeste|Dallas|Mavericks|G|45|16190|Broekhoff, Ryan|6 ft 7 in (2.01 m)|215 lb (98 kg)|1990–08–23|81|118|2290|18|71|30|18399
+Este|Atlantico|Brooklyn|Nets|G|8|6147|Dinwiddie, Spencer|6 ft 6 in (1.98 m)|210 lb (95 kg)|1993–04–06|77|96|5995|36|29|40|12065
+Este|Atlantico|Boston|Celtics|F|27|17997|Theis, Daniel |6 ft 8 in (2.03 m)|243 lb (110 kg)|1992–04–04|120|88|4284|20|41|34|22161
+Oeste|Noroeste|Utah|Jazz|F|34|7418|Cavanaugh, Tyler (TW)|6 ft 9 in (2.06 m)|238 lb (108 kg)|1994–02–09|103|116|1297|21|23|25|8612
+Este|Central|Cleveland|Cavaliers|F|13|6902|Thompson, Tristan|6 ft 10 in (2.08 m)|238 lb (108 kg)|1991–03–13|121|102|2384|32|39|12|9165
+Oeste|Suroeste|San Antonio|Spurs|F|12|6028|Aldridge, LaMarcus|6 ft 11 in (2.11 m)|260 lb (118 kg)|1985–07–19|122|105|6693|9|66|15|12599
+Oeste|Pacifico|Los Angeles|Clippers|G|11|21844|Bradley, Avery|6 ft 2 in (1.88 m)|180 lb (82 kg)|1990–11–26|110|81|898|5|56|13|22632
+Oeste|Suroeste|New Orleans|Pelicans|F|23|21572|Davis, Anthony|6 ft 10 in (2.08 m)|253 lb (115 kg)|1993–03–11|101|90|3316|39|67|39|24787
+Oeste|Pacifico|Los Angeles|Clippers|F|34|19047|Harris, Tobias|6 ft 9 in (2.06 m)|235 lb (107 kg)|1992–07–15|105|114|232|5|47|15|19174
+Este|Sureste|Charlotte|Hornets|F|0|4017|Bridges, Miles|6 ft 7 in (2.01 m)|225 lb (102 kg)|1998–03–21|123|116|5987|30|18|25|9881
+Este|Central|Cleveland|Cavaliers|G|10|11933|Holland, John (TW)|6 ft 5 in (1.96 m)|205 lb (93 kg)|1988–11–06|80|94|2487|8|46|14|14340
+Este|Central|Chicago|Bulls|G|32|7320|Dunn, Kris |6 ft 4 in (1.93 m)|205 lb (93 kg)|1994–03–18|81|96|3978|28|18|9|11217
+Este|Central|Milwaukee|Bucks|G|0|19308|Duval, Trevon (TW)|6 ft 2 in (1.88 m)|189 lb (86 kg)|1998–08–03|117|96|3865|17|0|26|23056
+Este|Atlantico|Brooklyn|Nets|G|13|11843|Napier, Shabazz|6 ft 1 in (1.85 m)|180 lb (82 kg)|1991–07–14|96|100|1348|25|2|0|13095
+Este|Central|Cleveland|Cavaliers|G|3|18097|Hill, George|6 ft 3 in (1.91 m)|188 lb (85 kg)|1986–05–04|112|112|5209|43|72|20|23194
+Oeste|Pacifico|Golden State|Warriors|F|28|7537|McKinnie, Alfonzo|6 ft 8 in (2.03 m)|215 lb (98 kg)|1992–09–17|108|114|6596|37|37|9|14025
+Este|Sureste|Miami|Heat|G|8|2844|Johnson, Tyler|6 ft 4 in (1.93 m)|190 lb (86 kg)|1992–05–07|100|112|5294|32|32|23|8038
+Oeste|Noroeste|Denver|Nuggets|F|20|18255|Lydon, Tyler|6 ft 9 in (2.06 m)|225 lb (102 kg)|1996–04–09|97|79|6626|29|28|25|24784
+Este|Central|Chicago|Bulls|C|42|4684|Lopez, Robin|7 ft 0 in (2.13 m)|275 lb (125 kg)|1988–04–01|76|86|7896|3|59|18|12504
+Oeste|Noroeste|Utah|Jazz|F|2|9975|Ingles, Joe|6 ft 8 in (2.03 m)|226 lb (103 kg)|1987–10–02|106|102|6603|21|75|30|16472
+Este|Central|Detroit|Pistons|F|23|10523|Griffin, Blake|6 ft 10 in (2.08 m)|250 lb (113 kg)|1989–03–16|117|120|5979|2|49|15|16385
+Oeste|Suroeste|New Orleans|Pelicans|F|3|17985|Mirotic, Nikola|6 ft 10 in (2.08 m)|250 lb (113 kg)|1991–02–11|94|106|5569|3|43|10|23460
+Oeste|Suroeste|New Orleans|Pelicans|G|4|5235|Payton, Elfrid|6 ft 4 in (1.93 m)|185 lb (84 kg)|1994–02–22|104|117|5191|43|56|15|10322
+Oeste|Noroeste|Denver|Nuggets|F|3|15076|Craig, Torrey|6 ft 6 in (1.98 m)|215 lb (98 kg)|1990–12–19|111|114|7176|32|64|42|22141
+Oeste|Noroeste|Oklahoma City|Thunder|G|8|16802|Abrines, Álex|6 ft 6 in (1.98 m)|200 lb (91 kg)|1993–08–01|97|77|1767|48|50|28|18472
+Este|Atlantico|Philadelphia|76ers|F|22|13931|Chandler, Wilson |6 ft 9 in (2.06 m)|225 lb (102 kg)|1987–05–10|94|116|174|9|39|3|14011
+Este|Sureste|Miami|Heat|G|11|5943|Waiters, Dion |6 ft 4 in (1.93 m)|215 lb (98 kg)|1991–12–10|114|100|7258|35|16|22|13087
+Oeste|Noroeste|Minnesota|Timberwolves|G|3|13239|Terrell, Jared (TW)|6 ft 3 in (1.91 m)|215 lb (98 kg)|1995–02–10|123|108|5254|41|14|32|18370
+Oeste|Pacifico|Phoenix|Suns|F|8|9531|King, George (TW)|6 ft 6 in (1.98 m)|220 lb (100 kg)|1994–01–15|98|117|6595|3|16|16|16028
+Oeste|Suroeste|Houston|Rockets|F|8|12095|Ennis, James|6 ft 7 in (2.01 m)|210 lb (95 kg)|1990–07–01|121|88|7491|39|17|37|19465
+Oeste|Suroeste|Dallas|Mavericks|G|1|16255|Smith, Dennis|6 ft 3 in (1.91 m)|195 lb (88 kg)|1997–11–25|88|122|5565|28|12|13|21732
+Este|Atlantico|New York|Knicks|G|31|17847|Baker, Ron|6 ft 4 in (1.93 m)|220 lb (100 kg)|1993–03–30|119|83|3624|48|7|18|21352
+Este|Atlantico|Toronto|Raptors|G|7|12388|Lowry, Kyle|6 ft 0 in (1.83 m)|205 lb (93 kg)|1986–03–25|111|110|368|16|39|17|12645
+Oeste|Pacifico|Los Angeles|Clippers|G|10|10181|Robinson, Jerome|6 ft 5 in (1.96 m)|188 lb (85 kg)|1997–02–22|115|79|1303|27|4|5|11369
+Oeste|Noroeste|Portland|Trail Blazers|C|27|6190|Nurkic, Jusuf|7 ft 0 in (2.13 m)|280 lb (127 kg)|1994–08–23|99|123|228|24|24|29|6319
+Este|Atlantico|Philadelphia|76ers|G|8|5809|Smith, Zhaire |6 ft 4 in (1.93 m)|199 lb (90 kg)|1999–06–04|83|105|1475|19|63|10|7201
+Este|Central|Indiana|Pacers|C|10|14866|O'Quinn, Kyle|6 ft 10 in (2.08 m)|250 lb (113 kg)|1990–03–26|91|109|3859|24|74|41|18634
+Oeste|Suroeste|Memphis|Grizzlies|F|18|17864|Casspi, Omri|6 ft 9 in (2.06 m)|225 lb (102 kg)|1988–06–22|81|122|5442|29|9|22|23225
+Este|Central|Milwaukee|Bucks|C|31|6091|Henson, John|6 ft 11 in (2.11 m)|219 lb (99 kg)|1990–12–28|89|99|5782|12|73|21|11784
+Oeste|Pacifico|Los Angeles|Lakers|F|15|8608|Wagner, Moritz|6 ft 11 in (2.11 m)|245 lb (111 kg)|1997–04–26|97|88|4791|50|28|40|13302
+Oeste|Pacifico|Sacramento|Kings|G|5|2589|Fox, De'Aaron|6 ft 3 in (1.91 m)|175 lb (79 kg)|1997–12–20|112|122|4478|17|71|24|6955
+Oeste|Noroeste|Utah|Jazz|C|27|11960|Gobert, Rudy|7 ft 1 in (2.16 m)|245 lb (111 kg)|1992–06–26|86|99|3614|39|37|45|15488
+Este|Sureste|Miami|Heat|F|16|7455|Johnson, James |6 ft 8 in (2.03 m)|240 lb (109 kg)|1987–02–20|121|120|4767|10|57|7|12101
+Oeste|Noroeste|Oklahoma City|Thunder|F|3|2420|Noel, Nerlens|6 ft 11 in (2.11 m)|220 lb (100 kg)|1994–04–10|95|86|7834|48|65|1|10159
+Oeste|Noroeste|Denver|Nuggets|C|15|16630|Jokic, Nikola|6 ft 10 in (2.08 m)|250 lb (113 kg)|1995–02–19|108|123|355|1|33|41|16877
+Este|Central|Milwaukee|Bucks|G|9|2275|DiVincenzo, Donte|6 ft 4 in (1.93 m)|203 lb (92 kg)|1997–01–31|125|111|6204|24|61|11|8354
+Este|Central|Chicago|Bulls|G|22|11277|Payne, Cameron|6 ft 3 in (1.91 m)|190 lb (86 kg)|1994–08–08|109|77|1163|19|41|36|12331
+Oeste|Noroeste|Minnesota|Timberwolves|F|33|12585|Bates-Diop, Keita|6 ft 9 in (2.06 m)|223 lb (101 kg)|1996–01–23|114|89|5561|15|73|8|18032
+Este|Sureste|Orlando|Magic|F|1|3212|Isaac, Jonathan|6 ft 10 in (2.08 m)|210 lb (95 kg)|1997–10–03|100|94|4935|44|42|41|8047
+Este|Sureste|Atlanta|Hawks|C|25|15151|Len, Alex|7 ft 1 in (2.16 m)|250 lb (113 kg)|1993–06–16|102|104|1551|5|33|43|16600
+Este|Sureste|Atlanta|Hawks|G|7|13177|Lin, Jeremy|6 ft 3 in (1.91 m)|200 lb (91 kg)|1988–08–23|88|119|3679|49|50|0|16768
+Este|Central|Chicago|Bulls|F|5|14672|Portis, Bobby |6 ft 11 in (2.11 m)|250 lb (113 kg)|1995–02–10|118|80|5859|26|24|37|20413
+Este|Sureste|Charlotte|Hornets|G|3|15354|Lamb, Jeremy|6 ft 5 in (1.96 m)|185 lb (84 kg)|1992–05–30|119|113|2759|1|2|31|17994
+Oeste|Pacifico|Los Angeles|Lakers|F|19|21195|Williams, Johnathan (TW)|6 ft 9 in (2.06 m)|228 lb (103 kg)|1995–05–22|99|90|1170|30|23|35|22266
+Oeste|Suroeste|Houston|Rockets|G|13|17659|Harden, James|6 ft 5 in (1.96 m)|220 lb (100 kg)|1989–08–26|80|94|5203|30|1|38|22782
+Oeste|Noroeste|Utah|Jazz|F|22|10719|Sefolosha, Thabo|6 ft 7 in (2.01 m)|220 lb (100 kg)|1984–05–02|106|88|7179|5|73|23|17792
+Oeste|Suroeste|San Antonio|Spurs|F|22|13892|Gay, Rudy|6 ft 8 in (2.03 m)|230 lb (104 kg)|1986–08–17|89|92|3526|28|24|33|17329
+Oeste|Pacifico|Golden State|Warriors|G|30|9529|Curry, Stephen (C)|6 ft 3 in (1.91 m)|190 lb (86 kg)|1988–03–14|75|115|4379|1|18|29|13833
+Oeste|Noroeste|Utah|Jazz|G|24|6718|Allen, Grayson|6 ft 5 in (1.96 m)|198 lb (90 kg)|1995–10–08|106|122|6776|4|10|29|13388
+Este|Central|Detroit|Pistons|G|18|12811|Lofton, Zach (TW)|6 ft 4 in (1.93 m)|180 lb (82 kg)|1992–11–18|101|119|4069|46|74|20|16779
+Este|Sureste|Orlando|Magic|G|10|15754|Fournier, Evan|6 ft 7 in (2.01 m)|205 lb (93 kg)|1992–10–29|84|121|6925|27|35|10|22595
+Oeste|Noroeste|Portland|Trail Blazers|G|31|5483|Curry, Seth|6 ft 2 in (1.88 m)|185 lb (84 kg)|1990–08–23|120|96|5598|35|20|24|10961
+Este|Atlantico|Philadelphia|76ers|F|33|2836|Covington, Robert|6 ft 9 in (2.06 m)|225 lb (102 kg)|1990–12–14|75|125|5270|7|35|23|8031
+Este|Atlantico|Toronto|Raptors|F|43|17548|Siakam, Pascal|6 ft 9 in (2.06 m)|230 lb (104 kg)|1994–04–02|85|122|5615|45|45|41|23078
+Este|Central|Detroit|Pistons|G|13|17674|Thomas, Khyri|6 ft 3 in (1.91 m)|210 lb (95 kg)|1996–05–08|85|92|5258|2|13|39|22847
+Oeste|Pacifico|Sacramento|Kings|F|50|4890|Randolph, Zach|6 ft 9 in (2.06 m)|250 lb (113 kg)|1981–07–16|112|75|3426|45|17|39|8204
+Este|Atlantico|New York|Knicks|G|14|15229|Trier, Allonzo (TW)|6 ft 5 in (1.96 m)|200 lb (91 kg)|1996–01–17|125|90|7435|27|68|38|22539
+Este|Sureste|Charlotte|Hornets|F|14|17358|Kidd-Gilchrist, Michael|6 ft 7 in (2.01 m)|232 lb (105 kg)|1993–09–26|123|79|1019|38|46|6|18254
+Este|Sureste|Charlotte|Hornets|F|44|19627|Kaminsky, Frank|7 ft 0 in (2.13 m)|242 lb (110 kg)|1993–04–04|106|97|4974|2|42|24|24495
+Este|Sureste|Charlotte|Hornets|F|2|6407|Williams, Marvin|6 ft 9 in (2.06 m)|237 lb (108 kg)|1986–06–19|93|92|7026|40|38|33|13340
+Oeste|Pacifico|Sacramento|Kings|F|32|20681|Gabriel, Wenyen (TW)|6 ft 9 in (2.06 m)|205 lb (93 kg)|1997–03–26|87|108|1186|41|3|33|21780
+Este|Atlantico|Philadelphia|76ers|F|43|5688|Bolden, Jonah|6 ft 10 in (2.08 m)|220 lb (100 kg)|1996–01–02|111|95|5169|50|29|18|10746
+Oeste|Noroeste|Denver|Nuggets|G|14|18740|Harris, Gary|6 ft 4 in (1.93 m)|210 lb (95 kg)|1994–09–14|82|105|4937|43|33|31|23595
+Este|Atlantico|Boston|Celtics|F|44|17313|Williams, Robert (GL)|6 ft 10 in (2.08 m)|240 lb (109 kg)|1997–10–17|85|112|7252|38|28|24|24480
+Oeste|Noroeste|Oklahoma City|Thunder|G|2|23627|Felton, Raymond|6 ft 1 in (1.85 m)|205 lb (93 kg)|1984–06–26|108|80|881|6|42|40|24400
+Oeste|Noroeste|Oklahoma City|Thunder|F|11|15887|Nader, Abdel|6 ft 6 in (1.98 m)|225 lb (102 kg)|1993–09–25|84|99|2890|1|75|17|18693
+Oeste|Noroeste|Oklahoma City|Thunder|C|34|21121|Davis, Tyler (TW)|6 ft 10 in (2.08 m)|266 lb (121 kg)|1997–05–22|110|124|593|31|18|28|21604
+Oeste|Pacifico|Los Angeles|Clippers|F|8|15552|Gallinari, Danilo|6 ft 10 in (2.08 m)|225 lb (102 kg)|1988–08–08|118|118|2000|45|28|45|17434
+Oeste|Suroeste|San Antonio|Spurs|G|10|13240|DeRozan, DeMar|6 ft 7 in (2.01 m)|220 lb (100 kg)|1989–08–07|102|100|3518|11|43|20|16656
+Este|Atlantico|New York|Knicks|G|11|14737|Ntilikina, Frank|6 ft 6 in (1.98 m)|200 lb (91 kg)|1998–07–28|98|116|3381|12|75|12|18020
+Oeste|Pacifico|Los Angeles|Clippers|F|5|15035|Harrell, Montrezl|6 ft 8 in (2.03 m)|240 lb (109 kg)|1994–01–26|98|108|378|8|55|30|15315
+Oeste|Suroeste|New Orleans|Pelicans|G|15|9169|Jackson, Frank|6 ft 3 in (1.91 m)|205 lb (93 kg)|1998–05–04|79|121|4891|50|54|8|13981
+Oeste|Suroeste|Dallas|Mavericks|G|5|8484|Barea, J. J.|6 ft 0 in (1.83 m)|185 lb (84 kg)|1984–06–26|87|100|5342|26|70|35|13739
+Oeste|Pacifico|Phoenix|Suns|F|3|12820|Ariza, Trevor|6 ft 8 in (2.03 m)|215 lb (98 kg)|1985–06–30|106|81|5542|45|1|6|18256
+Oeste|Pacifico|Sacramento|Kings|C|0|15839|Cauley-Stein, Willie|7 ft 0 in (2.13 m)|240 lb (109 kg)|1993–08–18|119|111|6377|41|41|30|22097
+Oeste|Pacifico|Los Angeles|Clippers|G|2|2020|Gilgeous-Alexander, Shai|6 ft 6 in (1.98 m)|180 lb (82 kg)|1998–07–12|99|81|3586|35|73|30|5507
+Oeste|Noroeste|Denver|Nuggets|F|4|20693|Millsap, Paul|6 ft 8 in (2.03 m)|246 lb (112 kg)|1985–02–10|84|120|4179|29|3|14|24788
+Este|Sureste|Washington|Wizards|F|22|11401|Porter, Otto|6 ft 8 in (2.03 m)|198 lb (90 kg)|1993–06–03|125|113|378|15|1|4|11654
+Oeste|Suroeste|Dallas|Mavericks|F|26|14899|Spalding, Ray|6 ft 10 in (2.08 m)|215 lb (98 kg)|1997–03–11|88|103|2877|9|60|3|17688
+Este|Central|Detroit|Pistons|G|5|11117|Kennard, Luke |6 ft 5 in (1.96 m)|206 lb (93 kg)|1996–06–24|107|91|3113|3|43|27|14123
+Oeste|Suroeste|Dallas|Mavericks|F|7|7554|Powell, Dwight|6 ft 11 in (2.11 m)|240 lb (109 kg)|1991–07–20|117|98|6410|28|64|33|13847
+Oeste|Noroeste|Minnesota|Timberwolves|G|12|3818|Williams, C. J. (TW)|6 ft 5 in (1.96 m)|230 lb (104 kg)|1990–02–06|80|123|3157|43|24|30|6895
+Este|Sureste|Charlotte|Hornets|G|55|17523|Macura, J. P. (TW)|6 ft 5 in (1.96 m)|205 lb (93 kg)|1995–06–05|107|122|7459|10|33|25|24875
+Este|Sureste|Orlando|Magic|G|13|-446|Briscoe, Isaiah|6 ft 3 in (1.91 m)|215 lb (98 kg)|1996–04–13|111|78|6994|50|6|13|6437
+Oeste|Noroeste|Portland|Trail Blazers|F|33|17800|Collins, Zach|7 ft 0 in (2.13 m)|230 lb (104 kg)|1997–11–19|119|85|6684|50|50|41|24365
+Oeste|Suroeste|Memphis|Grizzlies|G|3|1914|Carter, Jevon (GL)|6 ft 2 in (1.88 m)|196 lb (89 kg)|1995–09–14|119|96|4156|19|5|14|5951
+Oeste|Noroeste|Oklahoma City|Thunder|F|54|17388|Patterson, Patrick|6 ft 9 in (2.06 m)|230 lb (104 kg)|1989–03–14|87|93|3984|49|65|38|21285
+Oeste|Noroeste|Portland|Trail Blazers|G|24|17502|Simons, Anfernee|6 ft 4 in (1.93 m)|183 lb (83 kg)|1999–06–08|91|89|2705|1|14|23|20116
+Este|Atlantico|New York|Knicks|G|3|16376|Hardaway Jr., Tim|6 ft 6 in (1.98 m)|205 lb (93 kg)|1992–03–16|76|82|2445|1|18|44|18745
+Este|Central|Chicago|Bulls|F|15|16219|Hutchison, Chandler|6 ft 7 in (2.01 m)|197 lb (89 kg)|1996–04–26|125|97|4068|29|13|7|20162
+Este|Sureste|Miami|Heat|G|5|4748|Jones, Derrick|6 ft 7 in (2.01 m)|200 lb (91 kg)|1997–02–15|82|76|6563|23|60|39|11229
+Oeste|Pacifico|Golden State|Warriors|C|0|10359|Cousins, DeMarcus |6 ft 11 in (2.11 m)|270 lb (122 kg)|1990–08–13|123|82|2515|50|69|30|12751
+Este|Atlantico|Brooklyn|Nets|F|9|5258|Carroll, DeMarre |6 ft 8 in (2.03 m)|215 lb (98 kg)|1986–07–27|99|95|247|43|20|37|5406
+Oeste|Pacifico|Sacramento|Kings|G|23|13609|McLemore, Ben|6 ft 5 in (1.96 m)|195 lb (88 kg)|1993–02–11|112|98|5295|0|10|12|18792
+Este|Atlantico|New York|Knicks|G|5|4795|Lee, Courtney |6 ft 5 in (1.96 m)|215 lb (98 kg)|1985–10–03|114|95|7584|32|23|18|12265
+Este|Atlantico|New York|Knicks|F|6|13261|Porzingis, Kristaps |7 ft 3 in (2.21 m)|240 lb (109 kg)|1995–08–02|108|103|6862|30|68|26|20015
+Este|Central|Indiana|Pacers|F|21|8951|Young, Thaddeus|6 ft 8 in (2.03 m)|221 lb (100 kg)|1988–06–21|77|93|7858|38|41|39|16732
+Este|Central|Chicago|Bulls|G|9|20417|Blakeney, Antonio|6 ft 4 in (1.93 m)|192 lb (87 kg)|1996–10–04|85|106|402|5|47|43|20734
+Oeste|Suroeste|Dallas|Mavericks|F|37|17689|Antetokounmpo, Kostas (TW)|6 ft 10 in (2.08 m)|200 lb (91 kg)|1997–11–20|94|104|6579|20|9|20|24174
+Oeste|Noroeste|Utah|Jazz|G|10|7083|Burks, Alec|6 ft 6 in (1.98 m)|214 lb (97 kg)|1991–07–20|92|109|3571|34|5|37|10562
+Oeste|Noroeste|Minnesota|Timberwolves|F|9|130|Deng, Luol|6 ft 9 in (2.06 m)|220 lb (100 kg)|1985–04–16|85|76|6105|13|67|18|6150
+Oeste|Noroeste|Minnesota|Timberwolves|C|5|12417|Dieng, Gorgui|6 ft 11 in (2.11 m)|251 lb (114 kg)|1990–01–18|87|113|2491|21|55|28|14821
+Este|Central|Indiana|Pacers|C|13|9618|Anigbogu, Ike|6 ft 10 in (2.08 m)|250 lb (113 kg)|1998–10–16|107|121|7972|9|6|29|17483
+Oeste|Noroeste|Portland|Trail Blazers|F|50|13269|Swanigan, Caleb|6 ft 8 in (2.03 m)|250 lb (113 kg)|1997–04–18|119|92|2613|47|27|24|15763
+Oeste|Pacifico|Golden State|Warriors|F|35|16721|Durant, Kevin|6 ft 9 in (2.06 m)|240 lb (109 kg)|1988–09–29|82|89|1772|44|7|12|18411
+Oeste|Suroeste|Memphis|Grizzlies|F|25|19182|Parsons, Chandler |6 ft 10 in (2.08 m)|230 lb (104 kg)|1988–10–25|96|96|2805|0|53|21|21891
+Oeste|Suroeste|Dallas|Mavericks|F|41|9822|Nowitzki, Dirk |7 ft 0 in (2.13 m)|245 lb (111 kg)|1978–06–19|84|119|4784|15|36|29|14522
+Oeste|Noroeste|Oklahoma City|Thunder|G|0|6094|Westbrook, Russell|6 ft 3 in (1.91 m)|200 lb (91 kg)|1988–11–12|75|82|7869|31|32|28|13888
+Oeste|Pacifico|Golden State|Warriors|F|21|9635|Jerebko, Jonas|6 ft 10 in (2.08 m)|231 lb (105 kg)|1987–03–12|107|99|976|43|53|29|10504
+Este|Central|Cleveland|Cavaliers|C|41|4142|Žižic, Ante|6 ft 11 in (2.11 m)|254 lb (115 kg)|1997–01–04|121|121|7869|39|2|39|11890
+Este|Central|Indiana|Pacers|G|6|14964|Joseph, Cory|6 ft 3 in (1.91 m)|193 lb (88 kg)|1991–08–20|112|96|4376|22|17|18|19228
+Oeste|Suroeste|Dallas|Mavericks|G|13|6626|Brunson, Jalen|6 ft 3 in (1.91 m)|190 lb (86 kg)|1996–08–31|125|125|2732|7|32|23|9233
+Este|Sureste|Orlando|Magic|C|9|1017|Vucevic, Nikola|7 ft 0 in (2.13 m)|260 lb (118 kg)|1990–10–24|79|84|5120|41|10|13|6058
+Oeste|Noroeste|Denver|Nuggets|G|27|18993|Murray, Jamal|6 ft 4 in (1.93 m)|207 lb (94 kg)|1997–02–23|114|115|2963|3|58|6|21842
+Este|Atlantico|Boston|Celtics|F|46|12028|Baynes, Aron|6 ft 10 in (2.08 m)|260 lb (118 kg)|1986–12–09|85|121|6329|16|62|42|18272
+Oeste|Noroeste|Portland|Trail Blazers|G|9|8280|Trent, Gary|6 ft 6 in (1.98 m)|204 lb (93 kg)|1999–01–18|108|92|2099|30|2|14|10271
+Oeste|Suroeste|Dallas|Mavericks|F|40|1680|Barnes, Harrison|6 ft 8 in (2.03 m)|225 lb (102 kg)|1992–05–30|119|78|6714|49|49|42|8275
+Este|Central|Chicago|Bulls|F|34|15160|Carter, Wendell|6 ft 10 in (2.08 m)|255 lb (116 kg)|1999–04–16|115|115|6733|48|75|42|21778
+Este|Central|Milwaukee|Bucks|F|5|7490|Wilson, D. J.|6 ft 10 in (2.08 m)|231 lb (105 kg)|1996–02–19|105|98|5624|5|30|5|13009
+Este|Central|Detroit|Pistons|C|0|6274|Drummond, Andre|6 ft 11 in (2.11 m)|279 lb (127 kg)|1993–08–10|95|112|4101|32|62|42|10280
+Oeste|Pacifico|Phoenix|Suns|G|2|22581|Okobo, Élie|6 ft 2 in (1.88 m)|180 lb (82 kg)|1996–10–23|81|94|1885|3|42|10|24385
+Oeste|Pacifico|Phoenix|Suns|F|12|21100|Warren, T. J.|6 ft 8 in (2.03 m)|215 lb (98 kg)|1993–09–05|87|79|1191|5|40|21|22204
+Este|Atlantico|New York|Knicks|G|1|7087|Mudiay, Emmanuel|6 ft 5 in (1.96 m)|200 lb (91 kg)|1996–03–05|90|87|2337|9|41|27|9334
+Oeste|Noroeste|Portland|Trail Blazers|G|2|6897|Baldwin, Wade|6 ft 4 in (1.93 m)|202 lb (92 kg)|1996–03–29|83|113|1783|43|33|11|8597
+Este|Central|Indiana|Pacers|G|12|5621|Evans, Tyreke|6 ft 6 in (1.98 m)|220 lb (100 kg)|1989–09–19|124|122|7589|10|55|36|13086
+Este|Central|Cleveland|Cavaliers|F|20|9137|Preston, Billy (TW)|6 ft 10 in (2.08 m)|240 lb (109 kg)|1997–10–26|78|95|3019|9|73|35|12078
+Oeste|Noroeste|Utah|Jazz|F|99|14013|Crowder, Jae|6 ft 6 in (1.98 m)|235 lb (107 kg)|1990–07–06|119|102|4653|41|14|35|18547
+Oeste|Suroeste|Dallas|Mavericks|F|42|19052|Kleber, Maxi|6 ft 11 in (2.11 m)|240 lb (109 kg)|1992–01–29|121|77|2492|45|54|7|21423
+Oeste|Suroeste|New Orleans|Pelicans|F|21|344|Miller, Darius|6 ft 8 in (2.03 m)|225 lb (102 kg)|1990–03–21|92|122|5898|9|28|44|6150
+Este|Central|Cleveland|Cavaliers|G|8|10189|Clarkson, Jordan|6 ft 5 in (1.96 m)|194 lb (88 kg)|1992–06–07|112|121|2144|18|38|39|12221
+Oeste|Pacifico|Sacramento|Kings|G|3|13990|Ferrell, Yogi|6 ft 0 in (1.83 m)|180 lb (82 kg)|1993–05–09|77|99|331|25|73|5|14244
+Este|Sureste|Atlanta|Hawks|G|11|14069|Young, Trae|6 ft 2 in (1.88 m)|180 lb (82 kg)|1998–09–19|114|104|6986|47|46|1|20941
+Este|Sureste|Charlotte|Hornets|G|1|15572|Monk, Malik|6 ft 3 in (1.91 m)|200 lb (91 kg)|1998–02–04|118|84|8000|25|37|36|23454
+Oeste|Noroeste|Oklahoma City|Thunder|G|6|9062|Diallo, Hamidou|6 ft 5 in (1.96 m)|198 lb (90 kg)|1998–07–31|119|104|7133|19|21|32|16076
+Oeste|Noroeste|Oklahoma City|Thunder|G|23|923|Ferguson, Terrance|6 ft 7 in (2.01 m)|190 lb (86 kg)|1998–05–17|119|91|6915|0|44|26|7719
+Este|Atlantico|Toronto|Raptors|G|22|15567|Richardson, Malachi|6 ft 6 in (1.98 m)|205 lb (93 kg)|1996–01–05|107|93|4560|7|73|38|20020
+Oeste|Suroeste|Houston|Rockets|F|7|-590|Anthony, Carmelo|6 ft 8 in (2.03 m)|240 lb (109 kg)|1984–05–29|119|85|7070|35|46|19|6361
+Este|Atlantico|Toronto|Raptors|G|4|17633|Brown, Lorenzo|6 ft 5 in (1.96 m)|189 lb (86 kg)|1990–08–26|82|121|4094|33|62|36|21645
+Este|Central|Indiana|Pacers|G|4|10056|Oladipo, Victor|6 ft 4 in (1.93 m)|210 lb (95 kg)|1992–05–04|121|122|6772|6|52|15|16707
+Este|Central|Detroit|Pistons|G|25|12687|Bullock, Reggie|6 ft 7 in (2.01 m)|205 lb (93 kg)|1991–03–16|104|97|3822|41|16|16|16405
+Este|Atlantico|Toronto|Raptors|F|15|9301|Monroe, Greg|6 ft 11 in (2.11 m)|265 lb (120 kg)|1990–06–04|80|117|1533|28|20|37|10754
+Este|Atlantico|Boston|Celtics|G|9|20105|Wanamaker, Brad|6 ft 4 in (1.93 m)|210 lb (95 kg)|1989–07–25|117|111|2931|19|60|9|22919
+Este|Atlantico|Boston|Celtics|F|42|9379|Horford, Al|6 ft 10 in (2.08 m)|245 lb (111 kg)|1986–06–03|104|78|354|2|51|23|9629
+Oeste|Noroeste|Minnesota|Timberwolves|G|1|3978|Jones, Tyus|6 ft 2 in (1.88 m)|184 lb (83 kg)|1996–05–10|111|120|5015|30|39|41|8882
+Oeste|Suroeste|Memphis|Grizzlies|F|0|15127|Green, JaMychal |6 ft 9 in (2.06 m)|227 lb (103 kg)|1990–06–21|79|82|5383|21|21|37|20431
+Este|Central|Indiana|Pacers|F|44|13861|Bogdanovic, Bojan|6 ft 8 in (2.03 m)|216 lb (98 kg)|1989–04–18|108|106|1941|40|31|8|15694
+Este|Central|Milwaukee|Bucks|G|8|8515|Dellavedova, Matthew|6 ft 4 in (1.93 m)|200 lb (91 kg)|1990–09–08|100|75|5537|44|29|33|13952
+Este|Atlantico|New York|Knicks|F|4|4231|Hicks, Isaiah (TW)|6 ft 9 in (2.06 m)|230 lb (104 kg)|1994–07–24|101|80|2237|16|53|42|6367
+Este|Sureste|Charlotte|Hornets|G|5|20053|Batum, Nicolas|6 ft 8 in (2.03 m)|200 lb (91 kg)|1988–12–14|117|94|1996|14|66|24|21932
+Oeste|Suroeste|New Orleans|Pelicans|F|13|14984|Diallo, Cheick|6 ft 9 in (2.06 m)|220 lb (100 kg)|1996–09–13|84|78|534|18|63|40|15434
+Oeste|Suroeste|New Orleans|Pelicans|G|34|8639|Williams, Kenrich|6 ft 7 in (2.01 m)|210 lb (95 kg)|1994–12–02|120|106|7436|8|5|41|15955
+Oeste|Pacifico|Phoenix|Suns|F|25|5546|Bridges, Mikal|6 ft 7 in (2.01 m)|210 lb (95 kg)|1996–08–30|90|112|1089|3|39|17|6545
+Este|Sureste|Washington|Wizards|F|6|8977|Brown, Troy|6 ft 7 in (2.01 m)|215 lb (98 kg)|1999–07–28|99|107|2741|45|74|9|11619
+Este|Central|Chicago|Bulls|G|51|11410|Arcidiacono, Ryan|6 ft 3 in (1.91 m)|200 lb (91 kg)|1994–03–26|108|106|7507|18|31|42|18809
+Oeste|Noroeste|Oklahoma City|Thunder|F|13|13670|George, Paul|6 ft 9 in (2.06 m)|220 lb (100 kg)|1990–05–02|86|96|1267|11|46|42|14851
+Este|Central|Milwaukee|Bucks|F|22|12476|Middleton, Khris|6 ft 8 in (2.03 m)|222 lb (101 kg)|1991–08–12|116|82|1400|11|8|8|13760
+Oeste|Pacifico|Los Angeles|Clippers|F|15|11553|Motley, Johnathan (TW)|6 ft 10 in (2.08 m)|230 lb (104 kg)|1995–05–04|119|111|1554|11|8|45|12988
+Este|Sureste|Atlanta|Hawks|F|20|4293|Collins, John |6 ft 10 in (2.08 m)|235 lb (107 kg)|1997–09–23|84|117|7984|15|56|44|12193
+Este|Atlantico|Philadelphia|76ers|G|0|10657|Bayless, Jerryd |6 ft 3 in (1.91 m)|200 lb (91 kg)|1988–08–20|86|94|6674|16|69|35|17245
+Este|Atlantico|Toronto|Raptors|G|24|10296|Powell, Norman|6 ft 4 in (1.93 m)|215 lb (98 kg)|1993–05–25|120|83|4016|43|40|40|14192
+Este|Atlantico|Philadelphia|76ers|G|18|140|Milton, Shake (TW)|6 ft 6 in (1.98 m)|207 lb (94 kg)|1996–09–26|99|80|6491|17|53|18|6532
+Este|Central|Milwaukee|Bucks|C|11|12502|Lopez, Brook|7 ft 0 in (2.13 m)|270 lb (122 kg)|1988–04–01|84|101|5124|11|30|29|17542
+Este|Atlantico|Toronto|Raptors|G|23|1189|VanVleet, Fred|6 ft 0 in (1.83 m)|195 lb (88 kg)|1994–02–25|77|120|4184|46|56|2|5296
+Oeste|Noroeste|Portland|Trail Blazers|F|4|5651|Harkless, Maurice|6 ft 9 in (2.06 m)|220 lb (100 kg)|1993–05–11|77|109|6560|4|64|35|12134
+Oeste|Pacifico|Phoenix|Suns|G|0|-1611|Canaan, Isaiah|6 ft 0 in (1.83 m)|200 lb (91 kg)|1991–05–21|104|82|7360|3|50|34|5645
+Este|Central|Detroit|Pistons|G|81|8063|Calderón, José|6 ft 3 in (1.91 m)|200 lb (91 kg)|1981–09–28|113|112|3402|47|24|42|11352
+Oeste|Suroeste|Dallas|Mavericks|G|34|21112|Harris, Devin |6 ft 3 in (1.91 m)|185 lb (84 kg)|1983–02–27|93|110|223|2|32|3|21242
+Este|Sureste|Washington|Wizards|C|28|15518|Mahinmi, Ian|6 ft 11 in (2.11 m)|262 lb (119 kg)|1986–11–05|95|102|931|10|55|27|16354
+Este|Sureste|Orlando|Magic|F|11|10704|Jefferson, Amile (TW)|6 ft 9 in (2.06 m)|222 lb (101 kg)|1993–05–07|104|117|6024|28|68|4|16624
+Oeste|Noroeste|Utah|Jazz|G|3|23082|Rubio, Ricky|6 ft 4 in (1.93 m)|190 lb (86 kg)|1990–10–21|76|102|624|0|61|14|23630
+Este|Central|Indiana|Pacers|G|5|2470|Sumner, Edmond (TW)|6 ft 6 in (1.98 m)|176 lb (80 kg)|1995–12–31|90|116|7878|2|53|17|10258
+Este|Sureste|Miami|Heat|G|3|17428|Wade, Dwyane|6 ft 4 in (1.93 m)|220 lb (100 kg)|1982–01–17|94|118|2569|35|42|6|19903
+Oeste|Suroeste|San Antonio|Spurs|F|42|7124|Bertans, Davis|6 ft 10 in (2.08 m)|210 lb (95 kg)|1992–11–12|99|96|3613|41|61|39|10638
+Este|Central|Indiana|Pacers|F|22|17591|Leaf, T. J.|6 ft 10 in (2.08 m)|225 lb (102 kg)|1997–04–30|105|119|7138|22|20|39|24624
+Este|Atlantico|New York|Knicks|C|0|15825|Kanter, Enes|6 ft 11 in (2.11 m)|250 lb (113 kg)|1992–05–20|85|97|1791|10|18|7|17531
+Oeste|Suroeste|Memphis|Grizzlies|F|12|12022|Watanabe, Yuta (TW)|6 ft 9 in (2.06 m)|205 lb (93 kg)|1994–10–13|87|81|6579|34|21|28|18514
+Oeste|Pacifico|Sacramento|Kings|G|10|9883|Mason, Frank|5 ft 11 in (1.80 m)|190 lb (86 kg)|1994–04–03|98|112|731|21|54|41|10516
+Este|Atlantico|Philadelphia|76ers|C|31|9801|Muscala, Mike|6 ft 11 in (2.11 m)|240 lb (109 kg)|1991–07–01|78|118|4464|13|55|0|14187
+Oeste|Pacifico|Golden State|Warriors|G|1|11417|Lee, Damion (TW)|6 ft 6 in (1.98 m)|210 lb (95 kg)|1992–10–21|109|85|145|33|62|29|11453
+Oeste|Suroeste|Houston|Rockets|F|12|9593|Edwards, Vincent (TW)|6 ft 7 in (2.01 m)|220 lb (100 kg)|1996–04–05|115|82|2804|25|9|4|12282
+Oeste|Suroeste|Memphis|Grizzlies|G|7|-1399|Selden, Wayne|6 ft 5 in (1.96 m)|230 lb (104 kg)|1994–09–30|101|121|7222|23|54|34|5722
+Este|Central|Cleveland|Cavaliers|F|16|1896|Osman, Cedi|6 ft 8 in (2.03 m)|215 lb (98 kg)|1995–04–08|119|81|5473|26|38|40|7250
+Este|Central|Indiana|Pacers|G|32|10893|Reed, Davon (TW)|6 ft 5 in (1.96 m)|208 lb (94 kg)|1995–06–11|81|122|2025|12|61|19|12837
+Este|Sureste|Washington|Wizards|F|32|7498|Green, Jeff|6 ft 9 in (2.06 m)|235 lb (107 kg)|1986–08–28|104|121|2710|19|48|8|10104
+Oeste|Pacifico|Los Angeles|Clippers|C|51|19236|Marjanovic, Boban|7 ft 3 in (2.21 m)|290 lb (132 kg)|1988–08–15|116|104|3981|22|7|15|23101
+Este|Sureste|Orlando|Magic|G|22|16658|Grant, Jerian|6 ft 4 in (1.93 m)|205 lb (93 kg)|1992–10–09|112|102|419|15|0|37|16965
+Este|Sureste|Orlando|Magic|F|25|7857|Iwundu, Wes|6 ft 7 in (2.01 m)|195 lb (88 kg)|1994–12–20|119|79|1744|22|20|30|9482
+Oeste|Suroeste|San Antonio|Spurs|F|33|9964|Cunningham, Dante|6 ft 8 in (2.03 m)|230 lb (104 kg)|1987–04–22|89|95|6215|9|17|2|16090
+Este|Central|Milwaukee|Bucks|G|6|14443|Bledsoe, Eric|6 ft 1 in (1.85 m)|205 lb (93 kg)|1989–12–09|99|123|6065|50|50|40|20409
+Este|Sureste|Charlotte|Hornets|G|9|10155|Parker, Tony|6 ft 2 in (1.88 m)|185 lb (84 kg)|1982–05–17|120|89|6660|40|36|27|16695
+Este|Sureste|Washington|Wizards|F|14|9519|Smith, Jason|7 ft 0 in (2.13 m)|240 lb (109 kg)|1986–03–02|120|122|4734|32|67|44|14133
+Oeste|Suroeste|Memphis|Grizzlies|G|6|14461|Mack, Shelvin|6 ft 3 in (1.91 m)|203 lb (92 kg)|1990–04–22|105|93|7742|48|39|30|22098
+Oeste|Pacifico|Phoenix|Suns|G|14|10896|Melton, De'Anthony|6 ft 4 in (1.93 m)|200 lb (91 kg)|1998–05–28|90|92|3076|20|23|38|13882
+Este|Sureste|Orlando|Magic|C|5|11272|Bamba, Mohamed|7 ft 0 in (2.13 m)|221 lb (100 kg)|1998–05–12|83|104|6368|10|0|10|17557
+Oeste|Pacifico|Sacramento|Kings|F|25|10844|Jackson, Justin|6 ft 8 in (2.03 m)|210 lb (95 kg)|1995–03–28|124|83|4046|11|34|21|14766
+Este|Atlantico|Brooklyn|Nets|G|1|9210|Russell, D'Angelo|6 ft 5 in (1.96 m)|198 lb (90 kg)|1996–02–23|94|120|7557|50|37|33|16673
+Este|Sureste|Miami|Heat|G|7|16571|Dragic, Goran|6 ft 3 in (1.91 m)|190 lb (86 kg)|1986–05–06|112|116|6121|32|56|15|22580
+Este|Sureste|Miami|Heat|F|0|8892|Maten, Yante (TW)|6 ft 8 in (2.03 m)|240 lb (109 kg)|1996–08–14|108|100|5341|46|13|19|14125
+Este|Central|Detroit|Pistons|F|30|12702|Leuer, Jon|6 ft 10 in (2.08 m)|228 lb (103 kg)|1989–05–14|83|76|4315|39|45|7|16934
+Oeste|Pacifico|Los Angeles|Lakers|G|17|17967|Bonga, Isaac|6 ft 8 in (2.03 m)|180 lb (82 kg)|1999–11–08|101|109|250|34|27|44|18116
+Este|Sureste|Orlando|Magic|C|21|1256|Mozgov, Timofey|7 ft 1 in (2.16 m)|275 lb (125 kg)|1986–07–16|80|82|4352|30|10|37|5528
+Este|Atlantico|Boston|Celtics|G|50|12906|Dozier, P. J. (TW)|6 ft 6 in (1.98 m)|205 lb (93 kg)|1996–10–25|105|101|683|45|31|42|13484
+Oeste|Noroeste|Oklahoma City|Thunder|G|7|1801|Luwawu-Cabarrot, Timothé|6 ft 6 in (1.98 m)|210 lb (95 kg)|1995–05–09|94|120|3358|24|45|25|5065
+Este|Central|Detroit|Pistons|G|9|15356|Galloway, Langston|6 ft 2 in (1.88 m)|200 lb (91 kg)|1991–12–09|97|107|7406|12|31|35|22665
+Oeste|Pacifico|Los Angeles|Lakers|G|4|15188|Caruso, Alex (TW)|6 ft 5 in (1.96 m)|186 lb (84 kg)|1994–02–28|91|117|5846|36|32|12|20943
+Oeste|Suroeste|New Orleans|Pelicans|G|2|13631|Clark, Ian|6 ft 3 in (1.91 m)|175 lb (79 kg)|1991–03–07|109|75|6720|23|52|4|20242
+Este|Sureste|Charlotte|Hornets|C|41|3976|Hernangómez, Willy|6 ft 11 in (2.11 m)|240 lb (109 kg)|1994–05–27|105|104|7712|39|71|12|11583
+Oeste|Noroeste|Denver|Nuggets|F|24|18584|Plumlee, Mason|6 ft 11 in (2.11 m)|235 lb (107 kg)|1990–03–05|96|115|290|40|12|2|18778
+Oeste|Noroeste|Oklahoma City|Thunder|F|9|1844|Grant, Jerami|6 ft 9 in (2.06 m)|220 lb (100 kg)|1994–03–12|99|119|6848|6|43|23|8593
+Este|Central|Detroit|Pistons|G|22|19559|Robinson, Glenn|6 ft 6 in (1.98 m)|222 lb (101 kg)|1994–01–08|81|89|4326|49|44|4|23804
+Oeste|Noroeste|Minnesota|Timberwolves|F|67|7878|Gibson, Taj|6 ft 9 in (2.06 m)|235 lb (107 kg)|1985–06–24|117|111|4351|39|69|36|12112
+Oeste|Noroeste|Denver|Nuggets|C|45|14359|Welsh, Thomas (TW)|7 ft 0 in (2.13 m)|255 lb (116 kg)|1996–02–03|105|101|639|28|72|24|14893
+Este|Sureste|Atlanta|Hawks|F|6|14393|Spellman, Omari|6 ft 9 in (2.06 m)|245 lb (111 kg)|1997–07–21|92|114|4928|42|59|20|19229
+Este|Atlantico|Brooklyn|Nets|F|6|15339|Dudley, Jared|6 ft 7 in (2.01 m)|237 lb (108 kg)|1985–07–10|87|77|6640|39|53|28|21892
+Este|Atlantico|Brooklyn|Nets|F|24|9520|Hollis-Jefferson, Rondae|6 ft 7 in (2.01 m)|217 lb (98 kg)|1995–01–03|103|90|1428|30|44|37|10845
+Este|Atlantico|Boston|Celtics|G|36|4626|Smart, Marcus|6 ft 4 in (1.93 m)|220 lb (100 kg)|1994–03–06|97|120|2428|25|26|30|6957
+Este|Central|Cleveland|Cavaliers|F|22|701|Nance, Larry|6 ft 9 in (2.06 m)|230 lb (104 kg)|1993–01–01|95|109|5199|5|27|2|5805
+Este|Atlantico|New York|Knicks|G|23|15228|Burke, Trey|6 ft 1 in (1.85 m)|175 lb (79 kg)|1992–11–12|105|119|6077|12|40|5|21200
+Oeste|Pacifico|Los Angeles|Lakers|F|10|22350|Mykhailiuk, Sviatoslav|6 ft 8 in (2.03 m)|205 lb (93 kg)|1997–06–10|112|106|1813|25|11|39|24051
+Este|Central|Detroit|Pistons|G|6|9064|Brown, Bruce|6 ft 5 in (1.96 m)|202 lb (92 kg)|1996–08–15|94|92|4438|4|13|18|13408
+Oeste|Pacifico|Los Angeles|Clippers|C|13|19024|Gortat, Marcin|6 ft 11 in (2.11 m)|240 lb (109 kg)|1984–02–17|97|85|2297|49|28|24|21224
+Este|Central|Detroit|Pistons|F|7|6445|Johnson, Stanley|6 ft 7 in (2.01 m)|245 lb (111 kg)|1996–05–29|90|91|7011|19|66|20|13366
+Oeste|Suroeste|Memphis|Grizzlies|C|33|10217|Gasol, Marc|7 ft 1 in (2.16 m)|255 lb (116 kg)|1985–01–29|75|109|113|10|67|35|10255
+Oeste|Suroeste|Houston|Rockets|G|14|10043|Green, Gerald|6 ft 7 in (2.01 m)|205 lb (93 kg)|1986–01–26|115|96|6716|33|47|29|16644
+Este|Central|Indiana|Pacers|G|2|11240|Collison, Darren|6 ft 0 in (1.83 m)|175 lb (79 kg)|1987–08–23|109|87|2941|27|58|20|14072
+Oeste|Pacifico|Los Angeles|Clippers|G|9|12759|Wallace, Tyrone|6 ft 5 in (1.96 m)|198 lb (90 kg)|1994–06–10|110|103|7542|17|15|31|20191
+Este|Sureste|Miami|Heat|F|9|9837|Olynyk, Kelly|7 ft 0 in (2.13 m)|240 lb (109 kg)|1991–04–19|100|88|3767|22|50|32|13504
+Este|Sureste|Miami|Heat|G|0|5034|Richardson, Josh|6 ft 6 in (1.98 m)|200 lb (91 kg)|1993–09–15|113|102|2724|34|21|23|7645
+Este|Atlantico|Boston|Celtics|G|11|9544|Irving, Kyrie|6 ft 3 in (1.91 m)|193 lb (88 kg)|1992–03–23|90|119|5124|36|4|25|14578
+Este|Atlantico|New York|Knicks|F|42|8102|Thomas, Lance|6 ft 8 in (2.03 m)|240 lb (109 kg)|1988–04–24|98|114|6447|27|25|16|14451
+Este|Sureste|Washington|Wizards|C|21|11159|Howard, Dwight|6 ft 11 in (2.11 m)|265 lb (120 kg)|1985–12–08|112|100|6632|5|21|7|17679
+Este|Central|Detroit|Pistons|C|27|18914|Pachulia, Zaza|6 ft 11 in (2.11 m)|270 lb (122 kg)|1984–02–10|101|122|4204|11|39|16|23017
+Este|Atlantico|Boston|Celtics|G|12|3818|Rozier, Terry|6 ft 1 in (1.85 m)|190 lb (86 kg)|1994–03–17|116|104|4665|20|2|29|8367
+Oeste|Noroeste|Minnesota|Timberwolves|F|22|14835|Wiggins, Andrew|6 ft 8 in (2.03 m)|194 lb (88 kg)|1995–02–23|76|93|5981|17|54|27|20740
+Este|Central|Detroit|Pistons|G|12|4379|Evans, Keenan (TW)|6 ft 3 in (1.91 m)|190 lb (86 kg)|1996–08–23|93|101|4730|38|17|13|9016
+Este|Sureste|Orlando|Magic|F|17|2824|Simmons, Jonathon|6 ft 6 in (1.98 m)|195 lb (88 kg)|1989–09–14|94|92|2305|46|51|29|5035
+Oeste|Noroeste|Utah|Jazz|C|13|15356|Bradley, Tony|6 ft 10 in (2.08 m)|248 lb (112 kg)|1998–01–08|98|80|7389|2|32|34|22647
+Este|Atlantico|Brooklyn|Nets|C|31|11540|Allen, Jarrett|6 ft 11 in (2.11 m)|237 lb (108 kg)|1998–04–21|110|115|7553|26|13|34|18983
+Oeste|Noroeste|Minnesota|Timberwolves|G|0|7453|Teague, Jeff|6 ft 2 in (1.88 m)|189 lb (86 kg)|1988–06–10|88|115|5106|12|71|31|12471
+Oeste|Suroeste|Dallas|Mavericks|F|10|13875|Finney-Smith, Dorian|6 ft 8 in (2.03 m)|220 lb (100 kg)|1993–05–04|87|107|4879|29|66|38|18667
+Este|Sureste|Washington|Wizards|C|13|10327|Bryant, Thomas|6 ft 10 in (2.08 m)|248 lb (112 kg)|1997–07–31|109|104|4974|34|69|16|15192
+Oeste|Pacifico|Los Angeles|Lakers|G|6|15719|Stephenson, Lance|6 ft 6 in (1.98 m)|230 lb (104 kg)|1990–09–05|100|87|515|31|48|22|16134
+Oeste|Pacifico|Sacramento|Kings|F|7|17446|Labissière, Skal|6 ft 11 in (2.11 m)|225 lb (102 kg)|1996–03–18|116|77|3241|24|6|32|20571
+Este|Central|Cleveland|Cavaliers|G|26|761|Korver, Kyle|6 ft 7 in (2.01 m)|212 lb (96 kg)|1981–03–17|90|76|5342|16|38|11|6013
+Este|Central|Chicago|Bulls|F|2|7541|Parker, Jabari|6 ft 8 in (2.03 m)|245 lb (111 kg)|1995–05–15|95|91|5758|30|26|38|13204
+Oeste|Noroeste|Denver|Nuggets|G|5|1906|Barton, Will |6 ft 6 in (1.98 m)|190 lb (86 kg)|1991–01–06|114|107|3820|30|15|5|5612
+Este|Atlantico|Philadelphia|76ers|C|21|8083|Embiid, Joel|7 ft 0 in (2.13 m)|250 lb (113 kg)|1994–03–16|95|114|5923|30|13|43|13911
+Este|Atlantico|Toronto|Raptors|F|9|14298|Ibaka, Serge|6 ft 10 in (2.08 m)|235 lb (107 kg)|1989–09–18|102|102|7710|35|65|22|21906
+Este|Sureste|Washington|Wizards|G|52|7942|McRae, Jordan (TW)|6 ft 5 in (1.96 m)|179 lb (81 kg)|1991–03–28|85|86|868|45|3|23|8725
+Este|Central|Milwaukee|Bucks|G|21|-613|Snell, Tony|6 ft 7 in (2.01 m)|213 lb (97 kg)|1991–11–10|109|112|7115|36|2|36|6393
+Este|Central|Cleveland|Cavaliers|F|15|13259|Dekker, Sam|6 ft 9 in (2.06 m)|230 lb (104 kg)|1994–05–06|89|75|6405|27|75|34|19575
+Oeste|Pacifico|Sacramento|Kings|C|41|19151|Koufos, Kosta|7 ft 0 in (2.13 m)|265 lb (120 kg)|1989–02–24|88|123|4345|2|69|28|23408
+Este|Central|Chicago|Bulls|F|24|5563|Markkanen, Lauri |7 ft 0 in (2.13 m)|240 lb (109 kg)|1997–05–22|77|109|2575|29|2|18|8061
+Oeste|Pacifico|Sacramento|Kings|F|19|10358|Williams, Troy (TW)|6 ft 7 in (2.01 m)|218 lb (99 kg)|1994–12–30|89|79|1397|14|9|14|11666
+Este|Sureste|Charlotte|Hornets|G|4|17254|Graham, Devonte'|6 ft 2 in (1.88 m)|185 lb (84 kg)|1995–02–22|93|120|7705|13|43|24|24866
+Oeste|Pacifico|Phoenix|Suns|F|15|6025|Anderson, Ryan|6 ft 10 in (2.08 m)|240 lb (109 kg)|1988–05–06|108|108|4897|15|66|29|10814
+Este|Atlantico|Philadelphia|76ers|F|9|20552|Šaric, Dario|6 ft 10 in (2.08 m)|223 lb (101 kg)|1994–04–08|93|123|799|44|24|12|21258
+Este|Central|Milwaukee|Bucks|G|30|17158|Morris, Jaylen (TW)|6 ft 5 in (1.96 m)|185 lb (84 kg)|1995–09–19|93|97|6709|19|64|2|23774
+Oeste|Suroeste|Dallas|Mavericks|G|77|3086|Doncic, Luka|6 ft 7 in (2.01 m)|218 lb (99 kg)|1999–02–28|95|110|2468|25|67|10|5459
+Este|Atlantico|Brooklyn|Nets|G|22|4533|LeVert, Caris|6 ft 7 in (2.01 m)|204 lb (93 kg)|1994–08–25|118|122|7787|8|61|9|12202
+Este|Central|Indiana|Pacers|F|11|14877|Sabonis, Domantas|6 ft 11 in (2.11 m)|240 lb (109 kg)|1996–05–03|114|78|5384|28|0|23|20147
+Este|Sureste|Miami|Heat|F|13|17801|Adebayo, Bam|6 ft 10 in (2.08 m)|255 lb (116 kg)|1997–07–18|111|86|3881|46|61|43|21571
+Oeste|Noroeste|Utah|Jazz|F|15|21408|Favors, Derrick|6 ft 10 in (2.08 m)|265 lb (120 kg)|1991–07–15|85|83|636|37|25|8|21959
+Este|Central|Chicago|Bulls|G|45|3505|Valentine, Denzel |6 ft 6 in (1.98 m)|210 lb (95 kg)|1993–11–16|81|78|6497|0|57|31|9921
+Este|Atlantico|Toronto|Raptors|G|8|18658|Loyd, Jordan (TW)|6 ft 4 in (1.93 m)|210 lb (95 kg)|1993–07–27|125|124|3990|30|42|25|22523
+Este|Central|Milwaukee|Bucks|F|7|16016|Maker, Thon|7 ft 1 in (2.16 m)|221 lb (100 kg)|1997–02–25|92|94|7952|0|20|38|23876
+Este|Sureste|Atlanta|Hawks|C|18|13016|Plumlee, Miles|6 ft 11 in (2.11 m)|249 lb (113 kg)|1988–09–01|123|88|3674|22|58|45|16567
+Este|Atlantico|Toronto|Raptors|G|14|19399|Green, Danny|6 ft 6 in (1.98 m)|215 lb (98 kg)|1987–06–22|101|76|2506|31|6|14|21804
+Este|Sureste|Orlando|Magic|C|24|2933|Birch, Khem|6 ft 9 in (2.06 m)|220 lb (100 kg)|1992–09–28|110|103|3952|21|35|12|6775
+Este|Atlantico|Toronto|Raptors|F|2|17182|Leonard, Kawhi|6 ft 7 in (2.01 m)|230 lb (104 kg)|1991–06–29|91|124|6203|39|2|13|23294
+Este|Central|Cleveland|Cavaliers|G|2|5140|Sexton, Collin|6 ft 2 in (1.88 m)|190 lb (86 kg)|1999–01–04|125|118|4396|17|28|45|9411
+Este|Atlantico|Toronto|Raptors|F|25|6883|Boucher, Chris (TW)|6 ft 10 in (2.08 m)|200 lb (91 kg)|1993–01–11|79|114|2943|35|3|2|9747
+Oeste|Pacifico|Phoenix|Suns|C|22|17381|Ayton, Deandre|7 ft 1 in (2.16 m)|250 lb (113 kg)|1998–07–23|104|107|3387|49|43|15|20664
+Oeste|Pacifico|Los Angeles|Clippers|G|21|15262|Beverley, Patrick|6 ft 1 in (1.85 m)|185 lb (84 kg)|1988–07–12|103|75|1406|20|69|3|16565
+Este|Sureste|Washington|Wizards|G|9|10638|Randle, Chasson (GL)|6 ft 3 in (1.91 m)|185 lb (84 kg)|1993–02–05|117|121|2892|26|17|28|13413
+Oeste|Suroeste|Memphis|Grizzlies|G|8|6105|Brooks, MarShon|6 ft 5 in (1.96 m)|200 lb (91 kg)|1989–01–29|94|113|5899|10|37|7|11910
+Este|Atlantico|Philadelphia|76ers|F|5|644|Johnson, Amir|6 ft 9 in (2.06 m)|240 lb (109 kg)|1987–05–01|96|103|6752|36|53|15|7300
+Oeste|Pacifico|Golden State|Warriors|F|5|1560|Looney, Kevon|6 ft 9 in (2.06 m)|220 lb (100 kg)|1996–02–06|107|90|7452|32|40|33|8905
+Oeste|Pacifico|Sacramento|Kings|G|24|4318|Hield, Buddy|6 ft 4 in (1.93 m)|214 lb (97 kg)|1993–12–17|84|116|5773|50|13|22|10007
+Oeste|Pacifico|Sacramento|Kings|G|8|5446|Bogdanovic, Bogdan |6 ft 6 in (1.98 m)|205 lb (93 kg)|1992–08–18|86|124|6575|19|44|36|11935
+Este|Central|Detroit|Pistons|F|8|3970|Ellenson, Henry|6 ft 11 in (2.11 m)|245 lb (111 kg)|1997–01–13|89|96|1386|11|6|37|5267
+Oeste|Suroeste|Dallas|Mavericks|C|6|20128|Jordan, DeAndre|6 ft 11 in (2.11 m)|265 lb (120 kg)|1988–07–21|121|76|3608|7|17|13|23615
+Oeste|Suroeste|Dallas|Mavericks|G|23|18209|Matthews, Wesley|6 ft 5 in (1.96 m)|220 lb (100 kg)|1986–10–14|92|76|2534|34|14|29|20651
+Oeste|Suroeste|Memphis|Grizzlies|F|10|6240|Rabb, Ivan|6 ft 10 in (2.08 m)|220 lb (100 kg)|1997–02–04|108|123|2794|34|8|22|8926
+Oeste|Suroeste|Houston|Rockets|F|0|16144|Chriss, Marquese|6 ft 10 in (2.08 m)|240 lb (109 kg)|1997–07–02|102|124|7462|2|12|20|23504
+Oeste|Noroeste|Denver|Nuggets|F|7|7729|Lyles, Trey|6 ft 10 in (2.08 m)|234 lb (106 kg)|1995–11–05|111|97|6524|27|5|43|14142
+Oeste|Noroeste|Minnesota|Timberwolves|F|7|9866|Nunnally, James|6 ft 7 in (2.01 m)|205 lb (93 kg)|1990–07–14|115|91|2488|11|12|9|12239
+Oeste|Pacifico|Golden State|Warriors|F|32|8389|Derrickson, Marcus (TW)|6 ft 7 in (2.01 m)|249 lb (113 kg)|1996–02–01|82|123|7676|37|39|16|15983
+Oeste|Pacifico|Los Angeles|Lakers|F|11|2800|Beasley, Michael|6 ft 9 in (2.06 m)|235 lb (107 kg)|1989–01–09|125|89|7250|42|44|17|9925
+Este|Atlantico|Philadelphia|76ers|G|17|16591|Redick, JJ|6 ft 4 in (1.93 m)|200 lb (91 kg)|1984–06–24|125|116|1271|16|1|6|17737
+Oeste|Noroeste|Oklahoma City|Thunder|C|12|21858|Adams, Steven|7 ft 0 in (2.13 m)|265 lb (120 kg)|1993–07–20|98|77|2841|44|4|2|24601
+Este|Central|Chicago|Bulls|F|6|1694|Felício, Cristiano|6 ft 10 in (2.08 m)|265 lb (120 kg)|1992–07–07|90|99|6077|11|66|38|7681
+Oeste|Noroeste|Utah|Jazz|F|31|8565|Niang, Georges|6 ft 6 in (1.98 m)|231 lb (105 kg)|1993–06–17|90|83|1321|7|18|35|9796
+Oeste|Noroeste|Portland|Trail Blazers|G|0|4503|Lillard, Damian|6 ft 3 in (1.91 m)|195 lb (88 kg)|1990–07–15|125|80|7933|27|49|22|12311
+Este|Atlantico|New York|Knicks|C|26|20990|Robinson, Mitchell|7 ft 1 in (2.16 m)|240 lb (109 kg)|1998–04–01|94|114|1098|41|58|6|21994
+Oeste|Pacifico|Sacramento|Kings|G|9|858|Shumpert, Iman|6 ft 5 in (1.96 m)|220 lb (100 kg)|1990–06–26|112|107|7420|49|3|26|8166
+Este|Central|Chicago|Bulls|G|0|12886|Ulis, Tyler (TW)|5 ft 10 in (1.78 m)|150 lb (68 kg)|1996–01–05|84|120|2393|45|67|45|15195
+Oeste|Noroeste|Denver|Nuggets|G|23|14066|Akoon-Purcell, DeVaughn (TW)|6 ft 6 in (1.98 m)|200 lb (91 kg)|1993–06–05|121|101|5104|30|52|44|19049
+Este|Atlantico|Toronto|Raptors|C|17|-1665|Valanciunas, Jonas|7 ft 0 in (2.13 m)|255 lb (116 kg)|1992–05–06|124|125|7644|9|73|0|5855
+Este|Central|Chicago|Bulls|G|8|8061|LaVine, Zach|6 ft 5 in (1.96 m)|200 lb (91 kg)|1995–03–10|104|112|4292|0|46|34|12249
+Este|Sureste|Atlanta|Hawks|F|95|15831|Bembry, DeAndre'|6 ft 6 in (1.98 m)|210 lb (95 kg)|1994–07–04|104|100|4071|6|33|15|19798
+Oeste|Suroeste|Houston|Rockets|F|42|6434|Nenê |6 ft 11 in (2.11 m)|250 lb (113 kg)|1982–09–13|121|110|6338|45|22|5|12651
+Este|Atlantico|Boston|Celtics|F|20|8690|Hayward, Gordon|6 ft 8 in (2.03 m)|225 lb (102 kg)|1990–03–23|93|116|6647|11|57|25|15244
+Este|Central|Milwaukee|Bucks|F|77|20062|Ilyasova, Ersan|6 ft 10 in (2.08 m)|235 lb (107 kg)|1987–05–15|110|103|3123|7|56|39|23075
+Este|Sureste|Washington|Wizards|G|31|5458|Satoranský, Tomáš|6 ft 7 in (2.01 m)|210 lb (95 kg)|1991–10–30|121|76|423|22|51|2|5760
+Este|Central|Chicago|Bulls|G|20|18711|Alkins, Rawle (TW)|6 ft 5 in (1.96 m)|225 lb (102 kg)|1997–10–29|109|115|6113|34|19|40|24715
+Este|Central|Cleveland|Cavaliers|G|5|11275|Smith, J. R.|6 ft 6 in (1.98 m)|225 lb (102 kg)|1985–09–09|108|100|4252|28|40|17|15419
+Oeste|Pacifico|Los Angeles|Clippers|G|23|17702|Williams, Lou|6 ft 1 in (1.85 m)|175 lb (79 kg)|1986–10–27|78|119|6751|6|72|31|24375
+Oeste|Suroeste|Houston|Rockets|F|6|11955|Clark, Gary (TW)|6 ft 8 in (2.03 m)|225 lb (102 kg)|1994–11–16|107|115|4074|28|14|42|15922
+Este|Sureste|Orlando|Magic|F|0|4093|Gordon, Aaron|6 ft 9 in (2.06 m)|220 lb (100 kg)|1995–09–16|122|121|5442|18|62|38|9413
+Oeste|Noroeste|Utah|Jazz|G|25|7526|Neto, Raul |6 ft 1 in (1.85 m)|179 lb (81 kg)|1992–05–19|109|102|7735|17|23|16|15152
+Oeste|Pacifico|Golden State|Warriors|C|15|10572|Jones, Damian|7 ft 0 in (2.13 m)|245 lb (111 kg)|1995–06–30|89|121|6707|5|17|25|17190
+Este|Central|Indiana|Pacers|F|26|8908|Moore, Ben|6 ft 8 in (2.03 m)|220 lb (100 kg)|1995–05–13|87|114|1794|15|45|44|10615
+Este|Central|Cleveland|Cavaliers|F|9|22845|Frye, Channing|7 ft 0 in (2.13 m)|255 lb (116 kg)|1983–05–17|80|106|1100|7|2|7|23865
+Este|Sureste|Miami|Heat|F|20|14078|Winslow, Justise|6 ft 7 in (2.01 m)|225 lb (102 kg)|1996–03–26|100|104|5717|15|5|37|19695
+Este|Atlantico|Boston|Celtics|F|13|-768|Morris, Marcus|6 ft 9 in (2.06 m)|235 lb (107 kg)|1989–09–02|119|112|7490|6|4|3|6603
+Oeste|Noroeste|Portland|Trail Blazers|G|3|15572|McCollum, C. J.|6 ft 3 in (1.91 m)|190 lb (86 kg)|1991–09–19|86|109|915|6|55|10|16401
+Oeste|Pacifico|Los Angeles|Clippers|G|4|5895|Teodosic, Miloš|6 ft 5 in (1.96 m)|196 lb (89 kg)|1987–03–19|84|124|3093|5|18|23|8904
+Oeste|Pacifico|Los Angeles|Lakers|F|0|16017|Kuzma, Kyle|6 ft 9 in (2.06 m)|220 lb (100 kg)|1995–07–24|125|88|525|2|32|42|16417
+Oeste|Suroeste|New Orleans|Pelicans|G|5|10380|Bluiett, Trevon (TW)|6 ft 6 in (1.98 m)|198 lb (90 kg)|1994–11–04|82|79|4313|38|12|17|14611
+Oeste|Suroeste|New Orleans|Pelicans|G|55|10053|Moore, E'Twaun|6 ft 4 in (1.93 m)|191 lb (87 kg)|1989–02–25|108|115|3392|26|64|0|13337
+Este|Atlantico|Brooklyn|Nets|F|21|11020|Graham, Treveon |6 ft 5 in (1.96 m)|225 lb (102 kg)|1993–10–28|101|78|404|18|66|20|11323
+Este|Sureste|Atlanta|Hawks|G|10|5223|Adams, Jaylen (TW)|6 ft 2 in (1.88 m)|190 lb (86 kg)|1996–05–04|115|104|5207|29|73|14|10315
+Oeste|Pacifico|Los Angeles|Lakers|G|2|6552|Ball, Lonzo|6 ft 6 in (1.98 m)|190 lb (86 kg)|1997–10–27|98|79|7546|41|58|38|14000
+Oeste|Noroeste|Denver|Nuggets|G|0|5068|Thomas, Isaiah |5 ft 9 in (1.75 m)|185 lb (84 kg)|1989–02–07|123|120|7187|28|37|7|12132
+Oeste|Pacifico|Los Angeles|Clippers|G|0|8615|Thornwell, Sindarius|6 ft 5 in (1.96 m)|215 lb (98 kg)|1994–11–15|113|116|7559|25|57|14|16061
+Este|Sureste|Atlanta|Hawks|G|3|9221|Huerter, Kevin|6 ft 7 in (2.01 m)|190 lb (86 kg)|1998–08–27|87|120|229|15|34|29|9363
+Este|Atlantico|New York|Knicks|F|8|4234|Hezonja, Mario|6 ft 8 in (2.03 m)|225 lb (102 kg)|1995–02–25|85|115|2309|2|26|8|6458
+Este|Central|Milwaukee|Bucks|G|—|6517|Meeks, Jodie (S)|6 ft 4 in (1.93 m)|210 lb (95 kg)|1987–08–21|97|104|1563|10|17|10|7983
+Oeste|Suroeste|San Antonio|Spurs|G|8|1151|Mills, Patty|6 ft 0 in (1.83 m)|185 lb (84 kg)|1988–08–11|110|94|7153|41|36|7|8194
+Oeste|Pacifico|Los Angeles|Clippers|F|12|16646|Mbah a Moute, Luc|6 ft 8 in (2.03 m)|230 lb (104 kg)|1986–09–09|83|80|6148|38|64|20|22711
+Oeste|Noroeste|Minnesota|Timberwolves|F|32|12132|Towns, Karl-Anthony|7 ft 0 in (2.13 m)|248 lb (112 kg)|1995–11–15|82|119|5920|16|18|24|17970
+Oeste|Suroeste|New Orleans|Pelicans|C|8|14265|Okafor, Jahlil|6 ft 11 in (2.11 m)|275 lb (125 kg)|1995–12–15|120|107|3595|8|71|24|17740
+Oeste|Pacifico|Sacramento|Kings|F|88|15117|Bjelica, Nemanja|6 ft 10 in (2.08 m)|234 lb (106 kg)|1988–05–09|105|124|133|7|21|35|15145
+Este|Sureste|Miami|Heat|F|55|4329|Robinson, Duncan (TW)|6 ft 8 in (2.03 m)|210 lb (95 kg)|1994–04–22|92|116|7344|31|30|8|11581
+Oeste|Suroeste|Houston|Rockets|G|10|11747|Gordon, Eric|6 ft 4 in (1.93 m)|215 lb (98 kg)|1988–12–25|110|123|1421|6|45|33|13058
+Este|Sureste|Charlotte|Hornets|G|15|15049|Walker, Kemba|6 ft 1 in (1.85 m)|184 lb (83 kg)|1990–05–08|93|76|6485|24|35|11|21441
+Este|Sureste|Atlanta|Hawks|F|12|3780|Prince, Taurean|6 ft 8 in (2.03 m)|220 lb (100 kg)|1994–03–22|95|79|5578|40|0|37|9263
+Oeste|Pacifico|Los Angeles|Clippers|C|31|-1612|Delgado, Ángel (TW)|6 ft 10 in (2.08 m)|245 lb (111 kg)|1994–11–20|79|84|7847|41|37|32|6156
+Este|Sureste|Washington|Wizards|F|5|16081|Morris, Markieff|6 ft 10 in (2.08 m)|245 lb (111 kg)|1989–09–02|114|83|2665|19|56|45|18632
+Oeste|Suroeste|San Antonio|Spurs|G|4|18409|White, Derrick |6 ft 4 in (1.93 m)|190 lb (86 kg)|1994–07–02|82|120|5908|49|72|13|24235
+Oeste|Noroeste|Denver|Nuggets|F|8|17539|Vanderbilt, Jarred |6 ft 9 in (2.06 m)|214 lb (97 kg)|1999–04–03|75|123|1563|13|20|1|19027
+Oeste|Noroeste|Utah|Jazz|F|23|13503|O'Neale, Royce|6 ft 6 in (1.98 m)|226 lb (103 kg)|1993–06–05|118|92|3326|15|54|22|16711
+Oeste|Noroeste|Utah|Jazz|F|33|15774|Udoh, Ekpe|6 ft 10 in (2.08 m)|245 lb (111 kg)|1987–05–20|114|105|3316|46|54|8|18976
+Oeste|Noroeste|Portland|Trail Blazers|F|10|14507|Layman, Jake|6 ft 9 in (2.06 m)|210 lb (95 kg)|1994–03–07|104|112|1359|20|50|11|15762
+Oeste|Suroeste|Houston|Rockets|G|2|17824|Knight, Brandon |6 ft 3 in (1.91 m)|195 lb (88 kg)|1991–12–02|122|118|1029|44|59|2|18731
+Este|Sureste|Atlanta|Hawks|G|2|8242|Dorsey, Tyler|6 ft 5 in (1.96 m)|183 lb (83 kg)|1996–02–18|117|83|1673|29|37|30|9798
+Este|Atlantico|Boston|Celtics|F|30|14709|Yabusele, Guerschon|6 ft 8 in (2.03 m)|260 lb (118 kg)|1995–12–17|106|116|3945|42|63|12|18548
+Este|Atlantico|Brooklyn|Nets|G|12|5691|Harris, Joe|6 ft 6 in (1.98 m)|219 lb (99 kg)|1991–09–07|102|125|3282|47|15|40|8871
+Este|Central|Chicago|Bulls|G|7|4335|Holiday, Justin|6 ft 6 in (1.98 m)|181 lb (82 kg)|1989–04–05|110|101|5233|17|21|18|9458
+Oeste|Suroeste|Dallas|Mavericks|G|3|16454|Macon, Daryl (TW)|6 ft 3 in (1.91 m)|185 lb (84 kg)|1995–11–29|120|106|4589|2|55|1|20923
+Oeste|Noroeste|Utah|Jazz|G|45|586|Mitchell, Donovan|6 ft 3 in (1.91 m)|215 lb (98 kg)|1996–09–07|123|97|5101|47|0|26|5564
+Este|Central|Detroit|Pistons|G|1|-453|Jackson, Reggie|6 ft 3 in (1.91 m)|208 lb (94 kg)|1990–04–16|115|92|6201|36|1|38|5633
+Oeste|Suroeste|Memphis|Grizzlies|G|17|-498|Temple, Garrett|6 ft 6 in (1.98 m)|195 lb (88 kg)|1986–05–08|102|78|6146|44|20|6|5546
+Este|Central|Milwaukee|Bucks|G|13|17990|Brogdon, Malcolm|6 ft 5 in (1.96 m)|229 lb (104 kg)|1992–12–11|121|92|2149|43|63|43|20018

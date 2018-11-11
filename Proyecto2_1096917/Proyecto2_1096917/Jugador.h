@@ -1,23 +1,31 @@
 #pragma once
 #include "Persona.h"
+#include <string>
+#include <iostream>
+
+using namespace std;
 class Jugador: public Persona
 {
 public:
 	Jugador();
+	Jugador(string conference, string division, string city, string team, string position, int number, int id,
+		string name, string height, string weight, string birthdate, int power, string skill, int scoredPoints,
+		int stolenBalls, int rebounds, int plugs, int votes);
+	string cadena;
 	int getId();
 	void setId(int jId);
-	char* getConference();
-	void setConference(char jConference[]);
-	char* getTeam();
-	void setTeam(char jTeam[]);
-	char* getPosition();
-	void setPosition(char jPosition[]);
+	string getConference();
+	void setConference(string jConference);
+	string getTeam();
+	void setTeam(string jTeam);
+	string getPosition();
+	void setPosition(string jPosition);
 	int getPower();
 	void setPower(int jPower);
-	char* getSkill();
-	void setSkill(char jSkill[]);
-	int getHeight();
-	void setHeight(int jHeight);
+	string getSkill();
+	void setSkill(string jSkill);
+	string getHeight();
+	void setHeight(string jHeight);
 	int getScoredPoints();
 	void setScoredPoints(int jStolenBalls);
 	int getStolenBalls();
@@ -28,23 +36,26 @@ public:
 	void setPlugs(int jPlugs);
 	int getVotes();
 	void setVotes(int jVotes);
-	int getWeight();
-	void setWeight(int jWeight);		
-	char* getBirthdate();
-	void setBirthDate(char jBirthdate[]);
+	string getWeight();
+	void setWeight(string jWeight);		
+	string getBirthdate();
+	void setBirthDate(string jBirthdate);
+	int getNumber();
+	void setNumber(int jNumber);
 	~Jugador();
-private:
-	 int id;
-	 char* conference;
-	 char* team;
-	 char* position;
-	 char* skill;
-	 char* birthdate;
-	 char* city;
-	 char* division;
-	 int power;	 
-	 int height;
-	 int weight;
+private:	 
+	 string conference;
+	 string team;
+	 string position;
+	 string skill;
+	 string birthdate;
+	 string city;
+	 string division;
+	 string height;
+	 string weight;
+	 int id;	 
+	 int number;	 
+	 int power;	 	 
 	 int scoredPoints;
 	 int stolenBalls;
 	 int rebounds;

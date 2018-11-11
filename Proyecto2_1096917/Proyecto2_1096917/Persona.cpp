@@ -7,32 +7,14 @@ Persona::Persona()
 {
 }
 
-char* Persona::getName()
+string Persona::getName()
 {
 	return name;
 }
-void Persona::setName(char pName[])
+void Persona::setName(string pName)
 {
 	name = pName;
 }
-int Persona::getAge()
-{
-	return age;
-}
-void Persona::setAge(int pAge)
-{
-	age = pAge;
-}
-
-/*void Persona::toString()
-{	
-	cout << "[Name]: ";
-	for (size_t i = 0; i < sizeof(name); i++)
-	{
-		cout << name[i];
-	}
-	cout << ", [Age]: " + age;
-}*/
 
 Persona::~Persona()
 {

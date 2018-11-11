@@ -1,17 +1,15 @@
 #pragma once
 #include <string>
+
+using namespace std;
 class Persona
 {
 public:
 	Persona();
-	int getAge();
-	char* getName();
-	void setAge(int pAge);
-	void setName(char pName[]);
-	//void toString();
+	string getName();	
+	void setName(string pName);
 	~Persona();
-private:
-	int age;
-	char *name;
+private:	
+	string name;
 };
 

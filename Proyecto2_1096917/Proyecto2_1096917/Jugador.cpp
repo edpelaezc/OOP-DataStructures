@@ -1,9 +1,27 @@
 #include "pch.h"
 #include "Jugador.h"
 
+Jugador::Jugador() {}
 
-Jugador::Jugador()
-{
+Jugador::Jugador(string conference, string division, string city, string team, string position, int number, int id,
+	string name, string height, string weight, string birthdate, int power, string skill, int scoredPoints,
+	int stolenBalls, int rebounds, int plugs, int votes) {
+	this->setName(name);	
+	this->id = id;
+	this->birthdate = birthdate;
+	this->city = city;
+	this->division = division;
+	this->conference = conference;
+	this->team = team;
+	this->position = position;
+	this->power = power;
+	this->skill = skill;
+	this->height = height;
+	this->scoredPoints = scoredPoints;
+	this->stolenBalls = stolenBalls;
+	this->rebounds = rebounds;
+	this->plugs = plugs;
+	this->votes = votes;
 }
 
 int Jugador::getId()
@@ -16,47 +34,57 @@ void Jugador::setId(int jId)
 	id = jId;
 }
 
-char* Jugador::getConference()
+int Jugador::getNumber() {
+	return number;
+}
+
+void Jugador::setNumber(int jNumber) {
+	number = jNumber;
+}
+
+string Jugador::getConference()
 {
 	return conference;
 }
 
-void Jugador::setConference(char jConference[])
+void Jugador::setConference(string jConference)
 {
 	conference = jConference;
 }
 
-char* Jugador::getTeam()
+string Jugador::getTeam()
 {
 	return team;
 }
 
-void Jugador::setTeam(char jTeam[])
+void Jugador::setTeam(string jTeam)
 {
 	team = jTeam;
 }
 
-char* Jugador::getPosition()
+string Jugador::getPosition()
 {
 	return position;
 }
 
-void Jugador::setPosition(char jPosition[])
+void Jugador::setPosition(string jPosition)
 {
 	position = jPosition;
 }
 
-int Jugador::getWeight(){
+string Jugador::getWeight(){
 	return weight;
 }
 
-void Jugador::setWeight(int jWeight) {}
+void Jugador::setWeight(string jWeight) {
+	weight = jWeight;
+}
 
-char* Jugador::getBirthdate() {
+string Jugador::getBirthdate() {
 	return birthdate;
 }
 
-void Jugador::setBirthDate(char jBirthdate[]) {}
+void Jugador::setBirthDate(string jBirthdate) {}
 
 int Jugador::getPower()
 {
@@ -68,22 +96,22 @@ void Jugador::setPower(int jPower)
 	power = jPower;
 }
 
-char* Jugador::getSkill()
+string Jugador::getSkill()
 {
 	return skill;
 }
 
-void Jugador::setSkill(char jSkill[])
+void Jugador::setSkill(string jSkill)
 {
 	skill = jSkill;
 }
 
-int Jugador::getHeight()
+string Jugador::getHeight()
 {
 	return height;
 }
 
-void Jugador::setHeight(int jHeight)
+void Jugador::setHeight(string jHeight)
 {
 	height = jHeight;
 }
