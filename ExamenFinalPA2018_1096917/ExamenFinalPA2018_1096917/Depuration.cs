@@ -84,7 +84,7 @@ namespace ExamenFinalPA2018_1096917
             }
 
             //depuración completada
-            MessageBox.Show("INFORMACIÓN DEPURADA CORRECTAMENTE, LOS ARCHIVOS RESULTANTES SE ENCUENTRAN EN EL ESCRITORIO DE ESTE EQUIPO");
+            MessageBox.Show("INFORMACIÓN DEPURADA, LOS ARCHIVOS RESULTANTES SE ENCUENTRAN EN EL ESCRITORIO DE ESTE EQUIPO");
             this.Close();
         }
 
