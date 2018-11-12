@@ -88,13 +88,12 @@ namespace EstrcuturasDinamicas
                         addElement(root.getRight(), element, key);
                     }
                 }
-                else//x es igual que y
+                else if (key == root.getKey())//x es igual que y
                 {
                     //si las llave actual es igual a la llave se le restará o se sumará un número aleatorio
                     //para luego agregarlo al arbol binario                    
                     repeatedKeys.addLast(key);                   
-                    int num = generator.Next(2, 6);
-                    key *= num;
+                    key = generator.Next(6500, 9500);
                     add(element, key);
                 }
             }

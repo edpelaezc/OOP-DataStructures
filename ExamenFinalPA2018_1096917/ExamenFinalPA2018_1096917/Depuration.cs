@@ -46,10 +46,10 @@ namespace ExamenFinalPA2018_1096917
             MyLinkedList<TreeNode<Cliente>> repeated = new MyLinkedList<TreeNode<Cliente>>();
             //uso de delegates para comparar los clientes por llave de nombre                        
             repeated = refinedInformation.purge(compareByName);
-            MyLinkedList<TreeNode<Cliente>> newTree = repeated;
+            MyLinkedList<TreeNode<Cliente>> newTree = refinedInformation;
 
             StreamWriter file = new StreamWriter(@"C:\Users\edanP\Desktop\Archivo1.txt");
-            file.WriteLine("INFORMACION DEPURADA");
+            file.WriteLine("INFORMACION DEPURADA:");
             while (!refinedInformation.isEmpty())
             {
                 TreeNode<Cliente> aux = refinedInformation.removeFirst();
@@ -65,7 +65,8 @@ namespace ExamenFinalPA2018_1096917
                 file2.WriteLine(repeatedKeys.removeFirst());
             }
 
-            file2.WriteLine("NODOS ELIMINADOS:");
+            file2.WriteLine();
+            file2.WriteLine("\nNODOS ELIMINADOS:");
             while (!repeated.isEmpty())
             {
                 TreeNode<Cliente> aux = repeated.removeFirst();
@@ -73,19 +74,20 @@ namespace ExamenFinalPA2018_1096917
             }
             file2.Close();
 
-
             //volver a llenar arbol con información depurada
-            int size = refinedInformation.size();
+            BinaryTree<Cliente> nTree = new BinaryTree<Cliente>();
+            int size = newTree.size();
             for (int i = 0; i < size; i++)
             {
                 TreeNode<Cliente> aux = newTree.removeFirst();
-                theStar.add(aux.getElement(), aux.getKey());
+                nTree.add(aux.getElement(), aux.getKey());
             }
 
             //depuración completada
             MessageBox.Show("INFORMACIÓN DEPURADA CORRECTAMENTE, LOS ARCHIVOS RESULTANTES SE ENCUENTRAN EN EL ESCRITORIO DE ESTE EQUIPO");
         }
 
+        //funcion que se enviará a un delegate para comparar los clientes.
         static bool compareByName(Node<TreeNode<Cliente>> customer1, Node<TreeNode<Cliente>> customer2)
         {
             if (customer1.getElement().getElement().getName() == customer2.getElement().getElement().getName() && customer1 != null && customer2 != null)
