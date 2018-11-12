@@ -85,6 +85,7 @@ namespace ExamenFinalPA2018_1096917
 
             //depuración completada
             MessageBox.Show("INFORMACIÓN DEPURADA CORRECTAMENTE, LOS ARCHIVOS RESULTANTES SE ENCUENTRAN EN EL ESCRITORIO DE ESTE EQUIPO");
+            this.Close();
         }
 
         //funcion que se enviará a un delegate para comparar los clientes.
