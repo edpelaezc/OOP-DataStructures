@@ -70,6 +70,7 @@ public:
 	int weight();
 	void add(T element, int key);
 	bool elementExists(TreeNode<T> *root, int elementKey);
+	T showElement(TreeNode<T> *root, int elementKey);
 	int numberOfChildren(TreeNode<T> *root);
 	void preOrder(TreeNode<T> *root);
 	void postOrder(TreeNode<T> *root);

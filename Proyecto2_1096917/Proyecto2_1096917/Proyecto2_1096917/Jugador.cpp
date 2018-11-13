@@ -84,7 +84,9 @@ string Jugador::getBirthdate() {
 	return birthdate;
 }
 
-void Jugador::setBirthDate(string jBirthdate) {}
+void Jugador::setBirthDate(string jBirthdate) {
+	birthdate = jBirthdate;
+}
 
 int Jugador::getPower()
 {
@@ -164,6 +166,13 @@ int Jugador::getVotes()
 void Jugador::setVotes(int jVotes)
 {
 	votes = jVotes;
+}
+
+void Jugador::toString() {	
+	cout << "Jugador [ID: " << id << ", Nombre: " << getName() << ", Ciudad: " << city << ", Conferencia: " << conference << ", Equipo: " << team << ", Posicion:" << position
+		<< ", Potencia: " << power << ", Habilidad: " << skill << ", Altura: " << height << ", Puntos: " << scoredPoints
+		<< ", Balones robados=" << stolenBalls << ", Rebotes: " << rebounds << ", Tapones: " << plugs << ", Votos: " << votes
+		<< ", Peso: " << weight << ", Numero: " << number << ", Fecha de Nacimiento: " << birthdate << "]";
 }
 
 Jugador::~Jugador()

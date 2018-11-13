@@ -42,6 +42,7 @@ public:
 	void setBirthDate(string jBirthdate);
 	int getNumber();
 	void setNumber(int jNumber);
+	void toString();	
 	~Jugador();
 private:	 
 	 string conference;

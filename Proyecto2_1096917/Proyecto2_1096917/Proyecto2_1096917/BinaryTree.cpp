@@ -72,6 +72,26 @@ bool BinaryTree<T>::elementExists(TreeNode<T> *root, int elementKey) {
 }
 
 template<typename T>
+T BinaryTree<T>::showElement(TreeNode<T> *root, int elementKey) {
+	if (this->root == NULL) {}
+	else if (elementKey == root->getKey()) {
+		T aux = root->getElement();
+		return aux;
+	}
+	else
+	{
+		if (elementKey < root->getKey())
+		{
+			return showElement(root->getLeft(), elementKey);
+		}
+		else
+		{
+			return showElement(root->getRight(), elementKey);
+		}
+	}
+}
+
+template<typename T>
 int BinaryTree<T>::numberOfChildren(TreeNode<T> *root) {
 	int count = 0;
 	if (root->getLeft() != NULL)
