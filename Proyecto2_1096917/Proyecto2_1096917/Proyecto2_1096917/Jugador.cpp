@@ -1,5 +1,6 @@
 #include "pch.h"
 #include "Jugador.h"
+#include <locale.h>
 
 Jugador::Jugador() {}
 
@@ -7,6 +8,8 @@ Jugador::Jugador(string conference, string division, string city, string team, s
 	string name, string height, string weight, string birthdate, int power, string skill, int scoredPoints,
 	int stolenBalls, int rebounds, int plugs, int votes) {
 	this->setName(name);	
+	this->number = number;
+	this->weight = weight;
 	this->id = id;
 	this->birthdate = birthdate;
 	this->city = city;
@@ -169,10 +172,10 @@ void Jugador::setVotes(int jVotes)
 }
 
 void Jugador::toString() {	
-	cout << "Jugador [ID: " << id << ", Nombre: " << getName() << ", Ciudad: " << city << ", Conferencia: " << conference << ", Equipo: " << team << ", Posicion:" << position
-		<< ", Potencia: " << power << ", Habilidad: " << skill << ", Altura: " << height << ", Puntos: " << scoredPoints
-		<< ", Balones robados=" << stolenBalls << ", Rebotes: " << rebounds << ", Tapones: " << plugs << ", Votos: " << votes
-		<< ", Peso: " << weight << ", Numero: " << number << ", Fecha de Nacimiento: " << birthdate << "]";
+	cout << "[ID:" << id << ", Nombre:" << getName() << ",Ciudad: " << city << ", Conferencia:" << conference << ", Equipo:" << team << ", Posicion:" << position
+		<< ", Potencia:" << power << ", Habilidad:" << skill << ", Altura:" << height << ", Puntos:" << scoredPoints
+		<< ", Balones robados:" << stolenBalls << ", Rebotes:" << rebounds << ", Tapones:" << plugs << ", Votos:" << votes
+		<< ", Peso:" << weight << ", Numero:" << number << ", Fecha de Nacimiento:" << birthdate << "]";
 }
 
 Jugador::~Jugador()

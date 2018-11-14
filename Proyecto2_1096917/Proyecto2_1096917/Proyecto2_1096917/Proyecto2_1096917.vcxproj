@@ -152,12 +152,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\GenericStructures\GenericStructures\MyLinkedList.h" />
     <ClInclude Include="BinaryTree.h" />
     <ClInclude Include="Jugador.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Persona.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\GenericStructures\GenericStructures\MyLinkedList.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
     <ClCompile Include="Jugador.cpp" />
     <ClCompile Include="pch.cpp">

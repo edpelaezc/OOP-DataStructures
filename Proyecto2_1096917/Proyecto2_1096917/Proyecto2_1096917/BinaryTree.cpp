@@ -52,7 +52,7 @@ void BinaryTree<T>::addElement(TreeNode<T> *root, T element, int key) {
 
 template<typename T>
 bool BinaryTree<T>::elementExists(TreeNode<T> *root, int elementKey) {
-	if (this->root == NULL) {
+	if (root == NULL) {
 		return false;
 	}
 	else if (elementKey == root->getKey()) {
