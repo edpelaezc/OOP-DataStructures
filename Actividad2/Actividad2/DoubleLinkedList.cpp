@@ -15,7 +15,8 @@ int DoubleLinkedList::size() { return listSize; }
 bool DoubleLinkedList::isEmpty() { return listSize == 0; }
 
 void DoubleLinkedList::purge() {
-	NodeD *aux = header;
+	list = new MyLinkedListC();
+	NodeD *aux = header->getNext();
 	NodeD *aux2 = aux->getNext();
 	int cont = 1;
 	while (aux2->getNext() != NULL)
@@ -33,15 +34,20 @@ void DoubleLinkedList::purge() {
 				listSize--;
 				cont++;
 			}
-			if (cont == 3)
+			
+			if (aux2->getNext() == trailer)
 			{
-				std::cout << aux2->getElement();
+				if (cont == 3)
+				{
+					std::cout << aux2->getElement();
+				}
 			}
-			cont = 1;
+			
 			aux2 = aux2->getNext();
 		}
 		aux = aux->getNext();
 		aux2 = aux->getNext();
+		cont = 1;
 		if (aux == NULL || aux2 == NULL)
 		{
 			break;
@@ -49,7 +55,7 @@ void DoubleLinkedList::purge() {
 	}
 }
 
-char DoubleLinkedList::first() {
+int DoubleLinkedList::first() {
 	if (isEmpty()) {
 		return NULL;
 	}
@@ -58,7 +64,7 @@ char DoubleLinkedList::first() {
 	}
 }
 
-char DoubleLinkedList::last() {
+int DoubleLinkedList::last() {
 	if (isEmpty()) {
 		return NULL;
 	}
@@ -67,15 +73,15 @@ char DoubleLinkedList::last() {
 	}
 }
 
-void DoubleLinkedList::addFirst(char n) {
+void DoubleLinkedList::addFirst(int n) {
 	addBetween(n, header, header->getNext());
 }
 
-void DoubleLinkedList::addLast(char n) {
+void DoubleLinkedList::addLast(int n) {
 	addBetween(n, trailer->getPrev(), trailer);
 }
 
-char DoubleLinkedList::removeFirst() {
+int DoubleLinkedList::removeFirst() {
 	if (isEmpty()) {
 		return NULL;
 	}
@@ -84,7 +90,7 @@ char DoubleLinkedList::removeFirst() {
 	}
 }
 
-char DoubleLinkedList::removeLast() {
+int DoubleLinkedList::removeLast() {
 	if (isEmpty()) {
 		return NULL;
 	}
@@ -93,14 +99,14 @@ char DoubleLinkedList::removeLast() {
 	}
 }
 
-void DoubleLinkedList::addBetween(char n, nodeD predecessor, nodeD successor) {
+void DoubleLinkedList::addBetween(int n, nodeD predecessor, nodeD successor) {
 	nodeD newest = new NodeD(n, predecessor, successor);
 	predecessor->setNext(newest);
 	successor->setPrev(newest);
 	listSize++;
 }
 
-char DoubleLinkedList::remove(NodeD *node) {
+int DoubleLinkedList::remove(NodeD *node) {
 	NodeD *predecessor = node->getPrev();
 	NodeD *successor = node->getNext();
 	predecessor->setNext(successor);
@@ -109,11 +115,11 @@ char DoubleLinkedList::remove(NodeD *node) {
 	return node->getElement();
 }
 
-int DoubleLinkedList::leftSearch(char pivot, char character) {
+int DoubleLinkedList::leftSearch(int pivot, int intacter) {
 	nodeD auxiliar = header->getNext();
 	int response = 0;
 	while (auxiliar->getElement() != pivot) {
-		if (auxiliar->getElement() == character) {
+		if (auxiliar->getElement() == intacter) {
 			response++;
 		}
 		auxiliar = auxiliar->getNext();
@@ -121,7 +127,7 @@ int DoubleLinkedList::leftSearch(char pivot, char character) {
 	return response;
 }
 
-int DoubleLinkedList::rightSearch(char pivot, char character) {
+int DoubleLinkedList::rightSearch(int pivot, int intacter) {
 	nodeD auxiliar = header->getNext();
 	int response = 0;
 
@@ -131,7 +137,7 @@ int DoubleLinkedList::rightSearch(char pivot, char character) {
 	auxiliar = auxiliar->getNext();
 
 	while (auxiliar != trailer) {
-		if (auxiliar->getElement() == character) {
+		if (auxiliar->getElement() == intacter) {
 			response++;
 		}
 		auxiliar = auxiliar->getNext();
@@ -139,7 +145,7 @@ int DoubleLinkedList::rightSearch(char pivot, char character) {
 	return response;
 }
 
-bool DoubleLinkedList::search(char reference) {
+bool DoubleLinkedList::search(int reference) {
 	nodeD auxiliar = header->getNext();
 	bool flag = true;
 	while (auxiliar != trailer && flag)
@@ -165,7 +171,7 @@ void DoubleLinkedList::showElements() {
 	}
 }
 
-int DoubleLinkedList::searchPivot(char reference) {
+int DoubleLinkedList::searchPivot(int reference) {
 	nodeD auxiliar = header->getNext();
 	int response = 0;
 	while (auxiliar != trailer) {

@@ -3,21 +3,22 @@
 #include <string>
 #include <stdio.h>
 #include <iostream>
+#include "MyLinkedListC.h"
 
 class NodeD {
 private:
-	char element;
+	int element;
 	NodeD *prev;
 	NodeD *next;
 
 public:
-	NodeD(char e, NodeD *previousNode, NodeD *nextNode) {	
+	NodeD(int e, NodeD *previousNode, NodeD *nextNode) {
 		element = e;
 		prev = previousNode;
 		next = nextNode;
 	}
 
-	char getElement() {
+	int getElement() {
 		return element;
 	}
 
@@ -45,22 +46,23 @@ private:
 	nodeD header;
 	nodeD trailer;
 	int listSize;
-	void addBetween(char n, nodeD predecessor, nodeD successor);
-	char remove(NodeD *node);
-public:	
+	void addBetween(int n, nodeD predecessor, nodeD successor);
+	int remove(NodeD *node);
+public:
 	DoubleLinkedList();
+	MyLinkedListC *list;
 	int size();
 	bool isEmpty();
-	char first();
-	char last();
-	void addFirst(char n);
-	void addLast(char n);
-	char removeFirst();
-	char removeLast();
-	int leftSearch(char pivot, char character);
-	int rightSearch(char pivot, char character);
-	int searchPivot(char reference);
-	bool search(char reference);
+	int first();
+	int last();
+	void addFirst(int n);
+	void addLast(int n);
+	int removeFirst();
+	int removeLast();
+	int leftSearch(int pivot, int intacter);
+	int rightSearch(int pivot, int intacter);
+	int searchPivot(int reference);
+	bool search(int reference);
 	void purge();
 	void showElements();
 	void showElements(int reference);

@@ -9,7 +9,7 @@ class Jugador: public Persona
 public:
 	Jugador();
 	Jugador(string conference, string division, string city, string team, string position, int number, int id,
-		string name, string height, string weight, string birthdate, int power, string skill, int scoredPoints,
+		string name, string height, string weight, string birthdate, int power, int skill, int scoredPoints,
 		int stolenBalls, int rebounds, int plugs, int votes);
 	string cadena;
 	int getId();
@@ -22,8 +22,8 @@ public:
 	void setPosition(string jPosition);
 	int getPower();
 	void setPower(int jPower);
-	string getSkill();
-	void setSkill(string jSkill);
+	int getSkill();
+	void setSkill(int jSkill);
 	string getHeight();
 	void setHeight(string jHeight);
 	int getScoredPoints();
@@ -47,8 +47,7 @@ public:
 private:	 
 	 string conference;
 	 string team;
-	 string position;
-	 string skill;
+	 string position;	 
 	 string birthdate;
 	 string city;
 	 string division;
@@ -60,6 +59,7 @@ private:
 	 int scoredPoints;
 	 int stolenBalls;
 	 int rebounds;
+	 int skill;
 	 int plugs;
 	 int votes;
 };

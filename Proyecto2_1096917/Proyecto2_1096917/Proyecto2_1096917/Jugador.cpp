@@ -5,7 +5,7 @@
 Jugador::Jugador() {}
 
 Jugador::Jugador(string conference, string division, string city, string team, string position, int number, int id,
-	string name, string height, string weight, string birthdate, int power, string skill, int scoredPoints,
+	string name, string height, string weight, string birthdate, int power, int skill, int scoredPoints,
 	int stolenBalls, int rebounds, int plugs, int votes) {
 	this->setName(name);	
 	this->number = number;
@@ -101,12 +101,12 @@ void Jugador::setPower(int jPower)
 	power = jPower;
 }
 
-string Jugador::getSkill()
+int Jugador::getSkill()
 {
 	return skill;
 }
 
-void Jugador::setSkill(string jSkill)
+void Jugador::setSkill(int jSkill)
 {
 	skill = jSkill;
 }
