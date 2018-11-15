@@ -27,6 +27,14 @@ Jugador::Jugador(string conference, string division, string city, string team, s
 	this->votes = votes;
 }
 
+int Jugador::getQualification() {
+	return qualification;
+}
+
+void Jugador::setQualification(int jQuali) {
+	qualification = jQuali;
+}
+
 int Jugador::getId()
 {
 	return id;

@@ -43,6 +43,8 @@ public:
 	int getNumber();
 	void setNumber(int jNumber);
 	void toString();	
+	int getQualification();
+	void setQualification(int jQuali);
 	~Jugador();
 private:	 
 	 string conference;
@@ -62,5 +64,6 @@ private:
 	 int skill;
 	 int plugs;
 	 int votes;
+	 int qualification;
 };
 
