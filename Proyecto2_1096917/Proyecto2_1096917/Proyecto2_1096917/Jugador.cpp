@@ -176,6 +176,7 @@ void Jugador::toString() {
 		<< ", Potencia:" << power << ", Habilidad:" << skill << ", Altura:" << height << ", Puntos:" << scoredPoints
 		<< ", Balones robados:" << stolenBalls << ", Rebotes:" << rebounds << ", Tapones:" << plugs << ", Votos:" << votes
 		<< ", Peso:" << weight << ", Numero:" << number << ", Fecha de Nacimiento:" << birthdate << "]";
+	cout << endl;
 }
 
 Jugador::~Jugador()
