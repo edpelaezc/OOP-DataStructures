@@ -25,24 +25,22 @@ public:
 };
 
 template<class T>
-class MyLinkedList
+class CircularLinkedList
 {
 public:
-	MyLinkedList();
-	void *compare;
-	Node<T> *head;
+	CircularLinkedList();
 	Node<T> *tail;
+	int listSize;
 	int size();
 	bool isEmpty();
 	T first();
 	T last();
-	void addFirst(T d);
-	void addLast(T d);
+	void rotate();
+	void addFirst(T n);
+	void addLast(T n);
 	T removeFirst();
-	bool searchElement(T reference);
+	bool search(T reference);
 	void showElements();
-	~MyLinkedList();
-private:
-	int listSize;
+	~CircularLinkedList();
 };
 

@@ -40,12 +40,12 @@ template<class T>
 class DoubleLinkedList
 {
 private:
-	NodeD<T> *header;
-	NodeD<T> *trailer;
 	int listSize;
 	void addBetween(T n, NodeD<T> *predecessor, NodeD<T> *successor);
 	T remove(NodeD<T> *node);
 public:
+	NodeD<T> *header;
+	NodeD<T> *trailer;
 	DoubleLinkedList();
 	int size();
 	bool isEmpty();
@@ -56,7 +56,7 @@ public:
 	T removeFirst();
 	T removeLast();
 	bool search(T reference);
-	void purge();
+	void purge();	
 	~DoubleLinkedList();
 };
 
