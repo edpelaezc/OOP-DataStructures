@@ -63,20 +63,12 @@ void CircularLinkedList<T>::addLast(T n) {
 
 template<typename T>
 T CircularLinkedList<T>::removeFirst() {
-	if (isEmpty()) {
-		return NULL;
-	}
-	else {
-		Node<T> *head = tail->getNext();
-		if (tail == head) {
-			tail = NULL;
-		}
-		else {
-			tail->setNext(head->getNext());
-		}
-		listSize--;
-		return head->getElement();
-	}
+	if (isEmpty()) return NULL;
+	Node<T> *head = tail->getNext();
+	if (head == tail) { tail = NULL; }
+	else { tail->setNext(head->getNext()); }	
+	listSize--;
+	return head->getElement();
 }
 
 template<typename T>
