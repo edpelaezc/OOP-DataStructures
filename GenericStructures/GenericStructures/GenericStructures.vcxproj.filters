@@ -30,6 +30,9 @@
     <ClInclude Include="DoubleLinkedList.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
+    <ClInclude Include="CircularLinkedList.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -48,6 +51,9 @@
       <Filter>Archivos de origen</Filter>
     </ClCompile>
     <ClCompile Include="DoubleLinkedList.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="CircularLinkedList.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
   </ItemGroup>
