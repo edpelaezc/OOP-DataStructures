@@ -11,6 +11,10 @@ public:
 		return element;
 	}
 
+	void setElement(T t) {	
+		element = t;
+	}
+
 	Node<T>* getNext() {
 		return next;
 	}
