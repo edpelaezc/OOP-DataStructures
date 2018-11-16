@@ -24,15 +24,7 @@ Jugador::Jugador(string conference, string division, string city, string team, s
 	this->stolenBalls = stolenBalls;
 	this->rebounds = rebounds;
 	this->plugs = plugs;
-	this->votes = votes;
-}
-
-int Jugador::getQualification() {
-	return qualification;
-}
-
-void Jugador::setQualification(int jQuali) {
-	qualification = jQuali;
+	this->votes = votes;	
 }
 
 int Jugador::getId()

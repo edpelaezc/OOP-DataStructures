@@ -157,6 +157,7 @@
     <ClInclude Include="MyLinkedList.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Persona.h" />
+    <ClInclude Include="Score.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BinaryTree.cpp" />
@@ -170,6 +171,7 @@
     </ClCompile>
     <ClCompile Include="Persona.cpp" />
     <ClCompile Include="Proyecto2_1096917.cpp" />
+    <ClCompile Include="Score.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
