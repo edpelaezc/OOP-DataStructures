@@ -56,7 +56,8 @@ public:
 	T removeFirst();
 	T removeLast();
 	bool search(T reference);
-	void purge();	
+	void purge(static DoubleLinkedList<T> *list);	
+	void showElements();
 	~DoubleLinkedList();
 };
 

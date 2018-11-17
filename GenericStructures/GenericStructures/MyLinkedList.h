@@ -2,25 +2,25 @@
 #include <iostream>
 
 template<class T>
-class Node {
+class NodeM {
 private:
 	T element;
-	Node<T> *next;
+	NodeM<T> *next;
 public:
 	T getElement() {
 		return element;
 	}
 
-	Node<T>* getNext() {
+	NodeM<T>* getNext() {
 		return next;
 	}
-	void setNext(Node<T> *next) {
+	void setNext(NodeM<T> *next) {
 		this->next = next;
 	}
 
-	Node(T d, Node<T> *nextNode) {
+	NodeM(T d, NodeM<T> *nextNodeM) {
 		element = d;
-		next = nextNode;
+		next = nextNodeM;
 	}
 };
 
@@ -30,8 +30,8 @@ class MyLinkedList
 public:
 	MyLinkedList();
 	void *compare;
-	Node<T> *head;
-	Node<T> *tail;
+	NodeM<T> *head;
+	NodeM<T> *tail;
 	int size();
 	bool isEmpty();
 	T first();

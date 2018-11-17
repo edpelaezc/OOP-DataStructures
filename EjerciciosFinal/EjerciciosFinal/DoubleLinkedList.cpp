@@ -18,13 +18,12 @@ template<typename T>
 bool DoubleLinkedList<T>::isEmpty() { return listSize == 0; }
 
 template<typename T>
-void DoubleLinkedList<T>::purge() {
-	NodeD<T> *aux = header;
-	NodeD<T> *aux2 = aux->getNext();
-	int cont = 1;
-	while (aux2->getNext() != NULL)
+void DoubleLinkedList<T>::purge(static DoubleLinkedList<T> *list) {
+	NodeD<T> *aux = header->getNext();	
+	NodeD<T> *aux2 = aux->getNext();		
+	while (aux2->getNext() != trailer)
 	{
-		while (aux2 != NULL)
+		while (aux2 != trailer)
 		{
 			if (aux->getElement() == aux2->getElement())
 			{
@@ -32,24 +31,29 @@ void DoubleLinkedList<T>::purge() {
 				while (auxiliar->getNext() != aux2)
 				{
 					auxiliar = auxiliar->getNext();
-				}
-				auxiliar->setNext(aux2->getNext());
-				listSize--;
-				cont++;
-			}
-			if (cont == 3)
-			{
-				std::cout << aux2->getElement();
-			}
-			cont = 1;
-			aux2 = aux2->getNext();
-		}
+				}				
+				list->addLast(auxiliar->getNext()->getElement());
+				auxiliar->setNext(aux2->getNext());				
+				listSize--;				
+			}						
+			aux2 = aux2->getNext();			
+		}			
 		aux = aux->getNext();
 		aux2 = aux->getNext();
-		if (aux == NULL || aux2 == NULL)
+		if (aux == trailer || aux2 == trailer)
 		{
 			break;
 		}
+	}
+}
+
+template<typename T>
+void DoubleLinkedList<T>::showElements() {
+	NodeD<T> *aux = header->getNext();
+	while (aux != trailer)
+	{
+		std::cout << aux->getElement() << "->";
+		aux = aux->getNext();
 	}
 }
 

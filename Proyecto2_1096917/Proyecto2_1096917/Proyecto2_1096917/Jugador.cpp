@@ -1,6 +1,7 @@
 #include "pch.h"
 #include "Jugador.h"
 #include <locale.h>
+#include <sstream>
 
 Jugador::Jugador() {}
 
@@ -171,12 +172,14 @@ void Jugador::setVotes(int jVotes)
 	votes = jVotes;
 }
 
-void Jugador::toString() {	
-	cout << "[ID:" << id << ", Nombre:" << getName() << ",Ciudad: " << city << ", Conferencia:" << conference << ", Equipo:" << team << ", Posicion:" << position
+string Jugador::toString() {	
+	stringstream ss;
+	ss << "[ID:" << id << ", Nombre:" << getName() << ",Ciudad: " << city << ", Conferencia:" << conference << ", Equipo:" << team << ", Posicion:" << position
 		<< ", Potencia:" << power << ", Habilidad:" << skill << ", Altura:" << height << ", Puntos:" << scoredPoints
 		<< ", Balones robados:" << stolenBalls << ", Rebotes:" << rebounds << ", Tapones:" << plugs << ", Votos:" << votes
 		<< ", Peso:" << weight << ", Numero:" << number << ", Fecha de Nacimiento:" << birthdate << "]";
-	cout << endl;
+		string response = ss.str();
+		return response;
 }
 
 Jugador::~Jugador()

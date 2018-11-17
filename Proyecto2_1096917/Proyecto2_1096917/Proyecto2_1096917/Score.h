@@ -1,5 +1,8 @@
 #pragma once
 #include "Jugador.h"
+#include <string>
+
+using namespace std;
 class Score
 {
 public:
@@ -7,7 +10,7 @@ public:
 	Score(Jugador j, int quali);
 	Jugador getJugador();
 	int getQuilification();
-	void toString();
+	string toString();
 	~Score();
 private:
 	Jugador j;

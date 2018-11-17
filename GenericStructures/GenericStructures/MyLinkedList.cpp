@@ -38,7 +38,7 @@ T MyLinkedList<T>::last() {
 
 template<typename T>
 void MyLinkedList<T>::addFirst(T d) {
-	head = new Node<T>(d, head);
+	head = new NodeM<T>(d, head);
 	if (listSize == 0) {
 		tail = head;
 	}
@@ -47,7 +47,7 @@ void MyLinkedList<T>::addFirst(T d) {
 
 template<typename T>
 void MyLinkedList<T>::addLast(T d) {
-	Node<T> *newest = new Node<T>(d, NULL);
+	NodeM<T> *newest = new NodeM<T>(d, NULL);
 	if (isEmpty()) {
 		head = newest;
 	}
@@ -77,7 +77,7 @@ T MyLinkedList<T>::removeFirst() {
 
 template<typename T>
 bool MyLinkedList<T>::searchElement(T reference) {
-	Node<T> *auxiliar = head;
+	NodeM<T> *auxiliar = head;
 	bool flag = true;
 	while (auxiliar != NULL && flag) {
 		if (auxiliar->getElement() == reference) {
@@ -92,7 +92,7 @@ bool MyLinkedList<T>::searchElement(T reference) {
 
 template<typename T>
 void MyLinkedList<T>::showElements() {
-	Node<T> *auxiliar = head;
+	NodeM<T> *auxiliar = head;
 	while (auxiliar != NULL) {
 		std::cout << auxiliar->getElement() << "->";
 		auxiliar = auxiliar->getNext();

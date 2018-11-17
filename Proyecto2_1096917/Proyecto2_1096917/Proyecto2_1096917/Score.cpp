@@ -1,5 +1,6 @@
 #include "pch.h"
 #include "Score.h"
+#include <sstream>
 
 Score::Score() {}
 
@@ -13,9 +14,11 @@ Jugador Score::getJugador() { return j; }
 
 int Score::getQuilification() { return qualification; }
 
-void Score::toString() {
-	j.toString();
-	std::cout << "[CALIFICACION]: " << qualification << std::endl;
+string Score::toString() {
+	stringstream ss;	
+	ss << j.toString() << std::endl <<"[CALIFICACION]: " <<  qualification << std::endl;
+	string response = ss.str();
+	return response;
 }
 
 Score::~Score()
