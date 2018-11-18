@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include <iostream>
 
 using namespace std;
 class Empleado
@@ -15,6 +16,7 @@ public:
 	void setTipo(int eTipo);
 	int getTipo();
 	virtual int calcularSueldo();
+	void toString();
 	~Empleado();
 private:
 	string nombre;

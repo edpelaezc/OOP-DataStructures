@@ -6,6 +6,7 @@ using namespace std;
 class EPorHoras: public Empleado
 {
 public:
+	EPorHoras();
 	EPorHoras(string eNombre, int eEdad, int eDui, int eTipo, int hPrecio, int hHorasTrabajadas);
 	~EPorHoras();
 	void setPrecio(int hPrecio);

@@ -3,10 +3,10 @@
 #include <iostream>
 
 template<typename T>
-DoubleLinkedList<T>::DoubleLinkedList()
+DoubleLinkedList<T>::DoubleLinkedList(T n)
 {
-	header = new NodeD<T>(NULL, NULL, NULL);
-	trailer = new NodeD<T>(NULL, header, NULL);
+	header = new NodeD<T>(n, NULL, NULL);
+	trailer = new NodeD<T>(n, header, NULL);
 	header->setNext(trailer);
 	listSize = 0;
 }

@@ -1,6 +1,7 @@
 #include "pch.h"
 #include "EPorHoras.h"
 
+EPorHoras::EPorHoras() {}
 
 EPorHoras::EPorHoras(string eNombre, int eEdad, int eDui, int eTipo, int hPrecio, int hHorasTrabajadas) {
 	this->setNombre(eNombre);

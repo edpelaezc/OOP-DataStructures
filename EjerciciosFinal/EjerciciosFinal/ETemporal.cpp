@@ -1,6 +1,7 @@
 #include "pch.h"
 #include "ETemporal.h"
 
+ETemporal::ETemporal() {}
 
 ETemporal::ETemporal(string eNombre, int eEdad, int eDui, int eTipo, int tIngreso, int tSalida, int sueldo) {
 	this->setNombre(eNombre);

@@ -22,4 +22,8 @@ int Empleado::getTipo() { return tipo; }
 
 int Empleado::calcularSueldo() { return 0; }
 
+void Empleado::toString() {
+	std::cout << "[Nombre]: " << nombre << "; [Tipo]: " << tipo;
+}
+
 Empleado::~Empleado() {}

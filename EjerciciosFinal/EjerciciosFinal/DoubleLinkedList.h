@@ -1,10 +1,11 @@
 #pragma once
 #include <iostream>
 
+using namespace std;
 template<class T>
 class NodeD {
 private:
-	T element;
+	T element;	
 	NodeD<T> *prev;
 	NodeD<T> *next;
 
@@ -17,6 +18,10 @@ public:
 
 	T getElement() {
 		return element;
+	}
+
+	void setElement(T t) {
+		element = t;
 	}
 
 	NodeD<T> *getPrev() {
@@ -46,7 +51,7 @@ private:
 public:
 	NodeD<T> *header;
 	NodeD<T> *trailer;
-	DoubleLinkedList();
+	DoubleLinkedList(T n);
 	int size();
 	bool isEmpty();
 	T first();

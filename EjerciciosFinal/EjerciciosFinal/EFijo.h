@@ -6,6 +6,7 @@ using namespace std;
 class EFijo: public Empleado
 {
 public:
+	EFijo();
 	EFijo(string eNombre, int eEdad, int eDui, int eTipo, int fAño, int fSueldo, int fComplemento);
 	void setAño(int fAño);
 	int getAño();

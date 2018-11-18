@@ -1,6 +1,7 @@
 #include "pch.h"
 #include "EFijo.h"
 
+EFijo::EFijo() {}
 
 EFijo::EFijo(string eNombre, int eEdad, int eDui, int eTipo, int fAño, int fSueldo, int fComplemento) {
 	this->setNombre(eNombre);
