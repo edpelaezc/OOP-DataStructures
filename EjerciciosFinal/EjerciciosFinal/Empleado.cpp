@@ -16,4 +16,8 @@ void Empleado::setDui(int eDui) { dui = eDui; }
 
 int Empleado::getDui() { return dui; }
 
+void Empleado::setTipo(int eTipo) { tipo = eTipo; }
+
+int Empleado::getTipo() { return tipo; }
+
 Empleado::~Empleado() {}

@@ -2,10 +2,11 @@
 #include "EFijo.h"
 
 
-EFijo::EFijo(string eNombre, int eEdad, int eDui, int fAño, int fSueldo, int fComplemento) {
+EFijo::EFijo(string eNombre, int eEdad, int eDui, int eTipo, int fAño, int fSueldo, int fComplemento) {
 	this->setNombre(eNombre);
 	this->setEdad(eEdad);
 	this->setDui(eDui);
+	this->setTipo(eTipo);
 	año = fAño;
 	sueldo = fSueldo;
 	complemento = fComplemento;

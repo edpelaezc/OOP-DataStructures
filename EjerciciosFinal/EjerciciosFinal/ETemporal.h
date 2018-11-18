@@ -6,7 +6,7 @@ using namespace std;
 class ETemporal: public Empleado
 {
 public:
-	ETemporal(string eNombre, int eEdad, int eDui, int tIngreso, int tSalida, int sueldo);
+	ETemporal(string eNombre, int eEdad, int eDui, int eTipo, int tIngreso, int tSalida, int sueldo);
 	void setIngreso(int tIngreso);
 	int getIngreso();
 	void setSalida(int tSalida);

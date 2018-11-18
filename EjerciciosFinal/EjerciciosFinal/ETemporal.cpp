@@ -2,10 +2,11 @@
 #include "ETemporal.h"
 
 
-ETemporal::ETemporal(string eNombre, int eEdad, int eDui, int tIngreso, int tSalida, int sueldo) {
+ETemporal::ETemporal(string eNombre, int eEdad, int eDui, int eTipo, int tIngreso, int tSalida, int sueldo) {
 	this->setNombre(eNombre);
 	this->setEdad(eEdad);
 	this->setDui(eDui);
+	this->setTipo(eTipo);
 	ingreso = tIngreso;
 	salida = tSalida;
 	sueldoMensual = sueldo;

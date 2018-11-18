@@ -12,10 +12,13 @@ public:
 	int getEdad();
 	void setDui(int eDui);
 	int getDui();
+	void setTipo(int eTipo);
+	int getTipo();
 	~Empleado();
 private:
 	string nombre;
 	int edad;
 	int dui;
+	int tipo;
 };
 
