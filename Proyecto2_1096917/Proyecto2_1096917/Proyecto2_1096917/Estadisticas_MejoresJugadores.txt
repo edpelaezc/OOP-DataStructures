@@ -1,0 +1,93 @@
+LOS MEJORES 10 JUGADORES BASE: 
+[ID:5690, Nombre:Johnson, Wesley,Ciudad: New Orleans, Conferencia:Oeste, Equipo:Pelicans, Posicion:G, Potencia:98, Habilidad:122, Altura:6 ft 7 in (2.01 m), Puntos:195, Balones robados:21, Rebotes:66, Tapones:21, Votos:5787, Peso:215 lb (98 kg), Numero:33, Fecha de Nacimiento:1987–07–11]
+[CALIFICACION]: 6293
+
+[ID:5458, Nombre:Satoranský, Tomáš,Ciudad: Washington, Conferencia:Este, Equipo:Wizards, Posicion:G, Potencia:121, Habilidad:76, Altura:6 ft 7 in (2.01 m), Puntos:423, Balones robados:22, Rebotes:51, Tapones:2, Votos:5760, Peso:210 lb (95 kg), Numero:31, Fecha de Nacimiento:1991–10–30]
+[CALIFICACION]: 6476
+
+[ID:5230, Nombre:Caupain, Troy (TW),Ciudad: Orlando, Conferencia:Este, Equipo:Magic, Posicion:G, Potencia:100, Habilidad:108, Altura:6 ft 4 in (1.93 m), Puntos:1315, Balones robados:40, Rebotes:34, Tapones:39, Votos:6445, Peso:210 lb (95 kg), Numero:3, Fecha de Nacimiento:1995–11–29]
+[CALIFICACION]: 8113
+
+[ID:3086, Nombre:Doncic, Luka,Ciudad: Dallas, Conferencia:Oeste, Equipo:Mavericks, Posicion:G, Potencia:95, Habilidad:110, Altura:6 ft 7 in (2.01 m), Puntos:2468, Balones robados:25, Rebotes:67, Tapones:10, Votos:5459, Peso:218 lb (99 kg), Numero:77, Fecha de Nacimiento:1999–02–28]
+[CALIFICACION]: 8181
+
+[ID:3217, Nombre:Pondexter, Quincy,Ciudad: San Antonio, Conferencia:Oeste, Equipo:Spurs, Posicion:G, Potencia:90, Habilidad:109, Altura:6 ft 7 in (2.01 m), Puntos:2533, Balones robados:14, Rebotes:63, Tapones:6, Votos:5660, Peso:225 lb (102 kg), Numero:3, Fecha de Nacimiento:1988–03–10]
+[CALIFICACION]: 8448
+
+[ID:1801, Nombre:Luwawu-Cabarrot, Timothé,Ciudad: Oklahoma City, Conferencia:Oeste, Equipo:Thunder, Posicion:G, Potencia:94, Habilidad:120, Altura:6 ft 6 in (1.98 m), Puntos:3358, Balones robados:24, Rebotes:45, Tapones:25, Votos:5065, Peso:210 lb (95 kg), Numero:7, Fecha de Nacimiento:1995–05–09]
+[CALIFICACION]: 8712
+
+[ID:5809, Nombre:Smith, Zhaire ,Ciudad: Philadelphia, Conferencia:Este, Equipo:76ers, Posicion:G, Potencia:83, Habilidad:105, Altura:6 ft 4 in (1.93 m), Puntos:1475, Balones robados:19, Rebotes:63, Tapones:10, Votos:7201, Peso:199 lb (90 kg), Numero:8, Fecha de Nacimiento:1999–06–04]
+[CALIFICACION]: 8950
+
+[ID:2020, Nombre:Gilgeous-Alexander, Shai,Ciudad: Los Angeles, Conferencia:Oeste, Equipo:Clippers, Posicion:G, Potencia:99, Habilidad:81, Altura:6 ft 6 in (1.98 m), Puntos:3586, Balones robados:35, Rebotes:73, Tapones:30, Votos:5507, Peso:180 lb (82 kg), Numero:2, Fecha de Nacimiento:1998–07–12]
+[CALIFICACION]: 9361
+
+[ID:4626, Nombre:Smart, Marcus,Ciudad: Boston, Conferencia:Este, Equipo:Celtics, Posicion:G, Potencia:97, Habilidad:120, Altura:6 ft 4 in (1.93 m), Puntos:2428, Balones robados:25, Rebotes:26, Tapones:30, Votos:6957, Peso:220 lb (100 kg), Numero:36, Fecha de Nacimiento:1994–03–06]
+[CALIFICACION]: 9660
+
+[ID:1906, Nombre:Barton, Will ,Ciudad: Denver, Conferencia:Oeste, Equipo:Nuggets, Posicion:G, Potencia:114, Habilidad:107, Altura:6 ft 6 in (1.98 m), Puntos:3820, Balones robados:30, Rebotes:15, Tapones:5, Votos:5612, Peso:190 lb (86 kg), Numero:5, Fecha de Nacimiento:1991–01–06]
+[CALIFICACION]: 9665
+
+LOS MEJORES 10 JUGADORES ALERO: 
+[ID:5258, Nombre:Carroll, DeMarre ,Ciudad: Brooklyn, Conferencia:Este, Equipo:Nets, Posicion:F, Potencia:99, Habilidad:95, Altura:6 ft 8 in (2.03 m), Puntos:247, Balones robados:43, Rebotes:20, Tapones:37, Votos:5406, Peso:215 lb (98 kg), Numero:9, Fecha de Nacimiento:1986–07–27]
+[CALIFICACION]: 5972
+
+[ID:3970, Nombre:Ellenson, Henry,Ciudad: Detroit, Conferencia:Este, Equipo:Pistons, Posicion:F, Potencia:89, Habilidad:96, Altura:6 ft 11 in (2.11 m), Puntos:1386, Balones robados:11, Rebotes:6, Tapones:37, Votos:5267, Peso:245 lb (111 kg), Numero:8, Fecha de Nacimiento:1997–01–13]
+[CALIFICACION]: 6992
+
+[ID:6121, Nombre:Hartenstein, Isaiah,Ciudad: Houston, Conferencia:Oeste, Equipo:Rockets, Posicion:F, Potencia:108, Habilidad:80, Altura:7 ft 1 in (2.16 m), Puntos:499, Balones robados:34, Rebotes:29, Tapones:12, Votos:6512, Peso:249 lb (113 kg), Numero:55, Fecha de Nacimiento:1998–05–05]
+[CALIFICACION]: 7273
+
+[ID:2824, Nombre:Simmons, Jonathon,Ciudad: Orlando, Conferencia:Este, Equipo:Magic, Posicion:F, Potencia:94, Habilidad:92, Altura:6 ft 6 in (1.98 m), Puntos:2305, Balones robados:46, Rebotes:51, Tapones:29, Votos:5035, Peso:195 lb (88 kg), Numero:17, Fecha de Nacimiento:1989–09–14]
+[CALIFICACION]: 7668
+
+[ID:5546, Nombre:Bridges, Mikal,Ciudad: Phoenix, Conferencia:Oeste, Equipo:Suns, Posicion:F, Potencia:90, Habilidad:112, Altura:6 ft 7 in (2.01 m), Puntos:1089, Balones robados:3, Rebotes:39, Tapones:17, Votos:6545, Peso:210 lb (95 kg), Numero:25, Fecha de Nacimiento:1996–08–30]
+[CALIFICACION]: 7963
+
+[ID:3067, Nombre:Holmes, Richaun,Ciudad: Phoenix, Conferencia:Oeste, Equipo:Suns, Posicion:F, Potencia:88, Habilidad:79, Altura:6 ft 10 in (2.08 m), Puntos:2359, Balones robados:12, Rebotes:27, Tapones:19, Votos:5338, Peso:235 lb (107 kg), Numero:21, Fecha de Nacimiento:1993–10–15]
+[CALIFICACION]: 8046
+
+[ID:6392, Nombre:Bender, Dragan,Ciudad: Phoenix, Conferencia:Oeste, Equipo:Suns, Posicion:F, Potencia:91, Habilidad:121, Altura:7 ft 1 in (2.16 m), Puntos:1032, Balones robados:21, Rebotes:53, Tapones:40, Votos:7333, Peso:225 lb (102 kg), Numero:35, Fecha de Nacimiento:1997–11–17]
+[CALIFICACION]: 8649
+
+[ID:4231, Nombre:Hicks, Isaiah (TW),Ciudad: New York, Conferencia:Este, Equipo:Knicks, Posicion:F, Potencia:101, Habilidad:80, Altura:6 ft 9 in (2.06 m), Puntos:2237, Balones robados:16, Rebotes:53, Tapones:42, Votos:6367, Peso:230 lb (104 kg), Numero:4, Fecha de Nacimiento:1994–07–24]
+[CALIFICACION]: 8969
+
+[ID:2413, Nombre:Anderson, Kyle,Ciudad: Memphis, Conferencia:Oeste, Equipo:Grizzlies, Posicion:F, Potencia:125, Habilidad:123, Altura:6 ft 9 in (2.06 m), Puntos:3161, Balones robados:45, Rebotes:75, Tapones:16, Votos:5449, Peso:230 lb (104 kg), Numero:1, Fecha de Nacimiento:1993–09–20]
+[CALIFICACION]: 8997
+
+[ID:1735, Nombre:Kurucs, Rodions,Ciudad: Brooklyn, Conferencia:Este, Equipo:Nets, Posicion:F, Potencia:119, Habilidad:123, Altura:6 ft 9 in (2.06 m), Puntos:3537, Balones robados:24, Rebotes:38, Tapones:39, Votos:5153, Peso:210 lb (95 kg), Numero:0, Fecha de Nacimiento:1998–02–05]
+[CALIFICACION]: 9038
+
+LOS MEJORES 10 JUGADORES PIVOTE: 
+[ID:6190, Nombre:Nurkic, Jusuf,Ciudad: Portland, Conferencia:Oeste, Equipo:Trail Blazers, Posicion:C, Potencia:99, Habilidad:123, Altura:7 ft 0 in (2.13 m), Puntos:228, Balones robados:24, Rebotes:24, Tapones:29, Votos:6319, Peso:280 lb (127 kg), Numero:27, Fecha de Nacimiento:1994–08–23]
+[CALIFICACION]: 6919
+
+[ID:6414, Nombre:Whiteside, Hassan,Ciudad: Miami, Conferencia:Este, Equipo:Heat, Posicion:C, Potencia:121, Habilidad:116, Altura:7 ft 0 in (2.13 m), Puntos:349, Balones robados:2, Rebotes:17, Tapones:23, Votos:6642, Peso:265 lb (120 kg), Numero:21, Fecha de Nacimiento:1989–06–13]
+[CALIFICACION]: 7322
+
+[ID:1256, Nombre:Mozgov, Timofey,Ciudad: Orlando, Conferencia:Este, Equipo:Magic, Posicion:C, Potencia:80, Habilidad:82, Altura:7 ft 1 in (2.16 m), Puntos:4352, Balones robados:30, Rebotes:10, Tapones:37, Votos:5528, Peso:275 lb (125 kg), Numero:21, Fecha de Nacimiento:1986–07–16]
+[CALIFICACION]: 10204
+
+[ID:10217, Nombre:Gasol, Marc,Ciudad: Memphis, Conferencia:Oeste, Equipo:Grizzlies, Posicion:C, Potencia:75, Habilidad:109, Altura:7 ft 1 in (2.16 m), Puntos:113, Balones robados:10, Rebotes:67, Tapones:35, Votos:10255, Peso:255 lb (116 kg), Numero:33, Fecha de Nacimiento:1985–01–29]
+[CALIFICACION]: 10741
+
+[ID:4601, Nombre:Biyombo, Bismack,Ciudad: Charlotte, Conferencia:Este, Equipo:Hornets, Posicion:C, Potencia:117, Habilidad:121, Altura:6 ft 9 in (2.06 m), Puntos:2998, Balones robados:1, Rebotes:60, Tapones:32, Votos:7482, Peso:255 lb (116 kg), Numero:8, Fecha de Nacimiento:1992–08–28]
+[CALIFICACION]: 10887
+
+[ID:2933, Nombre:Birch, Khem,Ciudad: Orlando, Conferencia:Este, Equipo:Magic, Posicion:C, Potencia:110, Habilidad:103, Altura:6 ft 9 in (2.06 m), Puntos:3952, Balones robados:21, Rebotes:35, Tapones:12, Votos:6775, Peso:220 lb (100 kg), Numero:24, Fecha de Nacimiento:1992–09–28]
+[CALIFICACION]: 11091
+
+[ID:1017, Nombre:Vucevic, Nikola,Ciudad: Orlando, Conferencia:Este, Equipo:Magic, Posicion:C, Potencia:79, Habilidad:84, Altura:7 ft 0 in (2.13 m), Puntos:5120, Balones robados:41, Rebotes:10, Tapones:13, Votos:6058, Peso:260 lb (118 kg), Numero:9, Fecha de Nacimiento:1990–10–24]
+[CALIFICACION]: 11510
+
+[ID:1771, Nombre:Capela, Clint,Ciudad: Houston, Conferencia:Oeste, Equipo:Rockets, Posicion:C, Potencia:97, Habilidad:102, Altura:6 ft 10 in (2.08 m), Puntos:5737, Balones robados:1, Rebotes:3, Tapones:4, Votos:7411, Peso:240 lb (109 kg), Numero:15, Fecha de Nacimiento:1994–05–18]
+[CALIFICACION]: 13448
+
+[ID:-1665, Nombre:Valanciunas, Jonas,Ciudad: Toronto, Conferencia:Este, Equipo:Raptors, Posicion:C, Potencia:124, Habilidad:125, Altura:7 ft 0 in (2.13 m), Puntos:7644, Balones robados:9, Rebotes:73, Tapones:0, Votos:5855, Peso:255 lb (116 kg), Numero:17, Fecha de Nacimiento:1992–05–06]
+[CALIFICACION]: 13771
+
+[ID:3830, Nombre:Zubac, Ivica,Ciudad: Los Angeles, Conferencia:Oeste, Equipo:Lakers, Posicion:C, Potencia:98, Habilidad:77, Altura:7 ft 1 in (2.16 m), Puntos:5099, Balones robados:15, Rebotes:48, Tapones:9, Votos:8831, Peso:240 lb (109 kg), Numero:40, Fecha de Nacimiento:1997–03–18]
+[CALIFICACION]: 14238
+

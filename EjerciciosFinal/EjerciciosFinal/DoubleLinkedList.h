@@ -1,5 +1,6 @@
 #pragma once
 #include <iostream>
+#include "CircularLinkedList.h"
 
 using namespace std;
 template<class T>
@@ -61,7 +62,7 @@ public:
 	T removeFirst();
 	T removeLast();
 	bool search(T reference);
-	void purge(static DoubleLinkedList<T> *list);	
+	void purge(int *repeated);
 	void showElements();
 	~DoubleLinkedList();
 };

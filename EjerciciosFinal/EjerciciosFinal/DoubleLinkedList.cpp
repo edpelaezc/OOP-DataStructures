@@ -18,9 +18,10 @@ template<typename T>
 bool DoubleLinkedList<T>::isEmpty() { return listSize == 0; }
 
 template<typename T>
-void DoubleLinkedList<T>::purge(static DoubleLinkedList<T> *list) {
+void DoubleLinkedList<T>::purge(int *repeated) {
 	NodeD<T> *aux = header->getNext();	
-	NodeD<T> *aux2 = aux->getNext();		
+	NodeD<T> *aux2 = aux->getNext();	
+	int cont = 0;
 	while (aux2->getNext() != trailer)
 	{
 		while (aux2 != trailer)
@@ -31,11 +32,12 @@ void DoubleLinkedList<T>::purge(static DoubleLinkedList<T> *list) {
 				while (auxiliar->getNext() != aux2)
 				{
 					auxiliar = auxiliar->getNext();
-				}				
-				list->addLast(auxiliar->getNext()->getElement());
+				}	
+				repeated[cont] = auxiliar->getNext()->getElement();							
+				cont++;
 				auxiliar->setNext(aux2->getNext());				
 				listSize--;				
-			}						
+			}									
 			aux2 = aux2->getNext();			
 		}			
 		aux = aux->getNext();
@@ -44,7 +46,7 @@ void DoubleLinkedList<T>::purge(static DoubleLinkedList<T> *list) {
 		{
 			break;
 		}
-	}
+	}	
 }
 
 template<typename T>
