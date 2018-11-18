@@ -133,12 +133,11 @@ void BinaryTree<T>::inOrder(TreeNode<T> *root) {
 
 template<typename T>
 T BinaryTree<T>::remove(TreeNode<T> *root, int elementKey) {
-	if (this->root == NULL) {
-		return NULL;
+	if (this->root == NULL) {		
 	}
 	else if (elementKey == root->getKey()) {
 		if (numberOfChildren(root) == 0) {
-			int aux = root->getElement();
+			T aux = root->getElement();
 			if (root == this->root) {
 				this->root = NULL;
 			}
@@ -156,7 +155,7 @@ T BinaryTree<T>::remove(TreeNode<T> *root, int elementKey) {
 			return aux;
 		}
 		else if (numberOfChildren(root) == 1) {
-			int aux = root->getElement();
+			T aux = root->getElement();
 
 			if (root == this->root) {
 				if (root->getLeft() != NULL) {
@@ -188,15 +187,15 @@ T BinaryTree<T>::remove(TreeNode<T> *root, int elementKey) {
 			return aux;
 		}
 		else {// el nodo que sustituirá será el más derecho del subárbol izquierdo.
-			TreeNode *next = root->getLeft();
-			int aux = root->getElement();
+			TreeNode<T> *next = root->getLeft();
+			T aux = root->getElement();
 			if (next->getRight() != NULL) {
 				while (next->getRight() != NULL)
 				{
 					next = next->getRight();
 				}
 				root->setElement(next->getElement());
-				TreeNode *father = next->getParent();
+				TreeNode<T> *father = next->getParent();
 				father->setRight(NULL);
 			}
 			else {

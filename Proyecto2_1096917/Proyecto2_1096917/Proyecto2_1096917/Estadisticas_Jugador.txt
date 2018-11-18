@@ -1,2 +1,0 @@
-REPORTE POR JUGADOR: 
-[ID:21519, Nombre:Metu, Chimezie,Ciudad: San Antonio, Conferencia:Oeste, Equipo:Spurs, Posicion:F, Potencia:93, Habilidad:119, Altura:6 ft 10 in (2.08 m), Puntos:157, Balones robados:35, Rebotes:61, Tapones:0, Votos:21583, Peso:219 lb (99 kg), Numero:7, Fecha de Nacimiento:1997–03–22]
