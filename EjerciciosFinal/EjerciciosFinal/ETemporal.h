@@ -6,14 +6,17 @@ using namespace std;
 class ETemporal: public Empleado
 {
 public:
-	ETemporal(string eNombre, int eEdad, int eDui, string tIngreso, string tSalida);
-	void setIngreso(string tIngreso);
-	string getIngreso();
-	void setSalida(string tSalida);
-	string getSalida();
+	ETemporal(string eNombre, int eEdad, int eDui, int tIngreso, int tSalida, int sueldo);
+	void setIngreso(int tIngreso);
+	int getIngreso();
+	void setSalida(int tSalida);
+	int getSalida();
+	void setSueldoMensual(int tSueldo);
+	int getSueldoMensual();
 	~ETemporal();
 private:
-	string ingreso;
-	string salida;
+	int ingreso;
+	int salida;
+	int sueldoMensual;
 };
 

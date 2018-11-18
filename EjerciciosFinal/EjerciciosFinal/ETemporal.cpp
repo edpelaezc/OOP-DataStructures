@@ -2,20 +2,25 @@
 #include "ETemporal.h"
 
 
-ETemporal::ETemporal(string eNombre, int eEdad, int eDui, string tIngreso, string tSalida) {
+ETemporal::ETemporal(string eNombre, int eEdad, int eDui, int tIngreso, int tSalida, int sueldo) {
 	this->setNombre(eNombre);
 	this->setEdad(eEdad);
 	this->setDui(eDui);
 	ingreso = tIngreso;
 	salida = tSalida;
+	sueldoMensual = sueldo;
 }
 
-void ETemporal::setIngreso(string tIngreso) { ingreso = tIngreso; }
+void ETemporal::setIngreso(int tIngreso) { ingreso = tIngreso; }
 
-string ETemporal::getIngreso() { return ingreso; }
+int ETemporal::getIngreso() { return ingreso; }
 
-void ETemporal::setSalida(string tSalida) { salida = tSalida; }
+void ETemporal::setSalida(int tSalida) { salida = tSalida; }
 
-string ETemporal::getSalida() { return salida; }
+int ETemporal::getSalida() { return salida; }
+
+void ETemporal::setSueldoMensual(int tSueldo) { sueldoMensual = tSueldo; }
+
+int ETemporal::getSueldoMensual() { return sueldoMensual; }
 
 ETemporal::~ETemporal() {}
