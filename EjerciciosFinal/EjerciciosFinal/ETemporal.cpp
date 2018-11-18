@@ -24,4 +24,8 @@ void ETemporal::setSueldoMensual(int tSueldo) { sueldoMensual = tSueldo; }
 
 int ETemporal::getSueldoMensual() { return sueldoMensual; }
 
+int ETemporal::calcularSueldo() {
+	return sueldoMensual;
+}
+
 ETemporal::~ETemporal() {}

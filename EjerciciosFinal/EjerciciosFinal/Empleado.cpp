@@ -20,4 +20,6 @@ void Empleado::setTipo(int eTipo) { tipo = eTipo; }
 
 int Empleado::getTipo() { return tipo; }
 
+int Empleado::calcularSueldo() { return 0; }
+
 Empleado::~Empleado() {}

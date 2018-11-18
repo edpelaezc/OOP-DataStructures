@@ -13,6 +13,7 @@ public:
 	int getSueldo();
 	void setComplemento(int fComplemento);
 	int getComplemento();
+	int calcularSueldo();
 	~EFijo();
 private:
 	int año;

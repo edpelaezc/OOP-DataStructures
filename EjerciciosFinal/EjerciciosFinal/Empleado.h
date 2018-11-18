@@ -14,6 +14,7 @@ public:
 	int getDui();
 	void setTipo(int eTipo);
 	int getTipo();
+	virtual int calcularSueldo();
 	~Empleado();
 private:
 	string nombre;

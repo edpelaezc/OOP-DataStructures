@@ -12,6 +12,7 @@ public:
 	int getPrecio();
 	void setHorasTrabajadas(int hHorasTrabajadas);
 	int getHorasTrabajadas();
+	int calcularSueldo();
 private:
 	int precio;
 	int horasTrabajadas;

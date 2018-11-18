@@ -13,6 +13,7 @@ public:
 	int getSalida();
 	void setSueldoMensual(int tSueldo);
 	int getSueldoMensual();
+	int calcularSueldo();
 	~ETemporal();
 private:
 	int ingreso;

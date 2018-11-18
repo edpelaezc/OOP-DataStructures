@@ -24,4 +24,10 @@ void EFijo::setComplemento(int fComplemento) { complemento = fComplemento; }
 
 int EFijo::getComplemento() { return complemento; }
 
+int EFijo::calcularSueldo() {
+	int numeroAños = 2018 - año;
+	int bonificacion = complemento * numeroAños;
+	return sueldo + bonificacion;
+}
+
 EFijo::~EFijo() {}

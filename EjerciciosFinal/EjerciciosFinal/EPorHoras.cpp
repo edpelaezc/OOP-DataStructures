@@ -19,4 +19,6 @@ void EPorHoras::setHorasTrabajadas(int hHorasTrabajadas) { horasTrabajadas = hHo
 
 int EPorHoras::getHorasTrabajadas() { return horasTrabajadas; }
 
+int EPorHoras::calcularSueldo() { return precio * horasTrabajadas; }
+
 EPorHoras::~EPorHoras() {}
