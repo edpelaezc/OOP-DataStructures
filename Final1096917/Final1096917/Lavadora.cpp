@@ -20,8 +20,8 @@ void Lavadora::toString() {
 		 << "; [Peso]:" << getPeso() << "; [Carga]:" << carga << "; [Precio final]:" << calcularPrecio() << endl;
 }
 
-int Lavadora::calcularPrecio() {
-	int response = getPrecioBase();
+float Lavadora::calcularPrecio() {
+	float response = getPrecioBase();
 	
 	//verificar el consumo energetico y sumarle al precio base las siguientes cantidaddes
 	if (getConsumo() == "A") { response += 100; }

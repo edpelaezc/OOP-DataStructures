@@ -12,7 +12,7 @@ public:
 	int getCarga();
 	void setCarga(int lCarga);
 	void toString();
-	int calcularPrecio();
+	float calcularPrecio();
 	~Lavadora();
 private:
 	int carga;

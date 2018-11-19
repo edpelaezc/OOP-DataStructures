@@ -14,7 +14,7 @@ public:
 	bool getSintonizador();
 	void setSintonizador(bool tSintonizador);
 	void toString();
-	int calcularPrecio();
+	float calcularPrecio();
 	~Television();
 private:
 	int resolucion;

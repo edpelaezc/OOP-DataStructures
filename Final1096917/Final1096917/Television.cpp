@@ -30,8 +30,8 @@ void Television::toString() {
 		<< "; [Peso]:" << getPeso() << "; [Resolucion]:" << resolucion << "; [Sintonizador]:" << sintonizador << "; [Precio final]:" << calcularPrecio() << endl;
 }
 
-int Television::calcularPrecio() {
-	int response = getPrecioBase();
+float Television::calcularPrecio() {
+	float response = getPrecioBase();
 
 	//verificar el consumo energetico y sumarle al precio base las siguientes cantidaddes
 	if (getConsumo() == "A") { response += 100; }
