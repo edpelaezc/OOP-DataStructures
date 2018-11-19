@@ -2,13 +2,18 @@
 #include "Television.h"
 
 
-Television::Television(int ePrecio, string eColor, string eConsumo, int ePeso, int tResolucion, bool tSintonizador) {
+Television::Television(float ePrecio, string eColor, string eConsumo, int ePeso, int tResolucion, string tSintonizador) {
 	this->setPrecioBase(ePrecio);
 	this->setColor(eColor);
 	this->setConsumo(eConsumo);
 	this->setPeso(ePeso);
 	resolucion = tResolucion;
-	sintonizador = tSintonizador;
+	if (tSintonizador == "si") {
+		sintonizador = true;
+	}
+	else {
+		sintonizador = false;
+	}
 }
 
 int Television::getResolucion() { return resolucion; }

@@ -2,7 +2,7 @@
 #include "Lavadora.h"
 
 
-Lavadora::Lavadora(int ePrecio, string eColor, string eConsumo, int ePeso, int lCarga) {
+Lavadora::Lavadora(float ePrecio, string eColor, string eConsumo, int ePeso, int lCarga) {
 	this->setPrecioBase(ePrecio);
 	this->setColor(eColor);
 	this->setConsumo(eConsumo);

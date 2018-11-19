@@ -4,9 +4,9 @@
 
 Electrodomestico::Electrodomestico() {}
 
-int Electrodomestico::getPrecioBase() { return precioBase; }
+float Electrodomestico::getPrecioBase() { return precioBase; }
 
-void Electrodomestico::setPrecioBase(int ePrecio) { precioBase = ePrecio; }
+void Electrodomestico::setPrecioBase(float ePrecio) { precioBase = ePrecio; }
 
 string Electrodomestico::getColor() { return color; }
 

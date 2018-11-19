@@ -7,8 +7,8 @@ class Electrodomestico
 {
 public:
 	Electrodomestico();
-	int getPrecioBase();
-	void setPrecioBase(int ePrecio);
+	float getPrecioBase();
+	void setPrecioBase(float ePrecio);
 	string getColor();
 	void setColor(string eColor);
 	string getConsumo();
@@ -17,7 +17,7 @@ public:
 	void setPeso(int ePeso);
 	~Electrodomestico();
 private:
-	int precioBase;
+	float precioBase;
 	string color;
 	string consumo;
 	int peso;
