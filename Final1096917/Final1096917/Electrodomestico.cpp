@@ -10,7 +10,14 @@ void Electrodomestico::setPrecioBase(float ePrecio) { precioBase = ePrecio; }
 
 string Electrodomestico::getColor() { return color; }
 
-void Electrodomestico::setColor(string eColor) { color = eColor; }
+void Electrodomestico::setColor(string eColor) { 
+	if (eColor == "-") { 
+		color = "azul"; 
+	}
+	else {
+		color = eColor; 
+	}
+}
 
 string Electrodomestico::getConsumo() { return consumo; }
 

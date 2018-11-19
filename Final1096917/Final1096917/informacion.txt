@@ -1,5 +1,5 @@
 Lavadora|20.30|azul|A|20|25
-Lavadora|100.00|blanco|F|10|55
+Lavadora|100.00|-|F|10|55
 Television|200.00|azul|D|30|45|si
 Lavadora|100.00|rojo|F|10|55
 Television|200.00|amarillo|F|25|88|no
