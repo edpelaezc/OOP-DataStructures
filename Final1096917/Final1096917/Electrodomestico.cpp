@@ -27,4 +27,6 @@ int Electrodomestico::getPeso() { return peso; }
 
 void Electrodomestico::setPeso(int ePeso) { peso = ePeso; }
 
+int Electrodomestico::calcularPrecio() { return precioBase; }
+
 Electrodomestico::~Electrodomestico() {}

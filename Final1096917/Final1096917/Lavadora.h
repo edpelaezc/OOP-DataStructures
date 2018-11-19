@@ -12,6 +12,7 @@ public:
 	int getCarga();
 	void setCarga(int lCarga);
 	void toString();
+	int calcularPrecio();
 	~Lavadora();
 private:
 	int carga;

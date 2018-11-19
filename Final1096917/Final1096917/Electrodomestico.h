@@ -15,6 +15,7 @@ public:
 	void setConsumo(string eConsumo);
 	int getPeso();
 	void setPeso(int ePeso);
+	virtual int calcularPrecio();
 	~Electrodomestico();
 private:
 	float precioBase;
