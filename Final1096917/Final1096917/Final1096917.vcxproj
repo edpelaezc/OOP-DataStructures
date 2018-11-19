@@ -154,6 +154,8 @@
   <ItemGroup>
     <ClInclude Include="Electrodomestico.h" />
     <ClInclude Include="Lavadora.h" />
+    <ClInclude Include="MyLinkedListC.h" />
+    <ClInclude Include="Node.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Television.h" />
   </ItemGroup>
@@ -161,6 +163,8 @@
     <ClCompile Include="Electrodomestico.cpp" />
     <ClCompile Include="Final1096917.cpp" />
     <ClCompile Include="Lavadora.cpp" />
+    <ClCompile Include="MyLinkedListC.cpp" />
+    <ClCompile Include="Node.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

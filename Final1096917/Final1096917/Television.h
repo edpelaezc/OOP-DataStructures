@@ -7,6 +7,7 @@ using namespace std;
 class Television: public Electrodomestico
 {
 public:
+	Television();
 	Television(float ePrecio, string eColor, string eConsumo, int ePeso, int tResolucion, string tSintonizador);
 	int getResolucion();
 	void setResolucion(int tResolucion);

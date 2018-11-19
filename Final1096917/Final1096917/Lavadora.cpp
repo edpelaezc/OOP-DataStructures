@@ -1,6 +1,7 @@
 #include "pch.h"
 #include "Lavadora.h"
 
+Lavadora::Lavadora() {}
 
 Lavadora::Lavadora(float ePrecio, string eColor, string eConsumo, int ePeso, int lCarga) {
 	this->setPrecioBase(ePrecio);
@@ -15,8 +16,8 @@ int Lavadora::getCarga() { return carga; }
 void Lavadora::setCarga(int lCarga) { carga = lCarga; }
 
 void Lavadora::toString() {	
-	cout << "[Precio]: " << getPrecioBase() << "[Color]: " << getColor() << "[Consumo energetico]: " << getConsumo() 
-		 << "[Peso]: " << getPeso() << "[Carga]: " << carga << endl;
+	cout << "[LAVADORA]-" << "[Precio]: " << getPrecioBase() << "; [Color]: " << getColor() << "; [Consumo energetico]: " << getConsumo() 
+		 << "; [Peso]: " << getPeso() << "; [Carga]: " << carga << endl;
 }
 
 Lavadora::~Lavadora() {}

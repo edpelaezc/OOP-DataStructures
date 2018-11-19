@@ -1,6 +1,7 @@
 #include "pch.h"
 #include "Television.h"
 
+Television::Television() {}
 
 Television::Television(float ePrecio, string eColor, string eConsumo, int ePeso, int tResolucion, string tSintonizador) {
 	this->setPrecioBase(ePrecio);
@@ -21,8 +22,8 @@ void Television::setResolucion(int tResolucion) { resolucion = tResolucion; }
 bool Television::getSintonizador() { return sintonizador; }
 void Television::setSintonizador(bool tSintonizador) { sintonizador = tSintonizador; }
 void Television::toString() {
-	cout << "[Precio]: " << getPrecioBase() << "[Color]: " << getColor() << "[Consumo energetico]: " << getConsumo()
-		<< "[Peso]: " << getPeso() << "[Resolucion]: " << resolucion << "[Sintonizador]: " << sintonizador << endl;
+	cout << "[TELEVISION]-" << "[Precio]: " << getPrecioBase() << "; [Color]: " << getColor() << "; [Consumo energetico]: " << getConsumo()
+		<< "; [Peso]: " << getPeso() << "; [Resolucion]: " << resolucion << "; [Sintonizador]: " << sintonizador << endl;
 }
 
 Television::~Television() {}
