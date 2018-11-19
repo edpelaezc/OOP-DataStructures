@@ -16,7 +16,7 @@ int Lavadora::getCarga() { return carga; }
 void Lavadora::setCarga(int lCarga) { carga = lCarga; }
 
 void Lavadora::toString() {	
-	cout << "[LAVADORA]-" << "[Precio]:" << getPrecioBase() << "; [Color]:" << getColor() << "; [Consumo energetico]:" << getConsumo() 
+	cout << "[LAVADORA]-" << "[Precio base]:" << getPrecioBase() << "; [Color]:" << getColor() << "; [Consumo energetico]:" << getConsumo() 
 		 << "; [Peso]:" << getPeso() << "; [Carga]:" << carga << "; [Precio final]:" << calcularPrecio() << endl;
 }
 

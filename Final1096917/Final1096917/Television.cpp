@@ -26,7 +26,7 @@ bool Television::getSintonizador() { return sintonizador; }
 void Television::setSintonizador(bool tSintonizador) { sintonizador = tSintonizador; }
 
 void Television::toString() {
-	cout << "[TELEVISION]-" << "[Precio]:" << getPrecioBase() << "; [Color]:" << getColor() << "; [Consumo energetico]:" << getConsumo()
+	cout << "[TELEVISION]-" << "[Precio base]:" << getPrecioBase() << "; [Color]:" << getColor() << "; [Consumo energetico]:" << getConsumo()
 		<< "; [Peso]:" << getPeso() << "; [Resolucion]:" << resolucion << "; [Sintonizador]:" << sintonizador << "; [Precio final]:" << calcularPrecio() << endl;
 }
 
