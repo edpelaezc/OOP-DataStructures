@@ -55,19 +55,14 @@ namespace Screen
                                          + "set load %B1,\n"
                                          + "set address %B"
                                          + Convert.ToString((position + j + (i * 96)), 2) + ",\n"
-                                         + "eval,\ntick,\ntock,\noutput;\n");
+                                         + "eval,\noutput;\n");
                         }
                     }
                     line = lines.dequeue();
                 }
-                if (position % 31 == 0 || position % 31 >= 0)
-                {
-                    position *= 161;
-                }
-                else
-                {
-                    position += 4;
-                }
+
+                    position += 192;
+
             }
 
             file.Close();
