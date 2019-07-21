@@ -238,7 +238,7 @@ namespace EstrcuturasDinamicas
         {
             if (root != null)
             {
-                Console.Write(root.getElement() + "->");
+                order.addLast(root);
                 preOrder(root.getLeft());
                 preOrder(root.getRight());
             }

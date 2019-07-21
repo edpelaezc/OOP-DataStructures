@@ -60,14 +60,7 @@ namespace Screen
                     }
                     line = lines.dequeue();
                 }
-                if (position % 31 == 0 || position % 31 >= 0)
-                {
-                    position *= 161;
-                }
-                else
-                {
                     position += 4;
-                }
             }
 
             file.Close();
