@@ -18,6 +18,39 @@ namespace EstrcuturasDinamicas
         public Comparer<T> comp = Comparer<T>.Default;                
         public delegate bool exists<T>(Node<T> element1, Node<T> element2);
 
+        public MyLinkedList<T> purge(exists<T> comparador)
+        {
+            Node<T> aux = head;
+            Node<T> aux2 = aux.getNext();
+            MyLinkedList<T> repeated = new MyLinkedList<T>();
+            while (aux2.getNext() != null)
+            {
+                while (aux2 != null)
+                {
+                    if (comparador(aux, aux2))
+                    {
+                        Node<T> auxiliar = head;
+                        while (auxiliar.getNext() != aux2)
+                        {
+                            auxiliar = auxiliar.getNext();
+                        }
+                        auxiliar.setNext(aux2.getNext());
+                        repeated.addLast(aux2.getElement());
+                        listSize--;
+                    }
+                    aux2 = aux2.getNext();
+                }
+                aux = aux.getNext();
+                aux2 = aux.getNext();
+                if (aux == null || aux2 == null)
+                {
+                    break;
+                }
+            }
+
+            return repeated;
+        }
+
         /// <summary>
         /// Constructor de la Lista Enlazada simple
         /// </summary>
@@ -195,38 +228,7 @@ namespace EstrcuturasDinamicas
                 }
             }
         }
-
-        public MyLinkedList<T> purge(exists<T> comparador) {
-            Node<T> aux = head;
-            Node<T> aux2 = aux.getNext();
-            MyLinkedList<T> repeated = new MyLinkedList<T>();
-            while (aux2.getNext() != null)
-            {
-                while (aux2 != null)
-                {
-                    if (comparador(aux, aux2))
-                    {
-                        Node<T> auxiliar = head;
-                        while (auxiliar.getNext() != aux2)
-                        {
-                            auxiliar = auxiliar.getNext();
-                        }                        
-                        auxiliar.setNext(aux2.getNext());
-                        repeated.addLast(aux2.getElement());
-                        listSize--;
-                    }                    
-                    aux2 = aux2.getNext();
-                }
-                aux = aux.getNext();
-                aux2 = aux.getNext();
-                if (aux == null || aux2 == null)
-                {
-                    break;
-                }
-            }
-
-            return repeated;
-        }
+       
 
         public bool searchElement(T reference) {
             Node<T> auxiliar = head;
