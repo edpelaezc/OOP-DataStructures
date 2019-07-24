@@ -47,7 +47,7 @@ namespace EstrcuturasDinamicas
             }
             else
             {
-                addElement(root, element);
+                addElement(this.root, element);
             }
         }
 

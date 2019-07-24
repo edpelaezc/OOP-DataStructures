@@ -9,11 +9,13 @@ namespace EstrcuturasDinamicas
     public class AVLTree<T>
     {
         public delegate int compare<T>(T aux, T aux2);
+        compare<T> compareElements;
         private int numberOfTreeNodes = 0;
         public AVLNode<T> root;
 
-        public AVLTree() {
+        public AVLTree(compare<T> cmp) {
             root = null;
+            compareElements = cmp;
         }
 
         public int weight()
@@ -25,7 +27,8 @@ namespace EstrcuturasDinamicas
             return root == null;
         }
 
-        public int height(AVLNode<T> root) {
+        public int height(AVLNode<T> root)
+        {
             if (root == null) {
                 return -1;
             }
@@ -34,13 +37,16 @@ namespace EstrcuturasDinamicas
             }
         }
 
-        public void updateHeight(AVLNode<T> root) {
+        private void updateHeight(AVLNode<T> root)
+        {
             if (root != null) {
                 root.setHeight(Math.Max(height(root.getLeft()), height(root.getRight())) + 1);
             }
         }
 
-        public void add(T element, compare<T> compareElements)
+        
+
+        public void add(T element)
         {
             if (this.root == null)
             {
@@ -49,11 +55,11 @@ namespace EstrcuturasDinamicas
             }
             else
             {
-                addElement(root, element, compareElements);
+                addElement(this.root, element);
             }
         }
 
-        private void addElement(AVLNode<T> root, T element, compare<T> compareElements)
+        private void addElement(AVLNode<T> root, T element)
         {
             if (compareElements(element, root.getElement()) < 0)//x es menor que y
             {
@@ -64,7 +70,7 @@ namespace EstrcuturasDinamicas
                 }
                 else
                 {
-                    addElement(root.getLeft(), element, compareElements);
+                    addElement(root.getLeft(), element);
                 }
             }
             else if (compareElements(element, root.getElement()) > 0)//x es mayor que y 
@@ -76,7 +82,7 @@ namespace EstrcuturasDinamicas
                 }
                 else
                 {
-                    addElement(root.getRight(), element, compareElements);
+                    addElement(root.getRight(), element);
                 }
             }
             else//x es igual que y
@@ -84,5 +90,42 @@ namespace EstrcuturasDinamicas
                 throw new Exception("NO SE PERMITEN DUPLICADOS");
             }
         }
+
+        private void rotation(AVLNode<T> root, bool direction)
+        {
+            AVLNode<T> aux;
+            if (direction) //si es verdadero será rotación izquierda
+            {
+                aux = root.getLeft();
+                root.setLeft(aux.getRight());
+                aux.setRight(root);
+            }
+            else //rotación derecha
+            {
+                aux = root.getRight();
+                root.setRight(aux.getLeft());
+                aux.setLeft(root);
+            }
+
+            updateHeight(root);
+            updateHeight(aux);
+            root = aux;
+        }
+
+        private void doubleRotation(AVLNode<T> root, bool direction)
+        {
+            if (direction) //doble rotación izauierda
+            {
+                rotation(root.getLeft(), false);
+                rotation(root, true);
+            }
+            else //doble rotación derecha
+            {
+                rotation(root.getRight(), true);
+                rotation(root, false);
+            }
+        }
+
+        
     }
 }
