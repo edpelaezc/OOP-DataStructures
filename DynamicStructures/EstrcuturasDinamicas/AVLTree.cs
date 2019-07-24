@@ -57,6 +57,9 @@ namespace EstrcuturasDinamicas
             {
                 addElement(this.root, element);
             }
+
+            balance(this.root);
+            updateHeight(this.root);
         }
 
         private void addElement(AVLNode<T> root, T element)
@@ -155,5 +158,7 @@ namespace EstrcuturasDinamicas
                 }
             }
         }
+
+
     }
 }
