@@ -24,7 +24,7 @@ namespace EstrcuturasDinamicas
         }
 
         public bool isEmpty() {
-            return root == null;
+            return this.root == null;
         }
 
         public int height(AVLNode<T> root)
@@ -126,6 +126,34 @@ namespace EstrcuturasDinamicas
             }
         }
 
-        
+        void balance(AVLNode<T> root)
+        {
+            if (!isEmpty())
+            {
+                if (height(root.getLeft()) - height(root.getRight()) == 2) //hay un desequilibrio a la izquierda
+                {
+                    if (height(root.getLeft().getLeft()) >= height(root.getLeft().getRight())) //desequilibrio simple hacia la izquierda
+                    {
+                        rotation(root, true);
+                    }
+                    else //desequilibrio doble hacia la izquierda
+                    {
+                        doubleRotation(root, true);
+                    }
+                }
+
+                else if (height(root.getRight()) - height(root.getLeft()) == 2) //desequilibrio a la derecha
+                {
+                    if (height(root.getRight().getRight()) >= height(root.getRight().getLeft())) //desequiibrio simple hacia la derecha
+                    {
+                        rotation(root, false);
+                    }
+                    else //desequilibri doble hacia la derecha
+                    {
+                        doubleRotation(root, false);
+                    }
+                }
+            }
+        }
     }
 }
