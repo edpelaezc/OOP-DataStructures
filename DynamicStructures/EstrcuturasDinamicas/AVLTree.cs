@@ -33,7 +33,7 @@ namespace EstrcuturasDinamicas
                 return -1;
             }
             else {
-                return root.getHeight();
+                return Math.Max(height(root.getLeft()), height(root.getRight()));
             }
         }
 
@@ -56,10 +56,9 @@ namespace EstrcuturasDinamicas
             else
             {
                 addElement(this.root, element);
+                balance(this.root);
+                updateHeight(this.root);
             }
-
-            balance(this.root);
-            updateHeight(this.root);
         }
 
         private void addElement(AVLNode<T> root, T element)
