@@ -30,21 +30,19 @@ namespace EstrcuturasDinamicas
         public int height(AVLNode<T> root)
         {
             if (root == null) {
-                return -1;
+                return 0;
             }
             else {
-                return Math.Max(height(root.getLeft()), height(root.getRight()));
+                return root.getHeight();
             }
         }
 
-        private void updateHeight(AVLNode<T> root)
-        {
-            if (root != null) {
+        public void updateHeight (AVLNode<T> root) {
+            if (root != null)
+            {
                 root.setHeight(Math.Max(height(root.getLeft()), height(root.getRight())) + 1);
             }
         }
-
-        
 
         public void add(T element)
         {
@@ -55,9 +53,7 @@ namespace EstrcuturasDinamicas
             }
             else
             {
-                addElement(this.root, element);
-                balance(this.root);
-                updateHeight(this.root);
+                addElement(this.root, element);              
             }
         }
 
@@ -65,50 +61,51 @@ namespace EstrcuturasDinamicas
         {
             if (compareElements(element, root.getElement()) < 0)//x es menor que y
             {
-                if (root.getLeft() == null)
-                {
+                if (root.getLeft() == null){
                     root.setLeft(new AVLNode<T>(element, root, null, null));
                     numberOfTreeNodes++;
                 }
-                else
-                {
+                else{
                     addElement(root.getLeft(), element);
                 }
             }
             else if (compareElements(element, root.getElement()) > 0)//x es mayor que y 
             {
-                if (root.getRight() == null)
-                {
+                if (root.getRight() == null){
                     root.setRight(new AVLNode<T>(element, root, null, null));
                     numberOfTreeNodes++;
                 }
-                else
-                {
+                else{
                     addElement(root.getRight(), element);
                 }
             }
-            else//x es igual que y
-            {
-                throw new Exception("NO SE PERMITEN DUPLICADOS");
-            }
+            balance(root);
+            updateHeight(root);            
         }
 
         private void rotation(AVLNode<T> root, bool direction)
         {
             AVLNode<T> aux;
+            AVLNode<T> parent;
             if (direction) //si es verdadero será rotación izquierda
             {
                 aux = root.getLeft();
+                parent = root.getParent();
+                aux.setParent(parent);
                 root.setLeft(aux.getRight());
                 aux.setRight(root);
+                parent.setRight(aux);
             }
             else //rotación derecha
             {
                 aux = root.getRight();
+                parent = root.getParent();
+                aux.setParent(parent);
                 root.setRight(aux.getLeft());
                 aux.setLeft(root);
+                parent.setRight(aux);
             }
-
+            
             updateHeight(root);
             updateHeight(aux);
             root = aux;
@@ -116,7 +113,7 @@ namespace EstrcuturasDinamicas
 
         private void doubleRotation(AVLNode<T> root, bool direction)
         {
-            if (direction) //doble rotación izauierda
+            if (direction) //doble rotación izquierda
             {
                 rotation(root.getLeft(), false);
                 rotation(root, true);
@@ -130,7 +127,7 @@ namespace EstrcuturasDinamicas
 
         void balance(AVLNode<T> root)
         {
-            if (!isEmpty())
+            if (this.root != null)
             {
                 if (height(root.getLeft()) - height(root.getRight()) == 2) //hay un desequilibrio a la izquierda
                 {
@@ -158,6 +155,16 @@ namespace EstrcuturasDinamicas
             }
         }
 
+        public void preOrder(AVLNode<T> root)
+        {
+            if (root != null)
+            {
+                Console.WriteLine(root.getElement());                
+                preOrder(root.getLeft());
+                preOrder(root.getRight());
+            }
+        }
 
     }
 }
+

@@ -26,7 +26,7 @@ namespace EstrcuturasDinamicas
 
         public int treeDepth(TreeNode<T> root)
         {
-            if (root != null)
+            if (root == null)
             {
                 return 0;
             }
@@ -34,7 +34,7 @@ namespace EstrcuturasDinamicas
             {
                 int leftDepth = treeDepth(root.getLeft());
                 int rightDepth = treeDepth(root.getRight());
-                return Math.Max(leftDepth, rightDepth);
+                return Math.Max(leftDepth, rightDepth) + 1;
             }
         }
 

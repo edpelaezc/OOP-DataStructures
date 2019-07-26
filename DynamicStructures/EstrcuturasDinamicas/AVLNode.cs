@@ -17,6 +17,7 @@ namespace EstrcuturasDinamicas
         public AVLNode(T t, AVLNode<T> above, AVLNode<T> leftChild, AVLNode<T> rightChild)
         {
             element = t;
+            this.height = 1;
             parent = above;
             left = leftChild;
             right = rightChild;
