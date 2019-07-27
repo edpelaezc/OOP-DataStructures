@@ -32,6 +32,7 @@ namespace DSImplementation
             tree.preOrder(tree.root);
             tree.remove(tree.root, 13);
             tree.remove(tree.root, 15);
+            tree.remove(tree.root, 5);            
             Console.WriteLine("delete: " );
             tree.preOrder(tree.root);
             Console.ReadLine();
