@@ -175,22 +175,22 @@ namespace EstrcuturasDinamicas
                         {
                             if (root.getLeft() != null)
                             {
-                                root.getParent().setLeft(root.getLeft());
+                                root.getParent().setRight(root.getLeft());
                             }
                             else
                             {
-                                root.getParent().setLeft(root.getRight());
+                                root.getParent().setRight(root.getRight());
                             }
                         }
                         else
                         {
                             if (root.getLeft() != null)
                             {
-                                root.getParent().setRight(root.getLeft());
+                                root.getParent().setLeft(root.getLeft());
                             }
                             else
                             {
-                                root.getParent().setRight(root.getRight());
+                                root.getParent().setLeft(root.getRight());
                             }
                         }
                     }
@@ -238,6 +238,7 @@ namespace EstrcuturasDinamicas
         {
             if (root != null)
             {
+                Console.WriteLine(root.getElement());
                 order.addLast(root);
                 preOrder(root.getLeft());
                 preOrder(root.getRight());
