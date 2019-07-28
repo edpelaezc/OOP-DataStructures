@@ -83,6 +83,16 @@ namespace EstrcuturasDinamicas
             updateHeight(root);            
         }
 
+        public int numberOfChildren(AVLNode<T> root)
+        {
+            int count = 0;
+            if (root.getLeft() != null)
+                count++;
+            if (root.getRight() != null)
+                count++;
+            return count;
+        }
+
         private void rotation(AVLNode<T> root, bool direction)
         {
             AVLNode<T> aux;
@@ -151,6 +161,116 @@ namespace EstrcuturasDinamicas
                     {
                         doubleRotation(root, false);
                     }
+                }
+            }
+        }
+
+        public T remove(AVLNode<T> root, T element)
+        {
+            if (root == null)
+            {
+                return default(T);
+            }
+            else if (compareElements(element, root.getElement()) == 0)
+            {
+                if (numberOfChildren(root) == 0)
+                {
+                    T aux = root.getElement();
+                    if (root == this.root)
+                    {
+                        this.root = null;
+                    }
+                    else
+                    {
+                        if (compareElements(element, root.getParent().getLeft().getElement()) == 0)
+                        {
+                            root.getParent().setLeft(null);
+                            root = null;
+                        }
+                        else
+                        {
+                            root.getParent().setRight(null);
+                            root = null;
+                        }
+                    }
+                    numberOfTreeNodes--;
+                    return aux;
+                }
+                else if (numberOfChildren(root) == 1)
+                {
+                    T aux = root.getElement();
+                    if (root == this.root)
+                    {
+                        if (root.getLeft() != null)
+                        {
+                            this.root = root.getLeft();
+                        }
+                        else
+                        {
+                            this.root = root.getRight();
+                        }
+                    }
+                    else
+                    {
+                        if (root.getParent().getLeft() != null)
+                        {
+                            if (root.getLeft() != null)
+                            {
+                                root.getParent().setRight(root.getLeft());
+                            }
+                            else
+                            {
+                                root.getParent().setRight(root.getRight());
+                            }
+                        }
+                        else
+                        {
+                            if (root.getLeft() != null)
+                            {
+                                root.getParent().setLeft(root.getLeft());
+                            }
+                            else
+                            {
+                                root.getParent().setLeft(root.getRight());
+                            }
+                        }
+                    }
+                    numberOfTreeNodes--;
+                    return aux;
+                }
+                else//El que sustituirá será el más derecho de los izquierdos
+                {
+                    AVLNode<T> next = root.getLeft();
+                    T aux = root.getElement();
+                    if (next.getRight() != null)
+                    {
+                        while (next.getRight() != null)
+                        {
+                            next = next.getRight();
+                        }
+                        root.setElement(next.getElement());
+                        AVLNode<T> father = next.getParent();
+                        father.setRight(null);
+                    }
+                    else
+                    {
+                        root.setElement(next.getElement());
+                        root.setLeft(null);
+                    }
+
+                    numberOfTreeNodes--;
+                    return aux;
+                }
+            }
+            else
+            {
+                if (compareElements(element, root.getElement()) < 0)
+                {
+                    return remove(root.getLeft(), element);
+                }
+                else
+                {
+                    return remove(root.getRight(), element);
                 }
             }
         }
