@@ -170,9 +170,10 @@ namespace EstrcuturasDinamicas
             if (root == null)
             {
                 return default(T);
-            }
+            } //si no está vacío 
             else if (compareElements(element, root.getElement()) == 0)
             {
+                AVLNode<T> fatherNode;
                 if (numberOfChildren(root) == 0)
                 {
                     T aux = root.getElement();
@@ -182,16 +183,18 @@ namespace EstrcuturasDinamicas
                     }
                     else
                     {
-                        if (compareElements(element, root.getParent().getLeft().getElement()) == 0)
-                        {
-                            root.getParent().setLeft(null);
-                            root = null;
+                        if (compareElements(element, root.getParent().getLeft().getElement()) == 0){
+                            root.getParent().setLeft(null);                            
                         }
-                        else
-                        {
-                            root.getParent().setRight(null);
-                            root = null;
+                        else{
+                            root.getParent().setRight(null);                            
                         }
+
+                        //lineas agregadas.
+                        fatherNode = root.getParent();
+                        root = null;
+                        updateHeight(fatherNode);
+                        balance(fatherNode);
                     }
                     numberOfTreeNodes--;
                     return aux;
@@ -201,12 +204,10 @@ namespace EstrcuturasDinamicas
                     T aux = root.getElement();
                     if (root == this.root)
                     {
-                        if (root.getLeft() != null)
-                        {
+                        if (root.getLeft() != null){
                             this.root = root.getLeft();
                         }
-                        else
-                        {
+                        else{
                             this.root = root.getRight();
                         }
                     }
@@ -214,26 +215,29 @@ namespace EstrcuturasDinamicas
                     {
                         if (root.getParent().getLeft() != null)
                         {
-                            if (root.getLeft() != null)
-                            {
-                                root.getParent().setRight(root.getLeft());
+                            if (root.getLeft() != null){
+                                root.getParent().getRight().setElement(root.getLeft().getElement());                                
                             }
-                            else
-                            {
-                                root.getParent().setRight(root.getRight());
+                            else{
+                                root.getParent().getRight().setElement(root.getRight().getElement());                                
                             }
+                            updateHeight(root);                            
                         }
                         else
                         {
-                            if (root.getLeft() != null)
-                            {
-                                root.getParent().setLeft(root.getLeft());
+                            if (root.getLeft() != null){
+                                root.getParent().getLeft().setElement(root.getLeft().getElement());                                
                             }
-                            else
-                            {
-                                root.getParent().setLeft(root.getRight());
+                            else{
+                                root.getParent().getLeft().setElement(root.getRight().getElement());                                
                             }
+                            updateHeight(root);                            
                         }
+
+                        //lineas agregadas                        
+                        fatherNode = root.getParent();
+                        updateHeight(fatherNode);
+                        balance(fatherNode);
                     }
                     numberOfTreeNodes--;
                     return aux;
@@ -257,6 +261,10 @@ namespace EstrcuturasDinamicas
                         root.setElement(next.getElement());
                         root.setLeft(null);
                     }
+
+                    //lineas agregadas                    
+                    updateHeight(root);
+                    balance(root);
 
                     numberOfTreeNodes--;
                     return aux;

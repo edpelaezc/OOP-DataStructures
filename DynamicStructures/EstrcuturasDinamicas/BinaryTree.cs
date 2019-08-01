@@ -132,33 +132,31 @@ namespace EstrcuturasDinamicas
             }
             else if (comp.Compare(element, root.getElement()) == 0)
             {
-                if (numberOfChildren(root) == 0)
+                if (numberOfChildren(root) == 0)//borrar nodo sin hijos
                 {
                     T aux = root.getElement();
-                    if (root == this.root)
-                    {
+                    TreeNode<T> parent = root.getParent();
+                    if (root == this.root){
                         this.root = null;
                     }
                     else
                     {
-                        if (comp.Compare(element, root.getParent().getLeft().getElement()) == 0)
-                        {
-                            root.getParent().setLeft(null);
+                        if (parent.getLeft() == root){
+                            parent.setLeft(null);
                             root = null;
                         }
-                        else
-                        {
-                            root.getParent().setRight(null);
+                        else{
+                            parent.setRight(null);
                             root = null;
                         }
                     }
                     numberOfTreeNodes--;
                     return aux;
-                }
-                else if (numberOfChildren(root) == 1)
+                }//borrar nodo sin hijos
+                else if (numberOfChildren(root) == 1)//borrar nodo con 1 hijo
                 {
-                    T aux = root.getElement();
-                    if (root == this.root)
+                    T aux = root.getElement();                    
+                    if (root == this.root) //si es la raiz
                     {
                         if (root.getLeft() != null)
                         {
@@ -168,37 +166,43 @@ namespace EstrcuturasDinamicas
                         {
                             this.root = root.getRight();
                         }
+                        this.root.setParent(null);
                     }
                     else
                     {
-                        if (root.getParent().getLeft() != null)
+                        TreeNode<T> parent = root.getParent();
+                        if (parent.getLeft() == root)
                         {
-                            if (root.getLeft() != null)
-                            {
-                                root.getParent().setRight(root.getLeft());
+                            if (root.getLeft() != null){
+                                TreeNode<T> son = root.getLeft();
+                                son.setParent(parent);
+                                parent.setLeft(son);                                
                             }
-                            else
-                            {
-                                root.getParent().setRight(root.getRight());
+                            else{
+                                TreeNode<T> son = root.getRight();
+                                son.setParent(parent);
+                                parent.setLeft(son);
                             }
                         }
                         else
                         {
-                            if (root.getLeft() != null)
-                            {
-                                root.getParent().setLeft(root.getLeft());
+                            if (root.getLeft() != null){
+                                TreeNode<T> son = root.getLeft();
+                                son.setParent(parent);
+                                parent.setRight(son);
                             }
-                            else
-                            {
-                                root.getParent().setLeft(root.getRight());
+                            else{
+                                TreeNode<T> son = root.getRight();
+                                son.setParent(parent);
+                                parent.setRight(son);
                             }
                         }
                     }
                     numberOfTreeNodes--;
                     return aux;
-                }
-                else//El que sustituirá será el más derecho de los izquierdos
-                {
+                }//borrar nodo con 1 hijo
+                else
+                {//El que sustituirá será el más derecho de los izquierdos
                     TreeNode<T> next = root.getLeft();
                     T aux = root.getElement();
                     if (next.getRight() != null)
