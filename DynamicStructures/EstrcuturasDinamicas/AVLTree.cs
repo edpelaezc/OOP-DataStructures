@@ -18,8 +18,7 @@ namespace EstrcuturasDinamicas
             compareElements = cmp;
         }
 
-        public int weight()
-        {
+        public int weight() {
             return numberOfTreeNodes;
         }
 
@@ -38,21 +37,18 @@ namespace EstrcuturasDinamicas
         }
 
         private void updateHeight (AVLNode<T> root) {
-            if (root != null)
-            {
+            if (root != null) {
                 root.setHeight(Math.Max(height(root.getLeft()), height(root.getRight())) + 1);
             }
         }
 
         public void add(T element)
         {
-            if (this.root == null)
-            {
+            if (this.root == null) {
                 root = new AVLNode<T>(element, null, null, null);
                 numberOfTreeNodes++;
             }
-            else
-            {
+            else {
                 addElement(this.root, element);              
             }
         }
@@ -132,7 +128,6 @@ namespace EstrcuturasDinamicas
 
                 root.setRight(leftAux);//                                                             
                 aux.setParent(parent);
-                
 
                 if (root == this.root) {
                     this.root = root.getParent();
@@ -331,6 +326,26 @@ namespace EstrcuturasDinamicas
                 Console.WriteLine(root.getElement());                
                 preOrder(root.getLeft());
                 preOrder(root.getRight());
+            }
+        }
+
+        public void postOrder(TreeNode<T> root)
+        {
+            if (root != null)
+            {
+                postOrder(root.getLeft());
+                postOrder(root.getRight());
+                Console.WriteLine(root.getElement());
+            }
+        }
+
+        public void inOrder(TreeNode<T> root)
+        {
+            if (root != null)
+            {
+                inOrder(root.getLeft());
+                Console.WriteLine(root.getElement());
+                inOrder(root.getRight());
             }
         }
 
