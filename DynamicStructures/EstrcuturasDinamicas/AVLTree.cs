@@ -79,8 +79,9 @@ namespace EstrcuturasDinamicas
                     addElement(root.getRight(), element);
                 }
             }
+
             balance(root);
-            updateHeight(root);            
+            updateHeight(root);
         }
 
         public int numberOfChildren(AVLNode<T> root)
@@ -99,29 +100,52 @@ namespace EstrcuturasDinamicas
             AVLNode<T> aux;
             AVLNode<T> parent = root.getParent();
 
-            if (parent.getLeft() == root) { son = true; }
+            if (root != this.root) {
+                if (parent.getLeft() == root) { son = true; }
+            }            
 
             if (direction) //si es verdadero será rotación izquierda
             {                
                 aux = root.getLeft();//
-                root.setLeft(aux.getRight());//                
-                aux.setRight(root);//
+                AVLNode<T> rightAux = aux.getRight();                                          
                 root.setParent(aux);
-                aux.setParent(parent);                
+                aux.setRight(root);//                
+
+                if (rightAux != null) { rightAux.setParent(root); }
+
+                root.setLeft(rightAux);//   
+                aux.setParent(parent);
+
+                if (root == this.root) {
+                    this.root = root.getParent();
+                    this.root.setParent(null);
+                }
             }
             else //rotación derecha
             {
                 aux = root.getRight();//
-                root.setRight(aux.getLeft());//                                             
-                aux.setLeft(root);//
+                AVLNode<T> leftAux = aux.getLeft();
                 root.setParent(aux);
-                aux.setParent(parent);                
+                aux.setLeft(root);//     
+
+                if (leftAux != null) { leftAux.setParent(root); }
+
+                root.setRight(leftAux);//                                                             
+                aux.setParent(parent);
+                
+
+                if (root == this.root) {
+                    this.root = root.getParent();
+                    this.root.setParent(null);
+                }
             }
 
-            if (son)
+            if (son) {
                 parent.setLeft(aux);
-            else
+            } 
+            else {
                 parent.setRight(aux);
+            }                
             
             updateHeight(root);
             updateHeight(aux);            
