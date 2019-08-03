@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace EstrcuturasDinamicas
 {
-    public class AVLTree<T>
+    public class AVLTree<T, K>
     {
-        public delegate int compare<T>(T aux, T aux2);
-        compare<T> compareElements;
+        public delegate int compare<k>(T aux, T aux2);
+        compare<K> compareElements;
         private int numberOfTreeNodes = 0;
         public AVLNode<T> root;
 
-        public AVLTree(compare<T> cmp) {
+        public AVLTree(compare<K> cmp) {
             root = null;
             compareElements = cmp;
         }
@@ -27,7 +27,7 @@ namespace EstrcuturasDinamicas
             return this.root == null;
         }
 
-        public int height(AVLNode<T> root)
+        private int height(AVLNode<T> root)
         {
             if (root == null) {
                 return 0;
@@ -37,7 +37,7 @@ namespace EstrcuturasDinamicas
             }
         }
 
-        public void updateHeight (AVLNode<T> root) {
+        private void updateHeight (AVLNode<T> root) {
             if (root != null)
             {
                 root.setHeight(Math.Max(height(root.getLeft()), height(root.getRight())) + 1);
@@ -84,7 +84,7 @@ namespace EstrcuturasDinamicas
             updateHeight(root);
         }
 
-        public int numberOfChildren(AVLNode<T> root)
+        private int numberOfChildren(AVLNode<T> root)
         {
             int count = 0;
             if (root.getLeft() != null)
@@ -270,8 +270,7 @@ namespace EstrcuturasDinamicas
                                 parent.setRight(son);
                             }
                         }
-
-                        updateHeight(son);
+                        
                         updateHeight(parent);
                         balance(parent);    
                     }
@@ -288,8 +287,25 @@ namespace EstrcuturasDinamicas
                         next = next.getRight();
                     }
                     root.setElement(next.getElement());
-                    AVLNode<T> father = next.getParent();
-                    father.setRight(null);
+
+                    if (next != root.getLeft()) {
+                        AVLNode<T> father = next.getParent();
+                        father.setRight(null);
+                        updateHeight(father);
+                        balance(father);
+                    }
+                    else {
+                        if (next.getLeft() != null) {
+                            root.setLeft(next.getLeft());
+                            next.getLeft().setParent(root);
+                        }
+                        else {
+                            root.setLeft(null);
+                        }
+
+                        updateHeight(root);
+                        balance(root);
+                    }
 
                     numberOfTreeNodes--;
                     return aux;

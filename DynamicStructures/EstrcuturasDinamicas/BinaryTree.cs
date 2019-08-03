@@ -211,8 +211,20 @@ namespace EstrcuturasDinamicas
                         next = next.getRight();
                     }
                     root.setElement(next.getElement());
-                    TreeNode<T> father = next.getParent();
-                    father.setRight(null);
+
+                    if (next != root.getLeft()) {
+                        TreeNode<T> father = next.getParent();
+                        father.setRight(null);
+                    }
+                    else {
+                        if (next.getLeft() != null) {
+                            root.setLeft(next.getLeft());
+                            next.getLeft().setParent(root);
+                        }
+                        else {
+                            root.setLeft(null);
+                        }
+                    }
 
                     numberOfTreeNodes--;
                     return aux;
