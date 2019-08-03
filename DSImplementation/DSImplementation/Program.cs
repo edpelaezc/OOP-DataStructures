@@ -11,7 +11,15 @@ namespace DSImplementation
     {
         static void Main(string[] args)
         {
-            //AVLTree<int> tree = new AVLTree<int>(compareInt);
+            AVLTree<int> tree = new AVLTree<int>(compareInt);
+            tree.add(4);
+            tree.add(2);
+            tree.add(5);
+            tree.add(1);
+            tree.add(7);
+            tree.add(3);
+            tree.add(6);            
+
             //tree.add(8);
             //tree.add(11);
             //tree.add(5);
@@ -28,15 +36,8 @@ namespace DSImplementation
             //tree.add(4);
             //tree.remove(tree.root, 15);
             //tree.remove(tree.root, 6);
-            //tree.preOrder(tree.root);
-
-            BinaryTree<int> tree = new BinaryTree<int>();
-            tree.add(10);                   
-            tree.add(11);
-            tree.add(15);
-
-            tree.remove(tree.root, 11);
-            tree.preOrder(tree.root);                        
+            tree.preOrder(tree.root);
+                        
             Console.ReadLine();
         }
 

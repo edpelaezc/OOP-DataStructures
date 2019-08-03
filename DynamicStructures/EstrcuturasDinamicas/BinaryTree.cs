@@ -205,21 +205,14 @@ namespace EstrcuturasDinamicas
                 {//El que sustituirá será el más derecho de los izquierdos
                     TreeNode<T> next = root.getLeft();
                     T aux = root.getElement();
-                    if (next.getRight() != null)
+
+                    while (next.getRight() != null)
                     {
-                        while (next.getRight() != null)
-                        {
-                            next = next.getRight();
-                        }
-                        root.setElement(next.getElement());
-                        TreeNode<T> father = next.getParent();
-                        father.setRight(null);
+                        next = next.getRight();
                     }
-                    else
-                    {
-                        root.setElement(next.getElement());
-                        root.setLeft(null);
-                    }
+                    root.setElement(next.getElement());
+                    TreeNode<T> father = next.getParent();
+                    father.setRight(null);
 
                     numberOfTreeNodes--;
                     return aux;
