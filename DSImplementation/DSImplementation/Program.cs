@@ -11,16 +11,16 @@ namespace DSImplementation
     {
         static void Main(string[] args)
         {
-            AVLTree<int, int> tree = new AVLTree<int, int>(compareInt);
+            AVLTree<Student, int> tree = new AVLTree<Student, int>();
+            tree.compareNodesDelegate(compareStudents);
+            tree.compareKeysDelegate(compareKey);
 
-            tree.add(8);
-            tree.add(6);
-            tree.add(9);
-            tree.add(7);
-            tree.add(10);
-            tree.add(4);
-            tree.add(5);
-            tree.remove(tree.root, 7);            
+            tree.add(new Student(4, "Eduardo"));
+            tree.add(new Student(1, "Antonio"));
+            tree.add(new Student(5, "Pelaez"));
+            tree.add(new Student(3, "Cifuentes"));
+            tree.add(new Student(6, "Roberto"));
+            tree.add(new Student(7, "Ana"));
             tree.preOrder(tree.root);
 
 
@@ -35,6 +35,25 @@ namespace DSImplementation
                 return 1;
             else
             return 0;
+        }
+
+        static int compareStudents(Student st1, Student st2) {
+            if (st1.getID() < st2.getID())
+                return -1;
+            else if (st1.getID() > st2.getID())
+                return 1;
+            else
+                return 0;
+        }
+
+        static int compareKey(Student st1, int key)
+        {
+            if (st1.getID() < key)
+                return -1;
+            else if (st1.getID() > key)
+                return 1;
+            else
+                return 0;
         }
     }
 }

@@ -8,14 +8,23 @@ namespace EstrcuturasDinamicas
 {
     public class AVLTree<T, K>
     {
-        public delegate int compare<k>(T aux, T aux2);
+        public delegate int compare<K>(T aux, T aux2);
+        public delegate int compareByKey<K>(T aux, K key);
         compare<K> compareElements;
+        compareByKey<K> compareKeys;
         private int numberOfTreeNodes = 0;
         public AVLNode<T> root;
 
-        public AVLTree(compare<K> cmp) {
-            root = null;
+        public AVLTree() {
+            root = null;            
+        }
+
+        public void compareNodesDelegate(compare<K> cmp) {
             compareElements = cmp;
+        }
+
+        public void compareKeysDelegate(compareByKey<K> cmp) {
+            compareKeys = cmp;
         }
 
         public int weight() {
@@ -190,13 +199,13 @@ namespace EstrcuturasDinamicas
             }
         }
 
-        public T remove(AVLNode<T> root, T element)
+        public T remove(AVLNode<T> root, K key)
         {
             if (root == null)
             {
                 return default(T);
             }
-            else if (compareElements(element, root.getElement()) == 0)
+            else if (compareKeys(root.getElement(), key) == 0)
             {
                 if (numberOfChildren(root) == 0)//borrar nodo sin hijos
                 {
@@ -308,13 +317,13 @@ namespace EstrcuturasDinamicas
             }
             else
             {
-                if (compareElements(element, root.getElement()) < 0)
+                if (compareKeys(root.getElement(), key) < 0)
                 {
-                    return remove(root.getLeft(), element);
+                    return remove(root.getLeft(), key);
                 }
                 else
                 {
-                    return remove(root.getRight(), element);
+                    return remove(root.getRight(), key);
                 }
             }
         }
